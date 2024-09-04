@@ -5,8 +5,8 @@ import { FormattedMessage, FormattedNumber, FormattedDate } from 'react-intl';
 
 import classNames from 'classnames';
 
-import api from 'mastodon/api';
-import { roundTo10 } from 'mastodon/utils/numbers';
+import api from 'tucano/api';
+import { roundTo10 } from 'tucano/utils/numbers';
 
 const dateForCohort = cohort => {
   const timeZone = 'UTC';

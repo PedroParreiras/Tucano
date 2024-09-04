@@ -1,10 +1,10 @@
 ---
 zh-CN:
   about:
-    about_mastodon_html: 来自未来的社交网络：无广告、无监视、去中心化、合乎道德！使用 Mastodon 夺回你的数据！
+    about_tucano_html: 来自未来的社交网络：无广告、无监视、去中心化、合乎道德！使用 tucano 夺回你的数据！
     contact_missing: 未设定
     contact_unavailable: 未公开
-    hosted_on: 运行在 %{domain} 上的 Mastodon 实例
+    hosted_on: 运行在 %{domain} 上的 tucano 实例
     title: 关于本站
   accounts:
     follow: 关注
@@ -735,24 +735,24 @@ zh-CN:
         rules_hint: 有一个专门区域用于显示用户需要遵守的规则。
         title: 关于本站
       appearance:
-        preamble: 自定义 Mastodon 的网页界面。
+        preamble: 自定义 tucano 的网页界面。
         title: 外观
       branding:
-        preamble: 你的服务器与网络中其他服务器的招牌区别。此信息将可能在多种环境下显示，包括 Mastodon 网页界面、原生应用和其他网站的链接预览等。因此应尽量简明扼要。
+        preamble: 你的服务器与网络中其他服务器的招牌区别。此信息将可能在多种环境下显示，包括 tucano 网页界面、原生应用和其他网站的链接预览等。因此应尽量简明扼要。
         title: 招牌
       captcha_enabled:
         desc_html: 这依赖于来自hCaptcha的外部脚本，可能会带来安全和隐私问题。此外，<strong>这可能使注册过程对某些人（尤其是残疾人）的注册简易程度大幅下降</strong>。出于这些原因，请考虑采取其他措施，如基于批准或邀请的注册方式。
         title: 要求新用户输入验证码以确认他们的账户
       content_retention:
         danger_zone: 危险操作区
-        preamble: 控制用户生成的内容在 Mastodon 中如何存储。
+        preamble: 控制用户生成的内容在 tucano 中如何存储。
         title: 内容保留
       default_noindex:
         desc_html: 影响所有尚未更改此设置的用户
         title: 默认不让用户被搜索引擎索引
       discovery:
         follow_recommendations: 关注推荐
-        preamble: 露出有趣的内容有助于新加入 Mastodon 的用户融入。可在这里控制多种发现功能如何在你的服务器上工作。
+        preamble: 露出有趣的内容有助于新加入 tucano 的用户融入。可在这里控制多种发现功能如何在你的服务器上工作。
         profile_directory: 个人资料目录
         public_timelines: 公共时间轴
         publish_discovered_servers: 已公开实例的服务器
@@ -784,7 +784,7 @@ zh-CN:
       destroyed_msg: 站点上传的文件已经成功删除！
     software_updates:
       critical_update: 紧急 — 请尽快更新
-      description: 建议你及时更新Mastodon实例，以便获得最新修复和功能。此外，为避免安全问题，有时及时更新Mastodon是至关重要的。出于这些原因，Mastodon每30分钟检查一次更新，并根据您的邮件通知偏好向您发送通知。
+      description: 建议你及时更新tucano实例，以便获得最新修复和功能。此外，为避免安全问题，有时及时更新tucano是至关重要的。出于这些原因，tucano每30分钟检查一次更新，并根据您的邮件通知偏好向您发送通知。
       documentation_link: 详细了解
       release_notes: 发行说明
       title: 可用的更新
@@ -842,7 +842,7 @@ zh-CN:
         message_html: Elasticsearch索引映射已过时。请运行<code>tootctl search deploy --only=%{value}</code>。
       elasticsearch_preset:
         action: 查看文档
-        message_html: 您的Elasticsearch集群有多个节点，但Mastodon未配置好使用它们。
+        message_html: 您的Elasticsearch集群有多个节点，但tucano未配置好使用它们。
       elasticsearch_preset_single_node:
         action: 查看文档
         message_html: 您的Elasticsearch集群只有一个节点，<code>ES_PRESET</code>应该设置为<code>single_node_cluster</code>。
@@ -860,10 +860,10 @@ zh-CN:
         message_html: "%{value} 队列未运行任何 Sidekiq 进程。请检查你的 Sidekiq 配置"
       software_version_critical_check:
         action: 查看可用更新
-        message_html: 有一个紧急Mastodon紧急更新可用，请尽快更新。
+        message_html: 有一个紧急tucano紧急更新可用，请尽快更新。
       software_version_patch_check:
         action: 查看可用更新
-        message_html: 有一个Mastodon错误修复更新可用。
+        message_html: 有一个tucano错误修复更新可用。
       upload_check_privacy_error:
         action: 点击这里查看更多信息
         message_html: "<strong>您的网站服务器配置错误，您用户的隐私处于危险中。</strong>"
@@ -971,7 +971,7 @@ zh-CN:
     webhooks:
       add_new: 新增对端
       delete: 删除
-      description_html: "<strong>Webhook</strong> 使 Mastodon 能够推送 <strong>关于所选事件的实时通知</strong> 到你自己的应用程序，进而由你的应用程序<strong>自动触发反应</strong>。"
+      description_html: "<strong>Webhook</strong> 使 tucano 能够推送 <strong>关于所选事件的实时通知</strong> 到你自己的应用程序，进而由你的应用程序<strong>自动触发反应</strong>。"
       disable: 禁用
       disabled: 已禁用
       edit: 编辑对端
@@ -1004,8 +1004,8 @@ zh-CN:
       next_steps: 你可以批准此申诉并撤销该审核结果，也可以忽略此申诉。
       subject: "%{username} 对 %{instance} 的审核结果提出了申诉"
     new_critical_software_updates:
-      body: 新的紧急更新版本Mastodon已经发布，您可能希望尽快更新！
-      subject: 适用于 %{instance} 的Mastodon紧急更新已经可用。
+      body: 新的紧急更新版本tucano已经发布，您可能希望尽快更新！
+      subject: 适用于 %{instance} 的tucano紧急更新已经可用。
     new_pending_account:
       body: 新账户的详细信息如下。你可以批准或拒绝此申请。
       subject: 在 %{instance} 上有新账号 (%{username}) 需要审核
@@ -1014,8 +1014,8 @@ zh-CN:
       body_remote: 来自 %{domain} 的用户举报了用户 %{target}
       subject: 来自 %{instance} 的用户举报（#%{id}）
     new_software_updates:
-      body: 新的 Mastodon 版本已发布，您可能想要更新！
-      subject: 适用于 %{instance} 的Mastodon版本更新已经可用！
+      body: 新的 tucano 版本已发布，您可能想要更新！
+      subject: 适用于 %{instance} 的tucano版本更新已经可用！
     new_trends:
       body: 以下项目需要审核才能公开显示：
       new_trending_links:
@@ -1039,8 +1039,8 @@ zh-CN:
     confirmation_dialogs: 确认对话框
     discovery: 发现
     localization:
-      body: Mastodon 由志愿者翻译。
-      guide_link: https://crowdin.com/project/mastodon
+      body: tucano 由志愿者翻译。
+      guide_link: https://crowdin.com/project/tucano
       guide_link_text: 每个人都可以参与翻译。
     sensitive_content: 敏感内容
   application_mailer:
@@ -1078,9 +1078,9 @@ zh-CN:
     delete_account: 删除帐户
     delete_account_html: 如果你想删除你的帐户，请<a href="%{path}">点击这里继续</a>。你需要确认你的操作。
     description:
-      prefix_invited_by_user: "@%{name} 邀请你加入这个Mastodon服务器！"
-      prefix_sign_up: 现在就注册 Mastodon！
-      suffix: 注册一个账号，你就可以关注他人、发布嘟文、并和其它任何 Mastodon 服务器上的用户交流，而且还有其它更多功能！
+      prefix_invited_by_user: "@%{name} 邀请你加入这个tucano服务器！"
+      prefix_sign_up: 现在就注册 tucano！
+      suffix: 注册一个账号，你就可以关注他人、发布嘟文、并和其它任何 tucano 服务器上的用户交流，而且还有其它更多功能！
     didnt_get_confirmation: 没有收到确认链接？
     dont_have_your_security_key: 没有你的安全密钥？
     forgot_password: 忘记密码？
@@ -1127,7 +1127,7 @@ zh-CN:
       title: 登录到 %{domain}
     sign_up:
       manual_review: 您在 %{domain} 上的注册需要经由管理人员手动审核。 为了帮助我们处理您的注册，请稍微介绍一下您为什么想在 %{domain} 上注册。
-      preamble: 有了这个Mastodon服务器上的账户，您就可以关注Mastodon网络上的任何其他人，无论他们的账户在哪里。
+      preamble: 有了这个tucano服务器上的账户，您就可以关注tucano网络上的任何其他人，无论他们的账户在哪里。
       title: 让我们在 %{domain} 上开始。
     status:
       account_status: 账户状态
@@ -1233,7 +1233,7 @@ zh-CN:
       content: 抱歉，我们的后台出错了。
       title: 这个页面有问题
     '503': 服务暂时不可用，无法请求该页面。
-    noscript_html: 使用 Mastodon 网页版应用需要启用 JavaScript。你也可以选择适用于你的平台的 <a href="%{apps_path}">Mastodon 应用</a>。
+    noscript_html: 使用 tucano 网页版应用需要启用 JavaScript。你也可以选择适用于你的平台的 <a href="%{apps_path}">tucano 应用</a>。
   existing_username_validator:
     not_found: 在本站找不到此用户
     not_found_multiple: 找不到 %{usernames}
@@ -1414,7 +1414,7 @@ zh-CN:
     unsubscribe:
       action: 是，取消订阅
       complete: 已取消订阅
-      confirmation_html: 你确定要退订来自 %{domain} 上的 Mastodon 的 %{type} 到您的邮箱 %{email} 吗？您可以随时在<a href="%{settings_path}">邮件通知设置</a>中重新订阅。
+      confirmation_html: 你确定要退订来自 %{domain} 上的 tucano 的 %{type} 到您的邮箱 %{email} 吗？您可以随时在<a href="%{settings_path}">邮件通知设置</a>中重新订阅。
       emails:
         notification_emails:
           favourite: 嘟文被喜欢邮件通知
@@ -1423,7 +1423,7 @@ zh-CN:
           mention: 账户被提及邮件通知
           reblog: 嘟文被转嘟邮件通知
       resubscribe_html: 如果你不小心取消了订阅，可以在你的<a href="%{settings_path}">邮件通知设置</a>中重新订阅。
-      success_html: 你将不会在你的邮箱 %{email} 中收到 %{domain} 上的 Mastodon的 %{type}
+      success_html: 你将不会在你的邮箱 %{email} 中收到 %{domain} 上的 tucano的 %{type}
       title: 取消订阅
   media_attachments:
     validations:
@@ -1548,13 +1548,13 @@ zh-CN:
     posting_defaults: 发布默认值
     public_timelines: 公共时间轴
   privacy:
-    hint_html: "<strong>自定义您希望如何找到您的个人资料和嘟文。</strong>启用Mastodon中的各种功能可以帮助您扩大受众范围。请花点时间查看这些设置，确保它们适合您的使用情况。"
+    hint_html: "<strong>自定义您希望如何找到您的个人资料和嘟文。</strong>启用tucano中的各种功能可以帮助您扩大受众范围。请花点时间查看这些设置，确保它们适合您的使用情况。"
     privacy: 隐私
     privacy_hint_html: 控制你愿意向他人透露多少信息。通过浏览他人的关注列表和查看他们发嘟所用的应用，人们可以发现有趣的用户和酷炫的应用，但你可能更喜欢将其隐藏起来。
     reach: 范围
     reach_hint_html: 控制您是否希望被新人发现和关注。您是否希望您的嘟文出现在“探索”页面上？您是否希望其他人在关注推荐中看到您？您是想自动接受所有新粉丝，还是对每个粉丝都进行仔细的筛选？
     search: 搜索
-    search_hint_html: 控制你希望被找到的方式。你想让人们通过你公开发布的内容来找到你吗？当在网络上搜索时，你是否希望Mastodon之外的人能够找到你的个人资料？请注意，我们无法保证完全排除所有搜索引擎对公开信息的索引。
+    search_hint_html: 控制你希望被找到的方式。你想让人们通过你公开发布的内容来找到你吗？当在网络上搜索时，你是否希望tucano之外的人能够找到你的个人资料？请注意，我们无法保证完全排除所有搜索引擎对公开信息的索引。
     title: 隐私与可达性
   privacy_policy:
     title: 隐私政策
@@ -1629,7 +1629,7 @@ zh-CN:
     current_session: 当前会话
     date: 日期
     description: "%{platform} 上的 %{browser}"
-    explanation: 你的 Mastodon 账户目前已在这些浏览器上登录。
+    explanation: 你的 tucano 账户目前已在这些浏览器上登录。
     ip: IP 地址
     platforms:
       adobe_air: Adobe Air
@@ -1655,7 +1655,7 @@ zh-CN:
     aliases: 账号别名
     appearance: 外观
     authorized_apps: 已授权的应用
-    back: 返回 Mastodon
+    back: 返回 tucano
     delete: 删除账户
     development: 开发
     edit_profile: 更改个人资料
@@ -1768,9 +1768,9 @@ zh-CN:
   tags:
     does_not_match_previous_name: 和之前的名称不匹配
   themes:
-    contrast: Mastodon（高对比度）
-    default: Mastodon（暗色主题）
-    mastodon-light: Mastodon（亮色主题）
+    contrast: tucano（高对比度）
+    default: tucano（暗色主题）
+    tucano-light: tucano（亮色主题）
     system: 自动切换（使用系统主题）
   time:
     formats:
@@ -1810,7 +1810,7 @@ zh-CN:
       subtitle: 您的申诉已被驳回。
       title: 申诉已驳回
     backup_ready:
-      explanation: 您之前请求为您的 Mastodon 账户创建一份完整的备份。
+      explanation: 您之前请求为您的 tucano 账户创建一份完整的备份。
       extra: 现在它可以下载了！
       subject: 你的存档已经准备完毕
       title: 存档导出
@@ -1862,7 +1862,7 @@ zh-CN:
       apps_android_action: 从 Google Play 下载
       apps_ios_action: 从 App Store 下载
       apps_step: 下载我们的官方应用。
-      apps_title: Mastodon应用
+      apps_title: tucano应用
       checklist_subtitle: 让我们带您开启这片社交新天地：
       checklist_title: 欢迎清单
       edit_profile_action: 个性化
@@ -1870,16 +1870,16 @@ zh-CN:
       edit_profile_title: 个性化您的个人资料
       explanation: 下面是几个小贴士，希望它们能帮到你
       feature_action: 了解更多
-      feature_audience: Mastodon为您提供了无需中间商即可管理受众的独特可能。Mastodon可被部署在您自己的基础设施上，允许您关注其它任何Mastodon在线服务器的用户，或被任何其他在线 Mastodon 服务器的用户关注，并且不受您之外的任何人控制。
+      feature_audience: tucano为您提供了无需中间商即可管理受众的独特可能。tucano可被部署在您自己的基础设施上，允许您关注其它任何tucano在线服务器的用户，或被任何其他在线 tucano 服务器的用户关注，并且不受您之外的任何人控制。
       feature_audience_title: 放手去建立起您的受众
-      feature_control: 您最清楚您想在你自己的主页中看到什么动态。没有算法或广告浪费您的时间。您可以用一个账号关注任何 Mastodon 服务器上的任何人，并按时间顺序获得他们发布的嘟文，让您的互联网的角落更合自己的心意。
+      feature_control: 您最清楚您想在你自己的主页中看到什么动态。没有算法或广告浪费您的时间。您可以用一个账号关注任何 tucano 服务器上的任何人，并按时间顺序获得他们发布的嘟文，让您的互联网的角落更合自己的心意。
       feature_control_title: 掌控自己的时间线
-      feature_creativity: Mastodon支持音频、视频和图片、无障碍描述、投票、内容警告， 动画头像、自定义表情包、缩略图裁剪控制等功能，帮助您在网上尽情表达自己。无论您是要发布您的艺术作品、音乐还是播客，Mastodon 都能为您服务。
+      feature_creativity: tucano支持音频、视频和图片、无障碍描述、投票、内容警告， 动画头像、自定义表情包、缩略图裁剪控制等功能，帮助您在网上尽情表达自己。无论您是要发布您的艺术作品、音乐还是播客，tucano 都能为您服务。
       feature_creativity_title: 无与伦比的创造力
-      feature_moderation: Mastodon将决策权交还给您。每个服务器都会创建自己的规则和条例，并在站点内施行，而不是像企业社交媒体那样居高临下，这使得它可以最灵活地响应不同人群的需求。加入一个您认同其规则的服务器，或托管您自己的服务器。
+      feature_moderation: tucano将决策权交还给您。每个服务器都会创建自己的规则和条例，并在站点内施行，而不是像企业社交媒体那样居高临下，这使得它可以最灵活地响应不同人群的需求。加入一个您认同其规则的服务器，或托管您自己的服务器。
       feature_moderation_title: 管理，本应如此
       follow_action: 关注
-      follow_step: 关注有趣的人，这就是Mastodon的意义所在。
+      follow_step: 关注有趣的人，这就是tucano的意义所在。
       follow_title: 个性化您的首页动态
       follows_subtitle: 关注知名账户
       follows_title: 推荐关注
@@ -1893,10 +1893,10 @@ zh-CN:
       post_step: 向世界打个招呼吧。
       post_title: 发布您的第一条嘟文
       share_action: 分享
-      share_step: 让您的朋友知道如何在Mastodon找到你。
-      share_title: 分享您的Mastodon个人资料
+      share_step: 让您的朋友知道如何在tucano找到你。
+      share_title: 分享您的tucano个人资料
       sign_in_action: 登录
-      subject: 欢迎来到 Mastodon
+      subject: 欢迎来到 tucano
       title: "%{name}，欢迎你的加入！"
   users:
     follow_limit_reached: 你不能关注超过 %{limit} 个人
@@ -1909,7 +1909,7 @@ zh-CN:
   verification:
     extra_instructions_html: <strong>提示：</strong>您网站上的链接可能是不可见的。重要的部分是 <code>rel="me"</code>，它可以防止在具有用户生成内容的网站上冒充身份。您甚至可以在页面头部使用 <code>link</code> 标签而不是 <code>a</code>，但 HTML 必须能够在不执行 JavaScript 的情况下访问。
     here_is_how: 具体方法如下：
-    hint_html: "<strong>在Mastodon上验证您的身份对每个人都是必要的。</strong>基于开放网络标准，现在和将来永远免费。您只需要一个被人们认可的个人网站。当您在个人资料中链接到这个网站时，我们会检查该网站是否回链到您的资料，并显示一个指示符号。"
+    hint_html: "<strong>在tucano上验证您的身份对每个人都是必要的。</strong>基于开放网络标准，现在和将来永远免费。您只需要一个被人们认可的个人网站。当您在个人资料中链接到这个网站时，我们会检查该网站是否回链到您的资料，并显示一个指示符号。"
     instructions_html: 将下面的代码复制并粘贴到您网站的HTML中。然后在“编辑个人资料”选项卡中的附加字段之一添加您网站的地址，并保存更改。
     verification: 验证
     verified_links: 您已验证的链接

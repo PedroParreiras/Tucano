@@ -3,10 +3,10 @@ ia:
   simple_form:
     hints:
       account:
-        discoverable: Tu messages public e tu profilo pote esser mittite in evidentia o recommendate in varie areas de Mastodon e tu profilo pote esser suggerite a altere usatores.
+        discoverable: Tu messages public e tu profilo pote esser mittite in evidentia o recommendate in varie areas de tucano e tu profilo pote esser suggerite a altere usatores.
         display_name: Tu prenomine e nomine de familia o tu pseudonymo.
         fields: Tu pagina principal, pronomines, etate, tote lo que tu vole.
-        indexable: Tu messages public pote apparer in le resultatos de recerca sur Mastodon. Le personas qui ha interagite con tu messages pote cercar los in omne caso.
+        indexable: Tu messages public pote apparer in le resultatos de recerca sur tucano. Le personas qui ha interagite con tu messages pote cercar los in omne caso.
         note: 'Tu pote @mentionar altere personas o #hashtags.'
         show_collections: Le gente potera percurrer le listas de personas que tu seque e qui te seque. Le personas que tu seque videra que tu les seque in omne caso.
         unlocked: Le personas potera sequer te sin requestar approbation. Dismarca si tu vole revider le requestas de sequimento e seliger si acceptar o rejectar nove sequitores.
@@ -54,7 +54,7 @@ ia:
         phrase: Sera concordate ignorante majuscule/minuscule in le texto o avisos de contento de un message
         scopes: A que APIs sera permittite acceder al application. Si tu selige un ambito de maxime nivello, tu non besonia de seliger los singulemente.
         setting_aggregate_reblogs: Non monstrar nove impulsos pro messages que ha essite recentemente impulsate (affecta solmente le impulsos novemente recipite)
-        setting_always_send_emails: Normalmente le avisos de email non sera inviate quando tu activemente usa Mastodon
+        setting_always_send_emails: Normalmente le avisos de email non sera inviate quando tu activemente usa tucano
         setting_default_sensitive: Le medios sensibile es celate de ordinario e pote esser revelate con un clic
         setting_display_media_default: Celar le medios marcate como sensibile
         setting_display_media_hide_all: Sempre celar le medios
@@ -82,15 +82,15 @@ ia:
         bootstrap_timeline_accounts: Iste contos sera appunctate al summitate del recommendationes a sequer del nove usatores.
         closed_registrations_message: Monstrate quando le inscriptiones es claudite
         content_cache_retention_period: Tote le messages de altere servitores (includite impulsos e responsas) essera delite post le numero de dies specificate, independentemente de tote interaction de usatores local con ille messages. Isto include le messages addite al marcapaginas o marcate como favorite per un usator local. Le mentiones private inter usatores de differente instantias tamben essera irrecuperabilemente perdite. Le uso de iste parametro es intendite pro instantias con scopos specific e viola multe expectationes de usatores si es implementate pro uso general.
-        custom_css: Tu pote applicar stilos personalisate sur le version de web de Mastodon.
-        favicon: WEBP, PNG, GIF o JPG. Supplanta le favicone predefinite de Mastodon con un icone personalisate.
+        custom_css: Tu pote applicar stilos personalisate sur le version de web de tucano.
+        favicon: WEBP, PNG, GIF o JPG. Supplanta le favicone predefinite de tucano con un icone personalisate.
         mascot: Illo substitue le illustration in le interfacie web avantiate.
         media_cache_retention_period: Le files multimedial de messages producite per usatores remote es in cache sur tu servitor. Quando predefinite a un valor positive, le medios sera delite post le numero de dies specificate. Le datos multimedial requirite post que illo es delite, sera re-discargate, si le contento original sera ancora disponibile. Per limitationes sur le frequentia con que le schedas de pre-visualisation de ligamine scruta le sitos de tertie partes, il es recommendate de predefinir iste valor a al minus 14 dies, o le schedas de pre-visualisation de ligamine non sera actualisate sur demanda ante ille tempore.
         peers_api_enabled: Un lista de nomines de dominio que iste servitor ha incontrate in le fediverso. Nulle datos es includite ci re tu federation con un date servitor, justo que tu servitor lo cognosce. Isto es usate per servicios que collige statistica re le federation in senso general.
         profile_directory: Le directorio de profilo lista tote le usatores qui ha optate pro esser detectabile.
         require_invite_text: Quando le inscriptiones require approbation manual, rende obligatori, plus tosto que optional, le entrata de texto “Perque vole tu junger te?”
         site_contact_email: Como pote contactar te le personas pro questiones legal o de supporto.
-        site_contact_username: Como pote contactar te le personas re Mastodon.
+        site_contact_username: Como pote contactar te le personas re tucano.
         site_extended_description: Qualcunque information additional que pote esser utile al visitatores e a tu usatores. Pote esser structurate con syntaxe de markdown.
         site_short_description: Un breve description pro adjutar a univocamente identificar tu servitor. Qui ha exequite illo, proque es illo?
         site_terms: Usa tu proprie politica de confidentialitate o lassa blanc pro usar le predefinite. Pote esser structurate con syntaxe de markdown.
@@ -105,7 +105,7 @@ ia:
       form_challenge:
         current_password: Tu entra in un area secur
       imports:
-        data: File CSV exportate ab un altere servitor de Mastodon
+        data: File CSV exportate ab un altere servitor de tucano
       invite_request:
         text: Isto nos adjutara a revider tu application
       ip_block:
@@ -299,7 +299,7 @@ ia:
         software_updates:
           all: Notificar sur tote le actualisationes
           critical: Notificar solmente sur actualisationes critic
-          label: Un nove version de Mastodon es disponibile
+          label: Un nove version de tucano es disponibile
           none: Nunquam notificar sur actualisationes (non recommendate)
           patch: Notificar re actualisationes de correction de bug
         trending_tag: Un nove tendentia require revision

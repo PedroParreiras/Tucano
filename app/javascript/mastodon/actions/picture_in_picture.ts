@@ -1,7 +1,7 @@
 import { createAction } from '@reduxjs/toolkit';
 
-import type { PIPMediaProps } from 'mastodon/reducers/picture_in_picture';
-import { createAppAsyncThunk } from 'mastodon/store/typed_functions';
+import type { PIPMediaProps } from 'tucano/reducers/picture_in_picture';
+import { createAppAsyncThunk } from 'tucano/store/typed_functions';
 
 interface DeployParams {
   statusId: string;

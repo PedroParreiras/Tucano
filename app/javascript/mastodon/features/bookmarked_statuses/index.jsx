@@ -11,12 +11,12 @@ import { connect } from 'react-redux';
 import { debounce } from 'lodash';
 
 import BookmarksIcon from '@/material-icons/400-24px/bookmarks-fill.svg?react';
-import { fetchBookmarkedStatuses, expandBookmarkedStatuses } from 'mastodon/actions/bookmarks';
-import { addColumn, removeColumn, moveColumn } from 'mastodon/actions/columns';
-import ColumnHeader from 'mastodon/components/column_header';
-import StatusList from 'mastodon/components/status_list';
-import Column from 'mastodon/features/ui/components/column';
-import { getStatusList } from 'mastodon/selectors';
+import { fetchBookmarkedStatuses, expandBookmarkedStatuses } from 'tucano/actions/bookmarks';
+import { addColumn, removeColumn, moveColumn } from 'tucano/actions/columns';
+import ColumnHeader from 'tucano/components/column_header';
+import StatusList from 'tucano/components/status_list';
+import Column from 'tucano/features/ui/components/column';
+import { getStatusList } from 'tucano/selectors';
 
 const messages = defineMessages({
   heading: { id: 'column.bookmarks', defaultMessage: 'Bookmarks' },

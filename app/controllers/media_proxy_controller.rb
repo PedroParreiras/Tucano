@@ -11,8 +11,8 @@ class MediaProxyController < ApplicationController
   before_action :authenticate_user!, if: :limited_federation_mode?
 
   rescue_from ActiveRecord::RecordInvalid, with: :not_found
-  rescue_from Mastodon::UnexpectedResponseError, with: :not_found
-  rescue_from Mastodon::NotPermittedError, with: :not_found
+  rescue_from tucano::UnexpectedResponseError, with: :not_found
+  rescue_from tucano::NotPermittedError, with: :not_found
   rescue_from HTTP::TimeoutError, HTTP::ConnectionError, OpenSSL::SSL::SSLError, with: :internal_server_error
 
   def show

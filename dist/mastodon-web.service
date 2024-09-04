@@ -1,15 +1,15 @@
 [Unit]
-Description=mastodon-web
+Description=tucano-web
 After=network.target
 
 [Service]
 Type=simple
-User=mastodon
-WorkingDirectory=/home/mastodon/live
+User=tucano
+WorkingDirectory=/home/tucano/live
 Environment="RAILS_ENV=production"
 Environment="PORT=3000"
 Environment="LD_PRELOAD=libjemalloc.so"
-ExecStart=/home/mastodon/.rbenv/shims/bundle exec puma -C config/puma.rb
+ExecStart=/home/tucano/.rbenv/shims/bundle exec puma -C config/puma.rb
 ExecReload=/bin/kill -SIGUSR1 $MAINPID
 TimeoutSec=15
 Restart=always
@@ -47,7 +47,7 @@ SystemCallFilter=~@cpu-emulation @debug @keyring @ipc @mount @obsolete @privileg
 SystemCallFilter=@chown
 SystemCallFilter=pipe
 SystemCallFilter=pipe2
-ReadWritePaths=/home/mastodon/live
+ReadWritePaths=/home/tucano/live
 
 [Install]
 WantedBy=multi-user.target

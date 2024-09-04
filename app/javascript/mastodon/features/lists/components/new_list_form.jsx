@@ -5,8 +5,8 @@ import { defineMessages, injectIntl } from 'react-intl';
 
 import { connect } from 'react-redux';
 
-import { changeListEditorTitle, submitListEditor } from 'mastodon/actions/lists';
-import { Button } from 'mastodon/components/button';
+import { changeListEditorTitle, submitListEditor } from 'tucano/actions/lists';
+import { Button } from 'tucano/components/button';
 
 const messages = defineMessages({
   label: { id: 'lists.new.title_placeholder', defaultMessage: 'New list title' },

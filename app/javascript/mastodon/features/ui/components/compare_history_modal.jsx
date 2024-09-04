@@ -9,12 +9,12 @@ import { connect } from 'react-redux';
 import escapeTextContentForBrowser from 'escape-html';
 
 import CloseIcon from '@/material-icons/400-24px/close.svg?react';
-import { closeModal } from 'mastodon/actions/modal';
-import { IconButton } from 'mastodon/components/icon_button';
-import InlineAccount from 'mastodon/components/inline_account';
-import MediaAttachments from 'mastodon/components/media_attachments';
-import { RelativeTimestamp } from 'mastodon/components/relative_timestamp';
-import emojify from 'mastodon/features/emoji/emoji';
+import { closeModal } from 'tucano/actions/modal';
+import { IconButton } from 'tucano/components/icon_button';
+import InlineAccount from 'tucano/components/inline_account';
+import MediaAttachments from 'tucano/components/media_attachments';
+import { RelativeTimestamp } from 'tucano/components/relative_timestamp';
+import emojify from 'tucano/features/emoji/emoji';
 
 const mapStateToProps = (state, { statusId }) => ({
   language: state.getIn(['statuses', statusId, 'language']),

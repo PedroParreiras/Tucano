@@ -3,10 +3,10 @@ es-AR:
   simple_form:
     hints:
       account:
-        discoverable: Tu perfil y publicaciones pueden ser destacadas o recomendadas en varias áreas de Mastodon, y tu perfil puede ser sugerido a otros usuarios.
+        discoverable: Tu perfil y publicaciones pueden ser destacadas o recomendadas en varias áreas de tucano, y tu perfil puede ser sugerido a otros usuarios.
         display_name: Tu nombre completo o tu pseudónimo.
         fields: Tu sitio web, pronombres, edad, o lo que quieras.
-        indexable: Tus mensajes públicos pueden aparecer en los resultados de la búsqueda en Mastodon. La gente que interactuó con tus mensajes puede ser capaz de buscarlos sin importar el momento.
+        indexable: Tus mensajes públicos pueden aparecer en los resultados de la búsqueda en tucano. La gente que interactuó con tus mensajes puede ser capaz de buscarlos sin importar el momento.
         note: 'Podés @mencionar otras cuentas o usar #etiquetas.'
         show_collections: La gente podrá navegar a través de tus seguidos y seguidores. Sin embargo, la gente que sigás, sabrá que lo estás haciendo.
         unlocked: La gente podrá seguirte sin solicitar aprobación. Desmarcá si querés revisar las solicitudes de seguimiento y elegir si aceptar o rechazar nuevos seguidores.
@@ -54,7 +54,7 @@ es-AR:
         phrase: Se aplicará sin importar las mayúsculas o las advertencias de contenido de un mensaje
         scopes: Qué APIs de la aplicación tendrán acceso. Si seleccionás el alcance de nivel más alto, no necesitás seleccionar las individuales.
         setting_aggregate_reblogs: No mostrar nuevas adhesiones de los mensajes que fueron recientemente adheridos (sólo afecta a las adhesiones recibidas recientemente)
-        setting_always_send_emails: Normalmente las notificaciones por correo electrónico no se enviarán cuando estés usando Mastodon activamente
+        setting_always_send_emails: Normalmente las notificaciones por correo electrónico no se enviarán cuando estés usando tucano activamente
         setting_default_sensitive: El contenido de medios sensibles está oculto predeterminadamente y puede ser mostrado con un clic
         setting_display_media_default: Ocultar medios marcados como sensibles
         setting_display_media_hide_all: Siempre ocultar todos los medios
@@ -82,15 +82,15 @@ es-AR:
         bootstrap_timeline_accounts: Estas cuentas serán fijadas a la parte superior de las recomendaciones de cuentas a seguir para nuevos usuarios.
         closed_registrations_message: Mostrado cuando los registros están cerrados
         content_cache_retention_period: Todos los mensajes de otros servidores (incluyendo adhesiones y respuestas) se eliminarán después del número de días especificado, sin tener en cuenta la interacción del usuario local con esos mensajes. Esto incluye mensajes que un usuario local haya agregado a marcadores o los haya marcado como favoritos. Las menciones privadas entre usuarios de diferentes servidores también se perderán y también serán imposibles de restaurar. El uso de esta configuración está destinado a servidores de propósito especial y rompe muchas expectativas de los usuarios cuando se implementa para uso general.
-        custom_css: Podés aplicar estilos personalizados a la versión web de Mastodon.
-        favicon: WEBP, PNG, GIF o JPG. Reemplaza el favicón predeterminado de Mastodon con uno personalizado.
+        custom_css: Podés aplicar estilos personalizados a la versión web de tucano.
+        favicon: WEBP, PNG, GIF o JPG. Reemplaza el favicón predeterminado de tucano con uno personalizado.
         mascot: Reemplaza la ilustración en la interface web avanzada.
         media_cache_retention_period: Los archivos de medios de mensajes publicados por usuarios remotos se almacenan en la memoria caché en tu servidor. Cuando se establece un valor positivo, los medios se eliminarán después del número especificado de días. Si los datos multimedia se solicitan después de eliminarse, se volverán a descargar, si es que el contenido fuente todavía está disponible. Debido a restricciones en la frecuencia con la que las tarjetas de previsualización de enlace consultan a sitios web de terceros, se recomienda establecer este valor a, al menos, 14 días, o las tarjetas de previsualización de enlaces no se actualizarán a pedido antes de ese momento.
         peers_api_enabled: Una lista de nombres de dominio que este servidor ha encontrado en el Fediverso. Acá no se incluye ningún dato sobre si federás con un servidor determinado, sólo que tu servidor lo conoce. Esto es usado por los servicios que recopilan estadísticas sobre la federación en un sentido general.
         profile_directory: El directorio de perfiles lista a todos los usuarios que han optado a que su cuenta pueda ser descubierta.
         require_invite_text: Cuando registros aprobación manual, hacé que la solicitud de invitación "¿Por qué querés unirte?" sea obligatoria, en vez de opcional
         site_contact_email: Cómo la gente puede estar en contacto con vos para consultas legales o de ayuda.
-        site_contact_username: Cómo la gente puede estar en contacto con vos en Mastodon.
+        site_contact_username: Cómo la gente puede estar en contacto con vos en tucano.
         site_extended_description: Cualquier información adicional que pueda ser útil para los visitantes y tus usuarios. Se puede estructurar con sintaxis Markdown.
         site_short_description: Una breve descripción para ayudar a identificar individualmente a tu servidor. ¿Quién lo administra, a quién va dirigido?
         site_terms: Usá tu propia política de privacidad o dejala en blanco para usar la predeterminada. Puede estructurarse con sintaxis Markdown.
@@ -105,7 +105,7 @@ es-AR:
       form_challenge:
         current_password: Estás ingresando en un área segura
       imports:
-        data: Archivo CSV exportado desde otro servidor de Mastodon
+        data: Archivo CSV exportado desde otro servidor de tucano
       invite_request:
         text: Esto nos ayudará a revisar tu solicitud
       ip_block:
@@ -300,7 +300,7 @@ es-AR:
         software_updates:
           all: Notificar en todas las actualizaciones
           critical: Notificar solamente sobre actualizaciones críticas
-          label: Una nueva versión de Mastodon está disponible
+          label: Una nueva versión de tucano está disponible
           none: Nunca notificar sobre actualizaciones (no recomendado)
           patch: Notificar sobre actualizaciones de corrección de errores
         trending_tag: Una nueva tendencia requiere revisión

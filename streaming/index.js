@@ -773,7 +773,7 @@ const startServer = async () => {
                 // results is an Array of FilterResult; status_matches is always
                 // null as we only are only applying the keyword-based custom
                 // filters, not the status-based custom filters.
-                // https://docs.joinmastodon.org/entities/FilterResult/
+                // https://docs.jointucano.org/entities/FilterResult/
                 results.push({
                   filter: cachedFilter.filter,
                   keyword_matches,
@@ -789,7 +789,7 @@ const startServer = async () => {
             // have been either `update` or `status.update`, meaning the
             // `payload` is a Status entity, which has a `filtered` property:
             //
-            // filtered: https://docs.joinmastodon.org/entities/Status/#filtered
+            // filtered: https://docs.jointucano.org/entities/Status/#filtered
             transmit(event, {
               ...payload,
               filtered: filter_results
@@ -1277,7 +1277,7 @@ const startServer = async () => {
     ws.on('message', (data, isBinary) => {
       if (isBinary) {
         log.warn('Received binary data, closing connection');
-        ws.close(1003, 'The mastodon streaming server does not support binary messages');
+        ws.close(1003, 'The tucano streaming server does not support binary messages');
         return;
       }
       const message = data.toString('utf8');

@@ -11,12 +11,12 @@ import { connect } from 'react-redux';
 import { debounce } from 'lodash';
 
 import StarIcon from '@/material-icons/400-24px/star-fill.svg?react';
-import { addColumn, removeColumn, moveColumn } from 'mastodon/actions/columns';
-import { fetchFavouritedStatuses, expandFavouritedStatuses } from 'mastodon/actions/favourites';
-import ColumnHeader from 'mastodon/components/column_header';
-import StatusList from 'mastodon/components/status_list';
-import Column from 'mastodon/features/ui/components/column';
-import { getStatusList } from 'mastodon/selectors';
+import { addColumn, removeColumn, moveColumn } from 'tucano/actions/columns';
+import { fetchFavouritedStatuses, expandFavouritedStatuses } from 'tucano/actions/favourites';
+import ColumnHeader from 'tucano/components/column_header';
+import StatusList from 'tucano/components/status_list';
+import Column from 'tucano/features/ui/components/column';
+import { getStatusList } from 'tucano/selectors';
 
 const messages = defineMessages({
   heading: { id: 'column.favourites', defaultMessage: 'Favorites' },

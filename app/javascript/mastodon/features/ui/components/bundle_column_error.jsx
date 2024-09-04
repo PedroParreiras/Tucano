@@ -7,9 +7,9 @@ import classNames from 'classnames';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
-import { Button } from 'mastodon/components/button';
-import Column from 'mastodon/components/column';
-import { autoPlayGif } from 'mastodon/initial_state';
+import { Button } from 'tucano/components/button';
+import Column from 'tucano/components/column';
+import { autoPlayGif } from 'tucano/initial_state';
 
 class GIF extends PureComponent {
 

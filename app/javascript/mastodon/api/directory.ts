@@ -1,5 +1,5 @@
-import { apiRequestGet } from 'mastodon/api';
-import type { ApiAccountJSON } from 'mastodon/api_types/accounts';
+import { apiRequestGet } from 'tucano/api';
+import type { ApiAccountJSON } from 'tucano/api_types/accounts';
 
 export const apiGetDirectory = (
   params: {

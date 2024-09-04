@@ -10,15 +10,15 @@ import type {
 } from 'history';
 import { createBrowserHistory } from 'history';
 
-import { layoutFromWindow } from 'mastodon/is_mobile';
-import { isDevelopment } from 'mastodon/utils/environment';
+import { layoutFromWindow } from 'tucano/is_mobile';
+import { isDevelopment } from 'tucano/utils/environment';
 
-interface MastodonLocationState {
-  fromMastodon?: boolean;
-  mastodonModalKey?: string;
+interface tucanoLocationState {
+  fromtucano?: boolean;
+  tucanoModalKey?: string;
 }
 
-type LocationState = MastodonLocationState | null | undefined;
+type LocationState = tucanoLocationState | null | undefined;
 
 type HistoryPath = Path | LocationDescriptor<LocationState>;
 
@@ -59,23 +59,23 @@ function normalizePath(
   return location;
 }
 
-browserHistory.push = (path: HistoryPath, state?: MastodonLocationState) => {
+browserHistory.push = (path: HistoryPath, state?: tucanoLocationState) => {
   const location = normalizePath(path, state);
 
   location.state = location.state ?? {};
-  location.state.fromMastodon = true;
+  location.state.fromtucano = true;
 
   originalPush(location);
 };
 
-browserHistory.replace = (path: HistoryPath, state?: MastodonLocationState) => {
+browserHistory.replace = (path: HistoryPath, state?: tucanoLocationState) => {
   const location = normalizePath(path, state);
 
   if (!location.pathname) return;
 
-  if (browserHistory.location.state?.fromMastodon) {
+  if (browserHistory.location.state?.fromtucano) {
     location.state = location.state ?? {};
-    location.state.fromMastodon = true;
+    location.state.fromtucano = true;
   }
 
   originalReplace(location);

@@ -4,12 +4,12 @@ import classNames from 'classnames';
 
 import { HotKeys } from 'react-hotkeys';
 
-import { replyComposeById } from 'mastodon/actions/compose';
-import { navigateToStatus } from 'mastodon/actions/statuses';
-import type { IconProp } from 'mastodon/components/icon';
-import { Icon } from 'mastodon/components/icon';
-import { RelativeTimestamp } from 'mastodon/components/relative_timestamp';
-import { useAppSelector, useAppDispatch } from 'mastodon/store';
+import { replyComposeById } from 'tucano/actions/compose';
+import { navigateToStatus } from 'tucano/actions/statuses';
+import type { IconProp } from 'tucano/components/icon';
+import { Icon } from 'tucano/components/icon';
+import { RelativeTimestamp } from 'tucano/components/relative_timestamp';
+import { useAppSelector, useAppDispatch } from 'tucano/store';
 
 import { AvatarGroup } from './avatar_group';
 import { DisplayedName } from './displayed_name';

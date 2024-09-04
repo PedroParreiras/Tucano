@@ -1,10 +1,10 @@
 ---
 io:
   about:
-    about_mastodon_html: Mastodon esas <em>gratuita, apertitkodexa</em> sociala reto. Ol esas <em>sencentra</em> altra alternativo a komercala servadi. Ol evitigas, ke sola firmo guvernez tua tota komunikadol. Selektez servero, quan tu fidas. Irge qua esas tua selekto, tu povas komunikar kun omna altra uzeri. Irgu povas krear sua propra instaluro di Mastodon en sua servero, e partoprenar en la <em>sociala reto</em> tote glate.
+    about_tucano_html: tucano esas <em>gratuita, apertitkodexa</em> sociala reto. Ol esas <em>sencentra</em> altra alternativo a komercala servadi. Ol evitigas, ke sola firmo guvernez tua tota komunikadol. Selektez servero, quan tu fidas. Irge qua esas tua selekto, tu povas komunikar kun omna altra uzeri. Irgu povas krear sua propra instaluro di tucano en sua servero, e partoprenar en la <em>sociala reto</em> tote glate.
     contact_missing: Ne fixigita
     contact_unavailable: Nula
-    hosted_on: Mastodon hostigesas che %{domain}
+    hosted_on: tucano hostigesas che %{domain}
     title: Pri co
   accounts:
     follow: Sequar
@@ -645,7 +645,7 @@ io:
         moderation: Jero
         special: Specala
       delete: Efacez
-      description_html: Per <strong>uzantoroli</strong>, vu povas kustumizar funciono e siti di Mastodon quon vua uzanti povas uzar.
+      description_html: Per <strong>uzantoroli</strong>, vu povas kustumizar funciono e siti di tucano quon vua uzanti povas uzar.
       edit: Modifikez rolo di '%{name}'
       everyone: Originala permisi
       everyone_full_description_html: Co esas <strong>bazrolo</strong> quo efektigas <strong>omna uzanti</strong>, mem personi sen rolo. Omna altra roli ganas sama permisi de ol.
@@ -705,7 +705,7 @@ io:
         rules_hint: Havas partikulara areo por reguli quo uzanti expektesar sequar.
         title: Pri co
       appearance:
-        preamble: Kustumizitez retintervizajo di Mastodon.
+        preamble: Kustumizitez retintervizajo di tucano.
         title: Aspekto
       branding:
         preamble: Fabrikmarko di ca servilo diferentigas lu de altra servili en la reto. Ca informi forsan montresas che diversa loki. Do, ca informi debas esar klara.
@@ -713,7 +713,7 @@ io:
       captcha_enabled:
         title: Postular ke nova uzanti solvos CAPTCHA por konfirmar lia konti
       content_retention:
-        preamble: Dominacez quale uzantigita kontenajo retenesar en Mastodon.
+        preamble: Dominacez quale uzantigita kontenajo retenesar en tucano.
         title: Kontenajreteneso
       default_noindex:
         desc_html: Efektigas omna uzanti qui ne personale chanjis ca opciono
@@ -815,10 +815,10 @@ io:
         message_html: Sidekiq procedo ne funcionas ye %{value} fask(o). Kontrolez vua opciono di Sidekiq
       software_version_critical_check:
         action: Videz la aktualigi disponebla
-        message_html: Urjanta Mastodon-aktualigo es disponebla, voluntez aktualigar la servilo tam rapide kam es posibla.
+        message_html: Urjanta tucano-aktualigo es disponebla, voluntez aktualigar la servilo tam rapide kam es posibla.
       software_version_patch_check:
         action: Videz la aktualigi disponebla
-        message_html: Problemosolvanta Mastodon-aktualigo es disponebla.
+        message_html: Problemosolvanta tucano-aktualigo es disponebla.
       upload_check_privacy_error:
         action: Konsultez hike por plu multa informo
         message_html: "<strong>Vua retservilo es misfigurizita. La privateso di vua uzanti es domajebla.</strong>"
@@ -900,7 +900,7 @@ io:
     webhooks:
       add_new: Insertez finpunto
       delete: Efacez
-      description_html: "<strong>Rethoko</strong> povigas Mastodon sendar <strong>samtempoavizi</strong> pri selektita eventi a vua sua apliko, por ke vua apliko povas <strong>automate kauzigar reakti</strong>."
+      description_html: "<strong>Rethoko</strong> povigas tucano sendar <strong>samtempoavizi</strong> pri selektita eventi a vua sua apliko, por ke vua apliko povas <strong>automate kauzigar reakti</strong>."
       disable: Desaktivigez
       disabled: Desaktivigita
       edit: Modifikez finpunto
@@ -931,8 +931,8 @@ io:
       next_steps: Vu povas aprobar apelo por deagar jerdecido o ignorar.
       subject: "%{username} apela jerdecido che %{instance}"
     new_critical_software_updates:
-      body: Nova urjanta versioni di Mastodon emisesis, vu forsan volas aktualigar tam balde kam es posibla!
-      subject: Urjanta Mastodon-aktualigi es disponebla por %{instance}!
+      body: Nova urjanta versioni di tucano emisesis, vu forsan volas aktualigar tam balde kam es posibla!
+      subject: Urjanta tucano-aktualigi es disponebla por %{instance}!
     new_pending_account:
       body: Detali de nova konto esas la subo. Vu povas aprobar o refuzar ca apliko.
       subject: Nova konto bezonas kontrolesar che %{instance} (%{username})
@@ -941,8 +941,8 @@ io:
       body_remote: Ulu de %{domain} raportizis %{target}
       subject: Nova raporto por %{instance} (#%{id})
     new_software_updates:
-      body: Nova Mastodon-versioni emisesis, vu forsan volas aktualigar!
-      subject: Nova Mastodon-versioni es disponebla por %{instance}!
+      body: Nova tucano-versioni emisesis, vu forsan volas aktualigar!
+      subject: Nova tucano-versioni es disponebla por %{instance}!
     new_trends:
       body: 'Ca kozi bezonas kontrol ante ol povas montresar publike:'
       new_trending_links:
@@ -966,8 +966,8 @@ io:
     confirmation_dialogs: Konfirmdialogi
     discovery: Deskovro
     localization:
-      body: Mastodon tradukesas da voluntarii.
-      guide_link: https://crowdin.com/project/mastodon
+      body: tucano tradukesas da voluntarii.
+      guide_link: https://crowdin.com/project/tucano
       guide_link_text: Omnu povas kontributar.
     sensitive_content: Sentoza kontenajo
   application_mailer:
@@ -1001,9 +1001,9 @@ io:
     delete_account: Efacez konto
     delete_account_html: Se vu volas efacar vua konto, vu povas <a href="%{path}">irar hike</a>. Vu demandesos konfirmar.
     description:
-      prefix_invited_by_user: "@%{name} invitas vu juntar ca servilo di Mastodon!"
-      prefix_sign_up: Registrez che Mastodon hodie!
-      suffix: Per konto, vu povos sequar personi, postigar novaji e interchanjar mesaji kun uzanti de irga servilo di Mastodon e pluse!
+      prefix_invited_by_user: "@%{name} invitas vu juntar ca servilo di tucano!"
+      prefix_sign_up: Registrez che tucano hodie!
+      suffix: Per konto, vu povos sequar personi, postigar novaji e interchanjar mesaji kun uzanti de irga servilo di tucano e pluse!
     didnt_get_confirmation: Ka vu ne recevis konfirmoligilo?
     dont_have_your_security_key: Ka vu ne havas sekuresklefo?
     forgot_password: Pasvorto obliviita?
@@ -1047,7 +1047,7 @@ io:
       title: Enirez a %{domain}
     sign_up:
       manual_review: Registragi che %{domain} es revuata da nia personaro. Por helpar ni traktar vua aplikajo, skribez kelko pri vu e pro quo vu volas konto che %{domain}.
-      preamble: Per konto en ca servilo di Mastodon, on povas sequar irga persono en ca reto, ne ye ube ona konto hostagisas.
+      preamble: Per konto en ca servilo di tucano, on povas sequar irga persono en ca reto, ne ye ube ona konto hostagisas.
       title: Ni komencigez vu en %{domain}.
     status:
       account_status: Kontostando
@@ -1147,7 +1147,7 @@ io:
       content: Regreto, ma evas nefuncionas che nia latero.
       title: Ca pagino ne esas korekta
     '503': La pagino ne povas montresas pro tempala servilfalio.
-    noscript_html: Por uzar retsoftwaro di Mastodon, aktivigez JavaScript. Alternative, probez 1 de <a href="%{apps_path}">konciliebla softwari</a> por Mastodon por vua platformo.
+    noscript_html: Por uzar retsoftwaro di tucano, aktivigez JavaScript. Alternative, probez 1 de <a href="%{apps_path}">konciliebla softwari</a> por tucano por vua platformo.
   existing_username_validator:
     not_found: ne povas trovar lokala uzanti kun ta uzantonomo
     not_found_multiple: ne povas trovar %{usernames}
@@ -1529,7 +1529,7 @@ io:
       weibo: Weibo
     current_session: Nuna sesiono
     description: "%{browser} che %{platform}"
-    explanation: Co esas retvidili quo nun konektesis a vua konto di Mastodon.
+    explanation: Co esas retvidili quo nun konektesis a vua konto di tucano.
     ip: IP
     platforms:
       adobe_air: Adobe Air
@@ -1555,7 +1555,7 @@ io:
     aliases: Kontoaltnomi
     appearance: Aspekto
     authorized_apps: Yurizita apliki
-    back: Retro a Mastodon
+    back: Retro a tucano
     delete: Kontoefaco
     development: Developo
     edit_profile: Redaktar la profilo
@@ -1661,9 +1661,9 @@ io:
   tags:
     does_not_match_previous_name: ne parigesas a antea nomo
   themes:
-    contrast: Mastodon (Alta kontrasteso)
-    default: Mastodon (Obskura)
-    mastodon-light: Mastodon (Brila)
+    contrast: tucano (Alta kontrasteso)
+    default: tucano (Obskura)
+    tucano-light: tucano (Brila)
   time:
     formats:
       default: "%d %b, %Y, %H:%M"
@@ -1736,7 +1736,7 @@ io:
         suspend: Konto restriktigesis
     welcome:
       explanation: Subo esas guidilo por helpar vu komencar
-      subject: Bonveno a Mastodon
+      subject: Bonveno a tucano
       title: Bonveno, %{name}!
   users:
     follow_limit_reached: Vu ne povas sequar plu kam %{limit} personi

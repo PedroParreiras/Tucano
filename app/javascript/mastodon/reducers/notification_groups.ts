@@ -5,10 +5,10 @@ import {
   blockAccountSuccess,
   muteAccountSuccess,
   rejectFollowRequestSuccess,
-} from 'mastodon/actions/accounts_typed';
-import { focusApp, unfocusApp } from 'mastodon/actions/app';
-import { blockDomainSuccess } from 'mastodon/actions/domain_blocks_typed';
-import { fetchMarkers } from 'mastodon/actions/markers';
+} from 'tucano/actions/accounts_typed';
+import { focusApp, unfocusApp } from 'tucano/actions/app';
+import { blockDomainSuccess } from 'tucano/actions/domain_blocks_typed';
+import { fetchMarkers } from 'tucano/actions/markers';
 import {
   clearNotifications,
   fetchNotifications,
@@ -21,23 +21,23 @@ import {
   unmountNotifications,
   refreshStaleNotificationGroups,
   pollRecentNotifications,
-} from 'mastodon/actions/notification_groups';
+} from 'tucano/actions/notification_groups';
 import {
   disconnectTimeline,
   timelineDelete,
-} from 'mastodon/actions/timelines_typed';
+} from 'tucano/actions/timelines_typed';
 import type {
   ApiNotificationJSON,
   ApiNotificationGroupJSON,
-} from 'mastodon/api_types/notifications';
-import { compareId } from 'mastodon/compare_id';
-import { usePendingItems } from 'mastodon/initial_state';
+} from 'tucano/api_types/notifications';
+import { compareId } from 'tucano/compare_id';
+import { usePendingItems } from 'tucano/initial_state';
 import {
   NOTIFICATIONS_GROUP_MAX_AVATARS,
   createNotificationGroupFromJSON,
   createNotificationGroupFromNotificationJSON,
-} from 'mastodon/models/notification_group';
-import type { NotificationGroup } from 'mastodon/models/notification_group';
+} from 'tucano/models/notification_group';
+import type { NotificationGroup } from 'tucano/models/notification_group';
 
 const NOTIFICATIONS_TRIM_LIMIT = 50;
 

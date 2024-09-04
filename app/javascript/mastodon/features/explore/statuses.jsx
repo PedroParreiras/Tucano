@@ -11,11 +11,11 @@ import { connect } from 'react-redux';
 import { debounce } from 'lodash';
 
 
-import { fetchTrendingStatuses, expandTrendingStatuses } from 'mastodon/actions/trends';
-import { DismissableBanner } from 'mastodon/components/dismissable_banner';
-import StatusList from 'mastodon/components/status_list';
-import { getStatusList } from 'mastodon/selectors';
-import { WithRouterPropTypes } from 'mastodon/utils/react_router';
+import { fetchTrendingStatuses, expandTrendingStatuses } from 'tucano/actions/trends';
+import { DismissableBanner } from 'tucano/components/dismissable_banner';
+import StatusList from 'tucano/components/status_list';
+import { getStatusList } from 'tucano/selectors';
+import { WithRouterPropTypes } from 'tucano/utils/react_router';
 
 const mapStateToProps = state => ({
   statusIds: getStatusList(state, 'trending'),

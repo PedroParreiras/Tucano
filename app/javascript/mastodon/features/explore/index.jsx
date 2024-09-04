@@ -10,11 +10,11 @@ import { connect } from 'react-redux';
 
 import ExploreIcon from '@/material-icons/400-24px/explore.svg?react';
 import SearchIcon from '@/material-icons/400-24px/search.svg?react';
-import Column from 'mastodon/components/column';
-import ColumnHeader from 'mastodon/components/column_header';
-import Search from 'mastodon/features/compose/containers/search_container';
-import { identityContextPropShape, withIdentity } from 'mastodon/identity_context';
-import { trendsEnabled } from 'mastodon/initial_state';
+import Column from 'tucano/components/column';
+import ColumnHeader from 'tucano/components/column_header';
+import Search from 'tucano/features/compose/containers/search_container';
+import { identityContextPropShape, withIdentity } from 'tucano/identity_context';
+import { trendsEnabled } from 'tucano/initial_state';
 
 import Links from './links';
 import SearchResults from './results';

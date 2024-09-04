@@ -1,10 +1,10 @@
 import { debounce } from 'lodash';
 
-import type { MarkerJSON } from 'mastodon/api_types/markers';
-import { getAccessToken } from 'mastodon/initial_state';
-import { selectUseGroupedNotifications } from 'mastodon/selectors/settings';
-import type { AppDispatch, RootState } from 'mastodon/store';
-import { createAppAsyncThunk } from 'mastodon/store/typed_functions';
+import type { MarkerJSON } from 'tucano/api_types/markers';
+import { getAccessToken } from 'tucano/initial_state';
+import { selectUseGroupedNotifications } from 'tucano/selectors/settings';
+import type { AppDispatch, RootState } from 'tucano/store';
+import { createAppAsyncThunk } from 'tucano/store/typed_functions';
 
 import api from '../api';
 import { compareId } from '../compare_id';

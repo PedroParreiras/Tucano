@@ -2,10 +2,10 @@ import { FormattedMessage } from 'react-intl';
 
 import AlternateEmailIcon from '@/material-icons/400-24px/alternate_email.svg?react';
 import ReplyIcon from '@/material-icons/400-24px/reply-fill.svg?react';
-import { me } from 'mastodon/initial_state';
-import type { NotificationGroupMention } from 'mastodon/models/notification_group';
-import type { Status } from 'mastodon/models/status';
-import { useAppSelector } from 'mastodon/store';
+import { me } from 'tucano/initial_state';
+import type { NotificationGroupMention } from 'tucano/models/notification_group';
+import type { Status } from 'tucano/models/status';
+import { useAppSelector } from 'tucano/store';
 
 import type { LabelRenderer } from './notification_group_with_status';
 import { NotificationWithStatus } from './notification_with_status';

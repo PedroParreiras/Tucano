@@ -5,7 +5,7 @@ import { injectIntl, defineMessages } from 'react-intl';
 
 import classNames from 'classnames';
 
-import api from 'mastodon/api';
+import api from 'tucano/api';
 
 const messages = defineMessages({
   legal: { id: 'report.categories.legal', defaultMessage: 'Legal' },

@@ -2,7 +2,7 @@
 
 module Chewy
   class Strategy
-    class Mastodon < Base
+    class tucano < Base
       def initialize
         super
 

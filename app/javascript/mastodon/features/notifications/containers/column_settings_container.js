@@ -2,8 +2,8 @@ import { defineMessages, injectIntl } from 'react-intl';
 
 import { connect } from 'react-redux';
 
-import { openModal } from 'mastodon/actions/modal';
-import { initializeNotifications } from 'mastodon/actions/notifications_migration';
+import { openModal } from 'tucano/actions/modal';
+import { initializeNotifications } from 'tucano/actions/notifications_migration';
 
 import { showAlert } from '../../../actions/alerts';
 import { setFilter, requestBrowserPermission } from '../../../actions/notifications';
@@ -16,7 +16,7 @@ const messages = defineMessages({
 });
 
 /**
- * @param {import('mastodon/store').RootState} state
+ * @param {import('tucano/store').RootState} state
  */
 const mapStateToProps = state => ({
   settings: state.getIn(['settings', 'notifications']),

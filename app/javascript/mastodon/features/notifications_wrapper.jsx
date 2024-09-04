@@ -1,7 +1,7 @@
-import Notifications from 'mastodon/features/notifications';
-import Notifications_v2 from 'mastodon/features/notifications_v2';
-import { selectUseGroupedNotifications } from 'mastodon/selectors/settings';
-import { useAppSelector } from 'mastodon/store';
+import Notifications from 'tucano/features/notifications';
+import Notifications_v2 from 'tucano/features/notifications_v2';
+import { selectUseGroupedNotifications } from 'tucano/selectors/settings';
+import { useAppSelector } from 'tucano/store';
 
 export const NotificationsWrapper = (props) => {
   const optedInGroupedNotifications = useAppSelector(selectUseGroupedNotifications);

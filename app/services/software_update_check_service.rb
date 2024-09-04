@@ -12,14 +12,14 @@ class SoftwareUpdateCheckService < BaseService
 
   def clean_outdated_updates!
     SoftwareUpdate.find_each do |software_update|
-      software_update.delete if Mastodon::Version.gem_version >= software_update.gem_version
+      software_update.delete if tucano::Version.gem_version >= software_update.gem_version
     rescue ArgumentError
       software_update.delete
     end
   end
 
   def fetch_update_notices
-    Request.new(:get, "#{api_url}?version=#{version}").add_headers('Accept' => 'application/json', 'User-Agent' => 'Mastodon update checker').perform do |res|
+    Request.new(:get, "#{api_url}?version=#{version}").add_headers('Accept' => 'application/json', 'User-Agent' => 'tucano update checker').perform do |res|
       return Oj.load(res.body_with_limit, mode: :strict) if res.code == 200
     end
   rescue HTTP::Error, OpenSSL::SSL::SSLError, Oj::ParseError
@@ -27,11 +27,11 @@ class SoftwareUpdateCheckService < BaseService
   end
 
   def api_url
-    ENV.fetch('UPDATE_CHECK_URL', 'https://api.joinmastodon.org/update-check')
+    ENV.fetch('UPDATE_CHECK_URL', 'https://api.jointucano.org/update-check')
   end
 
   def version
-    @version ||= Mastodon::Version.to_s.split('+')[0]
+    @version ||= tucano::Version.to_s.split('+')[0]
   end
 
   def process_update_notices!(update_notices)

@@ -152,7 +152,7 @@ export function createDataLoadingThunk<
  *
  *   You can also omit this parameter and pass `thunkOptions` directly
  * @param maybeThunkOptions
- *   Additional Mastodon specific options for the thunk. Currently supports:
+ *   Additional tucano specific options for the thunk. Currently supports:
  *   - `useLoadingBar` to display a loading bar while this action is pending. Defaults to true.
  * @returns The created thunk
  */

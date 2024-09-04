@@ -12,28 +12,28 @@ RSpec.describe IntentsController do
   describe 'GET #show' do
     subject { get :show, params: { uri: uri } }
 
-    context 'when schema is web+mastodon' do
+    context 'when schema is web+tucano' do
       context 'when host is follow' do
-        let(:uri) { 'web+mastodon://follow?uri=test' }
+        let(:uri) { 'web+tucano://follow?uri=test' }
 
         it { is_expected.to redirect_to authorize_interaction_path(uri: 'test') }
       end
 
       context 'when host is share' do
-        let(:uri) { 'web+mastodon://share?text=test' }
+        let(:uri) { 'web+tucano://share?text=test' }
 
         it { is_expected.to redirect_to share_path(text: 'test') }
       end
 
       context 'when host is none of the above' do
-        let(:uri) { 'web+mastodon://test' }
+        let(:uri) { 'web+tucano://test' }
 
         it { is_expected.to have_http_status 404 }
       end
     end
 
-    context 'when schema is not web+mastodon' do
-      let(:uri) { 'api+mastodon://test.com' }
+    context 'when schema is not web+tucano' do
+      let(:uri) { 'api+tucano://test.com' }
 
       it { is_expected.to have_http_status 404 }
     end

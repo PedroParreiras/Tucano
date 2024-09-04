@@ -1,4 +1,4 @@
-import { browserHistory } from 'mastodon/components/router';
+import { browserHistory } from 'tucano/components/router';
 
 import api, { getLinks } from '../api';
 

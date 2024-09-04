@@ -11,13 +11,13 @@ import { connect } from 'react-redux';
 import { isEqual } from 'lodash';
 
 import TagIcon from '@/material-icons/400-24px/tag.svg?react';
-import { addColumn, removeColumn, moveColumn } from 'mastodon/actions/columns';
-import { connectHashtagStream } from 'mastodon/actions/streaming';
-import { fetchHashtag, followHashtag, unfollowHashtag } from 'mastodon/actions/tags';
-import { expandHashtagTimeline, clearTimeline } from 'mastodon/actions/timelines';
-import Column from 'mastodon/components/column';
-import ColumnHeader from 'mastodon/components/column_header';
-import { identityContextPropShape, withIdentity } from 'mastodon/identity_context';
+import { addColumn, removeColumn, moveColumn } from 'tucano/actions/columns';
+import { connectHashtagStream } from 'tucano/actions/streaming';
+import { fetchHashtag, followHashtag, unfollowHashtag } from 'tucano/actions/tags';
+import { expandHashtagTimeline, clearTimeline } from 'tucano/actions/timelines';
+import Column from 'tucano/components/column';
+import ColumnHeader from 'tucano/components/column_header';
+import { identityContextPropShape, withIdentity } from 'tucano/identity_context';
 
 import StatusListContainer from '../ui/containers/status_list_container';
 

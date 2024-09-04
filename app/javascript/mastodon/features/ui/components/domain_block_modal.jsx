@@ -11,11 +11,11 @@ import HistoryIcon from '@/material-icons/400-24px/history.svg?react';
 import PersonRemoveIcon from '@/material-icons/400-24px/person_remove.svg?react';
 import ReplyIcon from '@/material-icons/400-24px/reply.svg?react';
 import VisibilityOffIcon from '@/material-icons/400-24px/visibility_off.svg?react';
-import { blockAccount } from 'mastodon/actions/accounts';
-import { blockDomain } from 'mastodon/actions/domain_blocks';
-import { closeModal } from 'mastodon/actions/modal';
-import { Button } from 'mastodon/components/button';
-import { Icon } from 'mastodon/components/icon';
+import { blockAccount } from 'tucano/actions/accounts';
+import { blockDomain } from 'tucano/actions/domain_blocks';
+import { closeModal } from 'tucano/actions/modal';
+import { Button } from 'tucano/components/button';
+import { Icon } from 'tucano/components/icon';
 
 export const DomainBlockModal = ({ domain, accountId, acct }) => {
   const dispatch = useDispatch();

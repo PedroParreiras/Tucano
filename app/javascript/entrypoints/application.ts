@@ -1,9 +1,9 @@
 import './public-path';
-import main from 'mastodon/main';
+import main from 'tucano/main';
 
-import { start } from '../mastodon/common';
-import { loadLocale } from '../mastodon/locales';
-import { loadPolyfills } from '../mastodon/polyfills';
+import { start } from '../tucano/common';
+import { loadLocale } from '../tucano/locales';
+import { loadPolyfills } from '../tucano/polyfills';
 
 start();
 

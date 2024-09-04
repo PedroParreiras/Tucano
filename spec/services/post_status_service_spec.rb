@@ -236,7 +236,7 @@ RSpec.describe PostStatusService do
         media_ids: [media.id.to_s]
       )
     end.to raise_error(
-      Mastodon::ValidationError,
+      tucano::ValidationError,
       I18n.t('media_attachments.validations.not_found', ids: media.id)
     )
   end
@@ -252,7 +252,7 @@ RSpec.describe PostStatusService do
         media_ids: Array.new(2) { Fabricate(:media_attachment, account: account) }.map { |m| m.id.to_s }
       )
     end.to raise_error(
-      Mastodon::ValidationError,
+      tucano::ValidationError,
       I18n.t('media_attachments.validations.too_many')
     )
   end
@@ -274,7 +274,7 @@ RSpec.describe PostStatusService do
         ].map { |m| m.id.to_s }
       )
     end.to raise_error(
-      Mastodon::ValidationError,
+      tucano::ValidationError,
       I18n.t('media_attachments.validations.images_and_video')
     )
   end

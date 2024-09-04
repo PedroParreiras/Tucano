@@ -3,7 +3,7 @@
 require 'rubygems/package'
 require_relative 'base'
 
-module Mastodon::CLI
+module tucano::CLI
   class Emoji < Base
     option :prefix
     option :suffix

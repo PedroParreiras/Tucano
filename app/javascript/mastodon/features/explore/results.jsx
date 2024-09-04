@@ -12,12 +12,12 @@ import { connect } from 'react-redux';
 import FindInPageIcon from '@/material-icons/400-24px/find_in_page.svg?react';
 import PeopleIcon from '@/material-icons/400-24px/group.svg?react';
 import TagIcon from '@/material-icons/400-24px/tag.svg?react';
-import { submitSearch, expandSearch } from 'mastodon/actions/search';
-import { ImmutableHashtag as Hashtag } from 'mastodon/components/hashtag';
-import { Icon } from 'mastodon/components/icon';
-import ScrollableList from 'mastodon/components/scrollable_list';
-import Account from 'mastodon/containers/account_container';
-import Status from 'mastodon/containers/status_container';
+import { submitSearch, expandSearch } from 'tucano/actions/search';
+import { ImmutableHashtag as Hashtag } from 'tucano/components/hashtag';
+import { Icon } from 'tucano/components/icon';
+import ScrollableList from 'tucano/components/scrollable_list';
+import Account from 'tucano/containers/account_container';
+import Status from 'tucano/containers/status_container';
 
 import { SearchSection } from './components/search_section';
 

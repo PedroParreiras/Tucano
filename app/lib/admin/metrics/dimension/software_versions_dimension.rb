@@ -10,15 +10,15 @@ class Admin::Metrics::Dimension::SoftwareVersionsDimension < Admin::Metrics::Dim
   protected
 
   def perform_query
-    [mastodon_version, ruby_version, postgresql_version, redis_version, elasticsearch_version, libvips_version, imagemagick_version, ffmpeg_version].compact
+    [tucano_version, ruby_version, postgresql_version, redis_version, elasticsearch_version, libvips_version, imagemagick_version, ffmpeg_version].compact
   end
 
-  def mastodon_version
-    value = Mastodon::Version.to_s
+  def tucano_version
+    value = tucano::Version.to_s
 
     {
-      key: 'mastodon',
-      human_key: 'Mastodon',
+      key: 'tucano',
+      human_key: 'tucano',
       value: value,
       human_value: value,
     }

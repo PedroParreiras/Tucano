@@ -1,10 +1,10 @@
 ---
 da:
   about:
-    about_mastodon_html: 'Fremtidens sociale netværk: Ingen annoncer, ingen virksomhedsovervågning, etisk design og decentralisering! Vær ejer af egne data med Mastodon!'
+    about_tucano_html: 'Fremtidens sociale netværk: Ingen annoncer, ingen virksomhedsovervågning, etisk design og decentralisering! Vær ejer af egne data med tucano!'
     contact_missing: Ikke angivet
     contact_unavailable: Utilgængelig
-    hosted_on: Mastodon hostet på %{domain}
+    hosted_on: tucano hostet på %{domain}
     title: Om
   accounts:
     follow: Følg
@@ -686,7 +686,7 @@ da:
         moderation: Moderering
         special: Speciel
       delete: Slet
-      description_html: Med <strong>brugerroller</strong> kan man tilpasse sine brugeres adgang til Mastodon-funktioner og -områder.
+      description_html: Med <strong>brugerroller</strong> kan man tilpasse sine brugeres adgang til tucano-funktioner og -områder.
       edit: Redigér rolle for '%{name}
       everyone: Standardtilladelser
       everyone_full_description_html: Dette er <strong>basisrollen</strong> med indvirkning på <strong>alle brugere</strong>, selv dem uden rolletildeling. Alle øvrige rolletilladelser nedarves herfra.
@@ -749,24 +749,24 @@ da:
         rules_hint: Der er et dedikeret område for regler, som forventes overholdt af brugerne.
         title: Om
       appearance:
-        preamble: Tilpas Mastodon-webgrænsefladen.
+        preamble: Tilpas tucano-webgrænsefladen.
         title: Udseende
       branding:
-        preamble: Serverens branding adskiller den fra andres i netværket. Oplysningerne kan vises på tværs af div. miljøer, såsom Mastodon-webgrænsefladen, dedikerede applikationer, i-link forhåndsvisninger på andre websteder og i besked-apps mv. Oplysningerne bør derfor være klare og detaljerede, men samtidig kortfattede.
+        preamble: Serverens branding adskiller den fra andres i netværket. Oplysningerne kan vises på tværs af div. miljøer, såsom tucano-webgrænsefladen, dedikerede applikationer, i-link forhåndsvisninger på andre websteder og i besked-apps mv. Oplysningerne bør derfor være klare og detaljerede, men samtidig kortfattede.
         title: Branding
       captcha_enabled:
         desc_html: Dette er afhængig af eksterne scripts fra hCaptcha, som kan være en sikkerhed og privatlivets fred. Derudover kan <strong>dette gøre registreringsprocessen betydeligt mindre tilgængelig for nogle (især deaktiveret) personer</strong>. Af disse grunde bedes De overveje alternative foranstaltninger såsom godkendelsesbaseret eller inviteret til at blive registreret.
         title: Kræv nye brugere for at løse en CAPTCHA for at bekræfte deres konto
       content_retention:
         danger_zone: Farezone
-        preamble: Styr, hvordan Mastodon gemmer brugergenereret indhold.
+        preamble: Styr, hvordan tucano gemmer brugergenereret indhold.
         title: Indholdsopbevaring
       default_noindex:
         desc_html: Påvirker alle brugere, som ikke selv har ændret denne indstilling
         title: Fravælg som standard søgemaskineindeksering for brugere
       discovery:
         follow_recommendations: Følg-anbefalinger
-        preamble: At vise interessant indhold er vitalt ifm. at få nye brugere om bord, som måske ikke kender nogen på Mastodon. Styr, hvordan forskellige opdagelsesfunktioner fungerer på serveren.
+        preamble: At vise interessant indhold er vitalt ifm. at få nye brugere om bord, som måske ikke kender nogen på tucano. Styr, hvordan forskellige opdagelsesfunktioner fungerer på serveren.
         profile_directory: Profiloversigt
         public_timelines: Offentlige tidslinjer
         publish_discovered_servers: Udgiv fundne servere
@@ -798,7 +798,7 @@ da:
       destroyed_msg: Websteds-upload blev slettet!
     software_updates:
       critical_update: Kritisk – opdatér hurtigst muligt
-      description: Det anbefales at holde Mastodon-installationen opdateret for at drage fordel af de seneste fejlrettelser og funktioner. Undertiden kan det desuden være kritisk at opdatere Mastodon rettidigt for at undgå sikkerhedsproblemer. Mastodon tjekker derfor for opdateringer hvert 30. minut og notificerer brugeren jf. dennes e-mailnotifikationsindstillinger.
+      description: Det anbefales at holde tucano-installationen opdateret for at drage fordel af de seneste fejlrettelser og funktioner. Undertiden kan det desuden være kritisk at opdatere tucano rettidigt for at undgå sikkerhedsproblemer. tucano tjekker derfor for opdateringer hvert 30. minut og notificerer brugeren jf. dennes e-mailnotifikationsindstillinger.
       documentation_link: Læs mere
       release_notes: Udgivelsesnoter
       title: Tilgængelige opdateringer
@@ -856,7 +856,7 @@ da:
         message_html: Elasticsearch-indekseringer er forældede. Kør <code>tootctl search deploy --only=%{value}</code>
       elasticsearch_preset:
         action: Se dokumentation
-        message_html: Dit Elasticsearch-cluster har mere end én node, men Mastodon er ikke konfigureret til at bruge dem.
+        message_html: Dit Elasticsearch-cluster har mere end én node, men tucano er ikke konfigureret til at bruge dem.
       elasticsearch_preset_single_node:
         action: Se dokumentation
         message_html: Dit Elasticsearch-cluster har kun én node, <code>ES_PRESET</code> skal sættes til <code>single_node_cluster</code>.
@@ -874,10 +874,10 @@ da:
         message_html: Ingen Sidekiq-proces kører for %{value}-kø(er). Gennemgå Sidekiq-opsætningen
       software_version_critical_check:
         action: Se tilgængelige opdateringer
-        message_html: En kritisk Mastodon-opdatering er tilgængelig. Opdatér hurtigst muligt.
+        message_html: En kritisk tucano-opdatering er tilgængelig. Opdatér hurtigst muligt.
       software_version_patch_check:
         action: Se tilgængelige opdateringer
-        message_html: En Mastodon-fejlrettelsesopdatering er tilgængelig.
+        message_html: En tucano-fejlrettelsesopdatering er tilgængelig.
       upload_check_privacy_error:
         action: Tjek her for flere oplysninger
         message_html: "<strong>Webserveren er fejlopsat. Brugernes fortrolighed er i fare.</strong>"
@@ -988,7 +988,7 @@ da:
     webhooks:
       add_new: Tilføj endepunkt
       delete: Slet
-      description_html: En <strong>webhook</strong> lader Mastodon pushe <strong>notifikationer i realtid</strong> om valgte begivenheder til ens egen applikation, så denne <strong>automatisk kan udløse reaktioner</strong>.
+      description_html: En <strong>webhook</strong> lader tucano pushe <strong>notifikationer i realtid</strong> om valgte begivenheder til ens egen applikation, så denne <strong>automatisk kan udløse reaktioner</strong>.
       disable: Deaktivér
       disabled: Deaktiveret
       edit: Redigér endepunkt
@@ -1022,8 +1022,8 @@ da:
       next_steps: Appellen kan godkendes for at fortryde moderationsbeslutningen eller den ignoreres.
       subject: "%{username} appellerer en moderationsbeslutning for %{instance}"
     new_critical_software_updates:
-      body: Nye, kritiske Mastodon--versioner er udgivet. Opdatering bør ske hurtigst muligt!
-      subject: Kritiske Mastodon-opdateringer er tilgængelige til %{instance}!
+      body: Nye, kritiske tucano--versioner er udgivet. Opdatering bør ske hurtigst muligt!
+      subject: Kritiske tucano-opdateringer er tilgængelige til %{instance}!
     new_pending_account:
       body: Detaljerne for den nye konto fremgår nedenfor. Du kan godkende eller afvise denne ansøgning.
       subject: Ny konto til gennemgang på %{instance} (%{username})
@@ -1032,8 +1032,8 @@ da:
       body_remote: Nogen fra %{domain} har anmeldt %{target}
       subject: Ny anmeldelse for %{instance} (#%{id})
     new_software_updates:
-      body: Nye Mastodon-versioner er udgivet. Opgradering bør overvejes!
-      subject: Nye Mastodon-versioner er tilgængelige til %{instance}!
+      body: Nye tucano-versioner er udgivet. Opgradering bør overvejes!
+      subject: Nye tucano-versioner er tilgængelige til %{instance}!
     new_trends:
       body: 'Flg. emner kræver gennemgang, inden de kan vises offentligt:'
       new_trending_links:
@@ -1057,8 +1057,8 @@ da:
     confirmation_dialogs: Bekræftelsesdialoger
     discovery: Opdagelse
     localization:
-      body: Mastodon oversættes af frivillige.
-      guide_link: https://da.crowdin.com/project/mastodon
+      body: tucano oversættes af frivillige.
+      guide_link: https://da.crowdin.com/project/tucano
       guide_link_text: Alle kan bidrage.
     sensitive_content: Sensitivt indhold
   application_mailer:
@@ -1096,9 +1096,9 @@ da:
     delete_account: Slet konto
     delete_account_html: Ønsker du at slette din konto, kan du <a href="%{path}">gøre dette hér</a>. Du vil blive bedt om bekræftelse.
     description:
-      prefix_invited_by_user: "@%{name} inviterer dig ind på denne Mastodon-server!"
-      prefix_sign_up: Tilmeld dig Mastodon i dag!
-      suffix: Du vil med en konto kunne følge personer, indsende opdateringer og udveksle beskeder med brugere fra enhver Mastodon-server, og meget mere!
+      prefix_invited_by_user: "@%{name} inviterer dig ind på denne tucano-server!"
+      prefix_sign_up: Tilmeld dig tucano i dag!
+      suffix: Du vil med en konto kunne følge personer, indsende opdateringer og udveksle beskeder med brugere fra enhver tucano-server, og meget mere!
     didnt_get_confirmation: Intet bekræftelseslink modtaget?
     dont_have_your_security_key: Har ikke din sikkerhedsnøgle?
     forgot_password: Glemt din adgangskode?
@@ -1145,7 +1145,7 @@ da:
       title: Log ind på %{domain}
     sign_up:
       manual_review: Tilmeldinger på %{domain} undergår manuel moderatorgennemgang. For at hjælpe med behandlingen af tilmeldingen, så skriv en smule om dig selv, samt hvorfor du ønsker en konto på %{domain}.
-      preamble: Med en konto på denne Mastodon-server vil man kunne følge enhver anden person på netværket, uanset hvor vedkommendes konto hostes.
+      preamble: Med en konto på denne tucano-server vil man kunne følge enhver anden person på netværket, uanset hvor vedkommendes konto hostes.
       title: Lad os få dig sat op på %{domain}.
     status:
       account_status: Kontostatus
@@ -1251,7 +1251,7 @@ da:
       content: Beklager, noget gik galt hos os.
       title: Denne side er forkert
     '503': Siden kunne ikke vises grundet en midlertidig serverfejl.
-    noscript_html: For brug af Mastodon-webapplikationen, så aktivér JavaScript. Alternativt, prøv en af disse <a href="%{apps_path}">apps</a> til Mastodon til din platform.
+    noscript_html: For brug af tucano-webapplikationen, så aktivér JavaScript. Alternativt, prøv en af disse <a href="%{apps_path}">apps</a> til tucano til din platform.
   existing_username_validator:
     not_found: kunne ikke finde en lokal bruger med dette brugenavn
     not_found_multiple: kunne ikke finde %{usernames}
@@ -1440,7 +1440,7 @@ da:
     unsubscribe:
       action: Ja, afmeld
       complete: Afmeldt
-      confirmation_html: Sikker på, at %{type} for Mastodon skal afmeldes på %{domain} til e-mailen %{email}? Man kan altid gentilmelde sig via <a href="%{settings_path}">indstillingerne E-mailnotifikationer</a>.
+      confirmation_html: Sikker på, at %{type} for tucano skal afmeldes på %{domain} til e-mailen %{email}? Man kan altid gentilmelde sig via <a href="%{settings_path}">indstillingerne E-mailnotifikationer</a>.
       emails:
         notification_emails:
           favourite: e-mailnotifikationer om favoritmarkeringer
@@ -1449,7 +1449,7 @@ da:
           mention: e-mailnotifikationer om omtaler
           reblog: e-mailnotifikationer om boosts
       resubscribe_html: Har man afmeldt sig ved en fejl, kan man gentilmelde sig via <a href="%{settings_path}">indstillingerne E-mailnotifikationer</a>.
-      success_html: Man vil ikke længere modtage %{type} for Mastodon på %{domain} til e-mailen %{email}.
+      success_html: Man vil ikke længere modtage %{type} for tucano på %{domain} til e-mailen %{email}.
       title: Opsig abonnement
   media_attachments:
     validations:
@@ -1575,13 +1575,13 @@ da:
     posting_defaults: Standarder for indlæg
     public_timelines: Offentlige tidslinjer
   privacy:
-    hint_html: "<strong>Tilpas hvordan din profil og dine indlæg kan findes.</strong> En række funktioner i Mastodon kan hjælpe dig med at nå ud til et bredere publikum, hvis du aktiverer dem. Tjek indstillingerne herunder for at sikre, at de passer til dit brugsscenarie."
+    hint_html: "<strong>Tilpas hvordan din profil og dine indlæg kan findes.</strong> En række funktioner i tucano kan hjælpe dig med at nå ud til et bredere publikum, hvis du aktiverer dem. Tjek indstillingerne herunder for at sikre, at de passer til dit brugsscenarie."
     privacy: Privatliv
     privacy_hint_html: Styr, hvor meget der ønskes synliggjort til gavn for andre. Folk finder interessante profiler og apps ved at tjekke andres følgere ud, samt se hvilke apps de sender fra, men dine præferencer ønskes muligvis ikke synliggjort.
     reach: Udbredelse
     reach_hint_html: Indstil om du vil blive opdaget og fulgt af nye mennesker. Ønsker du, at dine indlæg skal vises på Udforsk-siden? Ønsker du, at andre skal se dig i deres følg-anbefalinger? Ønsker du at acceptere alle nye følgere automatisk, eller vil du have detaljeret kontrol over hver og en?
     search: Søg
-    search_hint_html: Indstil hvordan du vil findes. Ønsker du, at folk skal finde dig gennem hvad du har skrevet offentligt? Vil du have folk udenfor Mastodon til at finde din profil, når de søger på nettet? Vær opmærksom på, at det ikke kan garanteres at dine offentlige indlæg er udelukket fra alle søgemaskiner.
+    search_hint_html: Indstil hvordan du vil findes. Ønsker du, at folk skal finde dig gennem hvad du har skrevet offentligt? Vil du have folk udenfor tucano til at finde din profil, når de søger på nettet? Vær opmærksom på, at det ikke kan garanteres at dine offentlige indlæg er udelukket fra alle søgemaskiner.
     title: Fortrolighed og udbredelse
   privacy_policy:
     title: Privatlivspolitik
@@ -1656,7 +1656,7 @@ da:
     current_session: Aktuelle session
     date: Dato
     description: "%{browser} på %{platform}"
-    explanation: Disse webbrowsere er pt. logget ind på din Mastodon-konto.
+    explanation: Disse webbrowsere er pt. logget ind på din tucano-konto.
     ip: IP
     platforms:
       adobe_air: Adobe Air
@@ -1682,7 +1682,7 @@ da:
     aliases: Kontoaliaser
     appearance: Udseende
     authorized_apps: Godkendte apps
-    back: Retur til Mastodon
+    back: Retur til tucano
     delete: Kontosletning
     development: Udvikling
     edit_profile: Redigér profil
@@ -1801,9 +1801,9 @@ da:
   tags:
     does_not_match_previous_name: matcher ikke det foregående navn
   themes:
-    contrast: Mastodon (høj kontrast)
-    default: Mastodont (mørkt)
-    mastodon-light: Mastodon (lyst)
+    contrast: tucano (høj kontrast)
+    default: tucanot (mørkt)
+    tucano-light: tucano (lyst)
     system: Automatisk (benyt systemtema)
   time:
     formats:
@@ -1843,7 +1843,7 @@ da:
       subtitle: Din appel er afvist.
       title: Appel afvist
     backup_ready:
-      explanation: Der er anmodet om en fuld sikkerhedskopi af din Mastodon-konto.
+      explanation: Der er anmodet om en fuld sikkerhedskopi af din tucano-konto.
       extra: Sikkerhedskopien kan nu downloades!
       subject: Dit arkiv er klar til download
       title: Arkiv download
@@ -1895,7 +1895,7 @@ da:
       apps_android_action: Hent den fra Google Play
       apps_ios_action: Download i App Store
       apps_step: Download vores officielle apps.
-      apps_title: Mastodon apps
+      apps_title: tucano apps
       checklist_subtitle: 'Kom i gang på denne nye sociale frontløber:'
       checklist_title: Velkomsttjekliste
       edit_profile_action: Personliggør
@@ -1903,16 +1903,16 @@ da:
       edit_profile_title: Personliggør din profil
       explanation: Her er nogle råd for at få dig i gang
       feature_action: Læs mere
-      feature_audience: Mastodon giver brugeren en unik mulighed for at styre sit publikum uden mellemled. Mastodon udrullet på egen infrastruktur giver mulighed for at følge og blive fulgt fra enhver anden Mastodon-server online, kontrolleret/styret alene af brugen selv.
+      feature_audience: tucano giver brugeren en unik mulighed for at styre sit publikum uden mellemled. tucano udrullet på egen infrastruktur giver mulighed for at følge og blive fulgt fra enhver anden tucano-server online, kontrolleret/styret alene af brugen selv.
       feature_audience_title: Opbyg et publikum i tillid
-      feature_control: Man ved selv bedst, hvad man ønsker at se på sit hjemmefeed. Ingen algoritmer eller annoncer til at spilde tiden. Følg alle på tværs af enhver Mastodon-server fra en enkelt konto og modtag deres indlæg i kronologisk rækkefølge, og gør dette hjørne af internet lidt mere personligt.
+      feature_control: Man ved selv bedst, hvad man ønsker at se på sit hjemmefeed. Ingen algoritmer eller annoncer til at spilde tiden. Følg alle på tværs af enhver tucano-server fra en enkelt konto og modtag deres indlæg i kronologisk rækkefølge, og gør dette hjørne af internet lidt mere personligt.
       feature_control_title: Hold styr på egen tidslinje
-      feature_creativity: Mastodon understøtter indlæg med lyd, video og billede, tilgængelighedsbeskrivelser, meningsmålinger, indhold advarsler, animerede avatarer, tilpassede emojis, miniaturebeskæringskontrol og mere, for at gøre det lettere at udtrykke sig online. Uanset om man udgiver sin kunst, musik eller podcast, så står Mastodon til rådighed.
+      feature_creativity: tucano understøtter indlæg med lyd, video og billede, tilgængelighedsbeskrivelser, meningsmålinger, indhold advarsler, animerede avatarer, tilpassede emojis, miniaturebeskæringskontrol og mere, for at gøre det lettere at udtrykke sig online. Uanset om man udgiver sin kunst, musik eller podcast, så står tucano til rådighed.
       feature_creativity_title: Uovertruffen kreativitet
-      feature_moderation: Mastodon lægger beslutningstagning tilbage i brugerens hænder. Hver server opretter deres egne regler og reguleringer, som håndhæves lokalt og ikke ovenfra som virksomhedernes sociale medier, hvilket gør det til den mest fleksible mht. at reagere på behovene hos forskellige persongrupper. Deltag på en server med de regler, man er enige med, eller driv en egen server.
+      feature_moderation: tucano lægger beslutningstagning tilbage i brugerens hænder. Hver server opretter deres egne regler og reguleringer, som håndhæves lokalt og ikke ovenfra som virksomhedernes sociale medier, hvilket gør det til den mest fleksible mht. at reagere på behovene hos forskellige persongrupper. Deltag på en server med de regler, man er enige med, eller driv en egen server.
       feature_moderation_title: Moderering af måden, tingene bør være på
       follow_action: Følg
-      follow_step: At følge interessante personer, det er, hvad Mastodon handler om.
+      follow_step: At følge interessante personer, det er, hvad tucano handler om.
       follow_title: Personliggør hjemmefeedet
       follows_subtitle: Følg velkendte konti
       follows_title: Hvem, som skal følges
@@ -1927,10 +1927,10 @@ da:
       post_step: Sig hej til verden med tekst, fotos, videoer eller afstemninger.
       post_title: Opret det første indlæg
       share_action: Del
-      share_step: Lad vennerne vide, hvor man kan findes på Mastodon.
-      share_title: Del Mastodon-profilen
+      share_step: Lad vennerne vide, hvor man kan findes på tucano.
+      share_title: Del tucano-profilen
       sign_in_action: Log ind
-      subject: Velkommen til Mastodon
+      subject: Velkommen til tucano
       title: Velkommen ombord, %{name}!
   users:
     follow_limit_reached: Du kan maks. følge %{limit} personer
@@ -1943,7 +1943,7 @@ da:
   verification:
     extra_instructions_html: <strong>Tip:</strong> Linket på din hjemmeside kan være usynligt. Den vigtige del er <code>rel="me"</code> , som forhindrer impersonation på websteder med brugergenereret indhold. Du kan endda bruge et <code>link</code> tag i overskriften på siden i stedet for <code>a</code>, men HTML skal være tilgængelig uden at udføre JavaScript.
     here_is_how: Sådan gør du
-    hint_html: "<strong>Bekræftelse af din identitet på Mastodon er for alle.</strong> Baseret på åbne webstandarder, nu og for evigt gratis. Alt du behøver er en personlig hjemmeside, som folk genkende dig ved. Når du linker til denne hjemmeside fra din profil, vi vil kontrollere, at hjemmesiden linker tilbage til din profil og vise en visuel indikator på det."
+    hint_html: "<strong>Bekræftelse af din identitet på tucano er for alle.</strong> Baseret på åbne webstandarder, nu og for evigt gratis. Alt du behøver er en personlig hjemmeside, som folk genkende dig ved. Når du linker til denne hjemmeside fra din profil, vi vil kontrollere, at hjemmesiden linker tilbage til din profil og vise en visuel indikator på det."
     instructions_html: Kopier og indsæt koden nedenfor i HTML på din hjemmeside. Tilføj derefter adressen på din hjemmeside i et af de ekstra felter på din profil på fanen "Redigér profil" og gem ændringer.
     verification: Bekræftelse
     verified_links: Dine bekræftede links

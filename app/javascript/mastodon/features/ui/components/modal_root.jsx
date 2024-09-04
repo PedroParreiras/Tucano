@@ -3,7 +3,7 @@ import { PureComponent } from 'react';
 
 import { Helmet } from 'react-helmet';
 
-import Base from 'mastodon/components/modal_root';
+import Base from 'tucano/components/modal_root';
 import {
   MuteModal,
   BlockModal,
@@ -18,8 +18,8 @@ import {
   SubscribedLanguagesModal,
   ClosedRegistrationsModal,
   IgnoreNotificationsModal,
-} from 'mastodon/features/ui/util/async-components';
-import { getScrollbarWidth } from 'mastodon/utils/scrollbar';
+} from 'tucano/features/ui/util/async-components';
+import { getScrollbarWidth } from 'tucano/utils/scrollbar';
 
 import BundleContainer from '../containers/bundle_container';
 

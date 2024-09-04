@@ -37,7 +37,7 @@ class ActivityPub::FetchRepliesService < BaseService
     return unless @allow_synchronous_requests
     return if non_matching_uri_hosts?(@account.uri, collection_or_uri)
 
-    # NOTE: For backward compatibility reasons, Mastodon signs outgoing
+    # NOTE: For backward compatibility reasons, tucano signs outgoing
     # queries incorrectly by default.
     #
     # While this is relevant for all URLs with query strings, this is
@@ -46,7 +46,7 @@ class ActivityPub::FetchRepliesService < BaseService
     # Therefore, retry with correct signatures if this fails.
     begin
       fetch_resource_without_id_validation(collection_or_uri, nil, true)
-    rescue Mastodon::UnexpectedResponseError => e
+    rescue tucano::UnexpectedResponseError => e
       raise unless e.response && e.response.code == 401 && Addressable::URI.parse(collection_or_uri).query.present?
 
       fetch_resource_without_id_validation(collection_or_uri, nil, true, request_options: { with_query_string: true })

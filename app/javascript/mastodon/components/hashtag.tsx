@@ -10,8 +10,8 @@ import type Immutable from 'immutable';
 
 import { Sparklines, SparklinesCurve } from 'react-sparklines';
 
-import { ShortNumber } from 'mastodon/components/short_number';
-import { Skeleton } from 'mastodon/components/skeleton';
+import { ShortNumber } from 'tucano/components/short_number';
+import { Skeleton } from 'tucano/components/skeleton';
 
 interface SilentErrorBoundaryProps {
   children: React.ReactNode;

@@ -67,7 +67,7 @@ class AccountFilter
     when 'order'
       order_scope(value)
     else
-      raise Mastodon::InvalidParameterError, "Unknown filter: #{key}"
+      raise tucano::InvalidParameterError, "Unknown filter: #{key}"
     end
   end
 
@@ -78,7 +78,7 @@ class AccountFilter
     when 'remote'
       Account.remote
     else
-      raise Mastodon::InvalidParameterError, "Unknown origin: #{value}"
+      raise tucano::InvalidParameterError, "Unknown origin: #{value}"
     end
   end
 
@@ -97,7 +97,7 @@ class AccountFilter
     when 'sensitized'
       Account.sensitized
     else
-      raise Mastodon::InvalidParameterError, "Unknown status: #{value}"
+      raise tucano::InvalidParameterError, "Unknown status: #{value}"
     end
   end
 
@@ -108,7 +108,7 @@ class AccountFilter
     when 'recent'
       Account.recent
     else
-      raise Mastodon::InvalidParameterError, "Unknown order: #{value}"
+      raise tucano::InvalidParameterError, "Unknown order: #{value}"
     end
   end
 

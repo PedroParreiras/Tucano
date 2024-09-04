@@ -3,8 +3,8 @@ import { defineMessages } from 'react-intl';
 
 import { List as ImmutableList } from 'immutable';
 
-import { compareId } from 'mastodon/compare_id';
-import { usePendingItems as preferPendingItems } from 'mastodon/initial_state';
+import { compareId } from 'tucano/compare_id';
+import { usePendingItems as preferPendingItems } from 'tucano/initial_state';
 
 import api, { getLinks } from '../api';
 import { unescapeHTML } from '../utils/html';

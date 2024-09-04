@@ -20,7 +20,7 @@ class AccountReachFinder
   end
 
   def recently_mentioned_inboxes
-    cutoff_id       = Mastodon::Snowflake.id_at(2.days.ago, with_random: false)
+    cutoff_id       = tucano::Snowflake.id_at(2.days.ago, with_random: false)
     recent_statuses = @account.statuses.recent.where(id: cutoff_id...).limit(200)
 
     Account.joins(:mentions).where(mentions: { status: recent_statuses }).inboxes.take(2000)

@@ -2,13 +2,13 @@ import { useCallback, useEffect } from 'react';
 
 import { useIntl, defineMessages } from 'react-intl';
 
-import { useIdentity } from '@/mastodon/identity_context';
-import { fetchRelationships, followAccount } from 'mastodon/actions/accounts';
-import { openModal } from 'mastodon/actions/modal';
-import { Button } from 'mastodon/components/button';
-import { LoadingIndicator } from 'mastodon/components/loading_indicator';
-import { me } from 'mastodon/initial_state';
-import { useAppDispatch, useAppSelector } from 'mastodon/store';
+import { useIdentity } from '@/tucano/identity_context';
+import { fetchRelationships, followAccount } from 'tucano/actions/accounts';
+import { openModal } from 'tucano/actions/modal';
+import { Button } from 'tucano/components/button';
+import { LoadingIndicator } from 'tucano/components/loading_indicator';
+import { me } from 'tucano/initial_state';
+import { useAppDispatch, useAppSelector } from 'tucano/store';
 
 const messages = defineMessages({
   unfollow: { id: 'account.unfollow', defaultMessage: 'Unfollow' },

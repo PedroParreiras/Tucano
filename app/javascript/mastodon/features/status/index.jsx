@@ -16,13 +16,13 @@ import { HotKeys } from 'react-hotkeys';
 
 import VisibilityIcon from '@/material-icons/400-24px/visibility.svg?react';
 import VisibilityOffIcon from '@/material-icons/400-24px/visibility_off.svg?react';
-import { Icon }  from 'mastodon/components/icon';
-import { LoadingIndicator } from 'mastodon/components/loading_indicator';
-import { TimelineHint } from 'mastodon/components/timeline_hint';
-import ScrollContainer from 'mastodon/containers/scroll_container';
-import BundleColumnError from 'mastodon/features/ui/components/bundle_column_error';
-import { identityContextPropShape, withIdentity } from 'mastodon/identity_context';
-import { WithRouterPropTypes } from 'mastodon/utils/react_router';
+import { Icon }  from 'tucano/components/icon';
+import { LoadingIndicator } from 'tucano/components/loading_indicator';
+import { TimelineHint } from 'tucano/components/timeline_hint';
+import ScrollContainer from 'tucano/containers/scroll_container';
+import BundleColumnError from 'tucano/features/ui/components/bundle_column_error';
+import { identityContextPropShape, withIdentity } from 'tucano/identity_context';
+import { WithRouterPropTypes } from 'tucano/utils/react_router';
 
 import {
   unblockAccount,
@@ -585,7 +585,7 @@ class Status extends ImmutablePureComponent {
 
   shouldUpdateScroll = (prevRouterProps, { location }) => {
     // Do not change scroll when opening a modal
-    if (location.state?.mastodonModalKey !== prevRouterProps?.location?.state?.mastodonModalKey) {
+    if (location.state?.tucanoModalKey !== prevRouterProps?.location?.state?.tucanoModalKey) {
       return false;
     }
 

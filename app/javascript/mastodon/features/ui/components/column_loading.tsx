@@ -1,6 +1,6 @@
-import Column from 'mastodon/components/column';
-import { ColumnHeader } from 'mastodon/components/column_header';
-import type { Props as ColumnHeaderProps } from 'mastodon/components/column_header';
+import Column from 'tucano/components/column';
+import { ColumnHeader } from 'tucano/components/column_header';
+import type { Props as ColumnHeaderProps } from 'tucano/components/column_header';
 
 export const ColumnLoading: React.FC<ColumnHeaderProps> = (otherProps) => (
   <Column>

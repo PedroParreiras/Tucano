@@ -2,7 +2,7 @@
 
 require_relative 'base'
 
-module Mastodon::CLI
+module tucano::CLI
   class PreviewCards < Base
     include ActionView::Helpers::NumberHelper
 

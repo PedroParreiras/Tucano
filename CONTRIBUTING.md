@@ -1,38 +1,38 @@
 # Contributing
 
-Thank you for considering contributing to Mastodon 🐘
+Thank you for considering contributing to tucano 🐘
 
 You can contribute in the following ways:
 
 - Finding and reporting bugs
-- Translating the Mastodon interface into various languages
-- Contributing code to Mastodon by fixing bugs or implementing features
+- Translating the tucano interface into various languages
+- Contributing code to tucano by fixing bugs or implementing features
 - Improving the documentation
 
-If your contributions are accepted into Mastodon, you can request to be paid through [our OpenCollective](https://opencollective.com/mastodon).
+If your contributions are accepted into tucano, you can request to be paid through [our OpenCollective](https://opencollective.com/tucano).
 
 Please review the org-level [contribution guidelines] for high-level acceptance
 criteria guidance.
 
-[contribution guidelines]: https://github.com/mastodon/.github/blob/main/CONTRIBUTING.md
+[contribution guidelines]: https://github.com/tucano/.github/blob/main/CONTRIBUTING.md
 
 ## API Changes and Additions
 
-Please note that any changes or additions made to the API should have an accompanying pull request on [our documentation repository](https://github.com/mastodon/documentation).
+Please note that any changes or additions made to the API should have an accompanying pull request on [our documentation repository](https://github.com/tucano/documentation).
 
 ## Bug reports
 
-Bug reports and feature suggestions must use descriptive and concise titles and be submitted to [GitHub Issues](https://github.com/mastodon/mastodon/issues). Please use the search function to make sure that you are not submitting duplicates, and that a similar report or request has not already been resolved or rejected.
+Bug reports and feature suggestions must use descriptive and concise titles and be submitted to [GitHub Issues](https://github.com/tucano/tucano/issues). Please use the search function to make sure that you are not submitting duplicates, and that a similar report or request has not already been resolved or rejected.
 
 ## Translations
 
-You can submit translations via [Crowdin](https://crowdin.com/project/mastodon). They are periodically merged into the codebase.
+You can submit translations via [Crowdin](https://crowdin.com/project/tucano). They are periodically merged into the codebase.
 
-[![Crowdin](https://d322cqt584bo4o.cloudfront.net/mastodon/localized.svg)](https://crowdin.com/project/mastodon)
+[![Crowdin](https://d322cqt584bo4o.cloudfront.net/tucano/localized.svg)](https://crowdin.com/project/tucano)
 
 ## Pull requests
 
-**Please use clean, concise titles for your pull requests.** Unless the pull request is about refactoring code, updating dependencies or other internal tasks, assume that the person reading the pull request title is not a programmer or Mastodon developer, but instead a Mastodon user or server administrator, and **try to describe your change or fix from their perspective**. We use commit squashing, so the final commit in the main branch will carry the title of the pull request, and commits from the main branch are fed into the changelog. The changelog is separated into [keepachangelog.com categories](https://keepachangelog.com/en/1.0.0/), and while that spec does not prescribe how the entries ought to be named, for easier sorting, start your pull request titles using one of the verbs "Add", "Change", "Deprecate", "Remove", or "Fix" (present tense).
+**Please use clean, concise titles for your pull requests.** Unless the pull request is about refactoring code, updating dependencies or other internal tasks, assume that the person reading the pull request title is not a programmer or tucano developer, but instead a tucano user or server administrator, and **try to describe your change or fix from their perspective**. We use commit squashing, so the final commit in the main branch will carry the title of the pull request, and commits from the main branch are fed into the changelog. The changelog is separated into [keepachangelog.com categories](https://keepachangelog.com/en/1.0.0/), and while that spec does not prescribe how the entries ought to be named, for easier sorting, start your pull request titles using one of the verbs "Add", "Change", "Deprecate", "Remove", or "Fix" (present tense).
 
 Example:
 
@@ -52,4 +52,4 @@ It is not always possible to phrase every change in such a manner, but it is des
 
 ## Documentation
 
-The [Mastodon documentation](https://docs.joinmastodon.org) is a statically generated site. You can [submit merge requests to mastodon/documentation](https://github.com/mastodon/documentation).
+The [tucano documentation](https://docs.jointucano.org) is a statically generated site. You can [submit merge requests to tucano/documentation](https://github.com/tucano/documentation).

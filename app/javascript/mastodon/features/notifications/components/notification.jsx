@@ -18,11 +18,11 @@ import PersonIcon from '@/material-icons/400-24px/person-fill.svg?react';
 import PersonAddIcon from '@/material-icons/400-24px/person_add-fill.svg?react';
 import RepeatIcon from '@/material-icons/400-24px/repeat.svg?react';
 import StarIcon from '@/material-icons/400-24px/star-fill.svg?react';
-import { Icon }  from 'mastodon/components/icon';
-import AccountContainer from 'mastodon/containers/account_container';
-import StatusContainer from 'mastodon/containers/status_container';
-import { me } from 'mastodon/initial_state';
-import { WithRouterPropTypes } from 'mastodon/utils/react_router';
+import { Icon }  from 'tucano/components/icon';
+import AccountContainer from 'tucano/containers/account_container';
+import StatusContainer from 'tucano/containers/status_container';
+import { me } from 'tucano/initial_state';
+import { WithRouterPropTypes } from 'tucano/utils/react_router';
 
 import FollowRequestContainer from '../containers/follow_request_container';
 

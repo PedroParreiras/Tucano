@@ -172,8 +172,8 @@ module.exports = defineConfig({
         devDependencies: [
           '.eslintrc.js',
           'config/webpack/**',
-          'app/javascript/mastodon/performance.js',
-          'app/javascript/mastodon/test_setup.js',
+          'app/javascript/tucano/performance.js',
+          'app/javascript/tucano/test_setup.js',
           'app/javascript/**/__tests__/**',
         ],
       },
@@ -226,7 +226,7 @@ module.exports = defineConfig({
           },
           // Internal packages
           {
-            pattern: '{mastodon/**}',
+            pattern: '{tucano/**}',
             group: 'internal',
             position: 'after',
           },

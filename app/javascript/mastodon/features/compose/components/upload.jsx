@@ -12,10 +12,10 @@ import spring from 'react-motion/lib/spring';
 import CloseIcon from '@/material-icons/400-20px/close.svg?react';
 import EditIcon from '@/material-icons/400-24px/edit.svg?react';
 import WarningIcon from '@/material-icons/400-24px/warning.svg?react';
-import { undoUploadCompose, initMediaEditModal } from 'mastodon/actions/compose';
-import { Blurhash } from 'mastodon/components/blurhash';
-import { Icon }  from 'mastodon/components/icon';
-import Motion from 'mastodon/features/ui/util/optional_motion';
+import { undoUploadCompose, initMediaEditModal } from 'tucano/actions/compose';
+import { Blurhash } from 'tucano/components/blurhash';
+import { Icon }  from 'tucano/components/icon';
+import Motion from 'tucano/features/ui/util/optional_motion';
 
 export const Upload = ({ id, onDragStart, onDragEnter, onDragEnd }) => {
   const dispatch = useDispatch();

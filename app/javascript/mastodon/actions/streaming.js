@@ -1,6 +1,6 @@
 // @ts-check
 
-import { selectUseGroupedNotifications } from 'mastodon/selectors/settings';
+import { selectUseGroupedNotifications } from 'tucano/selectors/settings';
 
 import { getLocale } from '../locales';
 import { connectStream } from '../stream';

@@ -1,10 +1,10 @@
 import { createSelector } from '@reduxjs/toolkit';
 import { Record as ImmutableRecord } from 'immutable';
 
-import { accountDefaultValues } from 'mastodon/models/account';
-import type { Account, AccountShape } from 'mastodon/models/account';
-import type { Relationship } from 'mastodon/models/relationship';
-import type { RootState } from 'mastodon/store';
+import { accountDefaultValues } from 'tucano/models/account';
+import type { Account, AccountShape } from 'tucano/models/account';
+import type { Relationship } from 'tucano/models/relationship';
+import type { RootState } from 'tucano/store';
 
 const getAccountBase = (state: RootState, id: string) =>
   state.accounts.get(id, null);

@@ -2,7 +2,7 @@
 
 require_relative 'base'
 
-module Mastodon::CLI
+module tucano::CLI
   class Upgrade < Base
     CURRENT_STORAGE_SCHEMA_VERSION = 1
 

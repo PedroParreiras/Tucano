@@ -8,10 +8,10 @@ import PersonAddIcon from '@/material-icons/400-24px/person_add-fill.svg?react';
 import {
   authorizeFollowRequest,
   rejectFollowRequest,
-} from 'mastodon/actions/accounts';
-import { IconButton } from 'mastodon/components/icon_button';
-import type { NotificationGroupFollowRequest } from 'mastodon/models/notification_group';
-import { useAppDispatch } from 'mastodon/store';
+} from 'tucano/actions/accounts';
+import { IconButton } from 'tucano/components/icon_button';
+import type { NotificationGroupFollowRequest } from 'tucano/models/notification_group';
+import { useAppDispatch } from 'tucano/store';
 
 import type { LabelRenderer } from './notification_group_with_status';
 import { NotificationGroupWithStatus } from './notification_group_with_status';

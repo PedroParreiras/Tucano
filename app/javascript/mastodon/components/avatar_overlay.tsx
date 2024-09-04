@@ -1,4 +1,4 @@
-import type { Account } from 'mastodon/models/account';
+import type { Account } from 'tucano/models/account';
 
 import { useHovering } from '../../hooks/useHovering';
 import { autoPlayGif } from '../initial_state';

@@ -21,7 +21,7 @@ class Api::V2Alpha::NotificationsController < Api::BaseController
       ActiveRecord::Associations::Preloader.new(records: @presenter.accounts, associations: [:account_stat, { user: :role }]).call
     end
 
-    MastodonOTELTracer.in_span('Api::V2Alpha::NotificationsController#index rendering') do |span|
+    tucanoOTELTracer.in_span('Api::V2Alpha::NotificationsController#index rendering') do |span|
       statuses = @grouped_notifications.filter_map { |group| group.target_status&.id }
 
       span.add_attributes(
@@ -64,7 +64,7 @@ class Api::V2Alpha::NotificationsController < Api::BaseController
   private
 
   def load_notifications
-    MastodonOTELTracer.in_span('Api::V2Alpha::NotificationsController#load_notifications') do
+    tucanoOTELTracer.in_span('Api::V2Alpha::NotificationsController#load_notifications') do
       notifications = browserable_account_notifications.includes(from_account: [:account_stat, :user]).to_a_grouped_paginated_by_id(
         limit_param(DEFAULT_NOTIFICATIONS_LIMIT),
         params.slice(:max_id, :since_id, :min_id, :grouped_types).permit(:max_id, :since_id, :min_id, grouped_types: [])
@@ -77,7 +77,7 @@ class Api::V2Alpha::NotificationsController < Api::BaseController
   end
 
   def load_grouped_notifications
-    MastodonOTELTracer.in_span('Api::V2Alpha::NotificationsController#load_grouped_notifications') do
+    tucanoOTELTracer.in_span('Api::V2Alpha::NotificationsController#load_grouped_notifications') do
       NotificationGroup.from_notifications(@notifications, pagination_range: (@notifications.last.id)..(@notifications.first.id), grouped_types: params[:grouped_types])
     end
   end
@@ -125,7 +125,7 @@ class Api::V2Alpha::NotificationsController < Api::BaseController
     when 'partial_avatars'
       'partial_avatars'
     else
-      raise Mastodon::InvalidParameterError, "Invalid value for 'expand_accounts': '#{params[:expand_accounts]}', allowed values are 'full' and 'partial_avatars'"
+      raise tucano::InvalidParameterError, "Invalid value for 'expand_accounts': '#{params[:expand_accounts]}', allowed values are 'full' and 'partial_avatars'"
     end
   end
 end

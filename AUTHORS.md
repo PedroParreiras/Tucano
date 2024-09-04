@@ -1,7 +1,7 @@
 Authors
 =======
 
-Mastodon is available on [GitHub](https://github.com/mastodon/mastodon)
+tucano is available on [GitHub](https://github.com/tucano/tucano)
 and provided thanks to the work of the following contributors:
 
 * [Gargron](https://github.com/Gargron)
@@ -201,7 +201,7 @@ and provided thanks to the work of the following contributors:
 * [joenepraat](https://github.com/joenepraat)
 * [leopku](https://github.com/leopku)
 * [SansPseudoFix](https://github.com/SansPseudoFix)
-* [spla](mailto:sp@mastodont.cat)
+* [spla](mailto:sp@tucanot.cat)
 * [tomfhowe](https://github.com/tomfhowe)
 * [noraworld](https://github.com/noraworld)
 * [aji-su](https://github.com/aji-su)
@@ -950,11 +950,11 @@ and provided thanks to the work of the following contributors:
 * [西小倉宏信](mailto:nishiko@mindia.jp)
 * [雨宮美羽](mailto:k737566@gmail.com)
 
-This document is provided for informational purposes only. Since it is only updated once per release, the version you are looking at may be currently out of date. To see the full list of contributors, consider looking at the [git history](https://github.com/mastodon/mastodon/graphs/contributors) instead.
+This document is provided for informational purposes only. Since it is only updated once per release, the version you are looking at may be currently out of date. To see the full list of contributors, consider looking at the [git history](https://github.com/tucano/tucano/graphs/contributors) instead.
 
 ## Translators
 
-Following people have contributed to translation of Mastodon:
+Following people have contributed to translation of tucano:
 
 - GunChleoc (*Scottish Gaelic*)
 - KNTRO (*Spanish, Argentina*)
@@ -994,7 +994,7 @@ Following people have contributed to translation of Mastodon:
 - palindromordnilap (*Corsican, Esperanto, French*)
 - danialbehzadi (*Persian*)
 - stanionut12 (*Romanian*)
-- mastodon-linguist (*Chinese Simplified*)
+- tucano-linguist (*Chinese Simplified*)
 - lapor (*Slovenian*)
 - Brawaru (*Albanian, Armenian, Catalan, Danish, French, Galician, German, Greek, Hungarian, Italian, Kabyle, Korean, Polish, Portuguese, Russian, Swedish, Tamil, Ukrainian, Vietnamese*)
 - ManeraKai (*Arabic*)

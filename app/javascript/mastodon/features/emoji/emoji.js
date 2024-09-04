@@ -1,6 +1,6 @@
 import Trie from 'substring-trie';
 
-import { assetHost } from 'mastodon/utils/config';
+import { assetHost } from 'tucano/utils/config';
 
 import { autoPlayGif } from '../../initial_state';
 
@@ -116,7 +116,7 @@ const emojifyTextNode = (node, customEmojis) => {
 
       let theme = "light";
 
-      if(!isSystemTheme && !document.body?.classList.contains('theme-mastodon-light'))
+      if(!isSystemTheme && !document.body?.classList.contains('theme-tucano-light'))
         theme = "dark";
 
       img.setAttribute('src', `${assetHost}/emoji/${emojiFilename(filename, theme)}.svg`);

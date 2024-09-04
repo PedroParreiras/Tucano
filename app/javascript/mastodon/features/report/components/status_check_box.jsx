@@ -3,12 +3,12 @@ import { PureComponent } from 'react';
 
 import ImmutablePropTypes from 'react-immutable-proptypes';
 
-import { Avatar } from 'mastodon/components/avatar';
-import { DisplayName } from 'mastodon/components/display_name';
-import MediaAttachments from 'mastodon/components/media_attachments';
-import { RelativeTimestamp } from 'mastodon/components/relative_timestamp';
-import StatusContent from 'mastodon/components/status_content';
-import { VisibilityIcon } from 'mastodon/components/visibility_icon';
+import { Avatar } from 'tucano/components/avatar';
+import { DisplayName } from 'tucano/components/display_name';
+import MediaAttachments from 'tucano/components/media_attachments';
+import { RelativeTimestamp } from 'tucano/components/relative_timestamp';
+import StatusContent from 'tucano/components/status_content';
+import { VisibilityIcon } from 'tucano/components/visibility_icon';
 
 import Option from './option';
 

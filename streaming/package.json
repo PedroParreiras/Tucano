@@ -1,16 +1,16 @@
 {
-  "name": "@mastodon/streaming",
+  "name": "@tucano/streaming",
   "license": "AGPL-3.0-or-later",
   "packageManager": "yarn@4.4.1",
   "engines": {
     "node": ">=18"
   },
-  "description": "Mastodon's Streaming Server",
+  "description": "tucano's Streaming Server",
   "private": true,
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mastodon/mastodon.git"
+    "url": "https://github.com/tucano/tucano.git"
   },
   "scripts": {
     "start": "node ./index.js",

@@ -5,8 +5,8 @@ import { defineMessages, FormattedMessage, useIntl } from 'react-intl';
 import classNames from 'classnames';
 
 import HeartBrokenIcon from '@/material-icons/400-24px/heart_broken-fill.svg?react';
-import { Icon }  from 'mastodon/components/icon';
-import { domain } from 'mastodon/initial_state';
+import { Icon }  from 'tucano/components/icon';
+import { domain } from 'tucano/initial_state';
 
 // This needs to be kept in sync with app/models/relationships_severance_event.rb
 const messages = defineMessages({

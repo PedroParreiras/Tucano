@@ -1,10 +1,10 @@
 ---
 lv:
   about:
-    about_mastodon_html: 'Nākotnes sociālais tīkls: bez reklāmām, bez korporatīvās uzraudzības, ētisks dizains un decentralizācija! Pārvaldi savus datus ar Mastodon!'
+    about_tucano_html: 'Nākotnes sociālais tīkls: bez reklāmām, bez korporatīvās uzraudzības, ētisks dizains un decentralizācija! Pārvaldi savus datus ar tucano!'
     contact_missing: Nav uzstādīts
     contact_unavailable: N/A
-    hosted_on: Mastodon mitināts %{domain}
+    hosted_on: tucano mitināts %{domain}
     title: Par
   accounts:
     follow: Sekot
@@ -661,7 +661,7 @@ lv:
         moderation: Moderācija
         special: Īpašās
       delete: Dzēst
-      description_html: Izmantojot <strong>lietotāju lomas</strong>, vari pielāgot, kurām Mastodon funkcijām un apgabaliem var piekļūt tavi lietotāji.
+      description_html: Izmantojot <strong>lietotāju lomas</strong>, vari pielāgot, kurām tucano funkcijām un apgabaliem var piekļūt tavi lietotāji.
       edit: Labot lomu '%{name}'
       everyone: Noklusētās atļaujas
       everyone_full_description_html: Šī ir <strong>pamata loma</strong>, kas ietekmē <strong>visus lietotājus</strong>, pat tos, kuriem nav piešķirta loma. Visas pārējās lomas manto atļaujas no šīs.
@@ -723,24 +723,24 @@ lv:
         rules_hint: Noteikumiem, kas taviem lietotājiem ir jāievēro, ir īpaša sadaļa.
         title: Par
       appearance:
-        preamble: Pielāgo Mastodon tīmekļa saskarni.
+        preamble: Pielāgo tucano tīmekļa saskarni.
         title: Izskats
       branding:
-        preamble: Tava servera zīmols to atšķir no citiem tīkla serveriem. Šī informācija var tikt parādīta dažādās vidēs, piemēram, Mastodon tīmekļa saskarnē, vietējās lietojumprogrammās, saišu priekšskatījumos citās vietnēs un ziņojumapmaiņas lietotnēs un tā tālāk. Šī iemesla dēļ vislabāk ir saglabāt šo informāciju skaidru, īsu un kodolīgu.
+        preamble: Tava servera zīmols to atšķir no citiem tīkla serveriem. Šī informācija var tikt parādīta dažādās vidēs, piemēram, tucano tīmekļa saskarnē, vietējās lietojumprogrammās, saišu priekšskatījumos citās vietnēs un ziņojumapmaiņas lietotnēs un tā tālāk. Šī iemesla dēļ vislabāk ir saglabāt šo informāciju skaidru, īsu un kodolīgu.
         title: Zīmola veidošana
       captcha_enabled:
         desc_html: Tas balstās uz ārējiem skriptiem no hCaptcha, kas var radīt bažas par drošību un privātumu. Turklāt <strong>tas var padarīt reģistrācijas procesu ievērojami mazāk pieejamu dažiem cilvēkiem (īpaši invalīdiem)</strong>. Šo iemeslu dēļ, lūdzu, apsver alternatīvus pasākumus, piemēram, reģistrāciju, kas balstīta uz apstiprinājumu vai uzaicinājumu.
         title: Pieprasīt jaunajiem lietotājiem atrisināt CAPTCHA, lai apstiprinātu savu kontu
       content_retention:
         danger_zone: Bīstama sadaļa
-        preamble: Kontrolē, kā Mastodon tiek glabāts lietotāju ģenerēts saturs.
+        preamble: Kontrolē, kā tucano tiek glabāts lietotāju ģenerēts saturs.
         title: Satura saglabāšana
       default_noindex:
         desc_html: Ietekmē visus lietotājus, kuri paši nav mainījuši šo iestatījumu
         title: Pēc noklusējuma lietotāji būs atteikušies no meklētājprogrammu indeksēšanas
       discovery:
         follow_recommendations: Sekotšanas rekomendācijas
-        preamble: Interesanta satura parādīšana palīdz piesaistīt jaunus lietotājus, kuri, iespējams, nepazīst nevienu Mastodon. Kontrolē, kā tavā serverī darbojas dažādi atklāšanas līdzekļi.
+        preamble: Interesanta satura parādīšana palīdz piesaistīt jaunus lietotājus, kuri, iespējams, nepazīst nevienu tucano. Kontrolē, kā tavā serverī darbojas dažādi atklāšanas līdzekļi.
         profile_directory: Profila direktorija
         public_timelines: Publiskās ziņu lentas
         publish_discovered_servers: Publicēt atklātos serverus
@@ -827,7 +827,7 @@ lv:
         message_html: Elasticsearch indeksa kartējumi ir novecojuši. Lūdzu, palaid <code>tootctl search deploy --only=%{value}</code>
       elasticsearch_preset:
         action: Skatīt dokumentāciju
-        message_html: Tavam Elasticsearch klasterim ir vairāk nekā viens mezgls, taču Mastodon nav konfigurēts to lietošanai.
+        message_html: Tavam Elasticsearch klasterim ir vairāk nekā viens mezgls, taču tucano nav konfigurēts to lietošanai.
       elasticsearch_preset_single_node:
         action: Skatīt dokumentāciju
         message_html: Tavam Elasticsearch klasterim ir tikai viens mezgls, <code>ES_PRESET</code> ir jāiestata uz <code>single_node_cluster</code>.
@@ -845,10 +845,10 @@ lv:
         message_html: Rindā(s) %{value} nedarbojas neviens Sidekiq process. Lūdzu, pārskati savu Sidekiq konfigurāciju
       software_version_critical_check:
         action: Skatīt pieejamos atjauninājumus
-        message_html: Ir pieejams kritisks Mastodon atjauninājums. Lūdzu, atjaunini to pēc iespējas ātrāk.
+        message_html: Ir pieejams kritisks tucano atjauninājums. Lūdzu, atjaunini to pēc iespējas ātrāk.
       software_version_patch_check:
         action: Skatīt pieejamos atjauninājumus
-        message_html: Ir pieejams Mastodon kļūdu labojums.
+        message_html: Ir pieejams tucano kļūdu labojums.
       upload_check_privacy_error:
         action: Pārbaudi šeit, lai iegūtu plašāku informāciju
         message_html: "<strong>Tavs tīmekļa serveris ir nepareizi konfigurēts. Tavu lietotāju privātums ir apdraudēts.</strong>"
@@ -933,7 +933,7 @@ lv:
     webhooks:
       add_new: Pievienot galapunktu
       delete: Dzēst
-      description_html: Izmantojot <strong>tīmekļa aizķeri</strong>, Mastodon var nosūtīt jūsu lietojumprogrammai <strong>reāllaika paziņojumus</strong> par izvēlētajiem notikumiem, lai tava lietojumprogramma varētu <strong>automātiski izraisīt reakcijas</strong>.
+      description_html: Izmantojot <strong>tīmekļa aizķeri</strong>, tucano var nosūtīt jūsu lietojumprogrammai <strong>reāllaika paziņojumus</strong> par izvēlētajiem notikumiem, lai tava lietojumprogramma varētu <strong>automātiski izraisīt reakcijas</strong>.
       disable: Atspējot
       disabled: Atspējots
       edit: Labot galapunktu
@@ -965,8 +965,8 @@ lv:
       next_steps: Varat apstiprināt apelāciju, lai atsauktu regulēšanas lēmumu, vai ignorēt to.
       subject: "%{username} pārsūdz moderēšanas lēmumu par %{instance}"
     new_critical_software_updates:
-      body: Ir izlaistas jaunas Mastodon svarīgās versijas, iespējams, vēlēsies to atjaunināt pēc iespējas ātrāk!
-      subject: "%{instance} ir pieejami svarīgi Mastodon atjauninājumi!"
+      body: Ir izlaistas jaunas tucano svarīgās versijas, iespējams, vēlēsies to atjaunināt pēc iespējas ātrāk!
+      subject: "%{instance} ir pieejami svarīgi tucano atjauninājumi!"
     new_pending_account:
       body: Sīkāka informācija par jauno kontu ir sniegta zemāk. Tu vari apstiprināt vai noraidīt šo pieteikumu.
       subject: Jauns konts pārskatīšanai %{instance} (%{username})
@@ -975,8 +975,8 @@ lv:
       body_remote: Kāds no %{domain} ziņoja par %{target}
       subject: Jauns ziņojums par %{instance} (#%{id})
     new_software_updates:
-      body: Ir izlaistas jaunas Mastodon versijas, iespējams, vēlēsies atjaunināt!
-      subject: "%{instance} ir pieejamas jaunas Mastodon versijas!"
+      body: Ir izlaistas jaunas tucano versijas, iespējams, vēlēsies atjaunināt!
+      subject: "%{instance} ir pieejamas jaunas tucano versijas!"
     new_trends:
       body: 'Tālāk norādītie vienumi ir jāpārskata, lai tos varētu parādīt publiski:'
       new_trending_links:
@@ -1000,8 +1000,8 @@ lv:
     confirmation_dialogs: Apstiprināšanas dialogi
     discovery: Atklāšana
     localization:
-      body: Mastodon ir tulkojuši brīvprātīgie.
-      guide_link: https://crowdin.com/project/mastodon
+      body: tucano ir tulkojuši brīvprātīgie.
+      guide_link: https://crowdin.com/project/tucano
       guide_link_text: Ikviens var piedalīties.
     sensitive_content: Sensitīvs saturs
   application_mailer:
@@ -1035,9 +1035,9 @@ lv:
     delete_account: Dzēst kontu
     delete_account_html: Ja vēlies dzēst savu kontu, tu vari <a href="%{path}">turpināt šeit</a>. Tev tiks lūgts apstiprinājums.
     description:
-      prefix_invited_by_user: "@%{name} aicina tevi pievienoties šim Mastodon serverim!"
-      prefix_sign_up: Reģistrējies Mastodon jau šodien!
-      suffix: Izmantojot kontu, tu varēsi sekot cilvēkiem, publicēt atjauninājumus un apmainīties ar ziņojumiem ar lietotājiem no jebkura Mastodon servera un daudz ko citu!
+      prefix_invited_by_user: "@%{name} aicina tevi pievienoties šim tucano serverim!"
+      prefix_sign_up: Reģistrējies tucano jau šodien!
+      suffix: Izmantojot kontu, tu varēsi sekot cilvēkiem, publicēt atjauninājumus un apmainīties ar ziņojumiem ar lietotājiem no jebkura tucano servera un daudz ko citu!
     didnt_get_confirmation: Vai nesaņēmi apstiprinājuma saiti?
     dont_have_your_security_key: Vai tev nav drošības atslēgas?
     forgot_password: Aizmirsi paroli?
@@ -1081,7 +1081,7 @@ lv:
       title: Pierakstīties %{domain}
     sign_up:
       manual_review: Reģistrācijas domēnā %{domain} manuāli pārbauda mūsu moderatori. Lai palīdzētu mums apstrādāt tavu reģistrāciju, uzraksti mazliet par sevi un to, kāpēc vēlies kontu %{domain}.
-      preamble: Ar kontu šajā Mastodon serverī varēsi sekot jebkuram citam tīklā esošam cilvēkam neatkarīgi no tā, kur tiek mitināts viņa konts.
+      preamble: Ar kontu šajā tucano serverī varēsi sekot jebkuram citam tīklā esošam cilvēkam neatkarīgi no tā, kur tiek mitināts viņa konts.
       title: Atļauj tevi iestatīt %{domain}.
     status:
       account_status: Konta statuss
@@ -1182,7 +1182,7 @@ lv:
       content: Atvainojamies, bet mūsu pusē kaut kas nogāja greizi.
       title: Šī lapa nav pareiza
     '503': Lapu nevarēja apkalpot īslaicīgas servera kļūmes dēļ.
-    noscript_html: Lai izmantotu Mastodon web lietojumu, lūdzu, iespējo JavaScript. Vai arī izmēģini kādu no <a href="%{apps_path}">vietējām lietotnēm</a> Mastodon savai platformai.
+    noscript_html: Lai izmantotu tucano web lietojumu, lūdzu, iespējo JavaScript. Vai arī izmēģini kādu no <a href="%{apps_path}">vietējām lietotnēm</a> tucano savai platformai.
   existing_username_validator:
     not_found: nevarēja atrast lokālo lietotāju ar šādu lietotājvārdu
     not_found_multiple: nevarēja atrast %{usernames}
@@ -1499,13 +1499,13 @@ lv:
     posting_defaults: Publicēšanas noklusējuma iestatījumi
     public_timelines: Publiskās ziņu lentas
   privacy:
-    hint_html: "<strong>Pielāgo, kā vēlies atrast savu profilu un ziņas.</strong> Dažādas Mastodon funkcijas var palīdzēt sasniegt plašāku auditoriju, ja tās ir iespējotas. Velti laiku, lai pārskatītu šos iestatījumus, lai pārliecinātos, ka tie atbilst tavam lietošanas gadījumam."
+    hint_html: "<strong>Pielāgo, kā vēlies atrast savu profilu un ziņas.</strong> Dažādas tucano funkcijas var palīdzēt sasniegt plašāku auditoriju, ja tās ir iespējotas. Velti laiku, lai pārskatītu šos iestatījumus, lai pārliecinātos, ka tie atbilst tavam lietošanas gadījumam."
     privacy: Privātums
     privacy_hint_html: Kontrolē, cik daudz vēlies izpaust citu labā. Cilvēki atklāj interesantus profilus un lieliskas lietotnes, pārlūkojot citu cilvēku sekotājus un redzot, no kurām lietotnēm viņi izliek ziņas, taču tu, iespējams, vēlēsies to slēpt.
     reach: Sasniedzamība
     reach_hint_html: Kontrolē, vai vēlies, lai tevi atklātu un sekotu jauni cilvēki. Vai vēlies, lai tavas ziņas tiktu parādītas ekrānā Izpēte? Vai vēlies, lai citi cilvēki tevi redzētu savos ieteikumos? Vai vēlies automātiski pieņemt visus jaunos sekotājus vai arī tev ir pilnīga kontrole pār katru?
     search: Meklēt
-    search_hint_html: Kontrolē, kā vēlies tikt atrasts. Vai vēlies, lai cilvēki tevi atrod pēc tā, ko esi publiski publicējis? Vai vēlies, lai cilvēki ārpus Mastodon atrastu tavu profilu, meklējot tīmeklī? Lūdzu, ņem vērā, ka nevar garantēt publiskas informācijas pilnīgu izslēgšanu no visām meklētājprogrammām.
+    search_hint_html: Kontrolē, kā vēlies tikt atrasts. Vai vēlies, lai cilvēki tevi atrod pēc tā, ko esi publiski publicējis? Vai vēlies, lai cilvēki ārpus tucano atrastu tavu profilu, meklējot tīmeklī? Lūdzu, ņem vērā, ka nevar garantēt publiskas informācijas pilnīgu izslēgšanu no visām meklētājprogrammām.
     title: Privātums un sasniedzamība
   privacy_policy:
     title: Privātuma Politika
@@ -1577,7 +1577,7 @@ lv:
     current_session: Pašreizējā sesija
     date: Datums
     description: "%{browser} uz %{platform}"
-    explanation: Šie ir tīmekļa pārlūki, kuros šobrīd esi pieteicies savā Mastodon kontā.
+    explanation: Šie ir tīmekļa pārlūki, kuros šobrīd esi pieteicies savā tucano kontā.
     ip: IP
     platforms:
       adobe_air: Adobe Air
@@ -1603,7 +1603,7 @@ lv:
     aliases: Konta aizstājvārdi
     appearance: Izskats
     authorized_apps: Autorizētās lietotnes
-    back: Atgriezties Mastodon
+    back: Atgriezties tucano
     delete: Konta dzēšana
     development: Izstrāde
     edit_profile: Labot profilu
@@ -1718,9 +1718,9 @@ lv:
   tags:
     does_not_match_previous_name: nesakrīt ar iepriekšējo nosaukumu
   themes:
-    contrast: Mastodon (Augsts kontrasts)
-    default: Mastodon (Tumšs)
-    mastodon-light: Mastodon (Gaišs)
+    contrast: tucano (Augsts kontrasts)
+    default: tucano (Tumšs)
+    tucano-light: tucano (Gaišs)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
@@ -1799,12 +1799,12 @@ lv:
         suspend: Konts apturēts
     welcome:
       apps_android_action: Iegūt to Google Play
-      apps_title: Mastodon lietotnes
+      apps_title: tucano lietotnes
       edit_profile_action: Pielāgot
       edit_profile_title: Pielāgo savu profilu
       explanation: Šeit ir daži padomi, kā sākt darbu
       feature_action: Uzzināt vairāk
-      feature_creativity: Mastodon nodrošina skaņas, video un attēlu ierakstus, pieejamības aprakstus, aptaujas, satura brīdinājumus, animētus profila attēlus, pielāgotas emocijzīmes, sīktēlu apgriešanas vadīklas un vēl, lai palīdzētu Tev sevi izpaust tiešsaistē. Vai Tu izplati savu mākslu, mūziku vai aplādes, Mastodon ir šeit ar Tevi.
+      feature_creativity: tucano nodrošina skaņas, video un attēlu ierakstus, pieejamības aprakstus, aptaujas, satura brīdinājumus, animētus profila attēlus, pielāgotas emocijzīmes, sīktēlu apgriešanas vadīklas un vēl, lai palīdzētu Tev sevi izpaust tiešsaistē. Vai Tu izplati savu mākslu, mūziku vai aplādes, tucano ir šeit ar Tevi.
       follow_action: Sekot
       follow_title: Pielāgo savu mājas barotni
       follows_title: Kam sekot
@@ -1817,10 +1817,10 @@ lv:
       post_step: Pasveicini pasauli ar tekstu, fotoattēliem, video vai aptaujām!
       post_title: Izveido savu pirmo ierakstu
       share_action: Kopīgot
-      share_step: Dari saviem draugiem zināmu, kā Tevi atrast Mastodon!
-      share_title: Kopīgo savu Mastodon profilu
+      share_step: Dari saviem draugiem zināmu, kā Tevi atrast tucano!
+      share_title: Kopīgo savu tucano profilu
       sign_in_action: Pieteikties
-      subject: Laipni lūgts Mastodon
+      subject: Laipni lūgts tucano
       title: Laipni lūgts uz borta, %{name}!
   users:
     follow_limit_reached: Tu nevari sekot vairāk par %{limit} cilvēkiem
@@ -1832,7 +1832,7 @@ lv:
   verification:
     extra_instructions_html: <strong>Padoms:</strong> saite Tavā vietnē var būt neredzama. Svarīga daļa ir <code>rel="me"</code>, kas novērš uzdošanos vietnēs ar lietotāju izveidotu saturu. Tu pat vari lapas galvenē izmantot tagu <code>link</code>, nevis <code>a</code>, taču HTML ir jābūt pieejamam bez JavaScript izpildīšanas.
     here_is_how: Lūk, kā
-    hint_html: "<strong>Ikviens var apliecināt savu identitāti Mastodon.</strong> Balstīts uz atvērtiem tīmekļa standartiem, tagad un uz visiem laikiem bez maksas. Viss, kas Tev nepieciešams, ir personīga vietne, pēc kuras cilvēki Tevi atpazīst. Kad savā profilu sasaistīsi ar šo tīmekļvietni, mēs pārbaudīsim, vai tīmekļvietnei ir saite uz Tavu profilu, un tajā tiks parādīts redzama norāde."
+    hint_html: "<strong>Ikviens var apliecināt savu identitāti tucano.</strong> Balstīts uz atvērtiem tīmekļa standartiem, tagad un uz visiem laikiem bez maksas. Viss, kas Tev nepieciešams, ir personīga vietne, pēc kuras cilvēki Tevi atpazīst. Kad savā profilu sasaistīsi ar šo tīmekļvietni, mēs pārbaudīsim, vai tīmekļvietnei ir saite uz Tavu profilu, un tajā tiks parādīts redzama norāde."
     instructions_html: Ievieto starpliktuvē un ielīmē tālāk norādīto kodu savas tīmekļvietnes HTML! Tad pievieno savas tīmekļvietnes adresi vienā no papildu laukiem savā profila cilnē "Labot profilu" un saglabā izmaiņas!
     verification: Pārbaude
     verified_links: Tavas verifikācijas saites

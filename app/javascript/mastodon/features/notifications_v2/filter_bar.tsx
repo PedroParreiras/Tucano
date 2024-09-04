@@ -9,13 +9,13 @@ import PersonAddIcon from '@/material-icons/400-24px/person_add.svg?react';
 import RepeatIcon from '@/material-icons/400-24px/repeat.svg?react';
 import ReplyAllIcon from '@/material-icons/400-24px/reply_all.svg?react';
 import StarIcon from '@/material-icons/400-24px/star.svg?react';
-import { setNotificationsFilter } from 'mastodon/actions/notification_groups';
-import { Icon } from 'mastodon/components/icon';
+import { setNotificationsFilter } from 'tucano/actions/notification_groups';
+import { Icon } from 'tucano/components/icon';
 import {
   selectSettingsNotificationsQuickFilterActive,
   selectSettingsNotificationsQuickFilterAdvanced,
-} from 'mastodon/selectors/settings';
-import { useAppDispatch, useAppSelector } from 'mastodon/store';
+} from 'tucano/selectors/settings';
+import { useAppDispatch, useAppSelector } from 'tucano/store';
 
 const tooltips = defineMessages({
   mentions: { id: 'notifications.filter.mentions', defaultMessage: 'Mentions' },

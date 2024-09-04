@@ -39,14 +39,14 @@ body:
       required: false
   - type: input
     attributes:
-      label: Mastodon instance
-      description: The address of the Mastodon instance where you experienced the issue
-      placeholder: mastodon.social
+      label: tucano instance
+      description: The address of the tucano instance where you experienced the issue
+      placeholder: tucano.social
     validations:
       required: false
   - type: input
     attributes:
-      label: Mastodon version
+      label: tucano version
       description: |
         This is displayed at the bottom of the About page, eg. `v4.1.2+nightly-20230627`
       placeholder: v4.1.2
@@ -58,7 +58,7 @@ body:
       description: |
         Any additional technical details you may have, like logs or error traces
       value: |
-        If this is happening on your own Mastodon server, please fill out those:
+        If this is happening on your own tucano server, please fill out those:
         - Ruby version: (from `ruby --version`, eg. v3.1.2)
         - Node.js version: (from `node --version`, eg. v18.16.0)
     validations:

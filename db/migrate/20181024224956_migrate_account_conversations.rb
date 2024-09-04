@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require_relative '../../lib/mastodon/migration_warning'
+require_relative '../../lib/tucano/migration_warning'
 
 class MigrateAccountConversations < ActiveRecord::Migration[5.2]
-  include Mastodon::MigrationWarning
+  include tucano::MigrationWarning
 
   disable_ddl_transaction!
 

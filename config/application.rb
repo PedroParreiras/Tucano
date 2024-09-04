@@ -34,16 +34,16 @@ require_relative '../lib/paperclip/transcoder'
 require_relative '../lib/paperclip/type_corrector'
 require_relative '../lib/paperclip/response_with_limit_adapter'
 require_relative '../lib/terrapin/multi_pipe_extensions'
-require_relative '../lib/mastodon/snowflake'
-require_relative '../lib/mastodon/version'
-require_relative '../lib/mastodon/rack_middleware'
+require_relative '../lib/tucano/snowflake'
+require_relative '../lib/tucano/version'
+require_relative '../lib/tucano/rack_middleware'
 require_relative '../lib/public_file_server_middleware'
 require_relative '../lib/devise/strategies/two_factor_ldap_authenticatable'
 require_relative '../lib/devise/strategies/two_factor_pam_authenticatable'
 require_relative '../lib/elasticsearch/client_extensions'
 require_relative '../lib/chewy/settings_extensions'
 require_relative '../lib/chewy/index_extensions'
-require_relative '../lib/chewy/strategy/mastodon'
+require_relative '../lib/chewy/strategy/tucano'
 require_relative '../lib/chewy/strategy/bypass_with_warning'
 require_relative '../lib/webpacker/manifest_extensions'
 require_relative '../lib/webpacker/helper_extensions'
@@ -58,7 +58,7 @@ require_relative '../lib/simple_navigation/item_extensions'
 
 Bundler.require(:pam_authentication) if ENV['PAM_ENABLED'] == 'true'
 
-module Mastodon
+module tucano
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.1
@@ -94,17 +94,17 @@ module Mastodon
 
     config.middleware.use PublicFileServerMiddleware if Rails.env.local? || ENV['RAILS_SERVE_STATIC_FILES'] == 'true'
     config.middleware.use Rack::Attack
-    config.middleware.use Mastodon::RackMiddleware
+    config.middleware.use tucano::RackMiddleware
 
     initializer :deprecator do |app|
-      app.deprecators[:mastodon] = ActiveSupport::Deprecation.new('4.3', 'mastodon/mastodon')
+      app.deprecators[:tucano] = ActiveSupport::Deprecation.new('4.3', 'tucano/tucano')
     end
 
     config.before_configuration do
-      require 'mastodon/redis_configuration'
-      ::REDIS_CONFIGURATION = Mastodon::RedisConfiguration.new
+      require 'tucano/redis_configuration'
+      ::REDIS_CONFIGURATION = tucano::RedisConfiguration.new
 
-      config.x.use_vips = ENV['MASTODON_USE_LIBVIPS'] == 'true'
+      config.x.use_vips = ENV['tucano_USE_LIBVIPS'] == 'true'
 
       if config.x.use_vips
         require_relative '../lib/paperclip/vips_lazy_thumbnail'

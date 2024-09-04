@@ -1,8 +1,8 @@
 import { FormattedMessage } from 'react-intl';
 
 import BarChart4BarsIcon from '@/material-icons/400-20px/bar_chart_4_bars.svg?react';
-import { me } from 'mastodon/initial_state';
-import type { NotificationGroupPoll } from 'mastodon/models/notification_group';
+import { me } from 'tucano/initial_state';
+import type { NotificationGroupPoll } from 'tucano/models/notification_group';
 
 import { NotificationWithStatus } from './notification_with_status';
 

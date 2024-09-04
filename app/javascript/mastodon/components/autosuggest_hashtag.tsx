@@ -1,4 +1,4 @@
-import { ShortNumber } from 'mastodon/components/short_number';
+import { ShortNumber } from 'tucano/components/short_number';
 
 interface Props {
   tag: {

@@ -1,7 +1,7 @@
 import { fromJS, Map as ImmutableMap, List as ImmutableList } from 'immutable';
 
-import { blockDomainSuccess } from 'mastodon/actions/domain_blocks';
-import { timelineDelete } from 'mastodon/actions/timelines_typed';
+import { blockDomainSuccess } from 'tucano/actions/domain_blocks';
+import { timelineDelete } from 'tucano/actions/timelines_typed';
 
 import {
   authorizeFollowRequestSuccess,

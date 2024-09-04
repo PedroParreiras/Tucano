@@ -106,7 +106,7 @@ class Form::AdminSettings
     define_method(:"#{key}=") do |file|
       value = public_send(key)
       value.file = file
-    rescue Mastodon::DimensionsValidationError => e
+    rescue tucano::DimensionsValidationError => e
       errors.add(key.to_sym, e.message)
     end
   end

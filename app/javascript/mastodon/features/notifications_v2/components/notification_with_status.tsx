@@ -4,16 +4,16 @@ import classNames from 'classnames';
 
 import { HotKeys } from 'react-hotkeys';
 
-import { replyComposeById } from 'mastodon/actions/compose';
-import { toggleReblog, toggleFavourite } from 'mastodon/actions/interactions';
+import { replyComposeById } from 'tucano/actions/compose';
+import { toggleReblog, toggleFavourite } from 'tucano/actions/interactions';
 import {
   navigateToStatus,
   toggleStatusSpoilers,
-} from 'mastodon/actions/statuses';
-import type { IconProp } from 'mastodon/components/icon';
-import { Icon } from 'mastodon/components/icon';
-import Status from 'mastodon/containers/status_container';
-import { useAppSelector, useAppDispatch } from 'mastodon/store';
+} from 'tucano/actions/statuses';
+import type { IconProp } from 'tucano/components/icon';
+import { Icon } from 'tucano/components/icon';
+import Status from 'tucano/containers/status_container';
+import { useAppSelector, useAppDispatch } from 'tucano/store';
 
 import { DisplayedName } from './displayed_name';
 import type { LabelRenderer } from './notification_group_with_status';

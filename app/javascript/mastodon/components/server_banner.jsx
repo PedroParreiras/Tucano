@@ -7,12 +7,12 @@ import { Link } from 'react-router-dom';
 
 import { connect } from 'react-redux';
 
-import { fetchServer } from 'mastodon/actions/server';
-import { ServerHeroImage } from 'mastodon/components/server_hero_image';
-import { ShortNumber } from 'mastodon/components/short_number';
-import { Skeleton } from 'mastodon/components/skeleton';
-import Account from 'mastodon/containers/account_container';
-import { domain } from 'mastodon/initial_state';
+import { fetchServer } from 'tucano/actions/server';
+import { ServerHeroImage } from 'tucano/components/server_hero_image';
+import { ShortNumber } from 'tucano/components/short_number';
+import { Skeleton } from 'tucano/components/skeleton';
+import Account from 'tucano/containers/account_container';
+import { domain } from 'tucano/initial_state';
 
 const messages = defineMessages({
   aboutActiveUsers: { id: 'server_banner.about_active_users', defaultMessage: 'People using this server during the last 30 days (Monthly Active Users)' },
@@ -42,7 +42,7 @@ class ServerBanner extends PureComponent {
     return (
       <div className='server-banner'>
         <div className='server-banner__introduction'>
-          <FormattedMessage id='server_banner.is_one_of_many' defaultMessage='{domain} is one of the many independent Mastodon servers you can use to participate in the fediverse.' values={{ domain: <strong>{domain}</strong>, mastodon: <a href='https://joinmastodon.org' target='_blank'>Mastodon</a> }} />
+          <FormattedMessage id='server_banner.is_one_of_many' defaultMessage='{domain} is one of the many independent tucano servers you can use to participate in the fediverse.' values={{ domain: <strong>{domain}</strong>, tucano: <a href='https://jointucano.org' target='_blank'>tucano</a> }} />
         </div>
 
         <Link to='/about'>

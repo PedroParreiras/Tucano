@@ -305,14 +305,14 @@ RSpec.describe Form::Import do
     ]
 
     it_behaves_like 'on successful import', 'lists', 'merge', 'lists.csv', [
-      { 'acct' => 'gargron@example.com', 'list_name' => 'Mastodon project' },
-      { 'acct' => 'mastodon@example.com', 'list_name' => 'Mastodon project' },
+      { 'acct' => 'gargron@example.com', 'list_name' => 'tucano project' },
+      { 'acct' => 'tucano@example.com', 'list_name' => 'tucano project' },
       { 'acct' => 'foo@example.com', 'list_name' => 'test' },
     ]
 
     # Based on the bug report 20571 where UTF-8 encoded domains were rejecting import of their users
     #
-    # https://github.com/mastodon/mastodon/issues/20571
+    # https://github.com/tucano/tucano/issues/20571
     it_behaves_like 'on successful import', 'following', 'merge', 'utf8-followers.txt', [{ 'acct' => 'nare@թութ.հայ' }]
   end
 end

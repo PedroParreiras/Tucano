@@ -10,16 +10,16 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import DeleteIcon from '@/material-icons/400-24px/delete.svg?react';
 import MoreHorizIcon from '@/material-icons/400-24px/more_horiz.svg?react';
-import { initBlockModal } from 'mastodon/actions/blocks';
-import { initMuteModal } from 'mastodon/actions/mutes';
-import { acceptNotificationRequest, dismissNotificationRequest } from 'mastodon/actions/notifications';
-import { initReport } from 'mastodon/actions/reports';
-import { Avatar } from 'mastodon/components/avatar';
-import { CheckBox } from 'mastodon/components/check_box';
-import { IconButton } from 'mastodon/components/icon_button';
-import DropdownMenuContainer from 'mastodon/containers/dropdown_menu_container';
-import { makeGetAccount } from 'mastodon/selectors';
-import { toCappedNumber } from 'mastodon/utils/numbers';
+import { initBlockModal } from 'tucano/actions/blocks';
+import { initMuteModal } from 'tucano/actions/mutes';
+import { acceptNotificationRequest, dismissNotificationRequest } from 'tucano/actions/notifications';
+import { initReport } from 'tucano/actions/reports';
+import { Avatar } from 'tucano/components/avatar';
+import { CheckBox } from 'tucano/components/check_box';
+import { IconButton } from 'tucano/components/icon_button';
+import DropdownMenuContainer from 'tucano/containers/dropdown_menu_container';
+import { makeGetAccount } from 'tucano/selectors';
+import { toCappedNumber } from 'tucano/utils/numbers';
 
 const getAccount = makeGetAccount();
 

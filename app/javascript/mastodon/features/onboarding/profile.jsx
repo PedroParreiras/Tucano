@@ -12,14 +12,14 @@ import Toggle from 'react-toggle';
 
 import AddPhotoAlternateIcon from '@/material-icons/400-24px/add_photo_alternate.svg?react';
 import EditIcon from '@/material-icons/400-24px/edit.svg?react';
-import { updateAccount } from 'mastodon/actions/accounts';
-import { Button } from 'mastodon/components/button';
-import { ColumnBackButton } from 'mastodon/components/column_back_button';
-import { Icon } from 'mastodon/components/icon';
-import { LoadingIndicator } from 'mastodon/components/loading_indicator';
-import { me } from 'mastodon/initial_state';
-import { useAppSelector } from 'mastodon/store';
-import { unescapeHTML } from 'mastodon/utils/html';
+import { updateAccount } from 'tucano/actions/accounts';
+import { Button } from 'tucano/components/button';
+import { ColumnBackButton } from 'tucano/components/column_back_button';
+import { Icon } from 'tucano/components/icon';
+import { LoadingIndicator } from 'tucano/components/loading_indicator';
+import { me } from 'tucano/initial_state';
+import { useAppSelector } from 'tucano/store';
+import { unescapeHTML } from 'tucano/utils/html';
 
 const messages = defineMessages({
   uploadHeader: { id: 'onboarding.profile.upload_header', defaultMessage: 'Upload profile header' },
@@ -142,7 +142,7 @@ export const Profile = () => {
           <label className='app-form__toggle'>
             <div className='app-form__toggle__label'>
               <strong><FormattedMessage id='onboarding.profile.discoverable' defaultMessage='Make my profile discoverable' /></strong> <span className='recommended'><FormattedMessage id='recommended' defaultMessage='Recommended' /></span>
-              <span className='hint'><FormattedMessage id='onboarding.profile.discoverable_hint' defaultMessage='When you opt in to discoverability on Mastodon, your posts may appear in search results and trending, and your profile may be suggested to people with similar interests to you.' /></span>
+              <span className='hint'><FormattedMessage id='onboarding.profile.discoverable_hint' defaultMessage='When you opt in to discoverability on tucano, your posts may appear in search results and trending, and your profile may be suggested to people with similar interests to you.' /></span>
             </div>
 
             <div className='app-form__toggle__toggle'>

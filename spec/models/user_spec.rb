@@ -351,7 +351,7 @@ RSpec.describe User do
     around do |example|
       original = Rails.configuration.x.email_domains_allowlist
 
-      Rails.configuration.x.email_domains_allowlist = 'mastodon.space'
+      Rails.configuration.x.email_domains_allowlist = 'tucano.space'
 
       example.run
 
@@ -364,12 +364,12 @@ RSpec.describe User do
     end
 
     it 'allows a user to be created when their email is on the allowlist' do
-      user = described_class.new(email: 'foo@mastodon.space', account: account, password: password, agreement: true)
+      user = described_class.new(email: 'foo@tucano.space', account: account, password: password, agreement: true)
       expect(user).to be_valid
     end
 
     it 'does not allow a user with an email subdomain included on the top level domain allowlist to be created' do
-      user = described_class.new(email: 'foo@mastodon.space.userdomain.com', account: account, password: password, agreement: true)
+      user = described_class.new(email: 'foo@tucano.space.userdomain.com', account: account, password: password, agreement: true)
       expect(user).to_not be_valid
     end
 
@@ -381,9 +381,9 @@ RSpec.describe User do
       end
 
       it 'does not allow a user to be created with an email subdomain on the denylist even if the top domain is on the allowlist' do
-        Rails.configuration.x.email_domains_denylist = 'denylisted.mastodon.space'
+        Rails.configuration.x.email_domains_denylist = 'denylisted.tucano.space'
 
-        user = described_class.new(email: 'foo@denylisted.mastodon.space', account: account, password: password)
+        user = described_class.new(email: 'foo@denylisted.tucano.space', account: account, password: password)
         expect(user).to_not be_valid
       end
     end

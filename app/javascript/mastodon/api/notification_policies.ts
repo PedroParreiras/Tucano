@@ -1,5 +1,5 @@
-import { apiRequestGet, apiRequestPut } from 'mastodon/api';
-import type { NotificationPolicyJSON } from 'mastodon/api_types/notification_policies';
+import { apiRequestGet, apiRequestPut } from 'tucano/api';
+import type { NotificationPolicyJSON } from 'tucano/api_types/notification_policies';
 
 export const apiGetNotificationPolicy = () =>
   apiRequestGet<NotificationPolicyJSON>('v2/notifications/policy');

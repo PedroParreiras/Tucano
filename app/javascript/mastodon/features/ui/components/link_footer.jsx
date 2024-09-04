@@ -7,10 +7,10 @@ import { Link } from 'react-router-dom';
 
 import { connect } from 'react-redux';
 
-import { openModal } from 'mastodon/actions/modal';
-import { identityContextPropShape, withIdentity } from 'mastodon/identity_context';
-import { domain, version, source_url, statusPageUrl, profile_directory as profileDirectory } from 'mastodon/initial_state';
-import { PERMISSION_INVITE_USERS } from 'mastodon/permissions';
+import { openModal } from 'tucano/actions/modal';
+import { identityContextPropShape, withIdentity } from 'tucano/identity_context';
+import { domain, version, source_url, statusPageUrl, profile_directory as profileDirectory } from 'tucano/initial_state';
+import { PERMISSION_INVITE_USERS } from 'tucano/permissions';
 
 const mapDispatchToProps = (dispatch) => ({
   onLogout () {
@@ -74,11 +74,11 @@ class LinkFooter extends PureComponent {
         </p>
 
         <p>
-          <strong>Mastodon</strong>:
+          <strong>tucano</strong>:
           {' '}
-          <a href='https://joinmastodon.org' target='_blank'><FormattedMessage id='footer.about' defaultMessage='About' /></a>
+          <a href='https://jointucano.org' target='_blank'><FormattedMessage id='footer.about' defaultMessage='About' /></a>
           {DividingCircle}
-          <a href='https://joinmastodon.org/apps' target='_blank'><FormattedMessage id='footer.get_app' defaultMessage='Get the app' /></a>
+          <a href='https://jointucano.org/apps' target='_blank'><FormattedMessage id='footer.get_app' defaultMessage='Get the app' /></a>
           {DividingCircle}
           <Link to='/keyboard-shortcuts'><FormattedMessage id='footer.keyboard_shortcuts' defaultMessage='Keyboard shortcuts' /></Link>
           {DividingCircle}

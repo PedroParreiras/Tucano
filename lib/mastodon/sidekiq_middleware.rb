@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-class Mastodon::SidekiqMiddleware
+class tucano::SidekiqMiddleware
   BACKTRACE_LIMIT = 3
 
   def call(*, &block)
-    Chewy.strategy(:mastodon, &block)
-  rescue Mastodon::HostValidationError
+    Chewy.strategy(:tucano, &block)
+  rescue tucano::HostValidationError
     # Do not retry
   rescue => e
     clean_up_elasticsearch_connections!

@@ -10,10 +10,10 @@ import ImmutablePropTypes from 'react-immutable-proptypes';
 import { connect } from 'react-redux';
 
 import ChevronRightIcon from '@/material-icons/400-24px/chevron_right.svg?react';
-import { Icon }  from 'mastodon/components/icon';
-import PollContainer from 'mastodon/containers/poll_container';
-import { identityContextPropShape, withIdentity } from 'mastodon/identity_context';
-import { autoPlayGif, languages as preloadedLanguages } from 'mastodon/initial_state';
+import { Icon }  from 'tucano/components/icon';
+import PollContainer from 'tucano/containers/poll_container';
+import { identityContextPropShape, withIdentity } from 'tucano/identity_context';
+import { autoPlayGif, languages as preloadedLanguages } from 'tucano/initial_state';
 
 const MAX_HEIGHT = 706; // 22px * 32 (+ 2px padding at the top)
 

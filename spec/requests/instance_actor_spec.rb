@@ -24,7 +24,7 @@ RSpec.describe 'Instance actor endpoint' do
           .to include(
             id: instance_actor_url,
             type: 'Application',
-            preferredUsername: 'mastodon.internal',
+            preferredUsername: 'tucano.internal',
             inbox: instance_actor_inbox_url,
             outbox: instance_actor_outbox_url,
             publicKey: include(

@@ -47,7 +47,7 @@ RSpec.describe ResolveURLService do
           account.follow!(poster)
         end
 
-        context 'when the status uses Mastodon-style URLs' do
+        context 'when the status uses tucano-style URLs' do
           let(:url) { 'https://example.com/@foo/42' }
           let(:uri) { 'https://example.com/users/foo/statuses/42' }
 
@@ -71,7 +71,7 @@ RSpec.describe ResolveURLService do
       end
 
       context 'when the account does not follow the poster' do
-        context 'when the status uses Mastodon-style URLs' do
+        context 'when the status uses tucano-style URLs' do
           let(:url) { 'https://example.com/@foo/42' }
           let(:uri) { 'https://example.com/users/foo/statuses/42' }
 

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class Mastodon::RedisConfiguration
+class tucano::RedisConfiguration
   def base
     @base ||= {
       url: setup_base_redis_url,
@@ -42,7 +42,7 @@ class Mastodon::RedisConfiguration
   end
 
   def base_namespace
-    return "mastodon_test#{ENV.fetch('TEST_ENV_NUMBER', nil)}" if Rails.env.test?
+    return "tucano_test#{ENV.fetch('TEST_ENV_NUMBER', nil)}" if Rails.env.test?
 
     namespace
   end

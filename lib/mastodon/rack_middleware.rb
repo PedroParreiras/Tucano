@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class Mastodon::RackMiddleware
+class tucano::RackMiddleware
   def initialize(app)
     @app = app
   end

@@ -9,7 +9,7 @@ import { connect } from 'react-redux';
 
 import CancelIcon from '@/material-icons/400-24px/cancel.svg?react';
 import SearchIcon from '@/material-icons/400-24px/search.svg?react';
-import { Icon }  from 'mastodon/components/icon';
+import { Icon }  from 'tucano/components/icon';
 
 import { fetchListSuggestions, clearListSuggestions, changeListSuggestions } from '../../../actions/lists';
 

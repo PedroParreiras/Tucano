@@ -2,8 +2,8 @@ import { useCallback } from 'react';
 
 import { useHistory } from 'react-router-dom';
 
-import { openURL } from 'mastodon/actions/search';
-import { useAppDispatch } from 'mastodon/store';
+import { openURL } from 'tucano/actions/search';
+import { useAppDispatch } from 'tucano/store';
 
 const isMentionClick = (element: HTMLAnchorElement) =>
   element.classList.contains('mention');

@@ -5,8 +5,8 @@ import { FormattedMessage } from 'react-intl';
 
 import classNames from 'classnames';
 
-import api from 'mastodon/api';
-import { Hashtag } from 'mastodon/components/hashtag';
+import api from 'tucano/api';
+import { Hashtag } from 'tucano/components/hashtag';
 
 export default class Trends extends PureComponent {
 

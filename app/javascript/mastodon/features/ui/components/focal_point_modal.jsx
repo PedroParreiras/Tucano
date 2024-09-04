@@ -17,15 +17,15 @@ import tesseractWorkerPath from 'tesseract.js/dist/worker.min.js';
 import tesseractCorePath from 'tesseract.js-core/tesseract-core.wasm.js';
 
 import CloseIcon from '@/material-icons/400-24px/close.svg?react';
-import { Button } from 'mastodon/components/button';
-import { GIFV } from 'mastodon/components/gifv';
-import { IconButton } from 'mastodon/components/icon_button';
-import Audio from 'mastodon/features/audio';
-import { CharacterCounter } from 'mastodon/features/compose/components/character_counter';
-import { UploadProgress } from 'mastodon/features/compose/components/upload_progress';
-import { Tesseract as fetchTesseract } from 'mastodon/features/ui/util/async-components';
-import { me } from 'mastodon/initial_state';
-import { assetHost } from 'mastodon/utils/config';
+import { Button } from 'tucano/components/button';
+import { GIFV } from 'tucano/components/gifv';
+import { IconButton } from 'tucano/components/icon_button';
+import Audio from 'tucano/features/audio';
+import { CharacterCounter } from 'tucano/features/compose/components/character_counter';
+import { UploadProgress } from 'tucano/features/compose/components/upload_progress';
+import { Tesseract as fetchTesseract } from 'tucano/features/ui/util/async-components';
+import { me } from 'tucano/initial_state';
+import { assetHost } from 'tucano/utils/config';
 
 import { changeUploadCompose, uploadThumbnail, onChangeMediaDescription, onChangeMediaFocus } from '../../../actions/compose';
 import Video, { getPointerPosition } from '../../video';

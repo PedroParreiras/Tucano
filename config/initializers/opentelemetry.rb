@@ -56,15 +56,15 @@ if ENV.keys.any? { |name| name.match?(/OTEL_.*_ENDPOINT/) }
       },
     })
 
-    prefix = ENV.fetch('OTEL_SERVICE_NAME_PREFIX', 'mastodon')
+    prefix = ENV.fetch('OTEL_SERVICE_NAME_PREFIX', 'tucano')
 
     c.service_name =  case $PROGRAM_NAME
                       when /puma/ then "#{prefix}/web"
                       else
                         "#{prefix}/#{$PROGRAM_NAME.split('/').last}"
                       end
-    c.service_version = Mastodon::Version.to_s
+    c.service_version = tucano::Version.to_s
   end
 end
 
-MastodonOTELTracer = OpenTelemetry.tracer_provider.tracer('mastodon')
+tucanoOTELTracer = OpenTelemetry.tracer_provider.tracer('tucano')

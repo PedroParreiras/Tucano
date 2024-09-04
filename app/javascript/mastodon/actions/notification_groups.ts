@@ -3,26 +3,26 @@ import { createAction } from '@reduxjs/toolkit';
 import {
   apiClearNotifications,
   apiFetchNotifications,
-} from 'mastodon/api/notifications';
-import type { ApiAccountJSON } from 'mastodon/api_types/accounts';
+} from 'tucano/api/notifications';
+import type { ApiAccountJSON } from 'tucano/api_types/accounts';
 import type {
   ApiNotificationGroupJSON,
   ApiNotificationJSON,
-} from 'mastodon/api_types/notifications';
-import { allNotificationTypes } from 'mastodon/api_types/notifications';
-import type { ApiStatusJSON } from 'mastodon/api_types/statuses';
-import { usePendingItems } from 'mastodon/initial_state';
-import type { NotificationGap } from 'mastodon/reducers/notification_groups';
+} from 'tucano/api_types/notifications';
+import { allNotificationTypes } from 'tucano/api_types/notifications';
+import type { ApiStatusJSON } from 'tucano/api_types/statuses';
+import { usePendingItems } from 'tucano/initial_state';
+import type { NotificationGap } from 'tucano/reducers/notification_groups';
 import {
   selectSettingsNotificationsExcludedTypes,
   selectSettingsNotificationsQuickFilterActive,
   selectSettingsNotificationsShows,
-} from 'mastodon/selectors/settings';
-import type { AppDispatch } from 'mastodon/store';
+} from 'tucano/selectors/settings';
+import type { AppDispatch } from 'tucano/store';
 import {
   createAppAsyncThunk,
   createDataLoadingThunk,
-} from 'mastodon/store/typed_functions';
+} from 'tucano/store/typed_functions';
 
 import { importFetchedAccounts, importFetchedStatuses } from './importer';
 import { NOTIFICATIONS_FILTER_SET } from './notifications';

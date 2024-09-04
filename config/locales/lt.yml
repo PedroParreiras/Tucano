@@ -1,10 +1,10 @@
 ---
 lt:
   about:
-    about_mastodon_html: 'Ateities socialinis tinklas: jokių reklamų, jokių įmonių sekimo, etiškas dizainas ir decentralizacija! Turėk savo duomenis su Mastodon.'
+    about_tucano_html: 'Ateities socialinis tinklas: jokių reklamų, jokių įmonių sekimo, etiškas dizainas ir decentralizacija! Turėk savo duomenis su tucano.'
     contact_missing: Nenustatyta
     contact_unavailable: Nėra
-    hosted_on: Mastodon talpinamas %{domain}
+    hosted_on: tucano talpinamas %{domain}
     title: Apie
   accounts:
     follow: Sekti
@@ -587,7 +587,7 @@ lt:
       elasticsearch_health_yellow:
         message_html: Elasticsearch klasteris yra nesveikas (geltona būsena), galbūt norėsi išsiaiškinti priežastį
       elasticsearch_preset:
-        message_html: Tavo Elasticsearch klasteris turi daugiau nei vieną mazgą, bet Mastodon nėra sukonfigūruotas juos naudoti.
+        message_html: Tavo Elasticsearch klasteris turi daugiau nei vieną mazgą, bet tucano nėra sukonfigūruotas juos naudoti.
       elasticsearch_preset_single_node:
         action: Žiūrėti dokumentaciją
         message_html: Tavo Elasticsearch klasteris turi tik vieną mazgą, <code>ES_PRESET</code> turėtų būti nustatyta į <code>single_node_cluster</code>.
@@ -682,7 +682,7 @@ lt:
     webhooks:
       add_new: Pridėti galutinį tašką
       delete: Ištrinti
-      description_html: "<strong>Webhook</strong> leidžia Mastodon siųsti <strong>realaus laiko pranešimus</strong> apie pasirinktus įvykius į tavo programą, kad programa galėtų <strong>automatiškai paleisti reakcijas</strong>."
+      description_html: "<strong>Webhook</strong> leidžia tucano siųsti <strong>realaus laiko pranešimus</strong> apie pasirinktus įvykius į tavo programą, kad programa galėtų <strong>automatiškai paleisti reakcijas</strong>."
       disable: Išjungti
       disabled: Išjungta
       edit: Redaguoti galutinį tašką
@@ -717,7 +717,7 @@ lt:
     confirmation_dialogs: Patvirtinimo dialogai
     discovery: Atradimas
     localization:
-      body: Mastodon verčia savanoriai.
+      body: tucano verčia savanoriai.
       guide_link_text: Visi gali prisidėti.
     sensitive_content: Jautrus turinys
   application_mailer:
@@ -748,9 +748,9 @@ lt:
     delete_account: Ištrinti paskyrą
     delete_account_html: Jei nori ištrinti savo paskyrą, gali <a href="%{path}">tęsti čia</a>. Tavęs bus paprašyta patvirtinimo.
     description:
-      prefix_invited_by_user: "@%{name} kviečia prisijungti prie šio Mastodon serverio!"
-      prefix_sign_up: Užsiregistruok sistemoje Mastodon šiandien!
-      suffix: Su paskyra galėsi sekti žmones, skelbti naujienas ir keistis žinutėmis su bet kurio Mastodon serverio naudotojais ir dar daugiau!
+      prefix_invited_by_user: "@%{name} kviečia prisijungti prie šio tucano serverio!"
+      prefix_sign_up: Užsiregistruok sistemoje tucano šiandien!
+      suffix: Su paskyra galėsi sekti žmones, skelbti naujienas ir keistis žinutėmis su bet kurio tucano serverio naudotojais ir dar daugiau!
     didnt_get_confirmation: Negavai patvirtinimo nuorodos?
     dont_have_your_security_key: Neturi saugumo rakto?
     forgot_password: Pamiršai slaptažodį?
@@ -840,7 +840,7 @@ lt:
     '500':
       content: Atsiprašome, bet kažkas nutiko ne taip mūsų pusėje.
       title: Netinkamas puslapis
-    noscript_html: Kad naudotumėtės Mastodon web aplikacija, prašome įsijungti JavaScript. Alternatyviai, pabandykite viena iš <a href="%{apps_path}">vietinių aplikacijų</a> Mastodon savo platformai.
+    noscript_html: Kad naudotumėtės tucano web aplikacija, prašome įsijungti JavaScript. Alternatyviai, pabandykite viena iš <a href="%{apps_path}">vietinių aplikacijų</a> tucano savo platformai.
   exports:
     archive_takeout:
       date: Data
@@ -937,7 +937,7 @@ lt:
     title: Tapatybės nustatymo istorija
   mail_subscriptions:
     unsubscribe:
-      success_html: Daugiau negausi %{type} „Mastodon“ domene %{domain} į savo el. paštą %{email}.
+      success_html: Daugiau negausi %{type} „tucano“ domene %{domain} į savo el. paštą %{email}.
   media_attachments:
     validations:
       images_and_video: Negalima pridėti video prie statuso, kuris jau turi nuotrauką
@@ -997,13 +997,13 @@ lt:
     posting_defaults: Skelbimo numatytosios nuostatos
     public_timelines: Viešieji laiko skalės
   privacy:
-    hint_html: "<strong>Tikrink, kaip nori, kad tavo profilis ir įrašai būtų randami.</strong> Įjungus įvairias Mastodon funkcijas, jos gali padėti pasiekti platesnę auditoriją. Akimirką peržiūrėk šiuos nustatymus, kad įsitikintum, jog jie atitinka tavo naudojimo būdą."
+    hint_html: "<strong>Tikrink, kaip nori, kad tavo profilis ir įrašai būtų randami.</strong> Įjungus įvairias tucano funkcijas, jos gali padėti pasiekti platesnę auditoriją. Akimirką peržiūrėk šiuos nustatymus, kad įsitikintum, jog jie atitinka tavo naudojimo būdą."
     privacy: Privatumas
     privacy_hint_html: Valdyk, kiek informacijos norėtum atskleisti kitų labui. Žmonės atranda įdomių profilių ir šaunių programėlių, naršydami kitų žmonių sekamus profilius ir žiūrėdami, iš kokių programėlių jie skelbia įrašus, bet tu galbūt norėsi tai slėpti.
     reach: Pasiekiamumas
     reach_hint_html: Valdyk, ar norėtum, kad tave atrastų ir sektų nauji žmonės. Ar nori, kad įrašai būtų rodomi Naršyti ekrane? Ar nori, kad kiti žmonės tave matytų savo sekimo rekomendacijose? Ar nori automatiškai priimti visus naujus sekėjus, ar detaliai valdyti kiekvieną iš jų?
     search: Paieška
-    search_hint_html: Valdyk, kaip norėtum būti surastas. Ar nori, kad žmonės tave rastų pagal tai, apie ką viešai paskelbi? Ar nori, kad ne Mastodon žmonės, ieškantys profilio internete, rastų tavo profilį? Atmink, kad visiško pašalinimo iš visų paieškos variklių viešai skelbiamai informacijai užtikrinti negalima.
+    search_hint_html: Valdyk, kaip norėtum būti surastas. Ar nori, kad žmonės tave rastų pagal tai, apie ką viešai paskelbi? Ar nori, kad ne tucano žmonės, ieškantys profilio internete, rastų tavo profilį? Atmink, kad visiško pašalinimo iš visų paieškos variklių viešai skelbiamai informacijai užtikrinti negalima.
     title: Privatumas ir pasiekiamumas
   privacy_policy:
     title: Privatumo politika
@@ -1037,7 +1037,7 @@ lt:
     current_session: Dabartinis seansas
     date: Data
     description: "%{browser} ant %{platform}"
-    explanation: Čia rodomos web naršyklės prijungtos prie Jūsų Mastodon paskyros.
+    explanation: Čia rodomos web naršyklės prijungtos prie Jūsų tucano paskyros.
     ip: IP
     platforms:
       adobe_air: Adobe Air
@@ -1063,7 +1063,7 @@ lt:
     aliases: Paskyros pseudonimai
     appearance: Išvaizda
     authorized_apps: Leidžiamos programėlės
-    back: Grįžti į Mastodon
+    back: Grįžti į tucano
     delete: Paskyros trynimas
     development: Kūrimas
     edit_profile: Redaguoti profilį
@@ -1124,9 +1124,9 @@ lt:
   stream_entries:
     sensitive_content: Jautrus turinys
   themes:
-    contrast: Mastodon (didelis kontrastas)
-    default: Mastodon (tamsi)
-    mastodon-light: Mastodon (šviesi)
+    contrast: tucano (didelis kontrastas)
+    default: tucano (tamsi)
+    tucano-light: tucano (šviesi)
     system: Automatinis (naudoti sistemos temą)
   two_factor_authentication:
     add: Pridėti
@@ -1148,7 +1148,7 @@ lt:
     appeal_rejected:
       subtitle: Tavo apeliacija buvo atmesta.
     backup_ready:
-      explanation: Prašai sukurti pilną Mastodon paskyros atsarginę kopiją.
+      explanation: Prašai sukurti pilną tucano paskyros atsarginę kopiją.
       extra: Jį jau galima atsisiųsti!
       subject: Jūsų archyvas paruoštas parsisiuntimui
       title: Archyvas išimtas
@@ -1177,7 +1177,7 @@ lt:
       apps_android_action: Gauti per Google Play
       apps_ios_action: Atsisiųsti per App Store
       apps_step: Atsisiųsk oficialias programėles.
-      apps_title: Mastodon programėlės
+      apps_title: tucano programėlės
       checklist_subtitle: 'Pradėkime pažintį su šia nauja socialine sritimi:'
       checklist_title: Pasveikinimo sąrašas
       edit_profile_action: Suasmeninti
@@ -1185,16 +1185,16 @@ lt:
       edit_profile_title: Suasmenink savo profilį
       explanation: Štai keletas patarimų, kaip pradėti
       feature_action: Sužinoti daugiau
-      feature_audience: Mastodon suteikia unikalią galimybę valdyti savo auditoriją be tarpininkų. Tavo infrastruktūroje įdiegtas Mastodon leidžia sekti ir būti sekamam iš bet kurio kito Mastodon serverio internete ir yra kontroliuojamas tik tavęs.
+      feature_audience: tucano suteikia unikalią galimybę valdyti savo auditoriją be tarpininkų. Tavo infrastruktūroje įdiegtas tucano leidžia sekti ir būti sekamam iš bet kurio kito tucano serverio internete ir yra kontroliuojamas tik tavęs.
       feature_audience_title: Užtikrintai kurk savo auditoriją
-      feature_control: Tu geriausiai žinai, ką nori matyti savo pagrindiniame sraute. Jokių algoritmų ar reklamų, kurios gaištų tavo laiką. Iš vienos paskyros sek bet kurį asmenį bet kuriame Mastodon serveryje, gauk jo įrašus chronologine tvarka ir padaryk savo interneto kampelį šiek tiek panašesnį į save.
+      feature_control: Tu geriausiai žinai, ką nori matyti savo pagrindiniame sraute. Jokių algoritmų ar reklamų, kurios gaištų tavo laiką. Iš vienos paskyros sek bet kurį asmenį bet kuriame tucano serveryje, gauk jo įrašus chronologine tvarka ir padaryk savo interneto kampelį šiek tiek panašesnį į save.
       feature_control_title: Kontroliuok savo laiko skalę
-      feature_creativity: Mastodon palaiko garso, vaizdo įrašus ir paveikslėlių įrašus, prieinamumus aprašymus, apklausas, turinio įspėjimus, animuotus avatarus, pasirinktinius jaustukus, miniatiūrų apkarpymo valdymą ir dar daugiau, kad galėtum išreikšti save internete. Nesvarbu, ar publikuoji savo kūrybą, muziką, ar tinklalaidę, Mastodon tau padės.
+      feature_creativity: tucano palaiko garso, vaizdo įrašus ir paveikslėlių įrašus, prieinamumus aprašymus, apklausas, turinio įspėjimus, animuotus avatarus, pasirinktinius jaustukus, miniatiūrų apkarpymo valdymą ir dar daugiau, kad galėtum išreikšti save internete. Nesvarbu, ar publikuoji savo kūrybą, muziką, ar tinklalaidę, tucano tau padės.
       feature_creativity_title: Neprilygstamas kūrybiškumas
-      feature_moderation: Mastodon grąžina sprendimų priėmimą į tavo rankas. Kiekvienas serveris kuria savo taisykles ir nuostatus, kurie yra įgyvendinami vietoje, o ne iš viršaus į apačią, kaip įmonių socialinėje medijoje, todėl ši sistema lanksčiausiai reaguoja į skirtingų žmonių grupių poreikius. Prisijunk prie serverio su taisyklėmis, su kuriomis sutinki, arba talpink savo serverį.
+      feature_moderation: tucano grąžina sprendimų priėmimą į tavo rankas. Kiekvienas serveris kuria savo taisykles ir nuostatus, kurie yra įgyvendinami vietoje, o ne iš viršaus į apačią, kaip įmonių socialinėje medijoje, todėl ši sistema lanksčiausiai reaguoja į skirtingų žmonių grupių poreikius. Prisijunk prie serverio su taisyklėmis, su kuriomis sutinki, arba talpink savo serverį.
       feature_moderation_title: Prižiūrėjimas taip, kaip turėtų būti
       follow_action: Sekti
-      follow_step: Sekti įdomius žmones – tai, kas yra Mastodon.
+      follow_step: Sekti įdomius žmones – tai, kas yra tucano.
       follow_title: Suasmenink savo pagrindinį srautą
       follows_subtitle: Sek gerai žinomas paskyras.
       follows_title: Ką sekti
@@ -1206,10 +1206,10 @@ lt:
       post_step: Sakyk labas pasauliui tekstu, nuotraukomis, vaizdo įrašais arba apklausomis.
       post_title: Sukūrk savo pirmąjį įrašą
       share_action: Bendrinti
-      share_step: Leisk draugams sužinoti, kaip tave rasti Mastodon.
-      share_title: Bendrink savo Mastodon profilį
+      share_step: Leisk draugams sužinoti, kaip tave rasti tucano.
+      share_title: Bendrink savo tucano profilį
       sign_in_action: Prisijungti
-      subject: Sveiki atvykę į Mastodon
+      subject: Sveiki atvykę į tucano
       title: Sveiki atvykę, %{name}!
   users:
     follow_limit_reached: Negali sekti daugiau nei %{limit} žmonių
@@ -1222,7 +1222,7 @@ lt:
   verification:
     extra_instructions_html: <strong>Patarimas:</strong> nuoroda tavo svetainėje gali būti nematoma. Svarbi dalis – tai, kad <code>rel="me"</code> neleidžia apsimesti interneto svetainėse, kuriose yra naudotojų sukurto turinio. Vietoj to gali naudoti net <code>nuorodą</code> puslapio antraštėje esančią žymę <code>a</code>, tačiau HTML turi būti pasiekiamas nevykdant JavaScript.
     here_is_how: Štai kaip
-    hint_html: "<strong>Savo tapatybės patvirtinimas Mastodon skirtas visiems.</strong> Remiantis atviraisiais žiniatinklio standartais, dabar ir visam laikui nemokamas. Viskas, ko tau reikia, yra asmeninė svetainė, pagal kurią žmonės tave atpažįsta. Kai iš savo profilio pateiksi nuorodą į šią svetainę, patikrinsime, ar svetainėje yra nuoroda į tavo profilį, ir parodysime vizualinį indikatorių."
+    hint_html: "<strong>Savo tapatybės patvirtinimas tucano skirtas visiems.</strong> Remiantis atviraisiais žiniatinklio standartais, dabar ir visam laikui nemokamas. Viskas, ko tau reikia, yra asmeninė svetainė, pagal kurią žmonės tave atpažįsta. Kai iš savo profilio pateiksi nuorodą į šią svetainę, patikrinsime, ar svetainėje yra nuoroda į tavo profilį, ir parodysime vizualinį indikatorių."
     instructions_html: Nukopijuok ir įklijuok toliau pateiktą kodą į savo svetainės HTML. Tada į vieną iš papildomų profilio laukų skirtuke Redaguoti profilį įrašyk savo svetainės adresą ir išsaugok pakeitimus.
     verification: Patvirtinimas
     verified_links: Tavo patikrintos nuorodos

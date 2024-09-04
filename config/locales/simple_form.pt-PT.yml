@@ -3,10 +3,10 @@ pt-PT:
   simple_form:
     hints:
       account:
-        discoverable: As suas publicações e perfil públicos podem ser destacados ou recomendados em várias áreas do Mastodon e o seu perfil pode ser sugerido a outros utilizadores.
+        discoverable: As suas publicações e perfil públicos podem ser destacados ou recomendados em várias áreas do tucano e o seu perfil pode ser sugerido a outros utilizadores.
         display_name: O seu nome completo ou o seu nome divertido.
         fields: A sua página inicial, os seus pronomes, idade e tudo o que quiser.
-        indexable: As suas mensagens públicas podem aparecer nos resultados da pesquisa no Mastodon. Independentemente disso, as pessoas que interagiram com as suas publicações podem ser capazes de as pesquisar.
+        indexable: As suas mensagens públicas podem aparecer nos resultados da pesquisa no tucano. Independentemente disso, as pessoas que interagiram com as suas publicações podem ser capazes de as pesquisar.
         note: 'Pode @mencionar outras pessoas ou #hashtags.'
         show_collections: As pessoas podem navegar pelas listas das pessoas que segue e dos seus seguidores. Independentemente disso, as pessoas que segue verão que você as segue.
         unlocked: As pessoas podem segui-lo/a sem pedir a sua aprovação. Desmarque se quiser rever os pedidos para seguir e escolher se aceita ou rejeita os novos seguidores.
@@ -54,7 +54,7 @@ pt-PT:
         phrase: Será correspondido independentemente da capitalização ou do aviso de conteúdo duma publicação
         scopes: Quais as API a que será concedido acesso. Se escolher uma abrangência de nível superior, não precisará de as seleccionar individualmente.
         setting_aggregate_reblogs: Não mostrar novos reforços de publicações recentemente reforçadas (só afecta publicações acabadas de reforçar)
-        setting_always_send_emails: Normalmente as notificações por e-mail não serão enviadas quando estiver a utilizar ativamente o Mastodon
+        setting_always_send_emails: Normalmente as notificações por e-mail não serão enviadas quando estiver a utilizar ativamente o tucano
         setting_default_sensitive: Media problemática oculta por padrão, pode ser revelada com um clique
         setting_display_media_default: Esconder media marcada como problemática
         setting_display_media_hide_all: Esconder sempre toda a media
@@ -82,15 +82,15 @@ pt-PT:
         bootstrap_timeline_accounts: Estas contas serão destacadas no topo das recomendações aos novos utilizadores.
         closed_registrations_message: Apresentado quando as inscrições estiverem encerradas
         content_cache_retention_period: Todas as publicações de outros servidores (incluindo boosts e respostas) serão eliminadas após o número de dias especificado, independentemente de qualquer interação do utilizador local com essas publicações. Isto inclui publicações em que um utilizador local as tenha marcado como favoritas ou adicionado aos items salvos. As menções privadas entre utilizadores de instâncias diferentes também se perderão e serão impossíveis de restaurar. A utilização desta definição destina-se a instâncias para fins especiais e quebra muitas expectativas dos utilizadores quando implementada para utilização geral.
-        custom_css: Pode aplicar estilos personalizados na versão web do Mastodon.
-        favicon: WEBP, PNG, GIF ou JPG. Substitui o ícone de favorito padrão do Mastodon por um ícone personalizado.
+        custom_css: Pode aplicar estilos personalizados na versão web do tucano.
+        favicon: WEBP, PNG, GIF ou JPG. Substitui o ícone de favorito padrão do tucano por um ícone personalizado.
         mascot: Sobrepõe-se à ilustração na interface web avançada.
         media_cache_retention_period: Os ficheiros multimédia de publicações feitas por utilizadores remotos são armazenados em cache no seu servidor. Quando definido para um valor positivo, os ficheiros multimédia serão eliminados após o número de dias especificado. Se os ficheiros multimédia forem solicitados depois de terem sido eliminados, serão transferidos novamente, se o conteúdo de origem ainda estiver disponível. Devido a restrições sobre a frequência com que os cartões de pré-visualização de links pesquisam sites de terceiros, recomenda-se que este valor seja definido para, pelo menos, 14 dias, ou os cartões de pré-visualização de links não serão atualizados a pedido antes desse período.
         peers_api_enabled: Uma lista de nomes de domínio que este servidor encontrou no fediverso. Nenhum dado é incluído aqui sobre se você federa com um determinado servidor, apenas que o seu servidor o conhece. Este serviço é utilizado por serviços que recolhem estatísticas na federação, em termos gerais.
         profile_directory: O diretório de perfis lista todos os utilizadores que optaram por ter a sua conta a ser sugerida a outros.
         require_invite_text: Quando as incrições exigirem aprovação manual, faça o texto "Por que se quer juntar a nós?" da solicitação de convite ser obrigatório, em vez de opcional
         site_contact_email: Como as pessoas podem entrar em contacto consigo para obter informações legais ou de apoio técnico.
-        site_contact_username: Como as pessoas conseguem chegar até si no Mastodon.
+        site_contact_username: Como as pessoas conseguem chegar até si no tucano.
         site_extended_description: Qualquer informação adicional que possa ser útil para os visitantes e os seus utilizadores. Pode ser estruturada com a sintaxe Markdown.
         site_short_description: Uma breve descrição para ajudar a identificar de forma única o seu servidor. Quem o está a gerir, e a quem se destina?
         site_terms: Use a sua própria política de privacidade ou deixe em branco para usar a política padrão. Pode ser estruturada com a sintaxe Markdown.
@@ -105,7 +105,7 @@ pt-PT:
       form_challenge:
         current_password: Está a entrar numa área segura
       imports:
-        data: Ficheiro CSV exportado doutra instância do Mastodon
+        data: Ficheiro CSV exportado doutra instância do tucano
       invite_request:
         text: Isto vai ajudar-nos a analisar o seu pedido
       ip_block:
@@ -300,7 +300,7 @@ pt-PT:
         software_updates:
           all: Notificar todas as atualizações
           critical: Notificar apenas atualizações críticas
-          label: Está disponível uma nova versão do Mastodon
+          label: Está disponível uma nova versão do tucano
           none: Nunca notificar atualizações (não recomendado)
           patch: Notificar sobre atualizações de correções de problemas
         trending_tag: Uma nova publicação em alta requer avaliação

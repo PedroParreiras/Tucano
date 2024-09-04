@@ -8,11 +8,11 @@ import { withRouter } from 'react-router-dom';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import { connect } from 'react-redux';
 
-import { fetchTrendingHashtags } from 'mastodon/actions/trends';
-import { DismissableBanner } from 'mastodon/components/dismissable_banner';
-import { ImmutableHashtag as Hashtag } from 'mastodon/components/hashtag';
-import { LoadingIndicator } from 'mastodon/components/loading_indicator';
-import { WithRouterPropTypes } from 'mastodon/utils/react_router';
+import { fetchTrendingHashtags } from 'tucano/actions/trends';
+import { DismissableBanner } from 'tucano/components/dismissable_banner';
+import { ImmutableHashtag as Hashtag } from 'tucano/components/hashtag';
+import { LoadingIndicator } from 'tucano/components/loading_indicator';
+import { WithRouterPropTypes } from 'tucano/utils/react_router';
 
 const mapStateToProps = state => ({
   hashtags: state.getIn(['trends', 'tags', 'items']),

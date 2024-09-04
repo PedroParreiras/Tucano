@@ -5,9 +5,9 @@ import { FormattedMessage, injectIntl } from 'react-intl';
 
 import { connect } from 'react-redux';
 
-import { openModal } from 'mastodon/actions/modal';
-import InlineAccount from 'mastodon/components/inline_account';
-import { RelativeTimestamp } from 'mastodon/components/relative_timestamp';
+import { openModal } from 'tucano/actions/modal';
+import InlineAccount from 'tucano/components/inline_account';
+import { RelativeTimestamp } from 'tucano/components/relative_timestamp';
 
 import DropdownMenu from './containers/dropdown_menu_container';
 

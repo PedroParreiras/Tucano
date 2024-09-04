@@ -2,7 +2,7 @@
 
 require_relative 'base'
 
-module Mastodon::CLI
+module tucano::CLI
   class Media < Base
     include ActionView::Helpers::NumberHelper
 
@@ -258,7 +258,7 @@ module Mastodon::CLI
         fail_with_message 'Specify the source of media attachments'
       end
 
-      scope = scope.where('media_attachments.id > ?', Mastodon::Snowflake.id_at(options[:days].days.ago, with_random: false)) if options[:days].present?
+      scope = scope.where('media_attachments.id > ?', tucano::Snowflake.id_at(options[:days].days.ago, with_random: false)) if options[:days].present?
 
       processed, aggregate = parallelize_with_progress(scope) do |media_attachment|
         next if media_attachment.remote_url.blank? || (!options[:force] && media_attachment.file_file_name.present?)
@@ -276,7 +276,7 @@ module Mastodon::CLI
       say("Downloaded #{processed} media attachments (approx. #{number_to_human_size(aggregate)})#{dry_run_mode_suffix}", :green, true)
     end
 
-    desc 'usage', 'Calculate disk space consumed by Mastodon'
+    desc 'usage', 'Calculate disk space consumed by tucano'
     def usage
       say("Attachments:\t#{number_to_human_size(media_attachment_storage_size)} (#{number_to_human_size(local_media_attachment_storage_size)} local)")
       say("Custom emoji:\t#{number_to_human_size(CustomEmoji.sum(:image_file_size))} (#{number_to_human_size(CustomEmoji.local.sum(:image_file_size))} local)")

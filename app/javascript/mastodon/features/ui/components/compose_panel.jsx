@@ -3,11 +3,11 @@ import { PureComponent } from 'react';
 
 import { connect } from 'react-redux';
 
-import { changeComposing, mountCompose, unmountCompose } from 'mastodon/actions/compose';
-import ServerBanner from 'mastodon/components/server_banner';
-import ComposeFormContainer from 'mastodon/features/compose/containers/compose_form_container';
-import SearchContainer from 'mastodon/features/compose/containers/search_container';
-import { identityContextPropShape, withIdentity } from 'mastodon/identity_context';
+import { changeComposing, mountCompose, unmountCompose } from 'tucano/actions/compose';
+import ServerBanner from 'tucano/components/server_banner';
+import ComposeFormContainer from 'tucano/features/compose/containers/compose_form_container';
+import SearchContainer from 'tucano/features/compose/containers/search_container';
+import { identityContextPropShape, withIdentity } from 'tucano/identity_context';
 
 import LinkFooter from './link_footer';
 

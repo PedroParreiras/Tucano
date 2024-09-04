@@ -2,7 +2,7 @@
 
 require_relative 'base'
 
-module Mastodon::CLI
+module tucano::CLI
   class Registrations < Base
     desc 'open', 'Open registrations'
     def open

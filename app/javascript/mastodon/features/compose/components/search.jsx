@@ -11,11 +11,11 @@ import ImmutablePropTypes from 'react-immutable-proptypes';
 import CancelIcon from '@/material-icons/400-24px/cancel-fill.svg?react';
 import CloseIcon from '@/material-icons/400-24px/close.svg?react';
 import SearchIcon from '@/material-icons/400-24px/search.svg?react';
-import { Icon }  from 'mastodon/components/icon';
-import { identityContextPropShape, withIdentity } from 'mastodon/identity_context';
-import { domain, searchEnabled } from 'mastodon/initial_state';
-import { HASHTAG_REGEX } from 'mastodon/utils/hashtags';
-import { WithRouterPropTypes } from 'mastodon/utils/react_router';
+import { Icon }  from 'tucano/components/icon';
+import { identityContextPropShape, withIdentity } from 'tucano/identity_context';
+import { domain, searchEnabled } from 'tucano/initial_state';
+import { HASHTAG_REGEX } from 'tucano/utils/hashtags';
+import { WithRouterPropTypes } from 'tucano/utils/react_router';
 
 const messages = defineMessages({
   placeholder: { id: 'search.placeholder', defaultMessage: 'Search' },
@@ -281,7 +281,7 @@ class Search extends PureComponent {
       const couldBeURL = trimmedValue.startsWith('https://') && !trimmedValue.includes(' ');
 
       if (couldBeURL) {
-        options.push({ key: 'open-url', label: <FormattedMessage id='search.quick_action.open_url' defaultMessage='Open URL in Mastodon' />, action: this.handleURLClick });
+        options.push({ key: 'open-url', label: <FormattedMessage id='search.quick_action.open_url' defaultMessage='Open URL in tucano' />, action: this.handleURLClick });
       }
 
       const couldBeHashtag = (trimmedValue.startsWith('#') && trimmedValue.length > 1) || trimmedValue.match(HASHTAG_REGEX);

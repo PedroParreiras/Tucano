@@ -1,10 +1,10 @@
 ---
 et:
   about:
-    about_mastodon_html: 'Tuleviku sotsiaalvõrgustik: Reklaamivaba, korporatiivse järelvalveta, eetiline kujundus ning detsentraliseeritus! Oma enda andmeid Mastodonis!'
+    about_tucano_html: 'Tuleviku sotsiaalvõrgustik: Reklaamivaba, korporatiivse järelvalveta, eetiline kujundus ning detsentraliseeritus! Oma enda andmeid tucanois!'
     contact_missing: Määramata
     contact_unavailable: Pole saadaval
-    hosted_on: Mastodon majutatud %{domain}-is
+    hosted_on: tucano majutatud %{domain}-is
     title: Teave
   accounts:
     follow: Jälgi
@@ -659,7 +659,7 @@ et:
         moderation: Modereerimine
         special: Eriline
       delete: Kustuta
-      description_html: "<strong>Kasutajarollide</strong> abil saab kohandada, millistele Mastodoni funktsioonidele ja piirkondadele kasutajad ligi pääsevad."
+      description_html: "<strong>Kasutajarollide</strong> abil saab kohandada, millistele tucanoi funktsioonidele ja piirkondadele kasutajad ligi pääsevad."
       edit: Muuda '%{name}' rolli
       everyone: Vaikimisi load
       everyone_full_description_html: See on <strong>baasroll</strong> mõjudes <strong>kõigile kasutajatele</strong>, ka määramata rolliga. Kõik teised rollid pärivad selle rolli õigused.
@@ -720,24 +720,24 @@ et:
         rules_hint: Reeglitele, millega kasutajad peavad nõustuma, on vastav piirkond.
         title: Teave
       appearance:
-        preamble: Kohanda Mastodoni veebiliidest.
+        preamble: Kohanda tucanoi veebiliidest.
         title: Välimus
       branding:
-        preamble: Serveri bränding eristab seda teistest serveritest võrgus. Seda teavet võidakse kuvada erinevates keskkondades, näiteks Mastodoni veebiliideses, rakendustes, viitade eelvaadetes teistel veebisaitidel, sõnumsiderakendustes jne. Sel põhjusel on kõige parem hoida see teave selge, lühike ja ülevaatlik.
+        preamble: Serveri bränding eristab seda teistest serveritest võrgus. Seda teavet võidakse kuvada erinevates keskkondades, näiteks tucanoi veebiliideses, rakendustes, viitade eelvaadetes teistel veebisaitidel, sõnumsiderakendustes jne. Sel põhjusel on kõige parem hoida see teave selge, lühike ja ülevaatlik.
         title: Märgistus
       captcha_enabled:
         desc_html: See tugineb välistele hCaptcha skriptidele, mis võib olla turvalisuse ja privaatsuse probleem. Lisaks <strong>võib see muuta registreerimisprotsessi mõnede inimeste (eriti puudega inimeste) jaoks, oluliselt vähem ligipääsetavaks.</strong> Neil põhjustel kaalu palun teisi võimalusi, näiteks kinnitamis- või kutsepõhiseid registreerimislahendusi.
         title: Nõua uutelt kasutajatelt konto kinnitamiseks CAPTCHA lahendamist
       content_retention:
         danger_zone: Ohutsoon
-        preamble: Määra, kuidas kasutajate loodud sisu Mastodonis talletatakse.
+        preamble: Määra, kuidas kasutajate loodud sisu tucanois talletatakse.
         title: Sisu talletamine
       default_noindex:
         desc_html: Mõjub kasutajatele, kes pole seda sätet ise muutnud
         title: Otsimootorite indeksitesse kasutajaid vaikimisi ei lisata
       discovery:
         follow_recommendations: Jälgi soovitusi
-        preamble: Huvitava sisu esiletoomine on oluline uute kasutajate kaasamisel, kes ei pruugi Mastodonist kedagi tunda. Kontrolli, kuidas erinevad avastamisfunktsioonid serveris töötavad.
+        preamble: Huvitava sisu esiletoomine on oluline uute kasutajate kaasamisel, kes ei pruugi tucanoist kedagi tunda. Kontrolli, kuidas erinevad avastamisfunktsioonid serveris töötavad.
         profile_directory: Kasutajate kataloog
         public_timelines: Avalikud ajajooned
         publish_discovered_servers: Avalda avastatud serverid
@@ -826,7 +826,7 @@ et:
         message_html: Elasticsearchi indeksite kaardistused on vananenud. Palun käivita <code>tootctl search deploy --only=%{value}</code>
       elasticsearch_preset:
         action: Vaata dokumentatsiooni
-        message_html: Elasticsearchi klastris on rohkem kui üks sõlme, kuid Mastodon ei ole nende kasutamiseks konfigureeritud.
+        message_html: Elasticsearchi klastris on rohkem kui üks sõlme, kuid tucano ei ole nende kasutamiseks konfigureeritud.
       elasticsearch_preset_single_node:
         action: Vaata dokumentatsiooni
         message_html: Elasticsearchi klastris on ainult üks sõlm <code>ES_PRESET</code> peaks olema seatud väärtusele <code>single_node_cluster</code>.
@@ -844,10 +844,10 @@ et:
         message_html: Ühtegi Sidekiq protsessi pole %{value} järjekorra jaoks. Sidekiq seadistus vajab üle vaatamist
       software_version_critical_check:
         action: Vaata saadaolevaid uuendusi
-        message_html: Saadaval on Mastodoni kriitiline uuendus, uuenda nii kiiresti kui võimalik.
+        message_html: Saadaval on tucanoi kriitiline uuendus, uuenda nii kiiresti kui võimalik.
       software_version_patch_check:
         action: Vaata saadaolevaid uuendusi
-        message_html: Saadaval on Mastodoni veaparandusuuendus.
+        message_html: Saadaval on tucanoi veaparandusuuendus.
       upload_check_privacy_error:
         action: Klõpsa lisainfo saamiseks siia
         message_html: "<strong>Veebiserver on valesti seadistatud. Kasutajate privaatsus on ohustatud.</strong>"
@@ -947,7 +947,7 @@ et:
     webhooks:
       add_new: Lisa lõpp-punkt
       delete: Kustuta
-      description_html: "<strong>Veebihaak</strong> võimaldab Mastodonil edastada valitud sündmuste kohta su rakendusele <strong>reaalajas märguandeid</strong>, et rakendus saaks <strong>automaatselt reaktsioone käivitada</strong>."
+      description_html: "<strong>Veebihaak</strong> võimaldab tucanoil edastada valitud sündmuste kohta su rakendusele <strong>reaalajas märguandeid</strong>, et rakendus saaks <strong>automaatselt reaktsioone käivitada</strong>."
       disable: Keela
       disabled: Keelatud
       edit: Muuda lõpp-punkti
@@ -981,8 +981,8 @@ et:
       next_steps: Võid modereeringu tagasi pööramiseks vaidlustuse rahuldada, või ka mitte.
       subject: "%{username} on vaidlustanud %{instance} modereerimisotsuse"
     new_critical_software_updates:
-      body: Avaldatud on Mastodoni uus kriitiline versioon, sa võiksid selle paigaldada nii ruttu kui võimalik!
-      subject: Saadaval on Mastodoni kriitilised uuendused %{instance} jaoks!
+      body: Avaldatud on tucanoi uus kriitiline versioon, sa võiksid selle paigaldada nii ruttu kui võimalik!
+      subject: Saadaval on tucanoi kriitilised uuendused %{instance} jaoks!
     new_pending_account:
       body: Uue konto üksikasjad on allpool. Saad taotluse vastu võtta või tagasi lükata.
       subject: Uus konto valmis ülevaatluseks serveril %{instance} (%{username})
@@ -991,8 +991,8 @@ et:
       body_remote: Keegi domeenist %{domain} teavitas kasutajast %{target}
       subject: Uus teavitus %{instance}-ile (#%{id})
     new_software_updates:
-      body: Avaldatud on Mastodoni uued versioonid. Sa võiksid uuendada!
-      subject: Saadaval on Mastodoni uued versioonid %{instance} jaoks!
+      body: Avaldatud on tucanoi uued versioonid. Sa võiksid uuendada!
+      subject: Saadaval on tucanoi uued versioonid %{instance} jaoks!
     new_trends:
       body: 'Järgmised üksused vajavad enne avalikustamist ülevaatust:'
       new_trending_links:
@@ -1016,8 +1016,8 @@ et:
     confirmation_dialogs: Kinnitusdialoogid
     discovery: Avastamine
     localization:
-      body: Mastodoni tõlgivad vabatahtlikud.
-      guide_link: https://crowdin.com/project/mastodon/et
+      body: tucanoi tõlgivad vabatahtlikud.
+      guide_link: https://crowdin.com/project/tucano/et
       guide_link_text: Panustada võib igaüks!
     sensitive_content: Tundlik sisu
   application_mailer:
@@ -1051,9 +1051,9 @@ et:
     delete_account: Konto kustutamine
     delete_account_html: Kui soovid oma konto kustutada, siis <a href="%{path}">jätka siit</a>. Pead kustutamise eraldi kinnitama.
     description:
-      prefix_invited_by_user: "@%{name} kutsub sind liituma selle Mastodoni serveriga!"
-      prefix_sign_up: Loo Mastodoni konto juba täna!
-      suffix: Kasutajakontoga saad jälgida inimesi, postitada uudiseid ning pidada kirjavahetust ükskõik millise Mastodoni serveri kasutajatega ja muudki!
+      prefix_invited_by_user: "@%{name} kutsub sind liituma selle tucanoi serveriga!"
+      prefix_sign_up: Loo tucanoi konto juba täna!
+      suffix: Kasutajakontoga saad jälgida inimesi, postitada uudiseid ning pidada kirjavahetust ükskõik millise tucanoi serveri kasutajatega ja muudki!
     didnt_get_confirmation: Ei saanud kinnituslinki?
     dont_have_your_security_key: Pole turvavõtit?
     forgot_password: Salasõna ununenud?
@@ -1097,7 +1097,7 @@ et:
       title: Logi sisse kohta %{domain}
     sign_up:
       manual_review: Liitumised kohas %{domain} vaadatakse meie moderaatorite poolt käsitsi läbi. Aitamaks meil sinu taotlust läbi vaadata, kirjuta palun natuke endast ja miks soovid kontot kohas %{domain}.
-      preamble: Selle kontoga saad jälgida ja suhelda kõigi teiste kasutajatega erinevates Mastodoni serverites.
+      preamble: Selle kontoga saad jälgida ja suhelda kõigi teiste kasutajatega erinevates tucanoi serverites.
       title: Loo konto serverisse  %{domain}.
     status:
       account_status: Konto olek
@@ -1198,7 +1198,7 @@ et:
       content: Palume vabandust, midagi läks valesti meie pool.
       title: See lehekülg pole õige
     '503': Lehekülge ei saanud serveerida ajutise serveri vea tõttu.
-    noscript_html: Et kasutada Mastodoni veebirakendust, palun luba JavaScript. Teise võimalusena proovi mõnda <a href="%{apps_path}">rakendust</a> su platvormile.
+    noscript_html: Et kasutada tucanoi veebirakendust, palun luba JavaScript. Teise võimalusena proovi mõnda <a href="%{apps_path}">rakendust</a> su platvormile.
   existing_username_validator:
     not_found: ei suutnud leida kohalikku kasutajat selle kasutajanimega
     not_found_multiple: ei suutnud leida %{usernames}
@@ -1508,13 +1508,13 @@ et:
     posting_defaults: Postitamise vaikesätted
     public_timelines: Avalikud ajajooned
   privacy:
-    hint_html: "<strong>Kohanda, kuidas peaks su postitused ja profiil leitav olema.</strong> Mastodonis olevad paljud oskused võimaldavad jõuda sul rohkemate inimesteni, kui need lubada. Võta üks hetk, et vaadata need üle, et veenduda, kas sinu puhul need sobivad."
+    hint_html: "<strong>Kohanda, kuidas peaks su postitused ja profiil leitav olema.</strong> tucanois olevad paljud oskused võimaldavad jõuda sul rohkemate inimesteni, kui need lubada. Võta üks hetk, et vaadata need üle, et veenduda, kas sinu puhul need sobivad."
     privacy: Privaatsus
     privacy_hint_html: Määra, kui palju soovid teiste heaks infot avaldada. Inimesed leiavad huvitavaid profiile ning lahedaid äppe sirvides teiste inimeste jälgimisi ja vaadates, milliste äppidega nad postitavad, kuid sa võid soovida hoida seda varjatuna.
     reach: Ulatus
     reach_hint_html: Määra, kas soovid olla leitav ja jälgitav uute inimeste poolt. Kas soovid, et su postitused ilmuksid uurimise ekraanil? Kas soovid, et teised inimesed näeksid sind oma jälgitavate soovituste hulgas? Kas soovid nõustuda kõigi uute jälgijatega automaatselt või soovid igaühe puhul täpsemaid valikuid?
     search: Otsi
-    search_hint_html: Määra, kuidas sind leitakse. Kas soovid, et inimesed leiavad sind su avalike postituste alusel? Kas soovid, et väljaspool Mastodoni olevad inimesed leiavad veebis otsides su profiili? Pea meeles, et avaliku info puhul pole kõigist otsimootoritest info välistamine tagatav.
+    search_hint_html: Määra, kuidas sind leitakse. Kas soovid, et inimesed leiavad sind su avalike postituste alusel? Kas soovid, et väljaspool tucanoi olevad inimesed leiavad veebis otsides su profiili? Pea meeles, et avaliku info puhul pole kõigist otsimootoritest info välistamine tagatav.
     title: Privaatsus ja ulatus
   privacy_policy:
     title: Isikuandmete kaitse
@@ -1589,7 +1589,7 @@ et:
     current_session: Praegune seanss
     date: Kuupäev
     description: "%{browser} platvormil %{platform}"
-    explanation: Need veebilehitsejad on praegu su Mastodoni kontole sisse loginud.
+    explanation: Need veebilehitsejad on praegu su tucanoi kontole sisse loginud.
     ip: IP
     platforms:
       adobe_air: Adobe Air
@@ -1615,7 +1615,7 @@ et:
     aliases: Siia kolitavad kontod
     appearance: Välimus
     authorized_apps: Lubatud rakendused
-    back: Tagasi Mastodoni
+    back: Tagasi tucanoi
     delete: Konto kustutamine
     development: Arendus
     edit_profile: Muuda profiili
@@ -1735,9 +1735,9 @@ et:
   tags:
     does_not_match_previous_name: ei ühti eelmise nimega
   themes:
-    contrast: Mastodon (Kõrge kontrast)
-    default: Mastodon (Tume)
-    mastodon-light: Mastodon (Hele)
+    contrast: tucano (Kõrge kontrast)
+    default: tucano (Tume)
+    tucano-light: tucano (Hele)
     system: Automaatne (kasuta süsteemi teemat)
   time:
     formats:
@@ -1777,7 +1777,7 @@ et:
       subtitle: Sinu vaidlustus lükati tagasi.
       title: Vaidlustus tagasi lükatud
     backup_ready:
-      explanation: Taotlesid oma Mastodoni konto täisvarundust.
+      explanation: Taotlesid oma tucanoi konto täisvarundust.
       extra: See on nüüd allalaadimiseks valmis!
       subject: Arhiiv on allalaadimiseks valmis
       title: Arhiivi väljavõte
@@ -1829,7 +1829,7 @@ et:
       apps_android_action: Laadi see Google Playst
       apps_ios_action: Allalaadimine App Store'ist
       apps_step: Laadi meie ametlikud rakendused.
-      apps_title: Mastodoni rakendused
+      apps_title: tucanoi rakendused
       checklist_subtitle: 'Kuidas sel uudsel sotsiaalmeediarindel pihta hakata:'
       checklist_title: Millest alustada
       edit_profile_action: Isikupärasta
@@ -1837,16 +1837,16 @@ et:
       edit_profile_title: Isikupärasta oma profiili
       explanation: Siin on mõned nõuanded, mis aitavad alustada
       feature_action: Vaata lisa
-      feature_audience: Mastodon pakub unikaalset võimalust oma jälgijaskonda hallata ilma vahendajateta. Mastodoni käitamine enda serveris võimaldab jälgida kasutajaid ja olla jälgitav ükskõik millisest Mastodoni serverist võrgus ja see pole kellegi teise poolt kontrollitav.
+      feature_audience: tucano pakub unikaalset võimalust oma jälgijaskonda hallata ilma vahendajateta. tucanoi käitamine enda serveris võimaldab jälgida kasutajaid ja olla jälgitav ükskõik millisest tucanoi serverist võrgus ja see pole kellegi teise poolt kontrollitav.
       feature_audience_title: Kogu enesekindlalt jälgijaid
-      feature_control: Tead ise kõige paremini, mida soovid oma koduvoos näha. Ei aega raiskavaid algoritme ega reklaame. Jälgi ühe kasutajakonto kaudu keda iganes mistahes Mastodoni serveris ja näe postitusi ajalises järjestuses, muutes oma nurgakese Internetist rohkem endale meelepärasemaks.
+      feature_control: Tead ise kõige paremini, mida soovid oma koduvoos näha. Ei aega raiskavaid algoritme ega reklaame. Jälgi ühe kasutajakonto kaudu keda iganes mistahes tucanoi serveris ja näe postitusi ajalises järjestuses, muutes oma nurgakese Internetist rohkem endale meelepärasemaks.
       feature_control_title: Säilita oma ajajoone üle kontroll
-      feature_creativity: Mastodon toetab audiot, video- ja pildipostitusi, ligipääsetavuse kirjeldusi, küsitlusi, sisuhoiatusi, animeeritud avatare, kohandatud emotikone, pisipiltide lõikeeelistusi ja enamatki, et end võrgus väljendada. Kas avaldad kunsti, muusikat või taskuhäälingut, Mastodon on mõeldud Sinu jaoks.
+      feature_creativity: tucano toetab audiot, video- ja pildipostitusi, ligipääsetavuse kirjeldusi, küsitlusi, sisuhoiatusi, animeeritud avatare, kohandatud emotikone, pisipiltide lõikeeelistusi ja enamatki, et end võrgus väljendada. Kas avaldad kunsti, muusikat või taskuhäälingut, tucano on mõeldud Sinu jaoks.
       feature_creativity_title: Võrreldamatu loovus
-      feature_moderation: Mastodon annab otsustusõiguse tagasi Sinu kätte. Igal serveril on oma reeglid ja regulatsioonid, mida hallatakse kohapeal, mitte nagu ülalt-alla korporatiivses sotsiaalmeedias, võimaldades enim paindlikku vastavust erinevate vajadustega gruppide ja inimeste eelistustele. Liitu sobivate reeglitega serveriga, või käivita oma server.
+      feature_moderation: tucano annab otsustusõiguse tagasi Sinu kätte. Igal serveril on oma reeglid ja regulatsioonid, mida hallatakse kohapeal, mitte nagu ülalt-alla korporatiivses sotsiaalmeedias, võimaldades enim paindlikku vastavust erinevate vajadustega gruppide ja inimeste eelistustele. Liitu sobivate reeglitega serveriga, või käivita oma server.
       feature_moderation_title: Modereerimine, nagu see olema peab
       follow_action: Jälgi
-      follow_step: Huvipakkuvate inimeste jälgimine ongi Mastodoni olemuseks.
+      follow_step: Huvipakkuvate inimeste jälgimine ongi tucanoi olemuseks.
       follow_title: Isikupärasta oma koduvoogu
       follows_subtitle: Jälgi teada-tuntud kasutajaid
       follows_title: Keda jälgida
@@ -1861,10 +1861,10 @@ et:
       post_step: Tervita maailma teksti, fotode, videote või küsitlustega.
       post_title: Tee oma esimene postitus
       share_action: Jaga
-      share_step: Anna sõpradele teada, kuidas Sind Mastodonis leida.
-      share_title: Jaga oma Mastodoni profiili
+      share_step: Anna sõpradele teada, kuidas Sind tucanois leida.
+      share_title: Jaga oma tucanoi profiili
       sign_in_action: Sisene
-      subject: Tere tulemast Mastodoni
+      subject: Tere tulemast tucanoi
       title: Tere tulemast, %{name}!
   users:
     follow_limit_reached: Ei saa jälgida rohkem kui %{limit} inimest
@@ -1876,7 +1876,7 @@ et:
   verification:
     extra_instructions_html: <strong>Soovitus:</strong> Sinu kodulehel olev link võib olla nähtamatu. Oluline osa on <code>rel="me"</code>, mis väldib kasutaja loodud sisuga lehtedel libaisikustamist. Sa saad isegi kasutada lehe HEADER osas silti <code>link</code> sildi <code>a</code> asemel, kuid HTML peab olema kättesaadav ilma JavaScripti käivitamata.
     here_is_how: Siin on, kuidas
-    hint_html: "<strong>Oma isiku tuvastamine on Mastodonis kõigi jaoks.</strong> Toetub avatud veebistandarditele, nüüd ja igavesti tasuta. Kõik, mida vajad, on isiklik veebileht, mille järgi inimesed sind tunnevad. Kui lingid oma profiililt sellele veebilehele, kontrollime me, et see veebileht lingib tagasi sinu profiilile ning näitame profiilil visuaalset tähist."
+    hint_html: "<strong>Oma isiku tuvastamine on tucanois kõigi jaoks.</strong> Toetub avatud veebistandarditele, nüüd ja igavesti tasuta. Kõik, mida vajad, on isiklik veebileht, mille järgi inimesed sind tunnevad. Kui lingid oma profiililt sellele veebilehele, kontrollime me, et see veebileht lingib tagasi sinu profiilile ning näitame profiilil visuaalset tähist."
     instructions_html: Kopeeri ja kleebi allpool olev kood oma lehe HTML lähtekoodi. Seejärel lisa oma kodulehe aadress profiili "Muuda profiili" taabi ühte lisavälja ning salvesta muudatused.
     verification: Kinnitamine
     verified_links: Sinu kontrollitud lingid

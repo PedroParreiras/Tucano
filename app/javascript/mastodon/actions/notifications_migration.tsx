@@ -1,5 +1,5 @@
-import { selectUseGroupedNotifications } from 'mastodon/selectors/settings';
-import { createAppAsyncThunk } from 'mastodon/store';
+import { selectUseGroupedNotifications } from 'tucano/selectors/settings';
+import { createAppAsyncThunk } from 'tucano/store';
 
 import { fetchNotifications } from './notification_groups';
 import { expandNotifications } from './notifications';

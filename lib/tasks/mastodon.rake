@@ -2,13 +2,13 @@
 
 require 'tty-prompt'
 
-namespace :mastodon do
+namespace :tucano do
   desc 'Configure the instance for production use'
   task :setup do
     prompt = TTY::Prompt.new
     env    = {}
 
-    # When the application code gets loaded, it runs `lib/mastodon/redis_configuration.rb`.
+    # When the application code gets loaded, it runs `lib/tucano/redis_configuration.rb`.
     # This happens before application environment configuration and sets REDIS_URL etc.
     # These variables are then used even when REDIS_HOST etc. are changed, so clear them
     # out so they don't interfere with our new configuration.
@@ -52,7 +52,7 @@ namespace :mastodon do
 
       prompt.say "\n"
 
-      using_docker        = prompt.yes?('Are you using Docker to run Mastodon?')
+      using_docker        = prompt.yes?('Are you using Docker to run tucano?')
       db_connection_works = false
 
       prompt.say "\n"
@@ -72,13 +72,13 @@ namespace :mastodon do
 
         env['DB_NAME'] = prompt.ask('Name of PostgreSQL database:') do |q|
           q.required true
-          q.default using_docker ? 'postgres' : 'mastodon_production'
+          q.default using_docker ? 'postgres' : 'tucano_production'
           q.modify :strip
         end
 
         env['DB_USER'] = prompt.ask('Name of PostgreSQL user:') do |q|
           q.required true
-          q.default using_docker ? 'postgres' : 'mastodon'
+          q.default using_docker ? 'postgres' : 'tucano'
           q.modify :strip
         end
 
@@ -397,7 +397,7 @@ namespace :mastodon do
 
         env['SMTP_FROM_ADDRESS'] = prompt.ask('E-mail address to send e-mails "from":') do |q|
           q.required true
-          q.default "Mastodon <notifications@#{env['LOCAL_DOMAIN']}>"
+          q.default "tucano <notifications@#{env['LOCAL_DOMAIN']}>"
           q.modify :strip
         end
 
@@ -439,7 +439,7 @@ namespace :mastodon do
           mail = ActionMailer::Base.new.mail(
             to: send_to,
             subject: 'Test', # rubocop:disable Rails/I18nLocaleTexts
-            body: 'Mastodon SMTP configuration works!'
+            body: 'tucano SMTP configuration works!'
           )
           mail.deliver
           break
@@ -458,7 +458,7 @@ namespace :mastodon do
 
       prompt.say "\n"
 
-      env['UPDATE_CHECK_URL'] = '' unless prompt.yes?('Do you want Mastodon to periodically check for important updates and notify you? (Recommended)', default: true)
+      env['UPDATE_CHECK_URL'] = '' unless prompt.yes?('Do you want tucano to periodically check for important updates and notify you? (Recommended)', default: true)
 
       prompt.say "\n"
       prompt.say 'This configuration will be written to .env.production'
@@ -522,9 +522,9 @@ namespace :mastodon do
 
         prompt.say "\n"
         if errors
-          prompt.warn 'Your Mastodon server is set up, but there were some errors along the way, you may have to fix them.'
+          prompt.warn 'Your tucano server is set up, but there were some errors along the way, you may have to fix them.'
         else
-          prompt.ok 'All done! You can now power on the Mastodon server 🐘'
+          prompt.ok 'All done! You can now power on the tucano server 🐘'
         end
         prompt.say "\n"
 
@@ -580,7 +580,7 @@ namespace :mastodon do
   private
 
   def generate_header(include_warning)
-    default_message = "# Generated with mastodon:setup on #{Time.now.utc}\n\n"
+    default_message = "# Generated with tucano:setup on #{Time.now.utc}\n\n"
 
     default_message.tap do |string|
       if include_warning

@@ -18,7 +18,7 @@ class Api::Web::EmbedsController < Api::Web::BaseController
       return not_found if oembed.nil?
 
       begin
-        oembed[:html] = Sanitize.fragment(oembed[:html], Sanitize::Config::MASTODON_OEMBED)
+        oembed[:html] = Sanitize.fragment(oembed[:html], Sanitize::Config::tucano_OEMBED)
       rescue ArgumentError
         return not_found
       end
@@ -30,7 +30,7 @@ class Api::Web::EmbedsController < Api::Web::BaseController
   def set_status
     @status = Status.find(params[:id])
     authorize @status, :show?
-  rescue Mastodon::NotPermittedError
+  rescue tucano::NotPermittedError
     not_found
   end
 end

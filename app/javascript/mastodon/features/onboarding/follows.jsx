@@ -7,12 +7,12 @@ import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 
 
-import { fetchSuggestions } from 'mastodon/actions/suggestions';
-import { markAsPartial } from 'mastodon/actions/timelines';
-import { ColumnBackButton } from 'mastodon/components/column_back_button';
-import { EmptyAccount } from 'mastodon/components/empty_account';
-import Account from 'mastodon/containers/account_container';
-import { useAppSelector } from 'mastodon/store';
+import { fetchSuggestions } from 'tucano/actions/suggestions';
+import { markAsPartial } from 'tucano/actions/timelines';
+import { ColumnBackButton } from 'tucano/components/column_back_button';
+import { EmptyAccount } from 'tucano/components/empty_account';
+import Account from 'tucano/containers/account_container';
+import { useAppSelector } from 'tucano/store';
 
 export const Follows = () => {
   const dispatch = useDispatch();
@@ -43,7 +43,7 @@ export const Follows = () => {
 
       <div className='scrollable privacy-policy'>
         <div className='column-title'>
-          <h3><FormattedMessage id='onboarding.follows.title' defaultMessage='Popular on Mastodon' /></h3>
+          <h3><FormattedMessage id='onboarding.follows.title' defaultMessage='Popular on tucano' /></h3>
           <p><FormattedMessage id='onboarding.follows.lead' defaultMessage='You curate your own home feed. The more people you follow, the more active and interesting it will be. These profiles may be a good starting point—you can always unfollow them later!' /></p>
         </div>
 
@@ -51,7 +51,7 @@ export const Follows = () => {
           {loadedContent}
         </div>
 
-        <p className='onboarding__lead'><FormattedMessage id='onboarding.tips.accounts_from_other_servers' defaultMessage='<strong>Did you know?</strong> Since Mastodon is decentralized, some profiles you come across will be hosted on servers other than yours. And yet you can interact with them seamlessly! Their server is in the second half of their username!' values={{ strong: chunks => <strong>{chunks}</strong> }} /></p>
+        <p className='onboarding__lead'><FormattedMessage id='onboarding.tips.accounts_from_other_servers' defaultMessage='<strong>Did you know?</strong> Since tucano is decentralized, some profiles you come across will be hosted on servers other than yours. And yet you can interact with them seamlessly! Their server is in the second half of their username!' values={{ strong: chunks => <strong>{chunks}</strong> }} /></p>
 
         <div className='onboarding__footer'>
           <Link className='link-button' to='/start'><FormattedMessage id='onboarding.actions.back' defaultMessage='Take me back' /></Link>

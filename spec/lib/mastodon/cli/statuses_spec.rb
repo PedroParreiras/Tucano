@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 require 'rails_helper'
-require 'mastodon/cli/statuses'
+require 'tucano/cli/statuses'
 
-RSpec.describe Mastodon::CLI::Statuses do
+RSpec.describe tucano::CLI::Statuses do
   subject { cli.invoke(action, arguments, options) }
 
   let(:cli) { described_class.new }

@@ -1,6 +1,6 @@
 import { createAction } from '@reduxjs/toolkit';
 
-import type { Account } from 'mastodon/models/account';
+import type { Account } from 'tucano/models/account';
 
 export const blockDomainSuccess = createAction<{
   domain: string;

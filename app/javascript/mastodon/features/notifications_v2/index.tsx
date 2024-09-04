@@ -15,23 +15,23 @@ import {
   markNotificationsAsRead,
   mountNotifications,
   unmountNotifications,
-} from 'mastodon/actions/notification_groups';
-import { compareId } from 'mastodon/compare_id';
-import { Icon } from 'mastodon/components/icon';
-import { NotSignedInIndicator } from 'mastodon/components/not_signed_in_indicator';
-import { useIdentity } from 'mastodon/identity_context';
-import type { NotificationGap } from 'mastodon/reducers/notification_groups';
+} from 'tucano/actions/notification_groups';
+import { compareId } from 'tucano/compare_id';
+import { Icon } from 'tucano/components/icon';
+import { NotSignedInIndicator } from 'tucano/components/not_signed_in_indicator';
+import { useIdentity } from 'tucano/identity_context';
+import type { NotificationGap } from 'tucano/reducers/notification_groups';
 import {
   selectUnreadNotificationGroupsCount,
   selectPendingNotificationGroupsCount,
   selectAnyPendingNotification,
   selectNotificationGroups,
-} from 'mastodon/selectors/notifications';
+} from 'tucano/selectors/notifications';
 import {
   selectNeedsNotificationPermission,
   selectSettingsNotificationsShowUnread,
-} from 'mastodon/selectors/settings';
-import { useAppDispatch, useAppSelector } from 'mastodon/store';
+} from 'tucano/selectors/settings';
+import { useAppDispatch, useAppSelector } from 'tucano/store';
 
 import { addColumn, removeColumn, moveColumn } from '../../actions/columns';
 import { submitMarkers } from '../../actions/markers';

@@ -4,8 +4,8 @@ import ImmutablePropTypes from 'react-immutable-proptypes';
 import ImmutablePureComponent from 'react-immutable-pure-component';
 import { connect } from 'react-redux';
 
-import Audio from 'mastodon/features/audio';
-import Footer from 'mastodon/features/picture_in_picture/components/footer';
+import Audio from 'tucano/features/audio';
+import Footer from 'tucano/features/picture_in_picture/components/footer';
 
 const mapStateToProps = (state, { statusId }) => ({
   status: state.getIn(['statuses', statusId]),

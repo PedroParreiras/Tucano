@@ -14,19 +14,19 @@ import Toggle from 'react-toggle';
 import DeleteIcon from '@/material-icons/400-24px/delete.svg?react';
 import EditIcon from '@/material-icons/400-24px/edit.svg?react';
 import ListAltIcon from '@/material-icons/400-24px/list_alt.svg?react';
-import { addColumn, removeColumn, moveColumn } from 'mastodon/actions/columns';
-import { fetchList, updateList } from 'mastodon/actions/lists';
-import { openModal } from 'mastodon/actions/modal';
-import { connectListStream } from 'mastodon/actions/streaming';
-import { expandListTimeline } from 'mastodon/actions/timelines';
-import Column from 'mastodon/components/column';
-import ColumnHeader from 'mastodon/components/column_header';
-import { Icon }  from 'mastodon/components/icon';
-import { LoadingIndicator } from 'mastodon/components/loading_indicator';
-import { RadioButton } from 'mastodon/components/radio_button';
-import BundleColumnError from 'mastodon/features/ui/components/bundle_column_error';
-import StatusListContainer from 'mastodon/features/ui/containers/status_list_container';
-import { WithRouterPropTypes } from 'mastodon/utils/react_router';
+import { addColumn, removeColumn, moveColumn } from 'tucano/actions/columns';
+import { fetchList, updateList } from 'tucano/actions/lists';
+import { openModal } from 'tucano/actions/modal';
+import { connectListStream } from 'tucano/actions/streaming';
+import { expandListTimeline } from 'tucano/actions/timelines';
+import Column from 'tucano/components/column';
+import ColumnHeader from 'tucano/components/column_header';
+import { Icon }  from 'tucano/components/icon';
+import { LoadingIndicator } from 'tucano/components/loading_indicator';
+import { RadioButton } from 'tucano/components/radio_button';
+import BundleColumnError from 'tucano/features/ui/components/bundle_column_error';
+import StatusListContainer from 'tucano/features/ui/containers/status_list_container';
+import { WithRouterPropTypes } from 'tucano/utils/react_router';
 
 const messages = defineMessages({
   followed:   { id: 'lists.replies_policy.followed', defaultMessage: 'Any followed user' },

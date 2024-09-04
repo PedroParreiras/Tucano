@@ -14,36 +14,36 @@
 - [FEP-8fcf: Followers collection synchronization across servers](https://codeberg.org/fediverse/fep/src/branch/main/fep/8fcf/fep-8fcf.md)
 - [FEP-5feb: Search indexing consent for actors](https://codeberg.org/fediverse/fep/src/branch/main/fep/5feb/fep-5feb.md)
 
-## ActivityPub in Mastodon
+## ActivityPub in tucano
 
-Mastodon largely follows the ActivityPub server-to-server specification but it makes uses of some non-standard extensions, some of which are required for interacting with Mastodon at all.
+tucano largely follows the ActivityPub server-to-server specification but it makes uses of some non-standard extensions, some of which are required for interacting with tucano at all.
 
-- [Supported ActivityPub vocabulary](https://docs.joinmastodon.org/spec/activitypub/)
+- [Supported ActivityPub vocabulary](https://docs.jointucano.org/spec/activitypub/)
 
 ### Required extensions
 
 #### WebFinger
 
-In Mastodon, users are identified by a `username` and `domain` pair (e.g., `Gargron@mastodon.social`).
-This is used both for discovery and for unambiguously mentioning users across the fediverse. Furthermore, this is part of Mastodon's database design from its very beginnings.
+In tucano, users are identified by a `username` and `domain` pair (e.g., `Gargron@tucano.social`).
+This is used both for discovery and for unambiguously mentioning users across the fediverse. Furthermore, this is part of tucano's database design from its very beginnings.
 
-As a result, Mastodon requires that each ActivityPub actor uniquely maps back to an `acct:` URI that can be resolved via WebFinger.
+As a result, tucano requires that each ActivityPub actor uniquely maps back to an `acct:` URI that can be resolved via WebFinger.
 
-- [WebFinger information and examples](https://docs.joinmastodon.org/spec/webfinger/)
+- [WebFinger information and examples](https://docs.jointucano.org/spec/webfinger/)
 
 #### HTTP Signatures
 
-In order to authenticate activities, Mastodon relies on HTTP Signatures, signing every `POST` and `GET` request to other ActivityPub implementations on behalf of the user authoring an activity (for `POST` requests) or an actor representing the Mastodon server itself (for most `GET` requests).
+In order to authenticate activities, tucano relies on HTTP Signatures, signing every `POST` and `GET` request to other ActivityPub implementations on behalf of the user authoring an activity (for `POST` requests) or an actor representing the tucano server itself (for most `GET` requests).
 
-Mastodon requires all `POST` requests to be signed, and MAY require `GET` requests to be signed, depending on the configuration of the Mastodon server.
+tucano requires all `POST` requests to be signed, and MAY require `GET` requests to be signed, depending on the configuration of the tucano server.
 
-- [HTTP Signatures information and examples](https://docs.joinmastodon.org/spec/security/#http)
+- [HTTP Signatures information and examples](https://docs.jointucano.org/spec/security/#http)
 
 ### Optional extensions
 
-- [Linked-Data Signatures](https://docs.joinmastodon.org/spec/security/#ld)
-- [Bearcaps](https://docs.joinmastodon.org/spec/bearcaps/)
+- [Linked-Data Signatures](https://docs.jointucano.org/spec/security/#ld)
+- [Bearcaps](https://docs.jointucano.org/spec/bearcaps/)
 
 ### Additional documentation
 
-- [Mastodon documentation](https://docs.joinmastodon.org/)
+- [tucano documentation](https://docs.jointucano.org/)

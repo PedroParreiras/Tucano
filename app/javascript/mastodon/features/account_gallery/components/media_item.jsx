@@ -8,9 +8,9 @@ import ImmutablePureComponent from 'react-immutable-pure-component';
 import AudiotrackIcon from '@/material-icons/400-24px/music_note.svg?react';
 import PlayArrowIcon from '@/material-icons/400-24px/play_arrow.svg?react';
 import VisibilityOffIcon from '@/material-icons/400-24px/visibility_off.svg?react';
-import { Blurhash } from 'mastodon/components/blurhash';
-import { Icon }  from 'mastodon/components/icon';
-import { autoPlayGif, displayMedia, useBlurhash } from 'mastodon/initial_state';
+import { Blurhash } from 'tucano/components/blurhash';
+import { Icon }  from 'tucano/components/icon';
+import { autoPlayGif, displayMedia, useBlurhash } from 'tucano/initial_state';
 
 export default class MediaItem extends ImmutablePureComponent {
 

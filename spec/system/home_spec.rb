@@ -10,7 +10,7 @@ RSpec.describe 'Home page' do
       visit root_path
 
       expect(page)
-        .to have_css('noscript', text: /Mastodon/)
+        .to have_css('noscript', text: /tucano/)
     end
   end
 
@@ -19,7 +19,7 @@ RSpec.describe 'Home page' do
       visit root_path
 
       expect(page)
-        .to have_css('noscript', text: /Mastodon/)
+        .to have_css('noscript', text: /tucano/)
     end
   end
 end

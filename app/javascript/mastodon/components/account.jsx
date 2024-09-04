@@ -9,9 +9,9 @@ import { Link } from 'react-router-dom';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 
 import MoreHorizIcon from '@/material-icons/400-24px/more_horiz.svg?react';
-import { EmptyAccount } from 'mastodon/components/empty_account';
-import { ShortNumber } from 'mastodon/components/short_number';
-import { VerifiedBadge } from 'mastodon/components/verified_badge';
+import { EmptyAccount } from 'tucano/components/empty_account';
+import { ShortNumber } from 'tucano/components/short_number';
+import { VerifiedBadge } from 'tucano/components/verified_badge';
 
 import DropdownMenuContainer from '../containers/dropdown_menu_container';
 import { me } from '../initial_state';

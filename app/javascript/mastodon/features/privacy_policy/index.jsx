@@ -5,9 +5,9 @@ import { FormattedMessage, FormattedDate, injectIntl, defineMessages } from 'rea
 
 import { Helmet } from 'react-helmet';
 
-import api from 'mastodon/api';
-import Column from 'mastodon/components/column';
-import { Skeleton } from 'mastodon/components/skeleton';
+import api from 'tucano/api';
+import Column from 'tucano/components/column';
+import { Skeleton } from 'tucano/components/skeleton';
 
 const messages = defineMessages({
   title: { id: 'privacy_policy.title', defaultMessage: 'Privacy Policy' },

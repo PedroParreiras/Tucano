@@ -8,13 +8,13 @@ import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import SearchIcon from '@/material-icons/400-24px/search.svg?react';
-import { openModal } from 'mastodon/actions/modal';
-import { fetchServer } from 'mastodon/actions/server';
-import { Avatar } from 'mastodon/components/avatar';
-import { Icon } from 'mastodon/components/icon';
-import { WordmarkLogo, SymbolLogo } from 'mastodon/components/logo';
-import { identityContextPropShape, withIdentity } from 'mastodon/identity_context';
-import { registrationsOpen, me, sso_redirect } from 'mastodon/initial_state';
+import { openModal } from 'tucano/actions/modal';
+import { fetchServer } from 'tucano/actions/server';
+import { Avatar } from 'tucano/components/avatar';
+import { Icon } from 'tucano/components/icon';
+import { WordmarkLogo, SymbolLogo } from 'tucano/components/logo';
+import { identityContextPropShape, withIdentity } from 'tucano/identity_context';
+import { registrationsOpen, me, sso_redirect } from 'tucano/initial_state';
 
 const Account = connect(state => ({
   account: state.getIn(['accounts', me]),

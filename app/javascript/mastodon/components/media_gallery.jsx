@@ -11,7 +11,7 @@ import ImmutablePropTypes from 'react-immutable-proptypes';
 import { debounce } from 'lodash';
 
 import VisibilityOffIcon from '@/material-icons/400-24px/visibility_off.svg?react';
-import { Blurhash } from 'mastodon/components/blurhash';
+import { Blurhash } from 'tucano/components/blurhash';
 
 import { autoPlayGif, displayMedia, useBlurhash } from '../initial_state';
 

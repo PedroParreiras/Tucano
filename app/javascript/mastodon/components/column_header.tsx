@@ -10,10 +10,10 @@ import ChevronLeftIcon from '@/material-icons/400-24px/chevron_left.svg?react';
 import ChevronRightIcon from '@/material-icons/400-24px/chevron_right.svg?react';
 import CloseIcon from '@/material-icons/400-24px/close.svg?react';
 import SettingsIcon from '@/material-icons/400-24px/settings.svg?react';
-import type { IconProp } from 'mastodon/components/icon';
-import { Icon } from 'mastodon/components/icon';
-import { ButtonInTabsBar } from 'mastodon/features/ui/util/columns_context';
-import { useIdentity } from 'mastodon/identity_context';
+import type { IconProp } from 'tucano/components/icon';
+import { Icon } from 'tucano/components/icon';
+import { ButtonInTabsBar } from 'tucano/features/ui/util/columns_context';
+import { useIdentity } from 'tucano/identity_context';
 
 import { useAppHistory } from './router';
 
@@ -38,7 +38,7 @@ const BackButton: React.FC<{
   const intl = useIntl();
 
   const handleBackClick = useCallback(() => {
-    if (history.location.state?.fromMastodon) {
+    if (history.location.state?.fromtucano) {
       history.goBack();
     } else {
       history.push('/');
@@ -211,7 +211,7 @@ export const ColumnHeader: React.FC<Props> = ({
 
   if (
     !pinned &&
-    ((multiColumn && history.location.state?.fromMastodon) || showBackButton)
+    ((multiColumn && history.location.state?.fromtucano) || showBackButton)
   ) {
     backButton = <BackButton onlyIcon={!!title} />;
   }

@@ -9,7 +9,7 @@ import { connect } from 'react-redux';
 import AddIcon from '@/material-icons/400-24px/add.svg?react';
 import CloseIcon from '@/material-icons/400-24px/close.svg?react';
 import ListAltIcon from '@/material-icons/400-24px/list_alt.svg?react';
-import { Icon }  from 'mastodon/components/icon';
+import { Icon }  from 'tucano/components/icon';
 
 import { removeFromListAdder, addToListAdder } from '../../../actions/lists';
 import { IconButton }  from '../../../components/icon_button';

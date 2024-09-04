@@ -131,7 +131,7 @@ RSpec.describe 'The /.well-known/webfinger endpoint' do
     it 'returns links for the internal account' do
       expect(body_as_json)
         .to include(
-          subject: 'acct:mastodon.internal@cb6e6126.ngrok.io',
+          subject: 'acct:tucano.internal@cb6e6126.ngrok.io',
           aliases: ['https://cb6e6126.ngrok.io/actor']
         )
     end

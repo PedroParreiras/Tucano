@@ -57,14 +57,14 @@ class Keys::ClaimService < BaseService
     return unless json.present? && json['publicKeyBase64'].present?
 
     @result = Result.new(@target_account, @device_id, key_id: json['id'], key: json['publicKeyBase64'], signature: json.dig('signature', 'signatureValue'))
-  rescue HTTP::Error, OpenSSL::SSL::SSLError, Mastodon::Error => e
+  rescue HTTP::Error, OpenSSL::SSL::SSLError, tucano::Error => e
     Rails.logger.debug { "Claiming one-time key for #{@target_account.acct}:#{@device_id} failed: #{e}" }
     nil
   end
 
   def fetch_resource_with_post(uri)
     build_post_request(uri).perform do |response|
-      raise Mastodon::UnexpectedResponseError, response unless response_successful?(response) || response_error_unsalvageable?(response)
+      raise tucano::UnexpectedResponseError, response unless response_successful?(response) || response_error_unsalvageable?(response)
 
       body_to_json(response.body_with_limit) if response.code == 200
     end

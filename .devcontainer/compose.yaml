@@ -1,11 +1,11 @@
 services:
   app:
-    working_dir: /workspaces/mastodon/
+    working_dir: /workspaces/tucano/
     build:
       context: ..
       dockerfile: .devcontainer/Dockerfile
     volumes:
-      - ..:/workspaces/mastodon:cached
+      - ..:/workspaces/tucano:cached
     environment:
       RAILS_ENV: development
       NODE_ENV: development
@@ -56,7 +56,7 @@ services:
     restart: unless-stopped
     environment:
       ES_JAVA_OPTS: -Xms512m -Xmx512m
-      cluster.name: es-mastodon
+      cluster.name: es-tucano
       discovery.type: single-node
       bootstrap.memory_lock: 'true'
     volumes:

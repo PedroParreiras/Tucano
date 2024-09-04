@@ -9,8 +9,8 @@ import ImmutablePropTypes from 'react-immutable-proptypes';
 import { supportsPassiveEvents } from 'detect-passive-events';
 import Overlay from 'react-overlays/Overlay';
 
-import { CircularProgress } from 'mastodon/components/circular_progress';
-import { WithRouterPropTypes } from 'mastodon/utils/react_router';
+import { CircularProgress } from 'tucano/components/circular_progress';
+import { WithRouterPropTypes } from 'tucano/utils/react_router';
 
 import { IconButton } from './icon_button';
 

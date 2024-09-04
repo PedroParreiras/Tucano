@@ -3,10 +3,10 @@ gl:
   simple_form:
     hints:
       account:
-        discoverable: As túas publicacións públicas e perfil poden mostrarse ou recomendarse en varias zonas de Mastodon e o teu perfil ser suxerido a outras usuarias.
+        discoverable: As túas publicacións públicas e perfil poden mostrarse ou recomendarse en varias zonas de tucano e o teu perfil ser suxerido a outras usuarias.
         display_name: O teu nome completo ou un nome divertido.
         fields: Páxina web, pronome, idade, o que ti queiras.
-        indexable: As túas publicacións públicas poderían aparecer nos resultados das buscas en Mastodon. En calquera caso, as persoas que interactúen coas túas publicacións poderán buscalas igualmente.
+        indexable: As túas publicacións públicas poderían aparecer nos resultados das buscas en tucano. En calquera caso, as persoas que interactúen coas túas publicacións poderán buscalas igualmente.
         note: 'Podes @mencionar a outras persoas ou #cancelos.'
         show_collections: Calquera poderá ver os teus seguimentos e seguidoras, e as persoas ás que segues tamén poden ver que as segues.
         unlocked: Poderán seguirte directamente sen solicitar o seguimento. Desmarca isto se queres revisar manualmente cada solicitude e decidir se aceptas ou rexeitas novos seguimentos.
@@ -54,7 +54,7 @@ gl:
         phrase: Concordará independentemente das maiúsculas ou avisos de contido na publicación
         scopes: A que APIs terá acceso a aplicación. Se escolles un ámbito de alto nivel, non precisas seleccionar elementos individuais.
         setting_aggregate_reblogs: Non mostrar novas promocións de publicacións que foron promovidas recentemente (só afecta a promocións recén recibidas)
-        setting_always_send_emails: Como norma xeral non che enviamos correos electrónicos se usas activamente Mastodon
+        setting_always_send_emails: Como norma xeral non che enviamos correos electrónicos se usas activamente tucano
         setting_default_sensitive: Medios sensibles marcados como ocultos por defecto e móstranse cun click
         setting_display_media_default: Ocultar medios marcados como sensibles
         setting_display_media_hide_all: Ocultar sempre os medios
@@ -82,15 +82,15 @@ gl:
         bootstrap_timeline_accounts: Estas contas aparecerán fixas na parte superior das recomendacións para as usuarias.
         closed_registrations_message: Móstrase cando non se admiten novas usuarias
         content_cache_retention_period: Todas as publicacións procedentes de outros servidores (incluído promocións e respostas) van ser eliminadas despois do número de días indicado, sen importar as interaccións das usuarias locais con esas publicacións. Esto inclúe publicacións que a usuaria local marcou como favoritas ou incluíu nos marcadores. As mencións privadas entre usuarias de diferentes instancias tamén se eliminarán e non se poderán restablecer. O uso desta ferramenta esta orientado a situacións especiais e estraga moitas das expectativas das usuarias ao implementala cun propósito de uso xeral.
-        custom_css: Podes aplicar deseños personalizados na versión web de Mastodon.
-        favicon: WEBP, PNG, GIF ou JPG. Sobrescribe a icona de favoritos de Mastodon por defecto cunha icona personalizada.
+        custom_css: Podes aplicar deseños personalizados na versión web de tucano.
+        favicon: WEBP, PNG, GIF ou JPG. Sobrescribe a icona de favoritos de tucano por defecto cunha icona personalizada.
         mascot: Sobrescribe a ilustración na interface web avanzada.
         media_cache_retention_period: Os ficheiros multimedia de publicacións de usuarias remotas están almacenados no teu servidor. Ao establecer un valor positivo, o multimedia vaise eliminar despois do número de días establecido. Se o multimedia fose requerido após ser eliminado entón descargaríase outra vez, se aínda está dispoñible na orixe. Debido a restricións sobre a frecuencia en que o servizo de vista previa trae recursos de terceiras partes, é recomendable establecer este valor polo menos en 14 días, ou as tarxetas de vista previa non se actualizarán baixo demanda para casos anteriores a ese prazo.
         peers_api_enabled: Unha lista dos nomes de dominio que este servidor atopou no fediverso. Non se inclúen aquí datos acerca de se estás a federar con eles ou non, só que o teu servidor os recoñeceu. Ten utilidade para servizos que recollen estatísticas acerca da federación nun amplo senso.
         profile_directory: O directorio de perfís inclúe a tódalas usuarias que optaron por ser descubribles.
         require_invite_text: Cando os rexistros requiren aprobación manual, facer que o texto "Por que te queres rexistrar?" do convite sexa obrigatorio en lugar de optativo
         site_contact_email: De que xeito se pode contactar contigo para temas legais ou obter axuda.
-        site_contact_username: De que xeito se pode contactar contigo en Mastodon.
+        site_contact_username: De que xeito se pode contactar contigo en tucano.
         site_extended_description: Calquera información adicional que poida ser útil para visitantes e usuarias. Pode utilizarse sintaxe Markdown.
         site_short_description: Breve descrición que axuda a identificar de xeito único o teu servidor. Quen o xestiona, a quen vai dirixido?
         site_terms: Escribe a túa propia política de privacidade ou usa o valor por defecto. Podes usar sintaxe Markdow.
@@ -105,7 +105,7 @@ gl:
       form_challenge:
         current_password: Estás entrando nun área segura
       imports:
-        data: Ficheiro CSV exportado desde outro servidor Mastodon
+        data: Ficheiro CSV exportado desde outro servidor tucano
       invite_request:
         text: Esto axudaranos a revisar a tua solicitude
       ip_block:
@@ -300,7 +300,7 @@ gl:
         software_updates:
           all: Notificar todas as actualizacións
           critical: Notificar só as actualizacións críticas
-          label: Hai unha nova versión de Mastodon dispoñible
+          label: Hai unha nova versión de tucano dispoñible
           none: Non notificar nunca as actualizacións (non se aconsella)
           patch: Notificar as actualizacións de arranxos
         trending_tag: Hai que revisar un novo tema popular

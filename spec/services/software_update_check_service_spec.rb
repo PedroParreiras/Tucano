@@ -6,7 +6,7 @@ RSpec.describe SoftwareUpdateCheckService do
   subject { described_class.new }
 
   shared_examples 'when the feature is enabled' do
-    let(:full_update_check_url) { "#{update_check_url}?version=#{Mastodon::Version.to_s.split('+')[0]}" }
+    let(:full_update_check_url) { "#{update_check_url}?version=#{tucano::Version.to_s.split('+')[0]}" }
 
     let(:devops_role)     { Fabricate(:user_role, name: 'DevOps', permissions: UserRole::FLAGS[:view_devops]) }
     let(:owner_user)      { Fabricate(:user, role: UserRole.find_by(name: 'Owner')) }
@@ -62,19 +62,19 @@ RSpec.describe SoftwareUpdateCheckService do
               version: '4.2.1',
               urgent: false,
               type: 'patch',
-              releaseNotes: 'https://github.com/mastodon/mastodon/releases/v4.2.1',
+              releaseNotes: 'https://github.com/tucano/tucano/releases/v4.2.1',
             },
             {
               version: '4.3.0',
               urgent: false,
               type: 'minor',
-              releaseNotes: 'https://github.com/mastodon/mastodon/releases/v4.3.0',
+              releaseNotes: 'https://github.com/tucano/tucano/releases/v4.3.0',
             },
             {
               version: '5.0.0',
               urgent: false,
               type: 'minor',
-              releaseNotes: 'https://github.com/mastodon/mastodon/releases/v5.0.0',
+              releaseNotes: 'https://github.com/tucano/tucano/releases/v5.0.0',
             },
           ],
         }
@@ -105,7 +105,7 @@ RSpec.describe SoftwareUpdateCheckService do
                 version: '5.0.0',
                 urgent: true,
                 type: 'minor',
-                releaseNotes: 'https://github.com/mastodon/mastodon/releases/v5.0.0',
+                releaseNotes: 'https://github.com/tucano/tucano/releases/v5.0.0',
               },
             ],
           }
@@ -139,7 +139,7 @@ RSpec.describe SoftwareUpdateCheckService do
   end
 
   context 'when using the default update checking API' do
-    let(:update_check_url) { 'https://api.joinmastodon.org/update-check' }
+    let(:update_check_url) { 'https://api.jointucano.org/update-check' }
 
     it_behaves_like 'when the feature is enabled'
   end

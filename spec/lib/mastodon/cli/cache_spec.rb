@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 require 'rails_helper'
-require 'mastodon/cli/cache'
+require 'tucano/cli/cache'
 
-RSpec.describe Mastodon::CLI::Cache do
+RSpec.describe tucano::CLI::Cache do
   subject { cli.invoke(action, arguments, options) }
 
   let(:cli) { described_class.new }

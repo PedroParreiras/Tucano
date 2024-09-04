@@ -17,14 +17,14 @@ import elephantUIPlane from '@/images/elephant_ui_plane.svg';
 import AddIcon from '@/material-icons/400-24px/add.svg?react';
 import ChevronLeftIcon from '@/material-icons/400-24px/chevron_left.svg?react';
 import ChevronRightIcon from '@/material-icons/400-24px/chevron_right.svg?react';
-import { AnimatedNumber } from 'mastodon/components/animated_number';
-import { Icon }  from 'mastodon/components/icon';
-import { IconButton } from 'mastodon/components/icon_button';
-import EmojiPickerDropdown from 'mastodon/features/compose/containers/emoji_picker_dropdown_container';
-import { unicodeMapping } from 'mastodon/features/emoji/emoji_unicode_mapping_light';
-import { autoPlayGif, reduceMotion, disableSwiping, mascot } from 'mastodon/initial_state';
-import { assetHost } from 'mastodon/utils/config';
-import { WithRouterPropTypes } from 'mastodon/utils/react_router';
+import { AnimatedNumber } from 'tucano/components/animated_number';
+import { Icon }  from 'tucano/components/icon';
+import { IconButton } from 'tucano/components/icon_button';
+import EmojiPickerDropdown from 'tucano/features/compose/containers/emoji_picker_dropdown_container';
+import { unicodeMapping } from 'tucano/features/emoji/emoji_unicode_mapping_light';
+import { autoPlayGif, reduceMotion, disableSwiping, mascot } from 'tucano/initial_state';
+import { assetHost } from 'tucano/utils/config';
+import { WithRouterPropTypes } from 'tucano/utils/react_router';
 
 const messages = defineMessages({
   close: { id: 'lightbox.close', defaultMessage: 'Close' },
@@ -423,7 +423,7 @@ class Announcements extends ImmutablePureComponent {
 
     return (
       <div className='announcements'>
-        <img className='announcements__mastodon' alt='' draggable='false' src={mascot || elephantUIPlane} />
+        <img className='announcements__tucano' alt='' draggable='false' src={mascot || elephantUIPlane} />
 
         <div className='announcements__container'>
           <ReactSwipeableViews animateHeight animateTransitions={!reduceMotion} index={index} onChangeIndex={this.handleChangeIndex}>

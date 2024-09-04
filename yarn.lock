@@ -2741,9 +2741,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mastodon/mastodon@workspace:.":
+"@tucano/tucano@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@mastodon/mastodon@workspace:."
+  resolution: "@tucano/tucano@workspace:."
   dependencies:
     "@babel/core": "npm:^7.22.1"
     "@babel/plugin-transform-nullish-coalescing-operator": "npm:^7.22.3"
@@ -2911,9 +2911,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@mastodon/streaming@workspace:streaming":
+"@tucano/streaming@workspace:streaming":
   version: 0.0.0-use.local
-  resolution: "@mastodon/streaming@workspace:streaming"
+  resolution: "@tucano/streaming@workspace:streaming"
   dependencies:
     "@types/cors": "npm:^2.8.16"
     "@types/express": "npm:^4.17.17"

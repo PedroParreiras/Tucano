@@ -3,10 +3,10 @@ zh-CN:
   simple_form:
     hints:
       account:
-        discoverable: 您的公开嘟文和个人资料可能会在 Mastodon 的多个位置展示，您的个人资料可能会被推荐给其他用户。
+        discoverable: 您的公开嘟文和个人资料可能会在 tucano 的多个位置展示，您的个人资料可能会被推荐给其他用户。
         display_name: 您的全名或昵称。
         fields: 你的主页、人称代词、年龄，以及任何你想要添加的内容。
-        indexable: 您的公开嘟文会出现在 Mastodon 的搜索结果中。无论是否勾选，与您的嘟文有过交互的人都可能通过搜索找到它们。
+        indexable: 您的公开嘟文会出现在 tucano 的搜索结果中。无论是否勾选，与您的嘟文有过交互的人都可能通过搜索找到它们。
         note: '您可以提及 @其他人 或 #标签 。'
         show_collections: 人们将能够浏览您的关注和追随者。您关注的人会看到您关注他们。
         unlocked: 人们将能够在不请求批准的情况下关注您。如果您希望审核关注请求并选择接受或拒绝新的粉丝，请取消勾选此项。
@@ -54,7 +54,7 @@ zh-CN:
         phrase: 匹配将忽略嘟文或内容警告里的字母大小写
         scopes: 哪些 API 被允许使用。如果你勾选了更高一级的范围，就不用单独选中子项目了。
         setting_aggregate_reblogs: 不显示最近已经被转嘟过的嘟文(只会影响新收到的转嘟)
-        setting_always_send_emails: 一般情况下，如果你活跃使用 Mastodon，我们不会向你发送电子邮件通知
+        setting_always_send_emails: 一般情况下，如果你活跃使用 tucano，我们不会向你发送电子邮件通知
         setting_default_sensitive: 敏感内容默认隐藏，并在点击后显示
         setting_display_media_default: 隐藏被标记为敏感内容的媒体
         setting_display_media_hide_all: 始终隐藏媒体
@@ -67,7 +67,7 @@ zh-CN:
         domain: 该站点将能够从该服务器上拉取数据，并处理和存储收到的数据。
       email_domain_block:
         domain: 这可以是邮箱地址的域名或它使用的 MX 记录所指向的域名。用户注册时，系统会对此执行检查。
-        with_dns_records: Mastodon 会尝试解析所给域名的 DNS 记录，然后把解析结果一并封禁
+        with_dns_records: tucano 会尝试解析所给域名的 DNS 记录，然后把解析结果一并封禁
       featured_tag:
         name: 以下是你最近使用过的标签：
       filters:
@@ -82,15 +82,15 @@ zh-CN:
         bootstrap_timeline_accounts: 这些账号将在新用户关注推荐中置顶。
         closed_registrations_message: 在关闭注册时显示
         content_cache_retention_period: 来自其它实例的所有嘟文（包括转嘟与回复）都将在指定天数后被删除，不论本实例用户是否与这些嘟文产生过交互。这包括被本实例用户喜欢和收藏的嘟文。实例间用户的私下提及也将丢失并无法恢复。此设置针对的是特殊用途的实例，用于一般用途时会打破许多用户的期望。
-        custom_css: 你可以为网页版 Mastodon 应用自定义样式。
-        favicon: WEBP、PNG、GIF 或 JPG。使用自定义图标覆盖 Mastodon 的默认图标。
+        custom_css: 你可以为网页版 tucano 应用自定义样式。
+        favicon: WEBP、PNG、GIF 或 JPG。使用自定义图标覆盖 tucano 的默认图标。
         mascot: 覆盖高级网页界面中的绘图形象。
         media_cache_retention_period: 来自外站用户嘟文的媒体文件将被缓存到你的实例上。当该值被设为正值时，缓存的媒体文件将在指定天数后被清除。如果媒体文件在被清除后重新被请求，且源站内容仍然可用，它将被重新下载。由于链接预览卡拉取第三方站点的频率受到限制，建议将此值设置为至少 14 天，如果小于该值，链接预览卡将不会按需更新。
         peers_api_enabled: 此服务器在联邦宇宙中遇到的域名列表。 这里不包含关于您是否与给定服务器联合的数据，只是您的服务器知道它。 这由收集一般意义上的联邦统计信息的服务使用。
         profile_directory: 个人资料目录会列出所有选择可被发现的用户。
         require_invite_text: 当注册需要手动批准时，将“你为什么想要加入？”设为必填项
         site_contact_email: 他人需要询恰法务或支持信息时的联络方式
-        site_contact_username: 他人在 Mastodon 上联系你的方式
+        site_contact_username: 他人在 tucano 上联系你的方式
         site_extended_description: 任何可能对访客和用户有用的额外信息。可以使用 Markdown 语法。
         site_short_description: 有助于区分你的服务器独特性的简短描述。谁在管理？供谁使用？
         site_terms: 使用你自己的隐私政策或留空以使用默认版。可以使用 Markdown 语法。
@@ -105,7 +105,7 @@ zh-CN:
       form_challenge:
         current_password: 你正在进入安全区域
       imports:
-        data: 从其他 Mastodon 服务器导出的 CSV 文件
+        data: 从其他 tucano 服务器导出的 CSV 文件
       invite_request:
         text: 这会有助于我们处理你的申请
       ip_block:
@@ -300,7 +300,7 @@ zh-CN:
         software_updates:
           all: 通知所有更新
           critical: 仅在有关键更新时通知
-          label: 有新的 Mastodon 版本可用
+          label: 有新的 tucano 版本可用
           none: 从不通知更新（不推荐）
           patch: 通知错误修复更新
         trending_tag: 新热门待审核

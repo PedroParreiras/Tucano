@@ -2,8 +2,8 @@ import { connect } from 'react-redux';
 
 import { debounce } from 'lodash';
 
-import { fetchPoll, vote } from 'mastodon/actions/polls';
-import Poll from 'mastodon/components/poll';
+import { fetchPoll, vote } from 'tucano/actions/polls';
+import Poll from 'tucano/components/poll';
 
 const mapDispatchToProps = (dispatch, { pollId }) => ({
   refresh: debounce(

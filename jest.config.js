@@ -9,12 +9,12 @@ const config = {
     '<rootDir>/public/',
     '<rootDir>/tmp/',
   ],
-  setupFilesAfterEnv: ['<rootDir>/app/javascript/mastodon/test_setup.js'],
+  setupFilesAfterEnv: ['<rootDir>/app/javascript/tucano/test_setup.js'],
   collectCoverageFrom: [
-    'app/javascript/mastodon/**/*.{js,jsx,ts,tsx}',
-    '!app/javascript/mastodon/features/emoji/emoji_compressed.js',
-    '!app/javascript/mastodon/service_worker/entry.js',
-    '!app/javascript/mastodon/test_setup.js',
+    'app/javascript/tucano/**/*.{js,jsx,ts,tsx}',
+    '!app/javascript/tucano/features/emoji/emoji_compressed.js',
+    '!app/javascript/tucano/service_worker/entry.js',
+    '!app/javascript/tucano/test_setup.js',
   ],
   // Those packages are ESM, so we need them to be processed by Babel
   transformIgnorePatterns: ['/node_modules/(?!(redent|strip-indent)/)'],

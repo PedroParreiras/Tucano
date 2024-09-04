@@ -3,10 +3,10 @@ import { defineMessages } from 'react-intl';
 import axios from 'axios';
 import { throttle } from 'lodash';
 
-import api from 'mastodon/api';
-import { browserHistory } from 'mastodon/components/router';
-import { search as emojiSearch } from 'mastodon/features/emoji/emoji_mart_search_light';
-import { tagHistory } from 'mastodon/settings';
+import api from 'tucano/api';
+import { browserHistory } from 'tucano/components/router';
+import { search as emojiSearch } from 'tucano/features/emoji/emoji_mart_search_light';
+import { tagHistory } from 'tucano/settings';
 
 import { showAlert, showAlertForError } from './alerts';
 import { useEmoji } from './emojis';

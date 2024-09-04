@@ -11,13 +11,13 @@ import SwipeableViews from 'react-swipeable-views';
 
 import ArrowRightAltIcon from '@/material-icons/400-24px/arrow_right_alt.svg?react';
 import ContentCopyIcon from '@/material-icons/400-24px/content_copy.svg?react';
-import { ColumnBackButton } from 'mastodon/components/column_back_button';
-import { Icon }  from 'mastodon/components/icon';
-import { me, domain } from 'mastodon/initial_state';
-import { useAppSelector } from 'mastodon/store';
+import { ColumnBackButton } from 'tucano/components/column_back_button';
+import { Icon }  from 'tucano/components/icon';
+import { me, domain } from 'tucano/initial_state';
+import { useAppSelector } from 'tucano/store';
 
 const messages = defineMessages({
-  shareableMessage: { id: 'onboarding.share.message', defaultMessage: 'I\'m {username} on #Mastodon! Come follow me at {url}' },
+  shareableMessage: { id: 'onboarding.share.message', defaultMessage: 'I\'m {username} on #tucano! Come follow me at {url}' },
 });
 
 class CopyPasteText extends PureComponent {
@@ -147,14 +147,14 @@ export const Share = () => {
       <div className='scrollable privacy-policy'>
         <div className='column-title'>
           <h3><FormattedMessage id='onboarding.share.title' defaultMessage='Share your profile' /></h3>
-          <p><FormattedMessage id='onboarding.share.lead' defaultMessage='Let people know how they can find you on Mastodon!' /></p>
+          <p><FormattedMessage id='onboarding.share.lead' defaultMessage='Let people know how they can find you on tucano!' /></p>
         </div>
 
         <CopyPasteText value={intl.formatMessage(messages.shareableMessage, { username: `@${account.get('username')}@${domain}`, url })} />
 
         <TipCarousel>
-          <div><p className='onboarding__lead'><FormattedMessage id='onboarding.tips.verification' defaultMessage='<strong>Did you know?</strong> You can verify your account by putting a link to your Mastodon profile on your own website and adding the website to your profile. No fees or documents necessary!'  values={{ strong: chunks => <strong>{chunks}</strong> }}  /></p></div>
-          <div><p className='onboarding__lead'><FormattedMessage id='onboarding.tips.migration' defaultMessage='<strong>Did you know?</strong> If you feel like {domain} is not a great server choice for you in the future, you can move to another Mastodon server without losing your followers. You can even host your own server!' values={{ domain, strong: chunks => <strong>{chunks}</strong> }} /></p></div>
+          <div><p className='onboarding__lead'><FormattedMessage id='onboarding.tips.verification' defaultMessage='<strong>Did you know?</strong> You can verify your account by putting a link to your tucano profile on your own website and adding the website to your profile. No fees or documents necessary!'  values={{ strong: chunks => <strong>{chunks}</strong> }}  /></p></div>
+          <div><p className='onboarding__lead'><FormattedMessage id='onboarding.tips.migration' defaultMessage='<strong>Did you know?</strong> If you feel like {domain} is not a great server choice for you in the future, you can move to another tucano server without losing your followers. You can even host your own server!' values={{ domain, strong: chunks => <strong>{chunks}</strong> }} /></p></div>
           <div><p className='onboarding__lead'><FormattedMessage id='onboarding.tips.2fa' defaultMessage='<strong>Did you know?</strong> You can secure your account by setting up two-factor authentication in your account settings. It works with any TOTP app of your choice, no phone number necessary!'  values={{ strong: chunks => <strong>{chunks}</strong> }}  /></p></div>
         </TipCarousel>
 

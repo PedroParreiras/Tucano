@@ -2,7 +2,7 @@ import { injectIntl } from 'react-intl';
 
 import { connect } from 'react-redux';
 
-import { openURL } from 'mastodon/actions/search';
+import { openURL } from 'tucano/actions/search';
 
 import {
   followAccount,

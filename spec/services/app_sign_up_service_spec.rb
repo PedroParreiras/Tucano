@@ -87,7 +87,7 @@ RSpec.describe AppSignUpService do
       end
 
       it 'raises an error', :aggregate_failures do
-        expect { subject.call(app, remote_ip, good_params) }.to raise_error Mastodon::NotPermittedError
+        expect { subject.call(app, remote_ip, good_params) }.to raise_error tucano::NotPermittedError
       end
 
       context 'when using a valid invite' do
@@ -106,7 +106,7 @@ RSpec.describe AppSignUpService do
         let(:invite) { Fabricate(:invite, uses: 1, max_uses: 1) }
 
         it 'raises an error', :aggregate_failures do
-          expect { subject.call(app, remote_ip, params) }.to raise_error Mastodon::NotPermittedError
+          expect { subject.call(app, remote_ip, params) }.to raise_error tucano::NotPermittedError
         end
       end
     end

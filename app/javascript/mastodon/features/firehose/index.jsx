@@ -6,15 +6,15 @@ import { useIntl, defineMessages, FormattedMessage } from 'react-intl';
 import { Helmet } from 'react-helmet';
 import { NavLink } from 'react-router-dom';
 
-import { useIdentity } from '@/mastodon/identity_context';
+import { useIdentity } from '@/tucano/identity_context';
 import PublicIcon from '@/material-icons/400-24px/public.svg?react';
-import { addColumn } from 'mastodon/actions/columns';
-import { changeSetting } from 'mastodon/actions/settings';
-import { connectPublicStream, connectCommunityStream } from 'mastodon/actions/streaming';
-import { expandPublicTimeline, expandCommunityTimeline } from 'mastodon/actions/timelines';
-import { DismissableBanner } from 'mastodon/components/dismissable_banner';
-import { domain } from 'mastodon/initial_state';
-import { useAppDispatch, useAppSelector } from 'mastodon/store';
+import { addColumn } from 'tucano/actions/columns';
+import { changeSetting } from 'tucano/actions/settings';
+import { connectPublicStream, connectCommunityStream } from 'tucano/actions/streaming';
+import { expandPublicTimeline, expandCommunityTimeline } from 'tucano/actions/timelines';
+import { DismissableBanner } from 'tucano/components/dismissable_banner';
+import { domain } from 'tucano/initial_state';
+import { useAppDispatch, useAppSelector } from 'tucano/store';
 
 import Column from '../../components/column';
 import ColumnHeader from '../../components/column_header';

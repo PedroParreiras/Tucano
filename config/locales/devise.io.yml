@@ -28,7 +28,7 @@ io:
       email_changed:
         explanation: 'Retpostadreso di vua konto chanjesas a:'
         extra: Se vu ne chanjesis vua retpostadreso, nulu posible acesis vua konto. Chanjez vua pasvorto quik o kontaktez serviladministratero se vu ne povas enirar vua konto.
-        subject: 'Mastodon: Retpostadreso chanjesis'
+        subject: 'tucano: Retpostadreso chanjesis'
         title: Nova retpostadreso
       password_change:
         explanation: La pasvorto di vua konto chanjesis.
@@ -37,8 +37,8 @@ io:
         title: Pasvorto chanjesis
       reconfirmation_instructions:
         explanation: Konfirmez la nova adreso por chanjar vua retpostadreso.
-        extra: Se ca chanjo ne komencesis da vu, ignorez ca retposto. La retpostadreso por konto di Mastodon ne chanjesos til vu acesas la supera ligilo.
-        subject: 'Mastodon: Konfirmez retpostadreso por %{instance}'
+        extra: Se ca chanjo ne komencesis da vu, ignorez ca retposto. La retpostadreso por konto di tucano ne chanjesos til vu acesas la supera ligilo.
+        subject: 'tucano: Konfirmez retpostadreso por %{instance}'
         title: Verifikez retpostadreso
       reset_password_instructions:
         action: Chanjez pasvorto
@@ -47,31 +47,31 @@ io:
         subject: Instrucioni por chanjar la pasvorto
         title: Richanjo di pasvorto
       two_factor_disabled:
-        subject: 'Mastodon: 2-faktorverifiko deaktivigesis'
+        subject: 'tucano: 2-faktorverifiko deaktivigesis'
         title: 2FA deaktivigesis
       two_factor_enabled:
-        subject: 'Mastodon: 2-faktorverifiko aktivigesis'
+        subject: 'tucano: 2-faktorverifiko aktivigesis'
         title: 2FA aktivigesis
       two_factor_recovery_codes_changed:
         explanation: Antea rigankodexi devalidesis e novo facesis.
-        subject: 'Mastodon: 2-faktorrigankodexi rifacesis'
+        subject: 'tucano: 2-faktorrigankodexi rifacesis'
         title: 2FA-rigankodexi chanjesis
       unlock_instructions:
         subject: Instructioni por riacendar la konto
       webauthn_credential:
         added:
           explanation: Ca sekurklefo insertesis a vua konto
-          subject: 'Mastodon: Nova sekurklefo'
+          subject: 'tucano: Nova sekurklefo'
           title: Nova sekurklefo insertesis
         deleted:
           explanation: Ca sekurklefo efacesis de vua konto
-          subject: 'Mastodon: Sekurklefo efacesis'
+          subject: 'tucano: Sekurklefo efacesis'
           title: 1 de vua sekurklefi efacesis
       webauthn_disabled:
-        subject: 'Mastodon: Verifiko per sekurklefi deaktivigesis'
+        subject: 'tucano: Verifiko per sekurklefi deaktivigesis'
         title: Sekurklefi deaktivigesis
       webauthn_enabled:
-        subject: 'Mastodon: Sekurklefverifiko aktivigesis'
+        subject: 'tucano: Sekurklefverifiko aktivigesis'
         title: Sekurklefi aktivigesis
     omniauth_callbacks:
       failure: 'Ni ne povis autentikigar tu per %{kind}: ''%{reason}''.'

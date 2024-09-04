@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 require 'rails_helper'
-require 'mastodon/cli/main'
+require 'tucano/cli/main'
 
-RSpec.describe Mastodon::CLI::Main do
+RSpec.describe tucano::CLI::Main do
   subject { cli.invoke(action, arguments, options) }
 
   let(:cli) { described_class.new }
@@ -15,9 +15,9 @@ RSpec.describe Mastodon::CLI::Main do
   describe '#version' do
     let(:action) { :version }
 
-    it 'returns the Mastodon version' do
+    it 'returns the tucano version' do
       expect { subject }
-        .to output_results(Mastodon::Version.to_s)
+        .to output_results(tucano::Version.to_s)
     end
   end
 

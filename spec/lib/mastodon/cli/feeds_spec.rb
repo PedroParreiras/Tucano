@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 require 'rails_helper'
-require 'mastodon/cli/feeds'
+require 'tucano/cli/feeds'
 
-RSpec.describe Mastodon::CLI::Feeds do
+RSpec.describe tucano::CLI::Feeds do
   subject { cli.invoke(action, arguments, options) }
 
   let(:cli) { described_class.new }

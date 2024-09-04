@@ -13,15 +13,15 @@ import {
   removeColumn,
   moveColumn,
   changeColumnParams,
-} from 'mastodon/actions/columns';
-import { fetchDirectory, expandDirectory } from 'mastodon/actions/directory';
-import Column from 'mastodon/components/column';
-import { ColumnHeader } from 'mastodon/components/column_header';
-import { LoadMore } from 'mastodon/components/load_more';
-import { LoadingIndicator } from 'mastodon/components/loading_indicator';
-import { RadioButton } from 'mastodon/components/radio_button';
-import ScrollContainer from 'mastodon/containers/scroll_container';
-import { useAppDispatch, useAppSelector } from 'mastodon/store';
+} from 'tucano/actions/columns';
+import { fetchDirectory, expandDirectory } from 'tucano/actions/directory';
+import Column from 'tucano/components/column';
+import { ColumnHeader } from 'tucano/components/column_header';
+import { LoadMore } from 'tucano/components/load_more';
+import { LoadingIndicator } from 'tucano/components/loading_indicator';
+import { RadioButton } from 'tucano/components/radio_button';
+import ScrollContainer from 'tucano/containers/scroll_container';
+import { useAppDispatch, useAppSelector } from 'tucano/store';
 
 import { AccountCard } from './components/account_card';
 

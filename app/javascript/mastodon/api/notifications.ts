@@ -1,5 +1,5 @@
-import api, { apiRequest, getLinks } from 'mastodon/api';
-import type { ApiNotificationGroupsResultJSON } from 'mastodon/api_types/notifications';
+import api, { apiRequest, getLinks } from 'tucano/api';
+import type { ApiNotificationGroupsResultJSON } from 'tucano/api_types/notifications';
 
 export const apiFetchNotifications = async (params?: {
   exclude_types?: string[];

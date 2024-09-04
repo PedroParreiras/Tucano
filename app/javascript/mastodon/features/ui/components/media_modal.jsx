@@ -12,13 +12,13 @@ import ReactSwipeableViews from 'react-swipeable-views';
 import ChevronLeftIcon from '@/material-icons/400-24px/chevron_left.svg?react';
 import ChevronRightIcon from '@/material-icons/400-24px/chevron_right.svg?react';
 import CloseIcon from '@/material-icons/400-24px/close.svg?react';
-import { getAverageFromBlurhash } from 'mastodon/blurhash';
-import { GIFV } from 'mastodon/components/gifv';
-import { Icon }  from 'mastodon/components/icon';
-import { IconButton } from 'mastodon/components/icon_button';
-import Footer from 'mastodon/features/picture_in_picture/components/footer';
-import Video from 'mastodon/features/video';
-import { disableSwiping } from 'mastodon/initial_state';
+import { getAverageFromBlurhash } from 'tucano/blurhash';
+import { GIFV } from 'tucano/components/gifv';
+import { Icon }  from 'tucano/components/icon';
+import { IconButton } from 'tucano/components/icon_button';
+import Footer from 'tucano/features/picture_in_picture/components/footer';
+import Video from 'tucano/features/video';
+import { disableSwiping } from 'tucano/initial_state';
 
 import ImageLoader from './image_loader';
 

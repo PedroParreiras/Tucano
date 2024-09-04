@@ -12,7 +12,7 @@ class RemoteAccountRefreshWorker
     return if account.nil? || account.local?
 
     ActivityPub::FetchRemoteAccountService.new.call(account.uri)
-  rescue Mastodon::UnexpectedResponseError => e
+  rescue tucano::UnexpectedResponseError => e
     response = e.response
 
     if response_error_unsalvageable?(response)

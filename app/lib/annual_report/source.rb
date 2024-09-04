@@ -11,6 +11,6 @@ class AnnualReport::Source
   protected
 
   def year_as_snowflake_range
-    (Mastodon::Snowflake.id_at(DateTime.new(year, 1, 1))..Mastodon::Snowflake.id_at(DateTime.new(year, 12, 31)))
+    (tucano::Snowflake.id_at(DateTime.new(year, 1, 1))..tucano::Snowflake.id_at(DateTime.new(year, 12, 31)))
   end
 end

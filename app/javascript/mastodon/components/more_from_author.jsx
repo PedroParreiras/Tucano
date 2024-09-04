@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import { FormattedMessage } from 'react-intl';
 
-import { AuthorLink } from 'mastodon/features/explore/components/author_link';
+import { AuthorLink } from 'tucano/features/explore/components/author_link';
 
 export const MoreFromAuthor = ({ accountId }) => (
   <div className='more-from-author'>

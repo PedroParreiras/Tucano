@@ -22,15 +22,15 @@ module Remotable
 
         begin
           Request.new(:get, url).perform do |response|
-            raise Mastodon::UnexpectedResponseError, response unless (200...300).cover?(response.code)
+            raise tucano::UnexpectedResponseError, response unless (200...300).cover?(response.code)
 
             public_send(:"#{attachment_name}=", ResponseWithLimit.new(response, limit))
           end
-        rescue Mastodon::UnexpectedResponseError, HTTP::TimeoutError, HTTP::ConnectionError, OpenSSL::SSL::SSLError => e
+        rescue tucano::UnexpectedResponseError, HTTP::TimeoutError, HTTP::ConnectionError, OpenSSL::SSL::SSLError => e
           Rails.logger.debug { "Error fetching remote #{attachment_name}: #{e}" }
           public_send(:"#{attachment_name}=", nil) if public_send(:"#{attachment_name}_file_name").present?
           raise e unless suppress_errors
-        rescue Paperclip::Errors::NotIdentifiedByImageMagickError, Addressable::URI::InvalidURIError, Mastodon::HostValidationError, Mastodon::LengthValidationError, Paperclip::Error, Mastodon::DimensionsValidationError, Mastodon::StreamValidationError => e
+        rescue Paperclip::Errors::NotIdentifiedByImageMagickError, Addressable::URI::InvalidURIError, tucano::HostValidationError, tucano::LengthValidationError, Paperclip::Error, tucano::DimensionsValidationError, tucano::StreamValidationError => e
           Rails.logger.debug { "Error fetching remote #{attachment_name}: #{e}" }
           public_send(:"#{attachment_name}=", nil) if public_send(:"#{attachment_name}_file_name").present?
         end

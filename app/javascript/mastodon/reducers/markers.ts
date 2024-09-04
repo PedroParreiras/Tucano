@@ -1,7 +1,7 @@
 import { createReducer } from '@reduxjs/toolkit';
 
-import { submitMarkersAction, fetchMarkers } from 'mastodon/actions/markers';
-import { compareId } from 'mastodon/compare_id';
+import { submitMarkersAction, fetchMarkers } from 'tucano/actions/markers';
+import { compareId } from 'tucano/compare_id';
 
 const initialState = {
   home: '0',

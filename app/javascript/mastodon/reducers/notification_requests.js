@@ -1,6 +1,6 @@
 import { Map as ImmutableMap, List as ImmutableList, fromJS } from 'immutable';
 
-import { blockAccountSuccess, muteAccountSuccess } from 'mastodon/actions/accounts';
+import { blockAccountSuccess, muteAccountSuccess } from 'tucano/actions/accounts';
 import {
   NOTIFICATION_REQUESTS_EXPAND_REQUEST,
   NOTIFICATION_REQUESTS_EXPAND_SUCCESS,
@@ -21,7 +21,7 @@ import {
   NOTIFICATIONS_FOR_REQUEST_EXPAND_REQUEST,
   NOTIFICATIONS_FOR_REQUEST_EXPAND_SUCCESS,
   NOTIFICATIONS_FOR_REQUEST_EXPAND_FAIL,
-} from 'mastodon/actions/notifications';
+} from 'tucano/actions/notifications';
 
 import { notificationToMap } from './notifications';
 

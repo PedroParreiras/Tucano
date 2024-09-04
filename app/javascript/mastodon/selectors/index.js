@@ -1,7 +1,7 @@
 import { createSelector } from '@reduxjs/toolkit';
 import { List as ImmutableList, Map as ImmutableMap } from 'immutable';
 
-import { toServerSideType } from 'mastodon/utils/filters';
+import { toServerSideType } from 'tucano/utils/filters';
 
 import { me } from '../initial_state';
 

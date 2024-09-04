@@ -109,7 +109,7 @@ class REST::InstanceSerializer < ActiveModel::Serializer
 
   def api_versions
     {
-      mastodon: 1,
+      tucano: 1,
     }
   end
 

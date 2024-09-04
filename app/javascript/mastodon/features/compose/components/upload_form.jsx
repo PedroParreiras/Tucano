@@ -2,7 +2,7 @@ import { useRef, useCallback } from 'react';
 
 import { useSelector, useDispatch } from 'react-redux';
 
-import { changeMediaOrder } from 'mastodon/actions/compose';
+import { changeMediaOrder } from 'tucano/actions/compose';
 
 import { Upload } from './upload';
 import { UploadProgress } from './upload_progress';

@@ -27,7 +27,7 @@ class EncryptedMessage < ApplicationRecord
   belongs_to :device
   belongs_to :from_account, class_name: 'Account'
 
-  around_create Mastodon::Snowflake::Callbacks
+  around_create tucano::Snowflake::Callbacks
 
   after_commit :push_to_streaming_api
 

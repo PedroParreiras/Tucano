@@ -3,10 +3,10 @@ import { FormattedMessage, useIntl, defineMessages } from 'react-intl';
 import classNames from 'classnames';
 
 import FlagIcon from '@/material-icons/400-24px/flag-fill.svg?react';
-import { Icon } from 'mastodon/components/icon';
-import { RelativeTimestamp } from 'mastodon/components/relative_timestamp';
-import type { NotificationGroupAdminReport } from 'mastodon/models/notification_group';
-import { useAppSelector } from 'mastodon/store';
+import { Icon } from 'tucano/components/icon';
+import { RelativeTimestamp } from 'tucano/components/relative_timestamp';
+import type { NotificationGroupAdminReport } from 'tucano/models/notification_group';
+import { useAppSelector } from 'tucano/store';
 
 // This needs to be kept in sync with app/models/report.rb
 const messages = defineMessages({

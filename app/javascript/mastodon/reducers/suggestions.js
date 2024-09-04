@@ -1,7 +1,7 @@
 import { Map as ImmutableMap, List as ImmutableList, fromJS } from 'immutable';
 
-import { blockAccountSuccess, muteAccountSuccess } from 'mastodon/actions/accounts';
-import { blockDomainSuccess } from 'mastodon/actions/domain_blocks';
+import { blockAccountSuccess, muteAccountSuccess } from 'tucano/actions/accounts';
+import { blockDomainSuccess } from 'tucano/actions/domain_blocks';
 
 import {
   SUGGESTIONS_FETCH_REQUEST,

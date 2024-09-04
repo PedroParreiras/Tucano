@@ -4,12 +4,12 @@ import { Helmet } from 'react-helmet';
 import { useParams } from 'react-router-dom';
 
 import ExploreIcon from '@/material-icons/400-24px/explore.svg?react';
-import { expandLinkTimeline } from 'mastodon/actions/timelines';
-import Column from 'mastodon/components/column';
-import { ColumnHeader } from 'mastodon/components/column_header';
-import StatusListContainer from 'mastodon/features/ui/containers/status_list_container';
-import type { Card } from 'mastodon/models/status';
-import { useAppDispatch, useAppSelector } from 'mastodon/store';
+import { expandLinkTimeline } from 'tucano/actions/timelines';
+import Column from 'tucano/components/column';
+import { ColumnHeader } from 'tucano/components/column_header';
+import StatusListContainer from 'tucano/features/ui/containers/status_list_container';
+import type { Card } from 'tucano/models/status';
+import { useAppDispatch, useAppSelector } from 'tucano/store';
 
 export const LinkTimeline: React.FC<{
   multiColumn: boolean;

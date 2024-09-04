@@ -1,14 +1,14 @@
 [Unit]
-Description=mastodon-streaming on port %I
+Description=tucano-streaming on port %I
 After=network.target
-# handles using `systemctl restart mastodon-streaming`
-PartOf=mastodon-streaming.service
-ReloadPropagatedFrom=mastodon-streaming.service
+# handles using `systemctl restart tucano-streaming`
+PartOf=tucano-streaming.service
+ReloadPropagatedFrom=tucano-streaming.service
 
 [Service]
 Type=simple
-User=mastodon
-WorkingDirectory=/home/mastodon/live
+User=tucano
+WorkingDirectory=/home/tucano/live
 Environment="NODE_ENV=production"
 Environment="PORT=%i"
 ExecStart=/usr/bin/node ./streaming
@@ -48,7 +48,7 @@ SystemCallArchitectures=native
 SystemCallFilter=~@cpu-emulation @debug @keyring @ipc @memlock @mount @obsolete @privileged @resources @setuid
 SystemCallFilter=pipe
 SystemCallFilter=pipe2
-ReadWritePaths=/home/mastodon/live
+ReadWritePaths=/home/tucano/live
 
 [Install]
-WantedBy=multi-user.target mastodon-streaming.service
+WantedBy=multi-user.target tucano-streaming.service

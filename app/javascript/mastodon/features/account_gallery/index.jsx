@@ -6,15 +6,15 @@ import ImmutablePropTypes from 'react-immutable-proptypes';
 import ImmutablePureComponent from 'react-immutable-pure-component';
 import { connect } from 'react-redux';
 
-import { lookupAccount, fetchAccount } from 'mastodon/actions/accounts';
-import { openModal } from 'mastodon/actions/modal';
-import { ColumnBackButton } from 'mastodon/components/column_back_button';
-import { LoadMore } from 'mastodon/components/load_more';
-import { LoadingIndicator } from 'mastodon/components/loading_indicator';
-import ScrollContainer from 'mastodon/containers/scroll_container';
-import BundleColumnError from 'mastodon/features/ui/components/bundle_column_error';
-import { normalizeForLookup } from 'mastodon/reducers/accounts_map';
-import { getAccountGallery } from 'mastodon/selectors';
+import { lookupAccount, fetchAccount } from 'tucano/actions/accounts';
+import { openModal } from 'tucano/actions/modal';
+import { ColumnBackButton } from 'tucano/components/column_back_button';
+import { LoadMore } from 'tucano/components/load_more';
+import { LoadingIndicator } from 'tucano/components/loading_indicator';
+import ScrollContainer from 'tucano/containers/scroll_container';
+import BundleColumnError from 'tucano/features/ui/components/bundle_column_error';
+import { normalizeForLookup } from 'tucano/reducers/accounts_map';
+import { getAccountGallery } from 'tucano/selectors';
 
 import { expandAccountMediaTimeline } from '../../actions/timelines';
 import HeaderContainer from '../account_timeline/containers/header_container';

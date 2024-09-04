@@ -1,10 +1,10 @@
 ---
 it:
   about:
-    about_mastodon_html: 'Il social network del futuro: Nessuna pubblicità, zero sorveglianza azienale, design etico e decentralizzazione! Sii il proprietario dei tuoi dati, con Mastodon!'
+    about_tucano_html: 'Il social network del futuro: Nessuna pubblicità, zero sorveglianza azienale, design etico e decentralizzazione! Sii il proprietario dei tuoi dati, con tucano!'
     contact_missing: Non impostato
     contact_unavailable: N/D
-    hosted_on: Mastodon ospitato su %{domain}
+    hosted_on: tucano ospitato su %{domain}
     title: Info
   accounts:
     follow: Segui
@@ -686,7 +686,7 @@ it:
         moderation: Moderazione
         special: Speciale
       delete: Cancella
-      description_html: Con i <strong>ruoli utente</strong>, puoi personalizzare a quali funzioni e aree di Mastodon i tuoi utenti possono accedere.
+      description_html: Con i <strong>ruoli utente</strong>, puoi personalizzare a quali funzioni e aree di tucano i tuoi utenti possono accedere.
       edit: Modifica il ruolo '%{name}'
       everyone: Permessi predefiniti
       everyone_full_description_html: Questo è il ruolo <strong>base</strong> che influenza <strong>tutti gli utenti</strong>, anche quelli senza un ruolo assegnato. Tutti gli altri ruoli ereditano i permessi da esso.
@@ -749,24 +749,24 @@ it:
         rules_hint: C'è un'area dedicata per le regole che i tuoi utenti dovrebbero rispettare.
         title: Info
       appearance:
-        preamble: Personalizza l'interfaccia web di Mastodon.
+        preamble: Personalizza l'interfaccia web di tucano.
         title: Aspetto
       branding:
-        preamble: 'Il marchio del tuo server lo differenzia dagli altri server nella rete. Queste informazioni possono essere visualizzate in una varietà di ambienti, come: l''interfaccia web di Mastodon, le applicazioni native, nelle anteprime dei collegamenti su altri siti Web e all''interno delle app di messaggistica e così via. Per questo motivo, è meglio mantenere queste informazioni chiare, brevi e concise.'
+        preamble: 'Il marchio del tuo server lo differenzia dagli altri server nella rete. Queste informazioni possono essere visualizzate in una varietà di ambienti, come: l''interfaccia web di tucano, le applicazioni native, nelle anteprime dei collegamenti su altri siti Web e all''interno delle app di messaggistica e così via. Per questo motivo, è meglio mantenere queste informazioni chiare, brevi e concise.'
         title: Marchio
       captcha_enabled:
         desc_html: Questo si basa su script esterni da hCaptcha, che possono rappresentare un problema di sicurezza e privacy. Inoltre, <strong>questo può rendere il processo di registrazione significativamente meno accessibile ad alcune persone (soprattutto disabili)</strong>. Per questi motivi, prendi in considerazione misure alternative come la registrazione basata su approvazione o su invito.
         title: Richiedi ai nuovi utenti di risolvere un CAPTCHA per confermare il loro account
       content_retention:
         danger_zone: Zona pericolosa
-        preamble: Controlla come vengono memorizzati i contenuti generati dall'utente in Mastodon.
+        preamble: Controlla come vengono memorizzati i contenuti generati dall'utente in tucano.
         title: Conservazione dei contenuti
       default_noindex:
         desc_html: Interessa tutti gli utenti che non hanno modificato personalmente questa impostazione
         title: Esclude gli utenti dall'indicizzazione dei motori di ricerca per impostazione predefinita
       discovery:
         follow_recommendations: Segui le raccomandazioni
-        preamble: La comparsa di contenuti interessanti è determinante per l'arrivo di nuovi utenti che potrebbero non conoscere nessuno su Mastodon. Controlla in che modo varie funzionalità di scoperta funzionano sul tuo server.
+        preamble: La comparsa di contenuti interessanti è determinante per l'arrivo di nuovi utenti che potrebbero non conoscere nessuno su tucano. Controlla in che modo varie funzionalità di scoperta funzionano sul tuo server.
         profile_directory: Directory del profilo
         public_timelines: Timeline pubbliche
         publish_discovered_servers: Pubblica i server scoperti
@@ -798,7 +798,7 @@ it:
       destroyed_msg: Caricamento sito eliminato!
     software_updates:
       critical_update: 'Critico: ti preghiamo di aggiornare rapidamente'
-      description: Si consiglia di mantenere aggiornata l'installazione di Mastodon per beneficiare delle ultime correzioni e funzionalità. Inoltre, a volte è fondamentale aggiornare Mastodon in modo tempestivo per evitare problemi di sicurezza. Per queste ragioni, Mastodon verifica la presenza di aggiornamenti ogni 30 minuti e ti avviserà in base alle tue preferenze di notifica e-mail.
+      description: Si consiglia di mantenere aggiornata l'installazione di tucano per beneficiare delle ultime correzioni e funzionalità. Inoltre, a volte è fondamentale aggiornare tucano in modo tempestivo per evitare problemi di sicurezza. Per queste ragioni, tucano verifica la presenza di aggiornamenti ogni 30 minuti e ti avviserà in base alle tue preferenze di notifica e-mail.
       documentation_link: Scopri di più
       release_notes: Note di rilascio
       title: Aggiornamenti disponibili
@@ -856,7 +856,7 @@ it:
         message_html: Le mappature degli indici Elasticsearch sono obsolete. Si prega di eseguire <code>tootctl search deploy --only=%{value}</code>
       elasticsearch_preset:
         action: Vedi la documentazione
-        message_html: Il tuo cluster Elasticsearch ha più di un nodo, ma Mastodon non è configurato per utilizzarli.
+        message_html: Il tuo cluster Elasticsearch ha più di un nodo, ma tucano non è configurato per utilizzarli.
       elasticsearch_preset_single_node:
         action: Vedi la documentazione
         message_html: Il tuo cluster Elasticsearch ha un solo nodo, <code>ES_PRESET</code> dovrebbe essere impostato su <code>single_node_cluster</code>.
@@ -874,10 +874,10 @@ it:
         message_html: Nessun processo di Sidekiq in esecuzione per le code di %{value}. Sei pregato di revisionare la tua configurazione di Sidekiq
       software_version_critical_check:
         action: Visualizza gli aggiornamenti disponibili
-        message_html: Un aggiornamento critico di Mastodon è disponibile, ti preghiamo di aggiornare il più rapidamente possibile.
+        message_html: Un aggiornamento critico di tucano è disponibile, ti preghiamo di aggiornare il più rapidamente possibile.
       software_version_patch_check:
         action: Visualizza gli aggiornamenti disponibili
-        message_html: È disponibile un aggiornamento di correzione dei bug di Mastodon.
+        message_html: È disponibile un aggiornamento di correzione dei bug di tucano.
       upload_check_privacy_error:
         action: Controlla qui per maggiori informazioni
         message_html: "<strong>Il tuo server web è mal configurato. La privacy dei tuoi utenti è a rischio.</strong>"
@@ -988,7 +988,7 @@ it:
     webhooks:
       add_new: Aggiungi endpoint
       delete: Elimina
-      description_html: Un <strong>webhook</strong> consente a Mastodon di inviare <strong>notifiche in tempo reale</strong> su determinati eventi alla tua applicazione, così la tua applicazione può <strong>attivare automaticamente delle reazioni</strong>.
+      description_html: Un <strong>webhook</strong> consente a tucano di inviare <strong>notifiche in tempo reale</strong> su determinati eventi alla tua applicazione, così la tua applicazione può <strong>attivare automaticamente delle reazioni</strong>.
       disable: Disabilita
       disabled: Disabilitato
       edit: Modifica endpoint
@@ -1022,8 +1022,8 @@ it:
       next_steps: Puoi approvare l'appello per annullare la decisione di moderazione, oppure ignorarlo.
       subject: "%{username} sta facendo appello contro una decisione di moderazione su %{instance}"
     new_critical_software_updates:
-      body: Sono state rilasciate delle nuove versioni critiche di Mastodon, potresti volerlo aggiornare il prima possibile!
-      subject: Aggiornamenti critici di Mastodon disponibili per %{instance}!
+      body: Sono state rilasciate delle nuove versioni critiche di tucano, potresti volerlo aggiornare il prima possibile!
+      subject: Aggiornamenti critici di tucano disponibili per %{instance}!
     new_pending_account:
       body: I dettagli del nuovo account sono qui sotto. Puoi approvare o rifiutare questa richiesta.
       subject: Nuovo account pronto per la revisione su %{instance} (%{username})
@@ -1032,8 +1032,8 @@ it:
       body_remote: Qualcuno da %{domain} ha segnalato %{target}
       subject: Nuova segnalazione per %{instance} (#%{id})
     new_software_updates:
-      body: Sono state rilasciate delle nuove versioni di Mastodon, potresti volerlo aggiornare!
-      subject: Sono disponibili delle nuove versioni di Mastodon per %{instance}!
+      body: Sono state rilasciate delle nuove versioni di tucano, potresti volerlo aggiornare!
+      subject: Sono disponibili delle nuove versioni di tucano per %{instance}!
     new_trends:
       body: 'I seguenti elementi necessitano di un controllo prima che possano essere visualizzati pubblicamente:'
       new_trending_links:
@@ -1059,8 +1059,8 @@ it:
     confirmation_dialogs: Dialoghi di conferma
     discovery: Scoperta
     localization:
-      body: Mastodon è tradotto da volontari.
-      guide_link: https://it.crowdin.com/project/mastodon
+      body: tucano è tradotto da volontari.
+      guide_link: https://it.crowdin.com/project/tucano
       guide_link_text: Tutti possono contribuire.
     sensitive_content: Contenuto sensibile
   application_mailer:
@@ -1098,9 +1098,9 @@ it:
     delete_account: Elimina account
     delete_account_html: Se desideri cancellare il tuo account, puoi <a href="%{path}">farlo qui</a>. Ti sarà chiesta conferma.
     description:
-      prefix_invited_by_user: "@%{name} ti invita a iscriverti a questo server Mastodon!"
-      prefix_sign_up: Iscriviti oggi a Mastodon!
-      suffix: Con un account, sarai in grado di seguire le persone, pubblicare aggiornamenti e scambiare messaggi con gli utenti da qualsiasi server di Mastodon e altro ancora!
+      prefix_invited_by_user: "@%{name} ti invita a iscriverti a questo server tucano!"
+      prefix_sign_up: Iscriviti oggi a tucano!
+      suffix: Con un account, sarai in grado di seguire le persone, pubblicare aggiornamenti e scambiare messaggi con gli utenti da qualsiasi server di tucano e altro ancora!
     didnt_get_confirmation: Non hai ricevuto un link di conferma?
     dont_have_your_security_key: Non hai la tua chiave di sicurezza?
     forgot_password: Hai dimenticato la tua password?
@@ -1109,7 +1109,7 @@ it:
     link_to_webauth: Usa il tuo dispositivo chiave di sicurezza
     log_in_with: Accedi con
     login: Entra
-    logout: Esci da Mastodon
+    logout: Esci da tucano
     migrate_account: Sposta ad un account differente
     migrate_account_html: Se vuoi che questo account sia reindirizzato a uno diverso, puoi <a href="%{path}">configurarlo qui</a>.
     or_log_in_with: Oppure accedi con
@@ -1147,7 +1147,7 @@ it:
       title: Accedi a %{domain}
     sign_up:
       manual_review: Le registrazioni su %{domain} vengono sottoposte a revisione manuale da parte dei nostri moderatori. Per aiutarci a elaborare la tua registrazione, scrivi qualcosa su di te e sul motivo per cui desideri un account su %{domain}.
-      preamble: Con un account su questo server Mastodon, sarai in grado di seguire qualsiasi altra persona sulla rete, indipendentemente da dove sia ospitato il suo account.
+      preamble: Con un account su questo server tucano, sarai in grado di seguire qualsiasi altra persona sulla rete, indipendentemente da dove sia ospitato il suo account.
       title: Lascia che ti configuriamo su %{domain}.
     status:
       account_status: Stato dell'account
@@ -1253,7 +1253,7 @@ it:
       content: Siamo spiacenti, ma qualcosa non ha funzionato dal nostro lato.
       title: Questa pagina non è corretta
     '503': La pagina non può essere trasmessa a causa di un errore temporaneo del server.
-    noscript_html: Per usare l'interfaccia web di Mastodon dovi abilitare JavaScript. In alternativa puoi provare una delle <a href="%{apps_path}">app native</a> per Mastodon per la tua piattaforma.
+    noscript_html: Per usare l'interfaccia web di tucano dovi abilitare JavaScript. In alternativa puoi provare una delle <a href="%{apps_path}">app native</a> per tucano per la tua piattaforma.
   existing_username_validator:
     not_found: impossibile trovare un utente locale con quel nome utente
     not_found_multiple: impossibile trovare %{usernames}
@@ -1442,7 +1442,7 @@ it:
     unsubscribe:
       action: Sì, annulla l'iscrizione
       complete: Iscrizione annullata
-      confirmation_html: Si è sicuri di voler annullare l'iscrizione per non ricevere %{type} per Mastodon su %{domain} sulla tua e-mail %{email}? Puoi sempre reiscriverti dalle tue <a href="%{settings_path}">impostazioni di notifica e-mail</a>.
+      confirmation_html: Si è sicuri di voler annullare l'iscrizione per non ricevere %{type} per tucano su %{domain} sulla tua e-mail %{email}? Puoi sempre reiscriverti dalle tue <a href="%{settings_path}">impostazioni di notifica e-mail</a>.
       emails:
         notification_emails:
           favourite: e-mail di notifica preferite
@@ -1451,7 +1451,7 @@ it:
           mention: menziona le e-mail di notifica
           reblog: e-mail di notifica per le condivisioni
       resubscribe_html: Se hai annullato l'iscrizione per errore, puoi reiscriverti tramite le <a href="%{settings_path}">impostazioni di notifica e-mail</a>.
-      success_html: Non riceverai più %{type} per Mastodon su %{domain} al tuo indirizzo e-mail %{email}.
+      success_html: Non riceverai più %{type} per tucano su %{domain} al tuo indirizzo e-mail %{email}.
       title: Disiscriviti
   media_attachments:
     validations:
@@ -1577,13 +1577,13 @@ it:
     posting_defaults: Predefinite di pubblicazione
     public_timelines: Timeline pubbliche
   privacy:
-    hint_html: "<strong>Personalizza il modo in cui vuoi che il tuo profilo e i tuoi post vengano trovati.</strong> Una varietà di funzionalità in Mastodon possono aiutarti a raggiungere un pubblico più ampio se abilitato. Prenditi un momento per rivedere queste impostazioni per assicurarti che si adattino al tuo caso d'uso."
+    hint_html: "<strong>Personalizza il modo in cui vuoi che il tuo profilo e i tuoi post vengano trovati.</strong> Una varietà di funzionalità in tucano possono aiutarti a raggiungere un pubblico più ampio se abilitato. Prenditi un momento per rivedere queste impostazioni per assicurarti che si adattino al tuo caso d'uso."
     privacy: Privacy
     privacy_hint_html: Controlla quanto tu voglia mostrare a beneficio degli altri. Le persone scoprono profili interessanti e app fantastiche sfogliando il seguito di altre persone e vedendo da quali app pubblichino, ma potresti preferire tenerlo nascosto.
     reach: Copertura
     reach_hint_html: Controlla se vuoi essere scoperto e seguito da nuove persone. Vuoi che i tuoi post vengano visualizzati nella schermata Esplora? Vuoi che altre persone ti vedano tra i loro consigli di utenti da seguire? Vuoi accettare automaticamente tutti i nuovi seguaci o avere un controllo granulare su ciascuno di essi?
     search: Cerca
-    search_hint_html: Controlla come vuoi essere trovato. Vuoi che le persone ti trovino in base a ciò che hai postato pubblicamente? Vuoi che le persone al di fuori di Mastodon trovino il tuo profilo durante la ricerca sul web? Si prega di notare che l'esclusione totale da tutti i motori di ricerca non può essere garantita per le informazioni pubbliche.
+    search_hint_html: Controlla come vuoi essere trovato. Vuoi che le persone ti trovino in base a ciò che hai postato pubblicamente? Vuoi che le persone al di fuori di tucano trovino il tuo profilo durante la ricerca sul web? Si prega di notare che l'esclusione totale da tutti i motori di ricerca non può essere garantita per le informazioni pubbliche.
     title: Privacy e copertura
   privacy_policy:
     title: Politica sulla privacy
@@ -1658,7 +1658,7 @@ it:
     current_session: Sessione corrente
     date: Data
     description: "%{browser} su %{platform}"
-    explanation: Questi sono i browser da cui attualmente è avvenuto l'accesso al tuo account Mastodon.
+    explanation: Questi sono i browser da cui attualmente è avvenuto l'accesso al tuo account tucano.
     ip: IP
     platforms:
       adobe_air: Adobe Air
@@ -1684,7 +1684,7 @@ it:
     aliases: Alias dell'account
     appearance: Interfaccia
     authorized_apps: Applicazioni autorizzate
-    back: Torna a Mastodon
+    back: Torna a tucano
     delete: Cancellazione account
     development: Sviluppo
     edit_profile: Modifica profilo
@@ -1803,9 +1803,9 @@ it:
   tags:
     does_not_match_previous_name: non corrisponde al nome precedente
   themes:
-    contrast: Mastodon (contrasto elevato)
-    default: Mastodon (scuro)
-    mastodon-light: Mastodon (chiaro)
+    contrast: tucano (contrasto elevato)
+    default: tucano (scuro)
+    tucano-light: tucano (chiaro)
     system: Automatico (usa il tema di sistema)
   time:
     formats:
@@ -1845,7 +1845,7 @@ it:
       subtitle: Il tuo appello è stato respinto.
       title: Appello respinto
     backup_ready:
-      explanation: Hai richiesto un backup completo del tuo account Mastodon.
+      explanation: Hai richiesto un backup completo del tuo account tucano.
       extra: Ora è pronto per il download!
       subject: Il tuo archivio è pronto per essere scaricato
       title: Esportazione archivio
@@ -1897,7 +1897,7 @@ it:
       apps_android_action: Scaricalo da Google Play
       apps_ios_action: Scarica dall'App Store
       apps_step: Scarica le nostre app ufficiali.
-      apps_title: App di Mastodon
+      apps_title: App di tucano
       checklist_subtitle: 'Iniziamo su questa nuova frontiera sociale:'
       checklist_title: Lista di controllo di Benvenuto
       edit_profile_action: Personalizza
@@ -1905,16 +1905,16 @@ it:
       edit_profile_title: Personalizza il tuo profilo
       explanation: Ecco alcuni suggerimenti per iniziare
       feature_action: Scopri di più
-      feature_audience: Mastodon ti offre una possibilità unica di gestire il tuo pubblico senza intermediari. Mastodon, distribuito sulla tua stessa infrastruttura, ti permette di seguire e di essere seguito da qualsiasi altro server Mastodon online, e non è controllato da nessun altro, eccetto te.
+      feature_audience: tucano ti offre una possibilità unica di gestire il tuo pubblico senza intermediari. tucano, distribuito sulla tua stessa infrastruttura, ti permette di seguire e di essere seguito da qualsiasi altro server tucano online, e non è controllato da nessun altro, eccetto te.
       feature_audience_title: Costruisci il tuo pubblico in sicurezza
-      feature_control: Tu sai cosa sia meglio vedere sul tuo home feed. Nessun algoritmo o annunci che sprechino il tuo tempo. Segui chiunque attraverso qualsiasi server Mastodon da un singolo account e ricevi i loro messaggi in ordine cronologico, e rendi il tuo angolo di internet un po' più come te.
+      feature_control: Tu sai cosa sia meglio vedere sul tuo home feed. Nessun algoritmo o annunci che sprechino il tuo tempo. Segui chiunque attraverso qualsiasi server tucano da un singolo account e ricevi i loro messaggi in ordine cronologico, e rendi il tuo angolo di internet un po' più come te.
       feature_control_title: Rimani in controllo della tua timeline
-      feature_creativity: Mastodon supporta audio, filmati e post, descrizioni di accessibilità, sondaggi, avvisi di contenuto, avatar animati, emoji personalizzate, controllo del ritaglio delle miniature e altro ancora, per aiutarti a esprimerti online. Che tu stia pubblicando la tua arte, la tua musica o il tuo podcast, Mastodon è lì per te.
+      feature_creativity: tucano supporta audio, filmati e post, descrizioni di accessibilità, sondaggi, avvisi di contenuto, avatar animati, emoji personalizzate, controllo del ritaglio delle miniature e altro ancora, per aiutarti a esprimerti online. Che tu stia pubblicando la tua arte, la tua musica o il tuo podcast, tucano è lì per te.
       feature_creativity_title: Creatività senza precedenti
-      feature_moderation: Mastodon rimette il processo decisionale nelle tue mani. Ogni server crea le proprie regole che vengono applicate localmente e non dall'alto verso il basso come i social media aziendali, rendendo più flessibile il rispondere alle esigenze di diversi gruppi di persone. Unisciti a un server con regole con cui sei d'accordo o ospita il tuo.
+      feature_moderation: tucano rimette il processo decisionale nelle tue mani. Ogni server crea le proprie regole che vengono applicate localmente e non dall'alto verso il basso come i social media aziendali, rendendo più flessibile il rispondere alle esigenze di diversi gruppi di persone. Unisciti a un server con regole con cui sei d'accordo o ospita il tuo.
       feature_moderation_title: Moderazione come dovrebbe essere
       follow_action: Segui
-      follow_step: Seguire persone interessanti è ciò che fa Mastodon.
+      follow_step: Seguire persone interessanti è ciò che fa tucano.
       follow_title: Personalizza il tuo home feed
       follows_subtitle: Segui account ben noti
       follows_title: Chi seguire
@@ -1929,10 +1929,10 @@ it:
       post_step: Salutate il mondo con testo, foto, video o sondaggi.
       post_title: Scrivi il tuo primo post
       share_action: Condividi
-      share_step: Fai sapere ai tuoi amici come trovarti su Mastodon.
-      share_title: Condividi il tuo profilo Mastodon
+      share_step: Fai sapere ai tuoi amici come trovarti su tucano.
+      share_title: Condividi il tuo profilo tucano
       sign_in_action: Accedi
-      subject: Benvenuto/a su Mastodon
+      subject: Benvenuto/a su tucano
       title: Benvenuto a bordo, %{name}!
   users:
     follow_limit_reached: Non puoi seguire più di %{limit} persone
@@ -1945,7 +1945,7 @@ it:
   verification:
     extra_instructions_html: <strong>Suggerimento:</strong> il collegamento sul tuo sito web può essere invisibile. La parte importante è <code>rel="me"</code> che impedisce l'impersonificazione su siti web con contenuti generati dagli utenti. Puoi anche usare un tag <code>link</code> nell'intestazione della pagina invece di <code>a</code>, ma l'HTML deve essere accessibile senza eseguire JavaScript.
     here_is_how: Ecco come
-    hint_html: "<strong>La verifica della tua identità su Mastodon è per tutti.</strong> Basata su standard web aperti, ora e per sempre gratis. Tutto ciò di cui hai bisogno è un sito web personale in cui le persone ti riconoscano. Quando ti colleghi a questo sito web dal tuo profilo, verificheremo che il sito web rimandi al tuo profilo e mostreremo un indicatore visivo su di esso."
+    hint_html: "<strong>La verifica della tua identità su tucano è per tutti.</strong> Basata su standard web aperti, ora e per sempre gratis. Tutto ciò di cui hai bisogno è un sito web personale in cui le persone ti riconoscano. Quando ti colleghi a questo sito web dal tuo profilo, verificheremo che il sito web rimandi al tuo profilo e mostreremo un indicatore visivo su di esso."
     instructions_html: Copia e incolla il codice qui sotto nell'HTML del tuo sito web. Quindi, aggiungi l'indirizzo del tuo sito web in uno dei campi aggiuntivi del tuo profilo dalla scheda "Modifica profilo" e salva le modifiche.
     verification: Verifica
     verified_links: I tuoi collegamenti verificati

@@ -1,6 +1,6 @@
 import { fromJS } from 'immutable';
 
-import { searchHistory } from 'mastodon/settings';
+import { searchHistory } from 'tucano/settings';
 
 import api from '../api';
 

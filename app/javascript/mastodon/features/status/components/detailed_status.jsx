@@ -9,14 +9,14 @@ import ImmutablePropTypes from 'react-immutable-proptypes';
 import ImmutablePureComponent from 'react-immutable-pure-component';
 
 import AlternateEmailIcon from '@/material-icons/400-24px/alternate_email.svg?react';
-import { AnimatedNumber } from 'mastodon/components/animated_number';
-import { ContentWarning } from 'mastodon/components/content_warning';
-import EditedTimestamp from 'mastodon/components/edited_timestamp';
-import { getHashtagBarForStatus } from 'mastodon/components/hashtag_bar';
-import { Icon }  from 'mastodon/components/icon';
-import PictureInPicturePlaceholder from 'mastodon/components/picture_in_picture_placeholder';
-import { VisibilityIcon } from 'mastodon/components/visibility_icon';
-import { WithRouterPropTypes } from 'mastodon/utils/react_router';
+import { AnimatedNumber } from 'tucano/components/animated_number';
+import { ContentWarning } from 'tucano/components/content_warning';
+import EditedTimestamp from 'tucano/components/edited_timestamp';
+import { getHashtagBarForStatus } from 'tucano/components/hashtag_bar';
+import { Icon }  from 'tucano/components/icon';
+import PictureInPicturePlaceholder from 'tucano/components/picture_in_picture_placeholder';
+import { VisibilityIcon } from 'tucano/components/visibility_icon';
+import { WithRouterPropTypes } from 'tucano/utils/react_router';
 
 import { Avatar } from '../../../components/avatar';
 import { DisplayName } from '../../../components/display_name';
@@ -100,7 +100,7 @@ class DetailedStatus extends ImmutablePureComponent {
       href = e.target.href;
     }
 
-    window.open(href, 'mastodon-intent', 'width=445,height=600,resizable=no,menubar=no,status=no,scrollbars=yes');
+    window.open(href, 'tucano-intent', 'width=445,height=600,resizable=no,menubar=no,status=no,scrollbars=yes');
   };
 
   handleTranslate = () => {

@@ -1,7 +1,7 @@
 import { createAction } from '@reduxjs/toolkit';
 
-import type { ApiAccountJSON } from 'mastodon/api_types/accounts';
-import type { ApiRelationshipJSON } from 'mastodon/api_types/relationships';
+import type { ApiAccountJSON } from 'tucano/api_types/accounts';
+import type { ApiRelationshipJSON } from 'tucano/api_types/relationships';
 
 export const revealAccount = createAction<{
   id: string;

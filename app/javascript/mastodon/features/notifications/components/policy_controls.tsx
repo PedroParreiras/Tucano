@@ -2,10 +2,10 @@ import { useCallback } from 'react';
 
 import { useIntl, defineMessages, FormattedMessage } from 'react-intl';
 
-import { openModal } from 'mastodon/actions/modal';
-import { updateNotificationsPolicy } from 'mastodon/actions/notification_policies';
-import type { AppDispatch } from 'mastodon/store';
-import { useAppSelector, useAppDispatch } from 'mastodon/store';
+import { openModal } from 'tucano/actions/modal';
+import { updateNotificationsPolicy } from 'tucano/actions/notification_policies';
+import type { AppDispatch } from 'tucano/store';
+import { useAppSelector, useAppDispatch } from 'tucano/store';
 
 import { SelectWithLabel } from './select_with_label';
 

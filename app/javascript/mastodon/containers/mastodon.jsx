@@ -7,17 +7,17 @@ import { Provider as ReduxProvider } from 'react-redux';
 
 import { ScrollContext } from 'react-router-scroll-4';
 
-import { fetchCustomEmojis } from 'mastodon/actions/custom_emojis';
-import { hydrateStore } from 'mastodon/actions/store';
-import { connectUserStream } from 'mastodon/actions/streaming';
-import ErrorBoundary from 'mastodon/components/error_boundary';
-import { Router } from 'mastodon/components/router';
-import UI from 'mastodon/features/ui';
-import { IdentityContext, createIdentityContext } from 'mastodon/identity_context';
-import initialState, { title as siteTitle } from 'mastodon/initial_state';
-import { IntlProvider } from 'mastodon/locales';
-import { store } from 'mastodon/store';
-import { isProduction } from 'mastodon/utils/environment';
+import { fetchCustomEmojis } from 'tucano/actions/custom_emojis';
+import { hydrateStore } from 'tucano/actions/store';
+import { connectUserStream } from 'tucano/actions/streaming';
+import ErrorBoundary from 'tucano/components/error_boundary';
+import { Router } from 'tucano/components/router';
+import UI from 'tucano/features/ui';
+import { IdentityContext, createIdentityContext } from 'tucano/identity_context';
+import initialState, { title as siteTitle } from 'tucano/initial_state';
+import { IntlProvider } from 'tucano/locales';
+import { store } from 'tucano/store';
+import { isProduction } from 'tucano/utils/environment';
 
 const title = isProduction() ? siteTitle : `${siteTitle} (Dev)`;
 
@@ -28,7 +28,7 @@ if (initialState.meta.me) {
   store.dispatch(fetchCustomEmojis());
 }
 
-export default class Mastodon extends PureComponent {
+export default class tucano extends PureComponent {
   identity = createIdentityContext(initialState);
 
   componentDidMount() {
@@ -45,7 +45,7 @@ export default class Mastodon extends PureComponent {
   }
 
   shouldUpdateScroll (prevRouterProps, { location }) {
-    return !(location.state?.mastodonModalKey && location.state?.mastodonModalKey !== prevRouterProps?.location?.state?.mastodonModalKey);
+    return !(location.state?.tucanoModalKey && location.state?.tucanoModalKey !== prevRouterProps?.location?.state?.tucanoModalKey);
   }
 
   render () {

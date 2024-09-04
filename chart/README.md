@@ -1,3 +1,3 @@
 # This Helm chart has moved
 
-The Mastodon Helm chart is now maintained in https://github.com/mastodon/chart.
+The tucano Helm chart is now maintained in https://github.com/tucano/chart.

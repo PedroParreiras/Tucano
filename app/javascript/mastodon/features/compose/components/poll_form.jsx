@@ -13,8 +13,8 @@ import {
   clearComposeSuggestions,
   fetchComposeSuggestions,
   selectComposeSuggestion,
-} from 'mastodon/actions/compose';
-import AutosuggestInput from 'mastodon/components/autosuggest_input';
+} from 'tucano/actions/compose';
+import AutosuggestInput from 'tucano/components/autosuggest_input';
 
 const messages = defineMessages({
   option_placeholder: { id: 'compose_form.poll.option_placeholder', defaultMessage: 'Option {number}' },

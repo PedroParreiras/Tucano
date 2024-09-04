@@ -2,8 +2,8 @@ import { useCallback } from 'react';
 
 import { defineMessages, useIntl } from 'react-intl';
 
-import { editStatus } from 'mastodon/actions/statuses';
-import { useAppDispatch } from 'mastodon/store';
+import { editStatus } from 'tucano/actions/statuses';
+import { useAppDispatch } from 'tucano/store';
 
 import type { BaseConfirmationModalProps } from './confirmation_modal';
 import { ConfirmationModal } from './confirmation_modal';

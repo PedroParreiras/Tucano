@@ -10,13 +10,13 @@ import ImmutablePureComponent from 'react-immutable-pure-component';
 import { connect } from 'react-redux';
 
 import ListAltIcon from '@/material-icons/400-24px/list_alt.svg?react';
-import { fetchLists } from 'mastodon/actions/lists';
-import Column from 'mastodon/components/column';
-import ColumnHeader from 'mastodon/components/column_header';
-import { LoadingIndicator } from 'mastodon/components/loading_indicator';
-import ScrollableList from 'mastodon/components/scrollable_list';
-import ColumnLink from 'mastodon/features/ui/components/column_link';
-import ColumnSubheading from 'mastodon/features/ui/components/column_subheading';
+import { fetchLists } from 'tucano/actions/lists';
+import Column from 'tucano/components/column';
+import ColumnHeader from 'tucano/components/column_header';
+import { LoadingIndicator } from 'tucano/components/loading_indicator';
+import ScrollableList from 'tucano/components/scrollable_list';
+import ColumnLink from 'tucano/features/ui/components/column_link';
+import ColumnSubheading from 'tucano/features/ui/components/column_subheading';
 
 import NewListForm from './components/new_list_form';
 

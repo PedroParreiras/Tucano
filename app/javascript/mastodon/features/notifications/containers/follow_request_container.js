@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 
-import { authorizeFollowRequest, rejectFollowRequest } from 'mastodon/actions/accounts';
-import { makeGetAccount } from 'mastodon/selectors';
+import { authorizeFollowRequest, rejectFollowRequest } from 'tucano/actions/accounts';
+import { makeGetAccount } from 'tucano/selectors';
 
 import FollowRequest from '../components/follow_request';
 

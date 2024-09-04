@@ -12,7 +12,7 @@ import Overlay from 'react-overlays/Overlay';
 import AlternateEmailIcon from '@/material-icons/400-24px/alternate_email.svg?react';
 import BadgeIcon from '@/material-icons/400-24px/badge.svg?react';
 import GlobeIcon from '@/material-icons/400-24px/globe.svg?react';
-import { Icon } from 'mastodon/components/icon';
+import { Icon } from 'tucano/components/icon';
 
 export const DomainPill = ({ domain, username, isSelf }) => {
   const [open, setOpen] = useState(false);
@@ -68,8 +68,8 @@ export const DomainPill = ({ domain, username, isSelf }) => {
 
             {expanded && (
               <>
-                <p><FormattedMessage id='domain_pill.activitypub_like_language' defaultMessage='ActivityPub is like the language Mastodon speaks with other social networks.' /></p>
-                <p><FormattedMessage id='domain_pill.activitypub_lets_connect' defaultMessage='It lets you connect and interact with people not just on Mastodon, but across different social apps too.' /></p>
+                <p><FormattedMessage id='domain_pill.activitypub_like_language' defaultMessage='ActivityPub is like the language tucano speaks with other social networks.' /></p>
+                <p><FormattedMessage id='domain_pill.activitypub_lets_connect' defaultMessage='It lets you connect and interact with people not just on tucano, but across different social apps too.' /></p>
               </>
             )}
           </div>

@@ -2,10 +2,10 @@ import { isFulfilled } from '@reduxjs/toolkit';
 import type { Reducer } from '@reduxjs/toolkit';
 import { Map as ImmutableMap } from 'immutable';
 
-import type { ApiRelationshipJSON } from 'mastodon/api_types/relationships';
-import type { Account } from 'mastodon/models/account';
-import { createRelationship } from 'mastodon/models/relationship';
-import type { Relationship } from 'mastodon/models/relationship';
+import type { ApiRelationshipJSON } from 'tucano/api_types/relationships';
+import type { Account } from 'tucano/models/account';
+import { createRelationship } from 'tucano/models/relationship';
+import type { Relationship } from 'tucano/models/relationship';
 
 import { submitAccountNote } from '../actions/account_notes';
 import {

@@ -143,7 +143,7 @@ class Status < ApplicationRecord
   before_validation :set_conversation
   before_validation :set_local
 
-  around_create Mastodon::Snowflake::Callbacks
+  around_create tucano::Snowflake::Callbacks
 
   after_create :set_poll_id
 

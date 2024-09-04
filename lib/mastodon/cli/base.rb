@@ -7,7 +7,7 @@ require 'thor'
 require 'pastel'
 require_relative 'progress_helper'
 
-module Mastodon
+module tucano
   module CLI
     class Base < Thor
       include ProgressHelper

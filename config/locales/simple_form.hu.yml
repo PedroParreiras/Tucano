@@ -3,10 +3,10 @@ hu:
   simple_form:
     hints:
       account:
-        discoverable: A nyilvános bejegyzéseid és a profilod kiemelhető vagy ajánlható a Mastodon különböző területein, a profilod más felhasználóknak is javasolható.
+        discoverable: A nyilvános bejegyzéseid és a profilod kiemelhető vagy ajánlható a tucano különböző területein, a profilod más felhasználóknak is javasolható.
         display_name: Teljes neved vagy vicces neved.
         fields: Weboldalad, megszólításaid, korod, bármi, amit szeretnél.
-        indexable: A nyilvános bejegyzéseid megjelenhetnek a Mastodon keresési eredményei között. Azok, akik kapcsolatba léptek a bejegyzéseiddel, ettől függetlenül kereshetik azokat.
+        indexable: A nyilvános bejegyzéseid megjelenhetnek a tucano keresési eredményei között. Azok, akik kapcsolatba léptek a bejegyzéseiddel, ettől függetlenül kereshetik azokat.
         note: 'Megemlíthetsz @másokat vagy #hashtag-eket.'
         show_collections: Mások böngészhetnek a követőid és követetteid között. Ettől függetlenül a követetteid látják majd, hogy követed őket.
         unlocked: Mások jóváhagyás kérése nélkül követhetnek téged. Töröld a jelölést, ha szeretnéd áttekinteni a követési kéréseket és választani az új követők elfogadása vagy elutasítása közül.
@@ -54,7 +54,7 @@ hu:
         phrase: Illeszkedni fog kis/nagybetű függetlenül, és tartalmi figyelmeztetések mögött is
         scopes: Mely API-kat érheti el az alkalmazás. Ha felső szintű hatáskört választasz, nem kell egyesével kiválasztanod az alatta lévőeket.
         setting_aggregate_reblogs: Ne mutassunk megtolásokat olyan bejegyzésekhez, melyeket nemrég toltak meg (csak új megtolásokra lép életbe)
-        setting_always_send_emails: Alapesetben nem küldünk e-mail-értesítéseket, ha aktívan használod a Mastodont
+        setting_always_send_emails: Alapesetben nem küldünk e-mail-értesítéseket, ha aktívan használod a tucanot
         setting_default_sensitive: A kényes médiatartalmat alapesetben elrejtjük, de egyetlen kattintással előhozható
         setting_display_media_default: Kényes tartalomnak jelölt média elrejtése
         setting_display_media_hide_all: Média elrejtése mindig
@@ -82,15 +82,15 @@ hu:
         bootstrap_timeline_accounts: Ezek a fiókok ki lesznek tűzve az új felhasználók követési javaslatainak élére.
         closed_registrations_message: Akkor jelenik meg, amikor a regisztráció le van zárva
         content_cache_retention_period: Minden más kiszolgálóról származó bejegyzés (megtolásokkal és válaszokkal együtt) törölve lesz a megadott számú nap elteltével, függetlenül a helyi felhasználók ezekkel a bejegyzésekkel történő interakcióitól. Ebben azok a bejegyzések is benne vannak, melyeket a helyi felhasználó könyvjelzőzött vagy kedvencnek jelölt. A különböző kiszolgálók felhasználói közötti privát üzenetek is el fognak veszni visszaállíthatatlanul. Ennek a beállításnak a használata különleges felhasználási esetekre javasolt, mert számos felhasználói elvárás fog eltörni, ha általános céllal használják.
-        custom_css: A Mastodon webes verziójában használhatsz egyéni stílusokat.
-        favicon: WEBP, PNG, GIF vagy JPG. Az alapértelmezett Mastodon favicont felülírja egy egyéni ikonnal.
+        custom_css: A tucano webes verziójában használhatsz egyéni stílusokat.
+        favicon: WEBP, PNG, GIF vagy JPG. Az alapértelmezett tucano favicont felülírja egy egyéni ikonnal.
         mascot: Felülbírálja a speciális webes felületen található illusztrációt.
         media_cache_retention_period: A távoli felhasználók bejegyzéseinek médiatartalmait a kiszolgálód gyorsítótárazza. Ha pozitív értékre állítják, ezek a médiatartalmak a megadott számú nap után törölve lesznek. Ha a médiát újra lekérik, miután törlődött, újra le fogjuk tölteni, ha az eredeti még elérhető. A hivatkozások előnézeti kártyáinak harmadik fél weboldalai felé történő hivatkozásaira alkalmazott megkötései miatt javasolt, hogy ezt az értéket legalább 14 napra állítsuk, ellenkező esetben a hivatkozások előnézeti kártyái szükség esetén nem fognak tudni frissülni ezen idő előtt.
         peers_api_enabled: Azon domainek listája, melyekkel ez a kiszolgáló találkozott a fediverzumban. Nem csatolunk adatot arról, hogy föderált kapcsolatban vagy-e az adott kiszolgálóval, csak arról, hogy a kiszolgálód tud a másikról. Ezt olyan szolgáltatások használják, melyek általában a föderációról készítenek statisztikákat.
         profile_directory: A profilok jegyzéke minden olyan felhasználót felsorol, akik engedélyezték a felfedezhetőségüket.
         require_invite_text: Ha a regisztrációhoz manuális jóváhagyásra van szükség, akkor a „Miért akarsz csatlakozni?” válasz kitöltése legyen kötelező, és ne opcionális
         site_contact_email: Hogyan érhetnek el jogi vagy támogatási kérésekkel.
-        site_contact_username: Hogyan érhetnek el Mastodonon.
+        site_contact_username: Hogyan érhetnek el tucanoon.
         site_extended_description: Bármilyen egyéb információ, mely hasznos lehet a látogatóid vagy felhasználóid számára. Markdown szintaxis használható.
         site_short_description: Rövid leírás, amely segíthet a kiszolgálód egyedi azonosításában. Ki futtatja, kinek készült?
         site_terms: Használd a saját adatvédelmi irányelveidet, vagy hagyd üresen az alapértelmezett használatához. Markdown szintaxis használható.
@@ -105,7 +105,7 @@ hu:
       form_challenge:
         current_password: Beléptél egy biztonsági térben
       imports:
-        data: Egy másik Mastodon-kiszolgálóról exportált CSV-fájl
+        data: Egy másik tucano-kiszolgálóról exportált CSV-fájl
       invite_request:
         text: Ez segít nekünk átnézni a jelentkezésedet
       ip_block:
@@ -300,7 +300,7 @@ hu:
         software_updates:
           all: Értesítés az összes frissítésről
           critical: Értesítés csak a kritikus frissítésekről
-          label: Új Mastodon verzió érhető el
+          label: Új tucano verzió érhető el
           none: Nincs értesítés a frissítésekről (nem ajánlott)
           patch: Értesítés hibajavítási frissítésekről
         trending_tag: Új trend felülvizsgálatra vár

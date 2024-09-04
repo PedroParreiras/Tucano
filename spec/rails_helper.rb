@@ -92,7 +92,7 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
 
   # Set type to `cli` for all CLI specs
-  config.define_derived_metadata(file_path: Regexp.new('spec/lib/mastodon/cli')) do |metadata|
+  config.define_derived_metadata(file_path: Regexp.new('spec/lib/tucano/cli')) do |metadata|
     metadata[:type] = :cli
   end
 

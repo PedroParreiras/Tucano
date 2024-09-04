@@ -15,18 +15,18 @@ import { HotKeys } from 'react-hotkeys';
 
 import MoreHorizIcon from '@/material-icons/400-24px/more_horiz.svg?react';
 import ReplyIcon from '@/material-icons/400-24px/reply.svg?react';
-import { replyCompose } from 'mastodon/actions/compose';
-import { markConversationRead, deleteConversation } from 'mastodon/actions/conversations';
-import { openModal } from 'mastodon/actions/modal';
-import { muteStatus, unmuteStatus, toggleStatusSpoilers } from 'mastodon/actions/statuses';
-import AttachmentList from 'mastodon/components/attachment_list';
-import AvatarComposite from 'mastodon/components/avatar_composite';
-import { IconButton } from 'mastodon/components/icon_button';
-import { RelativeTimestamp } from 'mastodon/components/relative_timestamp';
-import StatusContent from 'mastodon/components/status_content';
-import DropdownMenuContainer from 'mastodon/containers/dropdown_menu_container';
-import { autoPlayGif } from 'mastodon/initial_state';
-import { makeGetStatus } from 'mastodon/selectors';
+import { replyCompose } from 'tucano/actions/compose';
+import { markConversationRead, deleteConversation } from 'tucano/actions/conversations';
+import { openModal } from 'tucano/actions/modal';
+import { muteStatus, unmuteStatus, toggleStatusSpoilers } from 'tucano/actions/statuses';
+import AttachmentList from 'tucano/components/attachment_list';
+import AvatarComposite from 'tucano/components/avatar_composite';
+import { IconButton } from 'tucano/components/icon_button';
+import { RelativeTimestamp } from 'tucano/components/relative_timestamp';
+import StatusContent from 'tucano/components/status_content';
+import DropdownMenuContainer from 'tucano/containers/dropdown_menu_container';
+import { autoPlayGif } from 'tucano/initial_state';
+import { makeGetStatus } from 'tucano/selectors';
 
 const messages = defineMessages({
   more: { id: 'status.more', defaultMessage: 'More' },

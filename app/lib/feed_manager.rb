@@ -266,7 +266,7 @@ class FeedManager
     account.following.includes(:account_stat).reorder(nil).find_each do |target_account|
       if redis.zcard(timeline_key) >= limit
         oldest_home_score = redis.zrange(timeline_key, 0, 0, with_scores: true).first.last.to_i
-        last_status_score = Mastodon::Snowflake.id_at(target_account.last_status_at)
+        last_status_score = tucano::Snowflake.id_at(target_account.last_status_at)
 
         # If the feed is full and this account has not posted more recently
         # than the last item on the feed, then we can skip the whole account

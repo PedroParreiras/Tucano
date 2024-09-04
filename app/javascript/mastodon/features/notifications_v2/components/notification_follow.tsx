@@ -1,11 +1,11 @@
 import { FormattedMessage } from 'react-intl';
 
 import PersonAddIcon from '@/material-icons/400-24px/person_add-fill.svg?react';
-import { FollowersCounter } from 'mastodon/components/counters';
-import { FollowButton } from 'mastodon/components/follow_button';
-import { ShortNumber } from 'mastodon/components/short_number';
-import type { NotificationGroupFollow } from 'mastodon/models/notification_group';
-import { useAppSelector } from 'mastodon/store';
+import { FollowersCounter } from 'tucano/components/counters';
+import { FollowButton } from 'tucano/components/follow_button';
+import { ShortNumber } from 'tucano/components/short_number';
+import type { NotificationGroupFollow } from 'tucano/models/notification_group';
+import { useAppSelector } from 'tucano/store';
 
 import type { LabelRenderer } from './notification_group_with_status';
 import { NotificationGroupWithStatus } from './notification_group_with_status';

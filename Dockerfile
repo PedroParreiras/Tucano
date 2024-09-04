@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1.9
 
 # This file is designed for production server deployment, not local development work
-# For a containerized local dev environment, see: https://github.com/mastodon/mastodon/blob/main/README.md#docker
+# For a containerized local dev environment, see: https://github.com/tucano/tucano/blob/main/README.md#docker
 
 # Please see https://docs.docker.com/engine/reference/builder for information about
 # the extended buildx capabilities used in this file.
@@ -23,53 +23,53 @@ FROM docker.io/node:${NODE_MAJOR_VERSION}-${DEBIAN_VERSION}-slim AS node
 # Ruby image to use for base image based on combined variables (ex: 3.3.x-slim-bookworm)
 FROM docker.io/ruby:${RUBY_VERSION}-slim-${DEBIAN_VERSION} AS ruby
 
-# Resulting version string is vX.X.X-MASTODON_VERSION_PRERELEASE+MASTODON_VERSION_METADATA
+# Resulting version string is vX.X.X-tucano_VERSION_PRERELEASE+tucano_VERSION_METADATA
 # Example: v4.3.0-nightly.2023.11.09+pr-123456
-# Overwrite existence of 'alpha.X' in version.rb [--build-arg MASTODON_VERSION_PRERELEASE="nightly.2023.11.09"]
-ARG MASTODON_VERSION_PRERELEASE=""
-# Append build metadata or fork information to version.rb [--build-arg MASTODON_VERSION_METADATA="pr-123456"]
-ARG MASTODON_VERSION_METADATA=""
+# Overwrite existence of 'alpha.X' in version.rb [--build-arg tucano_VERSION_PRERELEASE="nightly.2023.11.09"]
+ARG tucano_VERSION_PRERELEASE=""
+# Append build metadata or fork information to version.rb [--build-arg tucano_VERSION_METADATA="pr-123456"]
+ARG tucano_VERSION_METADATA=""
 
 # Allow Ruby on Rails to serve static files
-# See: https://docs.joinmastodon.org/admin/config/#rails_serve_static_files
+# See: https://docs.jointucano.org/admin/config/#rails_serve_static_files
 ARG RAILS_SERVE_STATIC_FILES="true"
 # Allow to use YJIT compiler
 # See: https://github.com/ruby/ruby/blob/v3_2_4/doc/yjit/yjit.md
 ARG RUBY_YJIT_ENABLE="1"
 # Timezone used by the Docker container and runtime, change with [--build-arg TZ=Europe/Berlin]
 ARG TZ="Etc/UTC"
-# Linux UID (user id) for the mastodon user, change with [--build-arg UID=1234]
+# Linux UID (user id) for the tucano user, change with [--build-arg UID=1234]
 ARG UID="991"
-# Linux GID (group id) for the mastodon user, change with [--build-arg GID=1234]
+# Linux GID (group id) for the tucano user, change with [--build-arg GID=1234]
 ARG GID="991"
 
-# Apply Mastodon build options based on options above
+# Apply tucano build options based on options above
 ENV \
-# Apply Mastodon version information
-  MASTODON_VERSION_PRERELEASE="${MASTODON_VERSION_PRERELEASE}" \
-  MASTODON_VERSION_METADATA="${MASTODON_VERSION_METADATA}" \
-# Apply Mastodon static files and YJIT options
+# Apply tucano version information
+  tucano_VERSION_PRERELEASE="${tucano_VERSION_PRERELEASE}" \
+  tucano_VERSION_METADATA="${tucano_VERSION_METADATA}" \
+# Apply tucano static files and YJIT options
   RAILS_SERVE_STATIC_FILES=${RAILS_SERVE_STATIC_FILES} \
   RUBY_YJIT_ENABLE=${RUBY_YJIT_ENABLE} \
 # Apply timezone
   TZ=${TZ}
 
 ENV \
-# Configure the IP to bind Mastodon to when serving traffic
+# Configure the IP to bind tucano to when serving traffic
   BIND="0.0.0.0" \
 # Use production settings for Yarn, Node and related nodejs based tools
   NODE_ENV="production" \
 # Use production settings for Ruby on Rails
   RAILS_ENV="production" \
-# Add Ruby and Mastodon installation to the PATH
+# Add Ruby and tucano installation to the PATH
   DEBIAN_FRONTEND="noninteractive" \
-  PATH="${PATH}:/opt/ruby/bin:/opt/mastodon/bin" \
+  PATH="${PATH}:/opt/ruby/bin:/opt/tucano/bin" \
 # Optimize jemalloc 5.x performance
   MALLOC_CONF="narenas:2,background_thread:true,thp:never,dirty_decay_ms:1000,muzzy_decay_ms:0" \
 # Enable libvips, should not be changed
-  MASTODON_USE_LIBVIPS=true \
+  tucano_USE_LIBVIPS=true \
 # Sidekiq will touch tmp/sidekiq_process_has_started_and_will_begin_processing_jobs to indicate it is ready. This can be used for a readiness check in Kubernetes
-  MASTODON_SIDEKIQ_READY_FILENAME=sidekiq_process_has_started_and_will_begin_processing_jobs
+  tucano_SIDEKIQ_READY_FILENAME=sidekiq_process_has_started_and_will_begin_processing_jobs
 
 # Set default shell used for running commands
 SHELL ["/bin/bash", "-o", "pipefail", "-o", "errexit", "-c"]
@@ -83,14 +83,14 @@ RUN \
   rm -f /etc/apt/apt.conf.d/docker-clean; \
 # Sets timezone
   echo "${TZ}" > /etc/localtime; \
-# Creates mastodon user/group and sets home directory
-  groupadd -g "${GID}" mastodon; \
-  useradd -l -u "${UID}" -g "${GID}" -m -d /opt/mastodon mastodon; \
-# Creates /mastodon symlink to /opt/mastodon
-  ln -s /opt/mastodon /mastodon;
+# Creates tucano user/group and sets home directory
+  groupadd -g "${GID}" tucano; \
+  useradd -l -u "${UID}" -g "${GID}" -m -d /opt/tucano tucano; \
+# Creates /tucano symlink to /opt/tucano
+  ln -s /opt/tucano /tucano;
 
-# Set /opt/mastodon as working directory
-WORKDIR /opt/mastodon
+# Set /opt/tucano as working directory
+WORKDIR /opt/tucano
 
 # hadolint ignore=DL3008,DL3005
 RUN \
@@ -122,8 +122,8 @@ RUN \
 FROM ruby AS build
 
 # Copy Node package configuration files into working directory
-COPY package.json yarn.lock .yarnrc.yml /opt/mastodon/
-COPY .yarn /opt/mastodon/.yarn
+COPY package.json yarn.lock .yarnrc.yml /opt/tucano/
+COPY .yarn /opt/tucano/.yarn
 
 COPY --from=node /usr/local/bin /usr/local/bin
 COPY --from=node /usr/local/lib /usr/local/lib
@@ -260,7 +260,7 @@ FROM build AS bundler
 ARG TARGETPLATFORM
 
 # Copy Gemfile config into working directory
-COPY Gemfile* /opt/mastodon/
+COPY Gemfile* /opt/tucano/
 
 RUN \
 # Mount Ruby Gem caches
@@ -282,26 +282,26 @@ FROM build AS yarn
 ARG TARGETPLATFORM
 
 # Copy Node package configuration files into working directory
-COPY package.json yarn.lock .yarnrc.yml /opt/mastodon/
-COPY streaming/package.json /opt/mastodon/streaming/
-COPY .yarn /opt/mastodon/.yarn
+COPY package.json yarn.lock .yarnrc.yml /opt/tucano/
+COPY streaming/package.json /opt/tucano/streaming/
+COPY .yarn /opt/tucano/.yarn
 
 # hadolint ignore=DL3008
 RUN \
 --mount=type=cache,id=corepack-cache-${TARGETPLATFORM},target=/usr/local/share/.cache/corepack,sharing=locked \
 --mount=type=cache,id=yarn-cache-${TARGETPLATFORM},target=/usr/local/share/.cache/yarn,sharing=locked \
 # Install Node packages
-  yarn workspaces focus --production @mastodon/mastodon;
+  yarn workspaces focus --production @tucano/tucano;
 
 # Create temporary assets build layer from build layer
 FROM build AS precompiler
 
-# Copy Mastodon sources into precompiler layer
-COPY . /opt/mastodon/
+# Copy tucano sources into precompiler layer
+COPY . /opt/tucano/
 
 # Copy bundler and node packages from build layer to container
-COPY --from=yarn /opt/mastodon /opt/mastodon/
-COPY --from=bundler /opt/mastodon /opt/mastodon/
+COPY --from=yarn /opt/tucano /opt/tucano/
+COPY --from=bundler /opt/tucano /opt/tucano/
 COPY --from=bundler /usr/local/bundle/ /usr/local/bundle/
 # Copy libvips components to layer for precompiler
 COPY --from=libvips /usr/local/libvips/bin /usr/local/bin
@@ -311,14 +311,14 @@ ARG TARGETPLATFORM
 
 RUN \
   ldconfig; \
-# Use Ruby on Rails to create Mastodon assets
+# Use Ruby on Rails to create tucano assets
   SECRET_KEY_BASE_DUMMY=1 \
   bundle exec rails assets:precompile; \
 # Cleanup temporary files
-  rm -fr /opt/mastodon/tmp;
+  rm -fr /opt/tucano/tmp;
 
-# Prep final Mastodon Ruby layer
-FROM ruby AS mastodon
+# Prep final tucano Ruby layer
+FROM ruby AS tucano
 
 ARG TARGETPLATFORM
 
@@ -369,12 +369,12 @@ RUN \
     libx265-199 \
   ;
 
-# Copy Mastodon sources into final layer
-COPY . /opt/mastodon/
+# Copy tucano sources into final layer
+COPY . /opt/tucano/
 
 # Copy compiled assets to layer
-COPY --from=precompiler /opt/mastodon/public/packs /opt/mastodon/public/packs
-COPY --from=precompiler /opt/mastodon/public/assets /opt/mastodon/public/assets
+COPY --from=precompiler /opt/tucano/public/packs /opt/tucano/public/packs
+COPY --from=precompiler /opt/tucano/public/assets /opt/tucano/public/assets
 # Copy bundler components to layer
 COPY --from=bundler /usr/local/bundle/ /usr/local/bundle/
 # Copy libvips components to layer
@@ -396,14 +396,14 @@ RUN \
   bundle exec bootsnap precompile --gemfile app/ lib/;
 
 RUN \
-# Pre-create and chown system volume to Mastodon user
-  mkdir -p /opt/mastodon/public/system; \
-  chown mastodon:mastodon /opt/mastodon/public/system; \
-# Set Mastodon user as owner of tmp folder
-  chown -R mastodon:mastodon /opt/mastodon/tmp;
+# Pre-create and chown system volume to tucano user
+  mkdir -p /opt/tucano/public/system; \
+  chown tucano:tucano /opt/tucano/public/system; \
+# Set tucano user as owner of tmp folder
+  chown -R tucano:tucano /opt/tucano/tmp;
 
 # Set the running user for resulting container
-USER mastodon
+USER tucano
 # Expose default Puma ports
 EXPOSE 3000
 # Set container tini as default entry point

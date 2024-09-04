@@ -2,7 +2,7 @@
 
 require_relative 'base'
 
-module Mastodon::CLI
+module tucano::CLI
   class Feeds < Base
     include Redisable
 

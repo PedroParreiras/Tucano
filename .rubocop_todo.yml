@@ -17,7 +17,7 @@ Metrics/AbcSize:
 # Configuration parameters: CountBlocks, CountModifierForms, Max.
 Metrics/BlockNesting:
   Exclude:
-    - 'lib/tasks/mastodon.rake'
+    - 'lib/tasks/tucano.rake'
 
 # Configuration parameters: AllowedMethods, AllowedPatterns.
 Metrics/CyclomaticComplexity:
@@ -44,7 +44,7 @@ Style/FetchEnvVar:
     - 'config/initializers/devise.rb'
     - 'config/initializers/paperclip.rb'
     - 'config/initializers/vapid.rb'
-    - 'lib/mastodon/redis_config.rb'
+    - 'lib/tucano/redis_config.rb'
     - 'lib/tasks/repo.rake'
 
 # This cop supports safe autocorrection (--autocorrect).
@@ -79,7 +79,7 @@ Style/MutableConstant:
   Exclude:
     - 'app/models/tag.rb'
     - 'app/services/delete_account_service.rb'
-    - 'lib/mastodon/migration_warning.rb'
+    - 'lib/tucano/migration_warning.rb'
 
 # Configuration parameters: AllowedMethods.
 # AllowedMethods: respond_to_missing?
@@ -93,7 +93,7 @@ Style/OptionalBooleanParameter:
     - 'app/services/fetch_resource_service.rb'
     - 'app/workers/domain_block_worker.rb'
     - 'app/workers/unfollow_follow_worker.rb'
-    - 'lib/mastodon/redis_config.rb'
+    - 'lib/tucano/redis_config.rb'
 
 # This cop supports unsafe autocorrection (--autocorrect-all).
 # Configuration parameters: EnforcedStyle.

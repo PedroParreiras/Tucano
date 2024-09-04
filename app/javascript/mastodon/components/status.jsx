@@ -13,11 +13,11 @@ import AlternateEmailIcon from '@/material-icons/400-24px/alternate_email.svg?re
 import PushPinIcon from '@/material-icons/400-24px/push_pin.svg?react';
 import RepeatIcon from '@/material-icons/400-24px/repeat.svg?react';
 import ReplyIcon from '@/material-icons/400-24px/reply.svg?react';
-import { ContentWarning } from 'mastodon/components/content_warning';
-import { FilterWarning } from 'mastodon/components/filter_warning';
-import { Icon }  from 'mastodon/components/icon';
-import PictureInPicturePlaceholder from 'mastodon/components/picture_in_picture_placeholder';
-import { withOptionalRouter, WithOptionalRouterPropTypes } from 'mastodon/utils/react_router';
+import { ContentWarning } from 'tucano/components/content_warning';
+import { FilterWarning } from 'tucano/components/filter_warning';
+import { Icon }  from 'tucano/components/icon';
+import PictureInPicturePlaceholder from 'tucano/components/picture_in_picture_placeholder';
+import { withOptionalRouter, WithOptionalRouterPropTypes } from 'tucano/utils/react_router';
 
 import Card from '../features/status/components/card';
 // We use the component (and not the container) since we do not want

@@ -3,10 +3,10 @@ da:
   simple_form:
     hints:
       account:
-        discoverable: Dine offentlige indlæg og profil kan blive fremhævet eller anbefalet i forskellige områder af Mastodon, og profilen kan blive foreslået til andre brugere.
+        discoverable: Dine offentlige indlæg og profil kan blive fremhævet eller anbefalet i forskellige områder af tucano, og profilen kan blive foreslået til andre brugere.
         display_name: Dit fulde navn eller dit sjove navn.
         fields: Din hjemmeside, dine pronominer, din alder, eller hvad du har lyst til.
-        indexable: Dine offentlige indlæg vil kunne vises i Mastodon-søgeresultater. Folk, som har interageret med dem, vil kunne finde dem uanset.
+        indexable: Dine offentlige indlæg vil kunne vises i tucano-søgeresultater. Folk, som har interageret med dem, vil kunne finde dem uanset.
         note: 'Du kan @omtale andre personer eller #hashtags.'
         show_collections: Folk vil ikke kunne tjekke dine Følger og Følgere. Folk, du selv følger, vil stadig kunne se dette.
         unlocked: Folk vil kunne følge dig uden krav om godkendelse. Fjern markeringen, såfremt du ønsker at tjekke Følg-anmodninger og individuelt acceptere eller afvise nye Følgere.
@@ -54,7 +54,7 @@ da:
         phrase: Matches uanset uanset brug af store/små bogstaver i teksten eller indholdsadvarsel for et indlæg
         scopes: De API'er, som applikationen vil kunne tilgå. Vælges en topniveaudstrækning, vil detailvalg være unødvendige.
         setting_aggregate_reblogs: Vis ikke nye boosts for nyligt boostede indlæg (påvirker kun nyligt modtagne boosts)
-        setting_always_send_emails: Normalt sendes ingen e-mailnotifikationer under aktivt brug af Mastodon
+        setting_always_send_emails: Normalt sendes ingen e-mailnotifikationer under aktivt brug af tucano
         setting_default_sensitive: Sensitive medier er som standard skjult og kan vises med et klik
         setting_display_media_default: Skjul medier med sensitiv-markering
         setting_display_media_hide_all: Skjul altid medier
@@ -82,15 +82,15 @@ da:
         bootstrap_timeline_accounts: Disse konti fastgøres øverst på nye brugeres følg-anbefalinger.
         closed_registrations_message: Vises, når tilmeldinger er lukket
         content_cache_retention_period: Alle indlæg fra andre servere (herunder boosts og besvarelser) slettes efter det angivne antal dage uden hensyn til lokal brugerinteraktion med disse indlæg. Dette omfatter indlæg, hvor en lokal bruger har markeret dem som bogmærker eller favoritter. Private omtaler mellem brugere fra forskellige instanser vil også være tabt og umulige at gendanne. Brugen af denne indstilling er beregnet til særlige formål instanser og bryder mange brugerforventninger ved implementering til almindelig brug.
-        custom_css: Man kan anvende tilpassede stilarter på Mastodon-webversionen.
-        favicon: WEBP, PNG, GIF eller JPG. Tilsidesætter standard Mastodon favikonet på mobilenheder med et tilpasset ikon.
+        custom_css: Man kan anvende tilpassede stilarter på tucano-webversionen.
+        favicon: WEBP, PNG, GIF eller JPG. Tilsidesætter standard tucano favikonet på mobilenheder med et tilpasset ikon.
         mascot: Tilsidesætter illustrationen i den avancerede webgrænseflade.
         media_cache_retention_period: Mediefiler fra indlæg oprettet af eksterne brugere er cachet på din server. Når sat til positiv værdi, slettes medier efter det angivne antal dage. Anmodes om mediedata efter de er slettet, gendownloades de, hvis kildeindholdet stadig er tilgængeligt. Grundet begrænsninger på, hvor ofte linkforhåndsvisningskort forespørger tredjeparts websteder, anbefales det at sætte denne værdi til mindst 14 dage, ellers opdateres linkforhåndsvisningskort ikke efter behov før det tidspunkt.
         peers_api_enabled: En liste med domænenavne, som denne server har stødt på i fediverset. Ingen data inkluderes her om, hvorvidt der fødereres med en given server, blot at din server kender til det. Dette bruges af tjenester, som indsamler generelle føderationsstatistikker.
         profile_directory: Profilmappen oplister alle brugere, som har valgt at kunne opdages.
         require_invite_text: Når tilmelding kræver manuel godkendelse, så gør “Hvorfor ønsker du at deltage?” tekstinput obligatorisk i stedet for valgfrit
         site_contact_email: Hvordan folk kan opnå kontakt ifm. juridiske eller supportforespørgsler.
-        site_contact_username: Hvordan folk kan kontakte dig på Mastodon.
+        site_contact_username: Hvordan folk kan kontakte dig på tucano.
         site_extended_description: Evt. yderligere oplysninger, som kan være nyttige for både besøgende og brugere. Kan struktureres vha. Markdown-syntaks.
         site_short_description: En kort beskrivelse mhp. entydigt at kunne identificere denne server. Hvem kører den, hvem er den for?
         site_terms: Brug egen fortrolighedspolitik eller lad stå tomt for standardpolitikken. Kan struktureres med Markdown-syntaks.
@@ -105,7 +105,7 @@ da:
       form_challenge:
         current_password: Du bevæger dig ind på et sikkert område
       imports:
-        data: CSV-fil eksporteret fra anden Mastodon-server
+        data: CSV-fil eksporteret fra anden tucano-server
       invite_request:
         text: Dette vil hjælpe os med at gennemgå din ansøgning
       ip_block:
@@ -300,7 +300,7 @@ da:
         software_updates:
           all: Notificér ved alle opdateringer
           critical: Notificér kun ved kritiske opdateringer
-          label: En ny Mastodon-version er tilgængelig
+          label: En ny tucano-version er tilgængelig
           none: Notificér ikke om opdateringer (anbefales ikke)
           patch: Notificér om fejlrettelsesopdateringer
         trending_tag: Ny tendens kræver revidering

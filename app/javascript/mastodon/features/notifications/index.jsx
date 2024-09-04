@@ -14,10 +14,10 @@ import { debounce } from 'lodash';
 
 import DoneAllIcon from '@/material-icons/400-24px/done_all.svg?react';
 import NotificationsIcon from '@/material-icons/400-24px/notifications-fill.svg?react';
-import { compareId } from 'mastodon/compare_id';
-import { Icon }  from 'mastodon/components/icon';
-import { NotSignedInIndicator } from 'mastodon/components/not_signed_in_indicator';
-import { identityContextPropShape, withIdentity } from 'mastodon/identity_context';
+import { compareId } from 'tucano/compare_id';
+import { Icon }  from 'tucano/components/icon';
+import { NotSignedInIndicator } from 'tucano/components/not_signed_in_indicator';
+import { identityContextPropShape, withIdentity } from 'tucano/identity_context';
 
 import { addColumn, removeColumn, moveColumn } from '../../actions/columns';
 import { submitMarkers } from '../../actions/markers';

@@ -34,7 +34,7 @@ class Admin::StatusFilter
     when 'media'
       Status.joins(:media_attachments).merge(@account.media_attachments).group(:id).reorder('statuses.id desc')
     else
-      raise Mastodon::InvalidParameterError, "Unknown filter: #{key}"
+      raise tucano::InvalidParameterError, "Unknown filter: #{key}"
     end
   end
 end

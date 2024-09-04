@@ -2,10 +2,10 @@ import { useCallback } from 'react';
 
 import { FormattedMessage } from 'react-intl';
 
-import { revealAccount } from 'mastodon/actions/accounts_typed';
-import { Button } from 'mastodon/components/button';
-import { domain } from 'mastodon/initial_state';
-import { useAppDispatch } from 'mastodon/store';
+import { revealAccount } from 'tucano/actions/accounts_typed';
+import { Button } from 'tucano/components/button';
+import { domain } from 'tucano/initial_state';
+import { useAppDispatch } from 'tucano/store';
 
 export const LimitedAccountHint: React.FC<{ accountId: string }> = ({
   accountId,

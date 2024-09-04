@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 require 'rails_helper'
-require 'mastodon/cli/email_domain_blocks'
+require 'tucano/cli/email_domain_blocks'
 
-RSpec.describe Mastodon::CLI::EmailDomainBlocks do
+RSpec.describe tucano::CLI::EmailDomainBlocks do
   subject { cli.invoke(action, arguments, options) }
 
   let(:cli) { described_class.new }

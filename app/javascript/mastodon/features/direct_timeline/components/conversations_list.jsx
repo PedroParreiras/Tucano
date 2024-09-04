@@ -5,8 +5,8 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import { debounce } from 'lodash';
 
-import { expandConversations } from 'mastodon/actions/conversations';
-import ScrollableList from 'mastodon/components/scrollable_list';
+import { expandConversations } from 'tucano/actions/conversations';
+import ScrollableList from 'tucano/components/scrollable_list';
 
 import { Conversation } from './conversation';
 

@@ -9,7 +9,7 @@ import {
   openURL,
   clickSearchResult,
   forgetSearchResult,
-} from 'mastodon/actions/search';
+} from 'tucano/actions/search';
 
 import Search from '../components/search';
 

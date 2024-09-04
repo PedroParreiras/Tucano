@@ -1,7 +1,7 @@
 import * as WebAuthnJSON from '@github/webauthn-json';
 import axios, { AxiosError } from 'axios';
 
-import ready from '../mastodon/ready';
+import ready from '../tucano/ready';
 
 import 'regenerator-runtime/runtime';
 

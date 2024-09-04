@@ -4,8 +4,8 @@ import { defineMessages, injectIntl, FormattedMessage } from 'react-intl';
 
 import ImmutablePropTypes from 'react-immutable-proptypes';
 
-import { Button } from 'mastodon/components/button';
-import { ShortNumber } from 'mastodon/components/short_number';
+import { Button } from 'tucano/components/button';
+import { ShortNumber } from 'tucano/components/short_number';
 
 const messages = defineMessages({
   followHashtag: { id: 'hashtag.follow', defaultMessage: 'Follow hashtag' },

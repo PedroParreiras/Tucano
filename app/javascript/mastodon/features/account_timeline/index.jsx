@@ -7,12 +7,12 @@ import ImmutablePropTypes from 'react-immutable-proptypes';
 import ImmutablePureComponent from 'react-immutable-pure-component';
 import { connect } from 'react-redux';
 
-import { TimelineHint } from 'mastodon/components/timeline_hint';
-import BundleColumnError from 'mastodon/features/ui/components/bundle_column_error';
-import { me } from 'mastodon/initial_state';
-import { normalizeForLookup } from 'mastodon/reducers/accounts_map';
-import { getAccountHidden } from 'mastodon/selectors';
-import { useAppSelector } from 'mastodon/store';
+import { TimelineHint } from 'tucano/components/timeline_hint';
+import BundleColumnError from 'tucano/features/ui/components/bundle_column_error';
+import { me } from 'tucano/initial_state';
+import { normalizeForLookup } from 'tucano/reducers/accounts_map';
+import { getAccountHidden } from 'tucano/selectors';
+import { useAppSelector } from 'tucano/store';
 
 import { lookupAccount, fetchAccount } from '../../actions/accounts';
 import { fetchFeaturedTags } from '../../actions/featured_tags';

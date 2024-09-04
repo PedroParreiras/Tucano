@@ -1,9 +1,9 @@
 import classNames from 'classnames';
 
 import CheckIcon from '@/material-icons/400-24px/check.svg?react';
-import { useLinks } from 'mastodon/../hooks/useLinks';
-import { Icon } from 'mastodon/components/icon';
-import type { Account } from 'mastodon/models/account';
+import { useLinks } from 'tucano/../hooks/useLinks';
+import { Icon } from 'tucano/components/icon';
+import type { Account } from 'tucano/models/account';
 
 export const AccountFields: React.FC<{
   fields: Account['fields'];

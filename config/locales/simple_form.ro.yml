@@ -3,9 +3,9 @@ ro:
   simple_form:
     hints:
       account:
-        discoverable: Este posibil ca postările și profilul tău să fie recomandate în diferite zone ale Mastodon, iar profilul tău ar poate fi sugerat altor utilizatori.
+        discoverable: Este posibil ca postările și profilul tău să fie recomandate în diferite zone ale tucano, iar profilul tău ar poate fi sugerat altor utilizatori.
         fields: Pagina ta principală, pronumele tale, vârsta, sau orice îți dorești.
-        indexable: Postările tale publice pot apărea în rezultatele căutărilor pe Mastodon. Persoanele care au interacționat cu postările tale vor putea să le caute oricând.
+        indexable: Postările tale publice pot apărea în rezultatele căutărilor pe tucano. Persoanele care au interacționat cu postările tale vor putea să le caute oricând.
         note: 'Poți @menționa alte persoane sau #hashtag-uri.'
         unlocked: Alte persoane vă vor putea urmări fără a solicita aprobare. Debifați dacă doriți să revizuiți cererile și să alegeți dacă doriți să acceptați sau să respingeți noii urmăritori.
       account_alias:
@@ -44,7 +44,7 @@ ro:
         phrase: Vor fi potrivite indiferent de textul din casetă sau advertismentul unei postări
         scopes: La care API-uri aplicația are nevoie de acces. Dacă selectezi un scop principal nu mai e nevoie să selectezi fiecare sub-scop al acestuia.
         setting_aggregate_reblogs: Nu afișa impulsurile noi pentru postările care au fost deja recent impulsionate (afectează doar noile impulsuri primite)
-        setting_always_send_emails: În mod normal, notificările prin e-mail nu vor fi trimise când utilizați în mod activ Mastodon
+        setting_always_send_emails: În mod normal, notificările prin e-mail nu vor fi trimise când utilizați în mod activ tucano
         setting_default_sensitive: Fișierele media sensibile sunt ascunse implicit și pot fi dezvăluite cu un clic
         setting_display_media_default: Ascunde conținutul media marcat ca sensibil (NSFW)
         setting_display_media_hide_all: Întotdeauna ascunde tot conținutul media

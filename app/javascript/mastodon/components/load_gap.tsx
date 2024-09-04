@@ -3,7 +3,7 @@ import { useCallback } from 'react';
 import { useIntl, defineMessages } from 'react-intl';
 
 import MoreHorizIcon from '@/material-icons/400-24px/more_horiz.svg?react';
-import { Icon } from 'mastodon/components/icon';
+import { Icon } from 'tucano/components/icon';
 
 const messages = defineMessages({
   load_more: { id: 'status.load_more', defaultMessage: 'Load more' },

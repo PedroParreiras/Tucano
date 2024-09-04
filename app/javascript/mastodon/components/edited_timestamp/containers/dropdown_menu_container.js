@@ -1,12 +1,12 @@
 import { connect } from 'react-redux';
 
-import { openDropdownMenu, closeDropdownMenu } from 'mastodon/actions/dropdown_menu';
-import { fetchHistory } from 'mastodon/actions/history';
-import DropdownMenu from 'mastodon/components/dropdown_menu';
+import { openDropdownMenu, closeDropdownMenu } from 'tucano/actions/dropdown_menu';
+import { fetchHistory } from 'tucano/actions/history';
+import DropdownMenu from 'tucano/components/dropdown_menu';
 
 /**
  *
- * @param {import('mastodon/store').RootState} state
+ * @param {import('tucano/store').RootState} state
  * @param {*} props
  */
 const mapStateToProps = (state, { statusId }) => ({

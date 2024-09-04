@@ -1,5 +1,5 @@
 # This file is designed for production server deployment, not local development work
-# For a containerized local dev environment, see: https://github.com/mastodon/mastodon/blob/main/README.md#docker
+# For a containerized local dev environment, see: https://github.com/tucano/tucano/blob/main/README.md#docker
 
 services:
   db:
@@ -36,7 +36,7 @@ services:
   #     - "xpack.graph.enabled=false"
   #     - "xpack.ml.enabled=false"
   #     - "bootstrap.memory_lock=true"
-  #     - "cluster.name=es-mastodon"
+  #     - "cluster.name=es-tucano"
   #     - "discovery.type=single-node"
   #     - "thread_pool.write.queue_size=1000"
   #   networks:
@@ -59,7 +59,7 @@ services:
   web:
     # You can uncomment the following line if you want to not use the prebuilt image, for example if you have local code changes
     # build: .
-    image: ghcr.io/mastodon/mastodon:v4.3.0-beta.1
+    image: ghcr.io/tucano/tucano:v4.3.0-beta.1
     restart: always
     env_file: .env.production
     command: bundle exec puma -C config/puma.rb
@@ -76,14 +76,14 @@ services:
       - redis
       # - es
     volumes:
-      - ./public/system:/mastodon/public/system
+      - ./public/system:/tucano/public/system
 
   streaming:
     # You can uncomment the following lines if you want to not use the prebuilt image, for example if you have local code changes
     # build:
     #   dockerfile: ./streaming/Dockerfile
     #   context: .
-    image: ghcr.io/mastodon/mastodon-streaming:v4.3.0-beta.1
+    image: ghcr.io/tucano/tucano-streaming:v4.3.0-beta.1
     restart: always
     env_file: .env.production
     command: node ./streaming/index.js
@@ -101,7 +101,7 @@ services:
 
   sidekiq:
     build: .
-    image: ghcr.io/mastodon/mastodon:v4.3.0-beta.1
+    image: ghcr.io/tucano/tucano:v4.3.0-beta.1
     restart: always
     env_file: .env.production
     command: bundle exec sidekiq
@@ -112,7 +112,7 @@ services:
       - external_network
       - internal_network
     volumes:
-      - ./public/system:/mastodon/public/system
+      - ./public/system:/tucano/public/system
     healthcheck:
       test: ['CMD-SHELL', "ps aux | grep '[s]idekiq\ 6' || false"]
 

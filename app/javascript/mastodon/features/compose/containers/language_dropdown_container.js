@@ -3,7 +3,7 @@ import { Map as ImmutableMap } from 'immutable';
 import { connect } from 'react-redux';
 
 
-import { changeComposeLanguage } from 'mastodon/actions/compose';
+import { changeComposeLanguage } from 'tucano/actions/compose';
 
 import LanguageDropdown from '../components/language_dropdown';
 

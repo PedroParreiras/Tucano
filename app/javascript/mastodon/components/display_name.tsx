@@ -2,7 +2,7 @@ import React from 'react';
 
 import type { List } from 'immutable';
 
-import type { Account } from 'mastodon/models/account';
+import type { Account } from 'tucano/models/account';
 
 import { autoPlayGif } from '../initial_state';
 

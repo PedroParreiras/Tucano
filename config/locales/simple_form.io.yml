@@ -3,10 +3,10 @@ io:
   simple_form:
     hints:
       account:
-        discoverable: Vua publika posti e profilo povas remarkesar o rekomendesar en diferanta parti di Mastodon e vua profilo povas sugestesar ad altra uzanti.
+        discoverable: Vua publika posti e profilo povas remarkesar o rekomendesar en diferanta parti di tucano e vua profilo povas sugestesar ad altra uzanti.
         display_name: Vua tota nomo o vua gaya nomo.
         fields: Vua retsituo, pronomi, evo, irgo quan vu volas.
-        indexable: Vua posta publika povos aparar en rezultaji di serchi che Mastodon. Personi qui interagis kun vua posti povos serchar oli irgakaze.
+        indexable: Vua posta publika povos aparar en rezultaji di serchi che tucano. Personi qui interagis kun vua posti povos serchar oli irgakaze.
         note: 'Vu povas @mencionar altra personi o #hashtagi.'
         show_collections: Personi povos navigar tra vua sequati e sequanti. Personi quin vu sequas, vidos ke vu sequas li irgakaze.
         unlocked: Personi povos sequar vu sen demandar aprobo. Deselektez se vu volas revuar sequadodemandi e selektez aceptar o refuzar nova sequati.
@@ -52,7 +52,7 @@ io:
         phrase: Parigesos ne ye textosituaciono o konteneyoaverto di posto
         scopes: Quala API quon softwaro permisesas acesar. Se vu selektas alta skopo, vu ne mustas selektar individui.
         setting_aggregate_reblogs: Ne montrez nova repeti di posti qui ja repetesis recente (nur efektigas repeti recevata nove)
-        setting_always_send_emails: Normale retpostoavizi ne sendesas kande vu aktiva uzas Mastodon
+        setting_always_send_emails: Normale retpostoavizi ne sendesas kande vu aktiva uzas tucano
         setting_default_sensitive: Sentoza medii originala celesas e povas revelesar per klikto
         setting_display_media_default: Celez medii quo markizesis quale sentoza
         setting_display_media_hide_all: Sempre celez medii
@@ -77,13 +77,13 @@ io:
         activity_api_enabled: Quanto de lokale publikigita posti, aktiva uzanti e nova registri, donita semanope
         bootstrap_timeline_accounts: Ca konti pinglagesos a super sequorekomendi di nova uzanti.
         closed_registrations_message: Montresas kande registradi klozesas
-        custom_css: Vu povas pozar kustumizita staili en retverso di Mastodon.
+        custom_css: Vu povas pozar kustumizita staili en retverso di tucano.
         mascot: Remplas montreso en avanca retintervizajo.
         peers_api_enabled: Listo di domeni quin ca servilo trovis en la fediverso. Nula informo inkluzesas hike pri ka vu federas kun partikulara servilo, nur ke vua servilo savas pri lo. Co es uzata da enti qui kolektas statistiki pri federeso generale.
         profile_directory: La profilcheflisto montras omna uzanti quo voluntale volas esar deskovrebla.
         require_invite_text: Kande registradi bezonas manuala aprobo, ol kauzigas "Por quo vu volas juntas?" textoenpozo esar obliganta
         site_contact_email: Quale personi povas kontaktar vu por legala o suportquestioni.
-        site_contact_username: Quale personi povas kontaktar vu en Mastodon.
+        site_contact_username: Quale personi povas kontaktar vu en tucano.
         site_extended_description: Irga plusa informi quo forsan esar utila por vizitanti e uzanti. Povas strukturigesar per sintaxo di Markdown.
         site_short_description: Kurta deskripto por helpar unala identifikar ca servilo. Qua funcionigar lu e por qua?
         site_terms: Uzez vua sua privatesguidilo o ignorez por uzar la originalo. Povas strukturigesar per sintaxo di Markdown.
@@ -98,7 +98,7 @@ io:
       form_challenge:
         current_password: Vu eniras sekura areo
       imports:
-        data: Dosiero CSV de altra instaluro di Mastodon
+        data: Dosiero CSV de altra instaluro di tucano
       invite_request:
         text: Co helpos ni kontrolar vua apliko
       ip_block:
@@ -287,7 +287,7 @@ io:
         software_updates:
           all: Notifikar pri omna aktualigi
           critical: Notifikar pri nur urjanta aktualigi
-          label: Nova Mastodon-versiono es disponebla
+          label: Nova tucano-versiono es disponebla
           none: Nultempe notifikar pri aktualigi (ne rekomendata)
           patch: Notifikar pri problemosolvanta aktualigi
         trending_tag: Nova tendenco bezonas kontrolo

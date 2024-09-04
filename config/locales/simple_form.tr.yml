@@ -3,10 +3,10 @@ tr:
   simple_form:
     hints:
       account:
-        discoverable: Herkese açık gönderileriniz ve profiliniz Mastodon'un çeşitli kısımlarında öne çıkarılabilir veya önerilebilir ve profiliniz başka kullanıcılara önerilebilir.
+        discoverable: Herkese açık gönderileriniz ve profiliniz tucano'un çeşitli kısımlarında öne çıkarılabilir veya önerilebilir ve profiliniz başka kullanıcılara önerilebilir.
         display_name: Tam adınız veya kullanıcı adınız.
         fields: Ana sayfanız, zamirleriniz, yaşınız, istediğiniz herhangi bir şey.
-        indexable: Herkese açık gönderileriniz Mastodon arama sonuçlarında görünebilir. Gönderilerinizle etkileşen kullanıcılar her halükarda onları arayabilirler.
+        indexable: Herkese açık gönderileriniz tucano arama sonuçlarında görünebilir. Gönderilerinizle etkileşen kullanıcılar her halükarda onları arayabilirler.
         note: 'Diğer insanlara @değinebilir veya #etiketler kullanabilirsiniz.'
         show_collections: İnsanlar takip ettiklerinize ve takipçilerinize göz gezdirebilir. Takip ettiğiniz kişiler sizin onları takip ettiğinizi her halükarda görecektir.
         unlocked: İnsanlar sizi onayınızı almadan takip edebileceklerdir. Takip isteklerini gözden geçirmek ve yeni takipçileri kabul veya reddetmek istiyorsanız seçimi kaldırın.
@@ -54,7 +54,7 @@ tr:
         phrase: Metnin büyük/küçük harf durumundan veya gönderinin içerik uyarısından bağımsız olarak eşleştirilecek
         scopes: Uygulamanın erişmesine izin verilen API'ler. Üst seviye bir kapsam seçtiyseniz, bireysel kapsam seçmenize gerek yoktur.
         setting_aggregate_reblogs: Yakın zamanda teşvik edilmiş gönderiler için yeni teşvikleri göstermeyin (yalnızca yeni alınan teşvikleri etkiler)
-        setting_always_send_emails: Normalde, Mastodon'u aktif olarak kullanırken e-posta bildirimleri gönderilmeyecektir
+        setting_always_send_emails: Normalde, tucano'u aktif olarak kullanırken e-posta bildirimleri gönderilmeyecektir
         setting_default_sensitive: Hassas medya varsayılan olarak gizlidir ve bir tıklama ile gösterilebilir
         setting_display_media_default: Hassas olarak işaretlenmiş medyayı gizle
         setting_display_media_hide_all: Medyayı her zaman gizle
@@ -82,15 +82,15 @@ tr:
         bootstrap_timeline_accounts: Bu hesaplar, yeni kullanıcıların takip önerilerinin tepesinde sabitlenecektir.
         closed_registrations_message: Kayıt olma kapalıyken görüntülenir
         content_cache_retention_period: Diğer sunuculardaki (öne çıkarma ve yanıtlar da dahil olmak üzere) tüm gönderiler belirlenen gün sonunda, yerel bir kullanıcının etkileşimine bakılmadan, silinecektir. Yerel bir kullanıcının yerimlerine veya favorilerine eklediği gönderiler de dahildir. Farklı sunuculardaki kullanıcılar arasındaki özel bahsetmeler de kaybolacak ve geri getirilmeleri mümkün olmayacaktır. Bu ayarın kullanımı özel amaçlı sunucular içindir ve genel amaçlı kullanımda etkinleştirildiğinde kullanıcı beklentilerini karşılamayabilir.
-        custom_css: Mastodon'un web sürümüne özel biçimler uygulayabilirsiniz.
-        favicon: WEBP, PNG, GIF veya JPG. Varsayılan Mastodon simgesini isteğe bağlı bir simgeyle değiştirir.
+        custom_css: tucano'un web sürümüne özel biçimler uygulayabilirsiniz.
+        favicon: WEBP, PNG, GIF veya JPG. Varsayılan tucano simgesini isteğe bağlı bir simgeyle değiştirir.
         mascot: Gelişmiş web arayüzündeki illüstrasyonu geçersiz kılar.
         media_cache_retention_period: Uzak kullanıcıların gönderilerindeki ortam dosyaları sunucunuzda önbelleklenir. Pozitif bir değer verildiğinde, ortam dosyaları belirlenen gün sonunda silinecektir. Eğer ortam dosyaları silindikten sonra istenirse, kaynak içerik hala mevcutsa, tekrar indirilecektir. Bağlantı önizleme kartlarının üçüncü parti siteleri yoklamasına ilişkin kısıtlamalar nedeniyle, bu değeri en azından 14 gün olarak ayarlamanız önerilir, yoksa bağlantı önizleme kartları bu süreden önce isteğe bağlı olarak güncellenmeyecektir.
         peers_api_enabled: Bu sunucunun fediverse'te karşılaştığı alan adlarının bir listesi. İlgili sunucuyla birleştirme mi yapıyorsunuz yoksa sunucunuz sadece onu biliyor mu hakkında bir bilgi burada yok. Bu blgi genel olarak federasyın hakkında istatistik toplamak isteyen hizmetler tarafından kullanılıyor.
         profile_directory: Profil dizini keşfedilebilir olmayı kabul eden tüm kullanıcıları listeler.
         require_invite_text: Kayıt olmak elle doğrulama gerektiriyorsa, "Neden katılmak istiyorsunuz?" metin girdisini isteğe bağlı yerine zorunlu yapın
         site_contact_email: İnsanlar yasal konular veya destek hakkında bilgi edinmek için size nasıl ulaşabilir.
-        site_contact_username: İnsanlar size Mastodon'da nasıl ulaşabilir.
+        site_contact_username: İnsanlar size tucano'da nasıl ulaşabilir.
         site_extended_description: Ziyaretçileriniz ve kullanıcılarınıza yardımı dokunabilecek herhangi bir ek bilgi. Markdown sözdizimiyle biçimlendirilebilir.
         site_short_description: Sunucunuzu tekil olarak tanımlamaya yardımcı olacak kısa tanım. Kim işletiyor, kimin için?
         site_terms: Kendi gizlilik politikanızı kullanın veya varsayılanı kullanmak için boş bırakın. Markdown sözdizimiyle biçimlendirilebilir.
@@ -105,7 +105,7 @@ tr:
       form_challenge:
         current_password: Güvenli bir bölgeye giriyorsunuz
       imports:
-        data: Diğer Mastodon sunucusundan dışarı aktardığınız CSV dosyası
+        data: Diğer tucano sunucusundan dışarı aktardığınız CSV dosyası
       invite_request:
         text: Bu, başvurunuzu gözden geçirmemize yardımcı olacaktır
       ip_block:
@@ -300,7 +300,7 @@ tr:
         software_updates:
           all: Tüm güncellemeleri bildir
           critical: Sadece kritik güncellemeleri bildir
-          label: Yeni bir Mastodon sürümü mevcut
+          label: Yeni bir tucano sürümü mevcut
           none: Güncellemeleri hiç bir zaman bildirme (önerilmiyor)
           patch: Yama güncellemelerini bildir
         trending_tag: Yeni eğilimin gözden geçmesi gerekiyor

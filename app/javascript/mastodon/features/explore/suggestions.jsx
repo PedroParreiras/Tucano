@@ -8,9 +8,9 @@ import { withRouter } from 'react-router-dom';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import { connect } from 'react-redux';
 
-import { fetchSuggestions } from 'mastodon/actions/suggestions';
-import { LoadingIndicator } from 'mastodon/components/loading_indicator';
-import { WithRouterPropTypes } from 'mastodon/utils/react_router';
+import { fetchSuggestions } from 'tucano/actions/suggestions';
+import { LoadingIndicator } from 'tucano/components/loading_indicator';
+import { WithRouterPropTypes } from 'tucano/utils/react_router';
 
 import { Card } from './components/card';
 

@@ -6,7 +6,7 @@ import 'wicg-inert';
 import { multiply } from 'color-blend';
 import { createBrowserHistory } from 'history';
 
-import { WithOptionalRouterPropTypes, withOptionalRouter } from 'mastodon/utils/react_router';
+import { WithOptionalRouterPropTypes, withOptionalRouter } from 'tucano/utils/react_router';
 
 class ModalRoot extends PureComponent {
 
@@ -109,15 +109,15 @@ class ModalRoot extends PureComponent {
       this.unlistenHistory();
     }
     const { state } = this.history.location;
-    if (state && state.mastodonModalKey === this._modalHistoryKey) {
+    if (state && state.tucanoModalKey === this._modalHistoryKey) {
       this.history.goBack();
     }
   }
 
   _ensureHistoryBuffer () {
     const { pathname, state } = this.history.location;
-    if (!state || state.mastodonModalKey !== this._modalHistoryKey) {
-      this.history.push(pathname, { ...state, mastodonModalKey: this._modalHistoryKey });
+    if (!state || state.tucanoModalKey !== this._modalHistoryKey) {
+      this.history.push(pathname, { ...state, tucanoModalKey: this._modalHistoryKey });
     }
   }
 

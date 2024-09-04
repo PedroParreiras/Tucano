@@ -13,14 +13,14 @@ import PersonAddIcon from '@/material-icons/400-24px/person_add.svg?react';
 import RepeatIcon from '@/material-icons/400-24px/repeat.svg?react';
 import ReplyIcon from '@/material-icons/400-24px/reply.svg?react';
 import StarIcon from '@/material-icons/400-24px/star.svg?react';
-import { openModal, closeModal } from 'mastodon/actions/modal';
-import api from 'mastodon/api';
-import { Button } from 'mastodon/components/button';
-import { Icon }  from 'mastodon/components/icon';
-import { registrationsOpen, sso_redirect } from 'mastodon/initial_state';
+import { openModal, closeModal } from 'tucano/actions/modal';
+import api from 'tucano/api';
+import { Button } from 'tucano/components/button';
+import { Icon }  from 'tucano/components/icon';
+import { registrationsOpen, sso_redirect } from 'tucano/initial_state';
 
 const messages = defineMessages({
-  loginPrompt: { id: 'interaction_modal.login.prompt', defaultMessage: 'Domain of your home server, e.g. mastodon.social' },
+  loginPrompt: { id: 'interaction_modal.login.prompt', defaultMessage: 'Domain of your home server, e.g. tucano.social' },
 });
 
 const mapStateToProps = (state, { accountId }) => ({
@@ -38,7 +38,7 @@ const mapDispatchToProps = (dispatch) => ({
   },
 });
 
-const PERSISTENCE_KEY = 'mastodon_home';
+const PERSISTENCE_KEY = 'tucano_home';
 
 const isValidDomain = value => {
   const url = new URL('https:///path');
@@ -360,22 +360,22 @@ class InteractionModal extends React.PureComponent {
     case 'reply':
       icon = <Icon id='reply' icon={ReplyIcon} />;
       title = <FormattedMessage id='interaction_modal.title.reply' defaultMessage="Reply to {name}'s post" values={{ name }} />;
-      actionDescription = <FormattedMessage id='interaction_modal.description.reply' defaultMessage='With an account on Mastodon, you can respond to this post.' />;
+      actionDescription = <FormattedMessage id='interaction_modal.description.reply' defaultMessage='With an account on tucano, you can respond to this post.' />;
       break;
     case 'reblog':
       icon = <Icon id='retweet' icon={RepeatIcon} />;
       title = <FormattedMessage id='interaction_modal.title.reblog' defaultMessage="Boost {name}'s post" values={{ name }} />;
-      actionDescription = <FormattedMessage id='interaction_modal.description.reblog' defaultMessage='With an account on Mastodon, you can boost this post to share it with your own followers.' />;
+      actionDescription = <FormattedMessage id='interaction_modal.description.reblog' defaultMessage='With an account on tucano, you can boost this post to share it with your own followers.' />;
       break;
     case 'favourite':
       icon = <Icon id='star' icon={StarIcon} />;
       title = <FormattedMessage id='interaction_modal.title.favourite' defaultMessage="Favorite {name}'s post" values={{ name }} />;
-      actionDescription = <FormattedMessage id='interaction_modal.description.favourite' defaultMessage='With an account on Mastodon, you can favorite this post to let the author know you appreciate it and save it for later.' />;
+      actionDescription = <FormattedMessage id='interaction_modal.description.favourite' defaultMessage='With an account on tucano, you can favorite this post to let the author know you appreciate it and save it for later.' />;
       break;
     case 'follow':
       icon = <Icon id='user-plus' icon={PersonAddIcon} />;
       title = <FormattedMessage id='interaction_modal.title.follow' defaultMessage='Follow {name}' values={{ name }} />;
-      actionDescription = <FormattedMessage id='interaction_modal.description.follow' defaultMessage='With an account on Mastodon, you can follow {name} to receive their posts in your home feed.' values={{ name }} />;
+      actionDescription = <FormattedMessage id='interaction_modal.description.follow' defaultMessage='With an account on tucano, you can follow {name} to receive their posts in your home feed.' values={{ name }} />;
       break;
     }
 
@@ -410,8 +410,8 @@ class InteractionModal extends React.PureComponent {
 
         <IntlLoginForm resourceUrl={url} />
 
-        <p className='hint'><FormattedMessage id='interaction_modal.sign_in_hint' defaultMessage="Tip: That's the website where you signed up. If you don't remember, look for the welcome e-mail in your inbox. You can also enter your full username! (e.g. @Mastodon@mastodon.social)" /></p>
-        <p><FormattedMessage id='interaction_modal.no_account_yet' defaultMessage='Not on Mastodon?' /> {signupButton}</p>
+        <p className='hint'><FormattedMessage id='interaction_modal.sign_in_hint' defaultMessage="Tip: That's the website where you signed up. If you don't remember, look for the welcome e-mail in your inbox. You can also enter your full username! (e.g. @tucano@tucano.social)" /></p>
+        <p><FormattedMessage id='interaction_modal.no_account_yet' defaultMessage='Not on tucano?' /> {signupButton}</p>
       </div>
     );
   }

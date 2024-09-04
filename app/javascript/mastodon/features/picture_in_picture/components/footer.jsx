@@ -14,14 +14,14 @@ import RepeatIcon from '@/material-icons/400-24px/repeat.svg?react';
 import ReplyIcon from '@/material-icons/400-24px/reply.svg?react';
 import ReplyAllIcon from '@/material-icons/400-24px/reply_all.svg?react';
 import StarIcon from '@/material-icons/400-24px/star.svg?react';
-import { replyCompose } from 'mastodon/actions/compose';
-import { toggleReblog, toggleFavourite } from 'mastodon/actions/interactions';
-import { openModal } from 'mastodon/actions/modal';
-import { IconButton } from 'mastodon/components/icon_button';
-import { identityContextPropShape, withIdentity } from 'mastodon/identity_context';
-import { me } from 'mastodon/initial_state';
-import { makeGetStatus } from 'mastodon/selectors';
-import { WithRouterPropTypes } from 'mastodon/utils/react_router';
+import { replyCompose } from 'tucano/actions/compose';
+import { toggleReblog, toggleFavourite } from 'tucano/actions/interactions';
+import { openModal } from 'tucano/actions/modal';
+import { IconButton } from 'tucano/components/icon_button';
+import { identityContextPropShape, withIdentity } from 'tucano/identity_context';
+import { me } from 'tucano/initial_state';
+import { makeGetStatus } from 'tucano/selectors';
+import { WithRouterPropTypes } from 'tucano/utils/react_router';
 
 const messages = defineMessages({
   reply: { id: 'status.reply', defaultMessage: 'Reply' },

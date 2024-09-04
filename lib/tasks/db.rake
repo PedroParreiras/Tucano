@@ -8,7 +8,7 @@ namespace :db do
     desc 'Generate a set of keys for configuring Active Record encryption in a given environment'
     task :init do # rubocop:disable Rails/RakeEnvironment
       puts <<~MSG
-        Add these secret environment variables to your Mastodon environment (e.g. .env.production):#{' '}
+        Add these secret environment variables to your tucano environment (e.g. .env.production):#{' '}
 
         ACTIVE_RECORD_ENCRYPTION_DETERMINISTIC_KEY=#{SecureRandom.alphanumeric(32)}
         ACTIVE_RECORD_ENCRYPTION_KEY_DERIVATION_SALT=#{SecureRandom.alphanumeric(32)}
@@ -33,7 +33,7 @@ namespace :db do
 
   task pre_migration_check: :environment do
     version = ActiveRecord::Base.connection.database_version
-    abort 'This version of Mastodon requires PostgreSQL 12.0 or newer. Please update PostgreSQL before updating Mastodon.' if version < 120_000
+    abort 'This version of tucano requires PostgreSQL 12.0 or newer. Please update PostgreSQL before updating tucano.' if version < 120_000
   end
 
   Rake::Task['db:migrate'].enhance(['db:pre_migration_check'])

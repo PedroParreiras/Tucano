@@ -5,12 +5,12 @@ import { FormattedMessage } from 'react-intl';
 import FindInPageIcon from '@/material-icons/400-24px/find_in_page.svg?react';
 import PeopleIcon from '@/material-icons/400-24px/group.svg?react';
 import TagIcon from '@/material-icons/400-24px/tag.svg?react';
-import { expandSearch } from 'mastodon/actions/search';
-import { Icon }  from 'mastodon/components/icon';
-import { LoadMore } from 'mastodon/components/load_more';
-import { LoadingIndicator } from 'mastodon/components/loading_indicator';
-import { SearchSection } from 'mastodon/features/explore/components/search_section';
-import { useAppDispatch, useAppSelector } from 'mastodon/store';
+import { expandSearch } from 'tucano/actions/search';
+import { Icon }  from 'tucano/components/icon';
+import { LoadMore } from 'tucano/components/load_more';
+import { LoadingIndicator } from 'tucano/components/loading_indicator';
+import { SearchSection } from 'tucano/features/explore/components/search_section';
+import { useAppDispatch, useAppSelector } from 'tucano/store';
 
 import { ImmutableHashtag as Hashtag } from '../../../components/hashtag';
 import AccountContainer from '../../../containers/account_container';

@@ -122,7 +122,7 @@ lv:
         admin/accounts: Kontu administrēšana
         admin/all: Visas administrēšanas funkcijas
         admin/reports: Ziņojumu administrēšana
-        all: Pilna piekļuve tavam Mastodon kontam
+        all: Pilna piekļuve tavam tucano kontam
         blocks: Bloķētie
         bookmarks: Grāmatzīmes
         conversations: Sarunas
@@ -135,7 +135,7 @@ lv:
         media: Multividesu pielikumi
         mutes: Apklusinātie
         notifications: Paziņojumi
-        profile: Tavs Mastodon profils
+        profile: Tavs tucano profils
         push: Uznirstošie paziņojumi
         reports: Ziņojumi
         search: Meklēt

@@ -8,11 +8,11 @@ import { connect } from 'react-redux';
 
 import { debounce } from 'lodash';
 
-import { TimelineHint } from 'mastodon/components/timeline_hint';
-import BundleColumnError from 'mastodon/features/ui/components/bundle_column_error';
-import { normalizeForLookup } from 'mastodon/reducers/accounts_map';
-import { getAccountHidden } from 'mastodon/selectors';
-import { useAppSelector } from 'mastodon/store';
+import { TimelineHint } from 'tucano/components/timeline_hint';
+import BundleColumnError from 'tucano/features/ui/components/bundle_column_error';
+import { normalizeForLookup } from 'tucano/reducers/accounts_map';
+import { getAccountHidden } from 'tucano/selectors';
+import { useAppSelector } from 'tucano/store';
 
 import {
   lookupAccount,

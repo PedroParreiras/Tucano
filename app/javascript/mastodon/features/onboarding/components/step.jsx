@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import ArrowRightAltIcon from '@/material-icons/400-24px/arrow_right_alt.svg?react';
 import CheckIcon from '@/material-icons/400-24px/done.svg?react';
-import { Icon } from 'mastodon/components/icon';
+import { Icon } from 'tucano/components/icon';
 
 export const Step = ({ label, description, icon, iconComponent, completed, onClick, href, to }) => {
   const content = (

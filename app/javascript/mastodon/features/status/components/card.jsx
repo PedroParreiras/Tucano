@@ -14,11 +14,11 @@ import ImmutablePropTypes from 'react-immutable-proptypes';
 import DescriptionIcon from '@/material-icons/400-24px/description-fill.svg?react';
 import OpenInNewIcon from '@/material-icons/400-24px/open_in_new.svg?react';
 import PlayArrowIcon from '@/material-icons/400-24px/play_arrow-fill.svg?react';
-import { Blurhash } from 'mastodon/components/blurhash';
-import { Icon }  from 'mastodon/components/icon';
-import { MoreFromAuthor } from 'mastodon/components/more_from_author';
-import { RelativeTimestamp } from 'mastodon/components/relative_timestamp';
-import { useBlurhash } from 'mastodon/initial_state';
+import { Blurhash } from 'tucano/components/blurhash';
+import { Icon }  from 'tucano/components/icon';
+import { MoreFromAuthor } from 'tucano/components/more_from_author';
+import { RelativeTimestamp } from 'tucano/components/relative_timestamp';
+import { useBlurhash } from 'tucano/initial_state';
 
 const IDNA_PREFIX = 'xn--';
 

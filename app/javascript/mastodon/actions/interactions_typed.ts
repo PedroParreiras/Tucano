@@ -1,6 +1,6 @@
-import { apiReblog, apiUnreblog } from 'mastodon/api/interactions';
-import type { StatusVisibility } from 'mastodon/models/status';
-import { createDataLoadingThunk } from 'mastodon/store/typed_functions';
+import { apiReblog, apiUnreblog } from 'tucano/api/interactions';
+import type { StatusVisibility } from 'tucano/models/status';
+import { createDataLoadingThunk } from 'tucano/store/typed_functions';
 
 import { importFetchedStatus } from './importer';
 

@@ -6,11 +6,11 @@ import ImmutablePureComponent from 'react-immutable-pure-component';
 import { connect } from 'react-redux';
 
 import CloseIcon from '@/material-icons/400-24px/close.svg?react';
-import { fetchFilters, createFilter, createFilterStatus } from 'mastodon/actions/filters';
-import { fetchStatus } from 'mastodon/actions/statuses';
-import { IconButton } from 'mastodon/components/icon_button';
-import AddedToFilter from 'mastodon/features/filters/added_to_filter';
-import SelectFilter from 'mastodon/features/filters/select_filter';
+import { fetchFilters, createFilter, createFilterStatus } from 'tucano/actions/filters';
+import { fetchStatus } from 'tucano/actions/statuses';
+import { IconButton } from 'tucano/components/icon_button';
+import AddedToFilter from 'tucano/features/filters/added_to_filter';
+import SelectFilter from 'tucano/features/filters/select_filter';
 
 const messages = defineMessages({
   close: { id: 'lightbox.close', defaultMessage: 'Close' },

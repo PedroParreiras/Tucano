@@ -10,7 +10,7 @@ RSpec.describe 'Tags' do
       visit tag_path(tag)
 
       expect(page)
-        .to have_css('noscript', text: /Mastodon/)
+        .to have_css('noscript', text: /tucano/)
     end
   end
 end

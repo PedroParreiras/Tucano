@@ -10,13 +10,13 @@ import Rails from '@rails/ujs';
 import axios from 'axios';
 import { throttle } from 'lodash';
 
-import { start } from '../mastodon/common';
-import { timeAgoString } from '../mastodon/components/relative_timestamp';
-import emojify from '../mastodon/features/emoji/emoji';
-import loadKeyboardExtensions from '../mastodon/load_keyboard_extensions';
-import { loadLocale, getLocale } from '../mastodon/locales';
-import { loadPolyfills } from '../mastodon/polyfills';
-import ready from '../mastodon/ready';
+import { start } from '../tucano/common';
+import { timeAgoString } from '../tucano/components/relative_timestamp';
+import emojify from '../tucano/features/emoji/emoji';
+import loadKeyboardExtensions from '../tucano/load_keyboard_extensions';
+import { loadLocale, getLocale } from '../tucano/locales';
+import { loadPolyfills } from '../tucano/polyfills';
+import ready from '../tucano/ready';
 
 import 'cocoon-js-vanilla';
 
@@ -187,7 +187,7 @@ function loaded() {
 
   if (reactComponents.length > 0) {
     import(
-      /* webpackChunkName: "containers/media_container" */ '../mastodon/containers/media_container'
+      /* webpackChunkName: "containers/media_container" */ '../tucano/containers/media_container'
     )
       .then(({ default: MediaContainer }) => {
         reactComponents.forEach((component) => {

@@ -11,10 +11,10 @@ import escapeTextContentForBrowser from 'escape-html';
 import spring from 'react-motion/lib/spring';
 
 import CheckIcon from '@/material-icons/400-24px/check.svg?react';
-import { Icon }  from 'mastodon/components/icon';
-import emojify from 'mastodon/features/emoji/emoji';
-import Motion from 'mastodon/features/ui/util/optional_motion';
-import { identityContextPropShape, withIdentity } from 'mastodon/identity_context';
+import { Icon }  from 'tucano/components/icon';
+import emojify from 'tucano/features/emoji/emoji';
+import Motion from 'tucano/features/ui/util/optional_motion';
+import { identityContextPropShape, withIdentity } from 'tucano/identity_context';
 
 import { RelativeTimestamp } from './relative_timestamp';
 

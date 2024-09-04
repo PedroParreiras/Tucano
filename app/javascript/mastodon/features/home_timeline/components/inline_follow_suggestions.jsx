@@ -12,15 +12,15 @@ import ChevronLeftIcon from '@/material-icons/400-24px/chevron_left.svg?react';
 import ChevronRightIcon from '@/material-icons/400-24px/chevron_right.svg?react';
 import CloseIcon from '@/material-icons/400-24px/close.svg?react';
 import InfoIcon from '@/material-icons/400-24px/info.svg?react';
-import { changeSetting } from 'mastodon/actions/settings';
-import { fetchSuggestions, dismissSuggestion } from 'mastodon/actions/suggestions';
-import { Avatar } from 'mastodon/components/avatar';
-import { DisplayName } from 'mastodon/components/display_name';
-import { FollowButton } from 'mastodon/components/follow_button';
-import { Icon } from 'mastodon/components/icon';
-import { IconButton } from 'mastodon/components/icon_button';
-import { VerifiedBadge } from 'mastodon/components/verified_badge';
-import { domain } from 'mastodon/initial_state';
+import { changeSetting } from 'tucano/actions/settings';
+import { fetchSuggestions, dismissSuggestion } from 'tucano/actions/suggestions';
+import { Avatar } from 'tucano/components/avatar';
+import { DisplayName } from 'tucano/components/display_name';
+import { FollowButton } from 'tucano/components/follow_button';
+import { Icon } from 'tucano/components/icon';
+import { IconButton } from 'tucano/components/icon_button';
+import { VerifiedBadge } from 'tucano/components/verified_badge';
+import { domain } from 'tucano/initial_state';
 
 const messages = defineMessages({
   follow: { id: 'account.follow', defaultMessage: 'Follow' },

@@ -1,6 +1,6 @@
 import { Map as ImmutableMap, fromJS } from 'immutable';
 
-import { POLLS_IMPORT } from 'mastodon/actions/importer';
+import { POLLS_IMPORT } from 'tucano/actions/importer';
 
 import { normalizePollOptionTranslation } from '../actions/importer/normalizer';
 import { STATUS_TRANSLATE_SUCCESS, STATUS_TRANSLATE_UNDO } from '../actions/statuses';

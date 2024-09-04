@@ -2,8 +2,8 @@ import React from 'react';
 
 import classNames from 'classnames';
 
-import { DisplayName } from 'mastodon/components/display_name';
-import { Skeleton } from 'mastodon/components/skeleton';
+import { DisplayName } from 'tucano/components/display_name';
+import { Skeleton } from 'tucano/components/skeleton';
 
 interface Props {
   size?: number;

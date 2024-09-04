@@ -85,12 +85,12 @@ module JsonLdHelper
 
   # Patches a JSON-LD document to avoid compatibility issues on redistribution
   #
-  # Since compacting a JSON-LD document against Mastodon's built-in vocabulary
+  # Since compacting a JSON-LD document against tucano's built-in vocabulary
   # means other extension namespaces will be expanded, malformed JSON-LD
   # attributes lost, and some values “unexpectedly” compacted this method
   # patches the following likely sources of incompatibility:
   # - 'https://www.w3.org/ns/activitystreams#Public' being compacted to
-  #   'as:Public' (for instance, pre-3.4.0 Mastodon does not understand
+  #   'as:Public' (for instance, pre-3.4.0 tucano does not understand
   #   'as:Public')
   # - single-item arrays being compacted to the item itself (`[foo]` being
   #   compacted to `foo`)
@@ -172,7 +172,7 @@ module JsonLdHelper
     on_behalf_of ||= Account.representative
 
     build_request(uri, on_behalf_of, options: request_options).perform do |response|
-      raise Mastodon::UnexpectedResponseError, response unless response_successful?(response) || response_error_unsalvageable?(response) || !raise_on_temporary_error
+      raise tucano::UnexpectedResponseError, response unless response_successful?(response) || response_error_unsalvageable?(response) || !raise_on_temporary_error
 
       body_to_json(response.body_with_limit) if response.code == 200 && valid_activitypub_content_type?(response)
     end

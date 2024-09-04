@@ -1,8 +1,8 @@
 import { Switch, Route } from 'react-router-dom';
 
-import AccountNavigation from 'mastodon/features/account/navigation';
-import Trends from 'mastodon/features/getting_started/containers/trends_container';
-import { showTrends } from 'mastodon/initial_state';
+import AccountNavigation from 'tucano/features/account/navigation';
+import Trends from 'tucano/features/getting_started/containers/trends_container';
+import { showTrends } from 'tucano/initial_state';
 
 const DefaultNavigation: React.FC = () =>
   showTrends ? (

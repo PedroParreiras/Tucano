@@ -11,7 +11,7 @@ class TranslateStatusService < BaseService
     @source_texts = source_texts
     @target_language = target_language
 
-    raise Mastodon::NotPermittedError unless permitted?
+    raise tucano::NotPermittedError unless permitted?
 
     status_translation = Rails.cache.fetch("v2:translations/#{@status.language}/#{@target_language}/#{content_hash}", expires_in: CACHE_TTL) do
       translations = translation_backend.translate(@source_texts.values, @status.language, @target_language)
@@ -76,7 +76,7 @@ class TranslateStatusService < BaseService
       case source
       when :content
         node = unwrap_emoji_shortcodes(translation.text)
-        Sanitize.node!(node, Sanitize::Config::MASTODON_STRICT)
+        Sanitize.node!(node, Sanitize::Config::tucano_STRICT)
         status_translation.content = node.to_html
       when :spoiler_text
         status_translation.spoiler_text = unwrap_emoji_shortcodes(translation.text).content

@@ -38,7 +38,7 @@ RSpec.describe 'API V1 Conversations' do
     context 'with since_id' do
       context 'when requesting old posts' do
         it 'returns conversations' do
-          get '/api/v1/conversations', params: { since_id: Mastodon::Snowflake.id_at(1.hour.ago, with_random: false) }, headers: headers
+          get '/api/v1/conversations', params: { since_id: tucano::Snowflake.id_at(1.hour.ago, with_random: false) }, headers: headers
 
           expect(body_as_json.size).to eq 2
         end
@@ -46,7 +46,7 @@ RSpec.describe 'API V1 Conversations' do
 
       context 'when requesting posts in the future' do
         it 'returns no conversation' do
-          get '/api/v1/conversations', params: { since_id: Mastodon::Snowflake.id_at(1.hour.from_now, with_random: false) }, headers: headers
+          get '/api/v1/conversations', params: { since_id: tucano::Snowflake.id_at(1.hour.from_now, with_random: false) }, headers: headers
 
           expect(body_as_json.size).to eq 0
         end

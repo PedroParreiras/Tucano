@@ -2,7 +2,7 @@ import { injectIntl } from 'react-intl';
 
 import { connect } from 'react-redux';
 
-import { openModal } from 'mastodon/actions/modal';
+import { openModal } from 'tucano/actions/modal';
 
 import {
   followAccount,

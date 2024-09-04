@@ -6,7 +6,7 @@ import {
   HASHTAG_FOLLOW_FAIL,
   HASHTAG_UNFOLLOW_REQUEST,
   HASHTAG_UNFOLLOW_FAIL,
-} from 'mastodon/actions/tags';
+} from 'tucano/actions/tags';
 
 const initialState = ImmutableMap();
 

@@ -10,16 +10,16 @@ import {
   followAccount,
   unblockAccount,
   unmuteAccount,
-} from 'mastodon/actions/accounts';
-import { openModal } from 'mastodon/actions/modal';
-import { Avatar } from 'mastodon/components/avatar';
-import { Button } from 'mastodon/components/button';
-import { DisplayName } from 'mastodon/components/display_name';
-import { ShortNumber } from 'mastodon/components/short_number';
-import { autoPlayGif, me } from 'mastodon/initial_state';
-import type { Account } from 'mastodon/models/account';
-import { makeGetAccount } from 'mastodon/selectors';
-import { useAppDispatch, useAppSelector } from 'mastodon/store';
+} from 'tucano/actions/accounts';
+import { openModal } from 'tucano/actions/modal';
+import { Avatar } from 'tucano/components/avatar';
+import { Button } from 'tucano/components/button';
+import { DisplayName } from 'tucano/components/display_name';
+import { ShortNumber } from 'tucano/components/short_number';
+import { autoPlayGif, me } from 'tucano/initial_state';
+import type { Account } from 'tucano/models/account';
+import { makeGetAccount } from 'tucano/selectors';
+import { useAppDispatch, useAppSelector } from 'tucano/store';
 
 const messages = defineMessages({
   unfollow: { id: 'account.unfollow', defaultMessage: 'Unfollow' },

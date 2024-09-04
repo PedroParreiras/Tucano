@@ -15,36 +15,36 @@ ARG DEBIAN_VERSION="bookworm"
 # Node image to use for base image based on combined variables (ex: 20-bookworm-slim)
 FROM docker.io/node:${NODE_MAJOR_VERSION}-${DEBIAN_VERSION}-slim AS streaming
 
-# Resulting version string is vX.X.X-MASTODON_VERSION_PRERELEASE+MASTODON_VERSION_METADATA
+# Resulting version string is vX.X.X-tucano_VERSION_PRERELEASE+tucano_VERSION_METADATA
 # Example: v4.3.0-nightly.2023.11.09+pr-123456
-# Overwrite existence of 'alpha.X' in version.rb [--build-arg MASTODON_VERSION_PRERELEASE="nightly.2023.11.09"]
-ARG MASTODON_VERSION_PRERELEASE=""
-# Append build metadata or fork information to version.rb [--build-arg MASTODON_VERSION_METADATA="pr-123456"]
-ARG MASTODON_VERSION_METADATA=""
+# Overwrite existence of 'alpha.X' in version.rb [--build-arg tucano_VERSION_PRERELEASE="nightly.2023.11.09"]
+ARG tucano_VERSION_PRERELEASE=""
+# Append build metadata or fork information to version.rb [--build-arg tucano_VERSION_METADATA="pr-123456"]
+ARG tucano_VERSION_METADATA=""
 
 # Timezone used by the Docker container and runtime, change with [--build-arg TZ=Europe/Berlin]
 ARG TZ="Etc/UTC"
-# Linux UID (user id) for the mastodon user, change with [--build-arg UID=1234]
+# Linux UID (user id) for the tucano user, change with [--build-arg UID=1234]
 ARG UID="991"
-# Linux GID (group id) for the mastodon user, change with [--build-arg GID=1234]
+# Linux GID (group id) for the tucano user, change with [--build-arg GID=1234]
 ARG GID="991"
 
-# Apply Mastodon build options based on options above
+# Apply tucano build options based on options above
 ENV \
-# Apply Mastodon version information
-  MASTODON_VERSION_PRERELEASE="${MASTODON_VERSION_PRERELEASE}" \
-  MASTODON_VERSION_METADATA="${MASTODON_VERSION_METADATA}" \
+# Apply tucano version information
+  tucano_VERSION_PRERELEASE="${tucano_VERSION_PRERELEASE}" \
+  tucano_VERSION_METADATA="${tucano_VERSION_METADATA}" \
 # Apply timezone
   TZ=${TZ}
 
 ENV \
-# Configure the IP to bind Mastodon to when serving traffic
+# Configure the IP to bind tucano to when serving traffic
   BIND="0.0.0.0" \
 # Explicitly set PORT to match the exposed port
   PORT=4000 \
 # Use production settings for Yarn, Node and related nodejs based tools
   NODE_ENV="production" \
-# Add Ruby and Mastodon installation to the PATH
+# Add Ruby and tucano installation to the PATH
   DEBIAN_FRONTEND="noninteractive"
 
 # Set default shell used for running commands
@@ -59,11 +59,11 @@ RUN \
   rm -f /etc/apt/apt.conf.d/docker-clean; \
 # Sets timezone
   echo "${TZ}" > /etc/localtime; \
-# Creates mastodon user/group and sets home directory
-  groupadd -g "${GID}" mastodon; \
-  useradd -l -u "${UID}" -g "${GID}" -m -d /opt/mastodon mastodon; \
-# Creates symlink for /mastodon folder
-  ln -s /opt/mastodon /mastodon;
+# Creates tucano user/group and sets home directory
+  groupadd -g "${GID}" tucano; \
+  useradd -l -u "${UID}" -g "${GID}" -m -d /opt/tucano tucano; \
+# Creates symlink for /tucano folder
+  ln -s /opt/tucano /tucano;
 
 # hadolint ignore=DL3008,DL3005
 RUN \
@@ -80,14 +80,14 @@ RUN \
     wget \
   ;
 
-# Set /opt/mastodon as working directory
-WORKDIR /opt/mastodon
+# Set /opt/tucano as working directory
+WORKDIR /opt/tucano
 
 # Copy Node package configuration files from build system to container
-COPY package.json yarn.lock .yarnrc.yml /opt/mastodon/
-COPY .yarn /opt/mastodon/.yarn
+COPY package.json yarn.lock .yarnrc.yml /opt/tucano/
+COPY .yarn /opt/tucano/.yarn
 # Copy Streaming source code from build system to container
-COPY ./streaming /opt/mastodon/streaming
+COPY ./streaming /opt/tucano/streaming
 
 RUN \
 # Mount local Corepack and Yarn caches from Docker buildx caches
@@ -103,10 +103,10 @@ RUN \
 --mount=type=cache,id=corepack-cache-${TARGETPLATFORM},target=/usr/local/share/.cache/corepack,sharing=locked \
 --mount=type=cache,id=yarn-cache-${TARGETPLATFORM},target=/usr/local/share/.cache/yarn,sharing=locked \
 # Install Node packages
-  yarn workspaces focus --production @mastodon/streaming;
+  yarn workspaces focus --production @tucano/streaming;
 
 # Set the running user for resulting container
-USER mastodon
+USER tucano
 # Expose default Streaming ports
 EXPOSE 4000
 # Run streaming when started

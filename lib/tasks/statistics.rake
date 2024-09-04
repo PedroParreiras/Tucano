@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-task stats: 'mastodon:stats'
+task stats: 'tucano:stats'
 
-namespace :mastodon do
+namespace :tucano do
   desc 'Report code statistics (KLOCs, etc)'
   task :stats do
     require 'rails/code_statistics'

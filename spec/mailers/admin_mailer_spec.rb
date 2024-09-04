@@ -100,8 +100,8 @@ RSpec.describe AdminMailer do
         .to be_present
         .and(deliver_to(recipient.user_email))
         .and(deliver_from('notifications@localhost'))
-        .and(have_subject('New Mastodon versions are available for cb6e6126.ngrok.io!'))
-        .and(have_body_text('New Mastodon versions have been released, you may want to update!'))
+        .and(have_subject('New tucano versions are available for cb6e6126.ngrok.io!'))
+        .and(have_body_text('New tucano versions have been released, you may want to update!'))
     end
   end
 
@@ -118,8 +118,8 @@ RSpec.describe AdminMailer do
         .to be_present
         .and(deliver_to(recipient.user_email))
         .and(deliver_from('notifications@localhost'))
-        .and(have_subject('Critical Mastodon updates are available for cb6e6126.ngrok.io!'))
-        .and(have_body_text('New critical versions of Mastodon have been released, you may want to update as soon as possible!'))
+        .and(have_subject('Critical tucano updates are available for cb6e6126.ngrok.io!'))
+        .and(have_body_text('New critical versions of tucano have been released, you may want to update as soon as possible!'))
         .and(have_header('Importance', 'high'))
         .and(have_header('Priority', 'urgent'))
         .and(have_header('X-Priority', '1'))

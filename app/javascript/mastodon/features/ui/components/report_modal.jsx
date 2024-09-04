@@ -8,16 +8,16 @@ import ImmutablePureComponent from 'react-immutable-pure-component';
 import { connect } from 'react-redux';
 
 import CloseIcon from '@/material-icons/400-24px/close.svg?react';
-import { submitReport } from 'mastodon/actions/reports';
-import { fetchServer } from 'mastodon/actions/server';
-import { expandAccountTimeline } from 'mastodon/actions/timelines';
-import { IconButton } from 'mastodon/components/icon_button';
-import Category from 'mastodon/features/report/category';
-import Comment from 'mastodon/features/report/comment';
-import Rules from 'mastodon/features/report/rules';
-import Statuses from 'mastodon/features/report/statuses';
-import Thanks from 'mastodon/features/report/thanks';
-import { makeGetAccount } from 'mastodon/selectors';
+import { submitReport } from 'tucano/actions/reports';
+import { fetchServer } from 'tucano/actions/server';
+import { expandAccountTimeline } from 'tucano/actions/timelines';
+import { IconButton } from 'tucano/components/icon_button';
+import Category from 'tucano/features/report/category';
+import Comment from 'tucano/features/report/comment';
+import Rules from 'tucano/features/report/rules';
+import Statuses from 'tucano/features/report/statuses';
+import Thanks from 'tucano/features/report/thanks';
+import { makeGetAccount } from 'tucano/selectors';
 
 const messages = defineMessages({
   close: { id: 'lightbox.close', defaultMessage: 'Close' },

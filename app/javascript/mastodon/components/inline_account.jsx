@@ -3,8 +3,8 @@ import { PureComponent } from 'react';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import { connect } from 'react-redux';
 
-import { Avatar } from 'mastodon/components/avatar';
-import { makeGetAccount } from 'mastodon/selectors';
+import { Avatar } from 'tucano/components/avatar';
+import { makeGetAccount } from 'tucano/selectors';
 
 const makeMapStateToProps = () => {
   const getAccount = makeGetAccount();

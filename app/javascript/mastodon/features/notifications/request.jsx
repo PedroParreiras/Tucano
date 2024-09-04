@@ -10,12 +10,12 @@ import { useSelector, useDispatch } from 'react-redux';
 import DeleteIcon from '@/material-icons/400-24px/delete.svg?react';
 import DoneIcon from '@/material-icons/400-24px/done.svg?react';
 import InventoryIcon from '@/material-icons/400-24px/inventory_2.svg?react';
-import { fetchNotificationRequest, fetchNotificationsForRequest, expandNotificationsForRequest, acceptNotificationRequest, dismissNotificationRequest } from 'mastodon/actions/notifications';
-import Column from 'mastodon/components/column';
-import ColumnHeader from 'mastodon/components/column_header';
-import { IconButton } from 'mastodon/components/icon_button';
-import ScrollableList from 'mastodon/components/scrollable_list';
-import { SensitiveMediaContextProvider } from 'mastodon/features/ui/util/sensitive_media_context';
+import { fetchNotificationRequest, fetchNotificationsForRequest, expandNotificationsForRequest, acceptNotificationRequest, dismissNotificationRequest } from 'tucano/actions/notifications';
+import Column from 'tucano/components/column';
+import ColumnHeader from 'tucano/components/column_header';
+import { IconButton } from 'tucano/components/icon_button';
+import ScrollableList from 'tucano/components/scrollable_list';
+import { SensitiveMediaContextProvider } from 'tucano/features/ui/util/sensitive_media_context';
 
 import NotificationContainer from './containers/notification_container';
 

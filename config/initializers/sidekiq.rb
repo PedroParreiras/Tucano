@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 
-require_relative '../../lib/mastodon/sidekiq_middleware'
+require_relative '../../lib/tucano/sidekiq_middleware'
 
 Sidekiq.configure_server do |config|
   config.redis = REDIS_CONFIGURATION.sidekiq
 
   # This is used in Kubernetes setups, to signal that the Sidekiq process has started and will begin processing jobs
   # This comes from https://github.com/sidekiq/sidekiq/wiki/Kubernetes#sidekiq
-  ready_filename = ENV.fetch('MASTODON_SIDEKIQ_READY_FILENAME', nil)
+  ready_filename = ENV.fetch('tucano_SIDEKIQ_READY_FILENAME', nil)
   if ready_filename
-    raise 'MASTODON_SIDEKIQ_READY_FILENAME is not a valid filename' if File.basename(ready_filename) != ready_filename
+    raise 'tucano_SIDEKIQ_READY_FILENAME is not a valid filename' if File.basename(ready_filename) != ready_filename
 
     ready_path = Rails.root.join('tmp', ready_filename)
 
@@ -23,7 +23,7 @@ Sidekiq.configure_server do |config|
   end
 
   config.server_middleware do |chain|
-    chain.add Mastodon::SidekiqMiddleware
+    chain.add tucano::SidekiqMiddleware
   end
 
   config.server_middleware do |chain|

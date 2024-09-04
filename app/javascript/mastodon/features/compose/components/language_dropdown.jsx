@@ -12,8 +12,8 @@ import Overlay from 'react-overlays/Overlay';
 import CancelIcon from '@/material-icons/400-24px/cancel-fill.svg?react';
 import SearchIcon from '@/material-icons/400-24px/search.svg?react';
 import TranslateIcon from '@/material-icons/400-24px/translate.svg?react';
-import { Icon } from 'mastodon/components/icon';
-import { languages as preloadedLanguages } from 'mastodon/initial_state';
+import { Icon } from 'tucano/components/icon';
+import { languages as preloadedLanguages } from 'tucano/initial_state';
 
 const messages = defineMessages({
   changeLanguage: { id: 'compose.language.change', defaultMessage: 'Change language' },

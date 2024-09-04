@@ -1,5 +1,5 @@
-import { forceGroupedNotifications } from 'mastodon/initial_state';
-import type { RootState } from 'mastodon/store';
+import { forceGroupedNotifications } from 'tucano/initial_state';
+import type { RootState } from 'tucano/store';
 
 /* eslint-disable @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access */
 // state.settings is not yet typed, so we disable some ESLint checks for those selectors

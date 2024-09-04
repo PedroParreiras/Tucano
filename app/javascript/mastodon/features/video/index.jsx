@@ -17,9 +17,9 @@ import RectangleIcon from '@/material-icons/400-24px/rectangle.svg?react';
 import VisibilityOffIcon from '@/material-icons/400-24px/visibility_off.svg?react';
 import VolumeOffIcon from '@/material-icons/400-24px/volume_off-fill.svg?react';
 import VolumeUpIcon from '@/material-icons/400-24px/volume_up-fill.svg?react';
-import { Blurhash } from 'mastodon/components/blurhash';
-import { Icon }  from 'mastodon/components/icon';
-import { playerSettings } from 'mastodon/settings';
+import { Blurhash } from 'tucano/components/blurhash';
+import { Icon }  from 'tucano/components/icon';
+import { playerSettings } from 'tucano/settings';
 
 import { displayMedia, useBlurhash } from '../../initial_state';
 import { isFullscreen, requestFullscreen, exitFullscreen } from '../ui/util/fullscreen';
